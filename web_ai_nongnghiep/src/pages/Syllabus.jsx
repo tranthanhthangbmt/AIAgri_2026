@@ -74,13 +74,6 @@ const Syllabus = () => {
                   </button>
                 )}
 
-                {week.notebookLink && (
-                  <a href={week.notebookLink} target="_blank" rel="noreferrer" className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-                    <MessageSquare size={18} />
-                    Hỏi đáp cùng Chuyên gia
-                  </a>
-                )}
-
                 {week.audio && (
                   <div style={{ marginTop: '10px' }}>
                     <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '5px' }}>Nghe Audio Tóm Tắt:</p>

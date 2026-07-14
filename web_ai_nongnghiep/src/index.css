@@ -309,3 +309,44 @@ footer {
   background: #d32f2f;
   transform: scale(1.1);
 }
+
+/* Floating Action Button (Tutor AI) */
+.tutor-fab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--primary-color);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(46, 125, 50, 0.5);
+  text-decoration: none;
+  z-index: 999;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+
+.tutor-fab-text {
+  max-width: 0;
+  opacity: 0;
+  white-space: nowrap;
+  font-weight: 600;
+  margin-left: 0;
+  transition: all 0.3s ease;
+}
+
+.tutor-fab:hover {
+  width: 160px;
+  background: var(--primary-light);
+  box-shadow: 0 6px 25px rgba(46, 125, 50, 0.6);
+}
+
+.tutor-fab:hover .tutor-fab-text {
+  max-width: 100px;
+  opacity: 1;
+  margin-left: 10px;
+}
