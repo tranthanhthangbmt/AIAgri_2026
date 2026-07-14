@@ -19,74 +19,76 @@ const Syllabus = () => {
   ];
 
   return (
-    <div className="container page-enter" style={{ paddingTop: '40px' }}>
-      <h2>Lịch trình & Bài giảng</h2>
-      <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>
-        Dưới đây là lịch trình chi tiết của môn học. Click vào nút tải về để xem Slide của từng chương.
-      </p>
+    <>
+      <div className="container page-enter" style={{ paddingTop: '40px' }}>
+        <h2>Lịch trình & Bài giảng</h2>
+        <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>
+          Dưới đây là lịch trình chi tiết của môn học. Click vào nút tải về để xem Slide của từng chương.
+        </p>
 
-      <div className="grid-2">
-        {weeks.map((week, index) => (
-          <div key={index} className="card glass-panel" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-            <div>
-              <h3 style={{ color: 'var(--primary-light)', fontSize: '1.2rem' }}>Tuần {week.num}</h3>
-              <p style={{ fontSize: '1.1rem', marginBottom: '20px', fontWeight: 500 }}>{week.title}</p>
+        <div className="grid-2">
+          {weeks.map((week, index) => (
+            <div key={index} className="card glass-panel" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <h3 style={{ color: 'var(--primary-light)', fontSize: '1.2rem' }}>Tuần {week.num}</h3>
+                <p style={{ fontSize: '1.1rem', marginBottom: '20px', fontWeight: 500 }}>{week.title}</p>
+              </div>
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                {week.slide ? (
+                  <button 
+                    onClick={() => setSelectedPdf(`${import.meta.env.BASE_URL}slides/${week.slide}`)}
+                    className="btn btn-secondary" 
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%' }}
+                  >
+                    <Eye size={18} />
+                    Xem Slide Bài Giảng
+                  </button>
+                ) : (
+                  <div style={{ padding: '12px', textAlign: 'center', color: 'var(--text-secondary)', background: 'rgba(0,0,0,0.2)', borderRadius: '8px' }}>
+                    Không có slide bài giảng
+                  </div>
+                )}
+
+                {week.infographic && (
+                  <button 
+                    onClick={() => setSelectedImage(`${import.meta.env.BASE_URL}media/Infographic/${week.infographic}`)}
+                    className="btn btn-secondary" 
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%' }}
+                  >
+                    <ImageIcon size={18} />
+                    Xem Infographic
+                  </button>
+                )}
+
+                {week.video && (
+                  <button 
+                    onClick={() => setSelectedVideo(`${import.meta.env.BASE_URL}media/Video/${week.video}`)}
+                    className="btn btn-secondary" 
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%', background: 'var(--primary-dark)', borderColor: 'var(--primary-dark)' }}
+                  >
+                    <PlayCircle size={18} />
+                    Xem Video Bài Giảng
+                  </button>
+                )}
+
+                {week.notebookLink && (
+                  <a href={week.notebookLink} target="_blank" rel="noreferrer" className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+                    <MessageSquare size={18} />
+                    Hỏi đáp cùng Chuyên gia
+                  </a>
+                )}
+
+                {week.audio && (
+                  <div style={{ marginTop: '10px' }}>
+                    <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '5px' }}>Nghe Audio Tóm Tắt:</p>
+                    <audio controls src={`${import.meta.env.BASE_URL}media/Audio/${week.audio}`} style={{ width: '100%', height: '40px' }} />
+                  </div>
+                )}
+              </div>
             </div>
-            
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              {week.slide ? (
-                <button 
-                  onClick={() => setSelectedPdf(`${import.meta.env.BASE_URL}slides/${week.slide}`)}
-                  className="btn btn-secondary" 
-                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%' }}
-                >
-                  <Eye size={18} />
-                  Xem Slide Bài Giảng
-                </button>
-              ) : (
-                <div style={{ padding: '12px', textAlign: 'center', color: 'var(--text-secondary)', background: 'rgba(0,0,0,0.2)', borderRadius: '8px' }}>
-                  Không có slide bài giảng
-                </div>
-              )}
-
-              {week.infographic && (
-                <button 
-                  onClick={() => setSelectedImage(`${import.meta.env.BASE_URL}media/Infographic/${week.infographic}`)}
-                  className="btn btn-secondary" 
-                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%' }}
-                >
-                  <ImageIcon size={18} />
-                  Xem Infographic
-                </button>
-              )}
-
-              {week.video && (
-                <button 
-                  onClick={() => setSelectedVideo(`${import.meta.env.BASE_URL}media/Video/${week.video}`)}
-                  className="btn btn-secondary" 
-                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%', background: 'var(--primary-dark)', borderColor: 'var(--primary-dark)' }}
-                >
-                  <PlayCircle size={18} />
-                  Xem Video Bài Giảng
-                </button>
-              )}
-
-              {week.notebookLink && (
-                <a href={week.notebookLink} target="_blank" rel="noreferrer" className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-                  <MessageSquare size={18} />
-                  Hỏi đáp cùng Chuyên gia
-                </a>
-              )}
-
-              {week.audio && (
-                <div style={{ marginTop: '10px' }}>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '5px' }}>Nghe Audio Tóm Tắt:</p>
-                  <audio controls src={`${import.meta.env.BASE_URL}media/Audio/${week.audio}`} style={{ width: '100%', height: '40px' }} />
-                </div>
-              )}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       {selectedPdf && (
@@ -122,11 +124,11 @@ const Syllabus = () => {
             <button className="close-btn" onClick={() => setSelectedVideo(null)} style={{ position: 'absolute', top: '10px', right: '10px', zIndex: 100 }}>
               <X size={20} />
             </button>
-            <video controls src={selectedVideo} style={{ maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%' }} autoPlay />
+            <video controls src={selectedVideo} style={{ maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%', objectFit: 'contain' }} autoPlay />
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
