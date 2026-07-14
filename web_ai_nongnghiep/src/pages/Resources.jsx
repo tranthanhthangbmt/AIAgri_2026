@@ -32,7 +32,7 @@ const Resources = () => {
           {viDocs.map((doc, index) => (
             <div key={index} className="card glass-panel" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <p style={{ fontSize: '1.1rem', marginBottom: '16px', fontWeight: 500 }}>{doc.title}</p>
-              <a href={`/ebooks/${doc.file}`} target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+              <a href={`${import.meta.env.BASE_URL}ebooks/${doc.file}`} target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
                 <Download size={18} />
                 Tải file ({doc.type.toUpperCase()})
               </a>

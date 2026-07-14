@@ -36,7 +36,7 @@ const Syllabus = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {week.slide ? (
                 <button 
-                  onClick={() => setSelectedPdf(`/slides/${week.slide}`)}
+                  onClick={() => setSelectedPdf(`${import.meta.env.BASE_URL}slides/${week.slide}`)}
                   className="btn btn-secondary" 
                   style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%' }}
                 >
@@ -51,7 +51,7 @@ const Syllabus = () => {
 
               {week.infographic && (
                 <button 
-                  onClick={() => setSelectedImage(`/media/Infographic/${week.infographic}`)}
+                  onClick={() => setSelectedImage(`${import.meta.env.BASE_URL}media/Infographic/${week.infographic}`)}
                   className="btn btn-secondary" 
                   style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%' }}
                 >
@@ -62,7 +62,7 @@ const Syllabus = () => {
 
               {week.video && (
                 <button 
-                  onClick={() => setSelectedVideo(`/media/Video/${week.video}`)}
+                  onClick={() => setSelectedVideo(`${import.meta.env.BASE_URL}media/Video/${week.video}`)}
                   className="btn btn-secondary" 
                   style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%', background: 'var(--primary-dark)', borderColor: 'var(--primary-dark)' }}
                 >
@@ -81,7 +81,7 @@ const Syllabus = () => {
               {week.audio && (
                 <div style={{ marginTop: '10px' }}>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '5px' }}>Nghe Audio Tóm Tắt:</p>
-                  <audio controls src={`/media/Audio/${week.audio}`} style={{ width: '100%', height: '40px' }} />
+                  <audio controls src={`${import.meta.env.BASE_URL}media/Audio/${week.audio}`} style={{ width: '100%', height: '40px' }} />
                 </div>
               )}
             </div>
