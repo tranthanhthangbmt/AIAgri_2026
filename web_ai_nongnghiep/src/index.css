@@ -2,12 +2,12 @@
   --primary-color: #2E7D32; /* Deep Green */
   --primary-light: #4CAF50;
   --secondary-color: #81C784;
-  --bg-color: #121212; /* Dark Mode */
-  --surface-color: rgba(30, 30, 30, 0.7); /* Glassmorphism surface */
-  --surface-border: rgba(255, 255, 255, 0.1);
-  --text-primary: #ffffff;
-  --text-secondary: #b3b3b3;
-  --accent-color: #A5D6A7;
+  --bg-color: #F9FAFB; /* Light Mode Background */
+  --surface-color: rgba(255, 255, 255, 0.85); /* Glassmorphism surface light */
+  --surface-border: rgba(0, 0, 0, 0.08);
+  --text-primary: #111827;
+  --text-secondary: #4B5563;
+  --accent-color: #4CAF50;
   --danger-color: #ef5350;
   --success-color: #66bb6a;
 }
@@ -25,19 +25,19 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   /* Thêm một background gradient mờ để nhìn premium hơn */
-  background-image: radial-gradient(circle at 15% 50%, rgba(46, 125, 50, 0.1), transparent 25%),
-                    radial-gradient(circle at 85% 30%, rgba(76, 175, 80, 0.1), transparent 25%);
+  background-image: radial-gradient(circle at 15% 50%, rgba(46, 125, 50, 0.05), transparent 25%),
+                    radial-gradient(circle at 85% 30%, rgba(76, 175, 80, 0.05), transparent 25%);
   background-attachment: fixed;
 }
 
 /* Glassmorphism utilities */
 .glass-panel {
   background: var(--surface-color);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border: 1px solid var(--surface-border);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
 }
 
 .container {
@@ -52,7 +52,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(18, 18, 18, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(15px);
   border-bottom: 1px solid var(--surface-border);
 }
@@ -88,8 +88,8 @@ body {
 }
 
 .nav-link:hover, .nav-link.active {
-  color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.05);
+  color: var(--primary-color);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 /* Hero Section */
@@ -139,13 +139,13 @@ body {
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.03);
+  color: var(--primary-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.06);
   transform: translateY(-2px);
 }
 
@@ -185,7 +185,7 @@ body {
   text-align: left;
   padding: 16px;
   margin-bottom: 12px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.03);
   border: 1px solid var(--surface-border);
   border-radius: 8px;
   color: var(--text-primary);
@@ -195,22 +195,22 @@ body {
 }
 
 .option-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.06);
   border-color: var(--primary-light);
 }
 
 .option-btn.selected {
-  background: rgba(46, 125, 50, 0.2);
+  background: rgba(46, 125, 50, 0.1);
   border-color: var(--primary-color);
 }
 
 .option-btn.correct {
-  background: rgba(102, 187, 106, 0.2);
+  background: rgba(102, 187, 106, 0.15);
   border-color: var(--success-color);
 }
 
 .option-btn.wrong {
-  background: rgba(239, 83, 80, 0.2);
+  background: rgba(239, 83, 80, 0.15);
   border-color: var(--danger-color);
 }
 
@@ -281,7 +281,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
-  background: rgba(30, 30, 30, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid var(--surface-border);
 }
 

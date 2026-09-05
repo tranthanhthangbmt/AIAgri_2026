@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Download, MessageSquare, Eye, X, Image as ImageIcon, PlayCircle } from 'lucide-react';
+import { Download, MessageSquare, Eye, X, Image as ImageIcon, PlayCircle, BookOpen } from 'lucide-react';
+import textbooksData from '../data/textbooks.json';
 
 const Syllabus = () => {
   const [selectedPdf, setSelectedPdf] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [isZoomed, setIsZoomed] = useState(false);
 
   const tutorLink = "https://notebooklm.google.com/notebook/dc66dc0c-d176-4024-aac8-4680a4f0b4bd?authuser=9";
 
@@ -47,14 +49,65 @@ const Syllabus = () => {
                     Xem Slide Bài Giảng
                   </button>
                 ) : (
-                  <div style={{ padding: '12px', textAlign: 'center', color: 'var(--text-secondary)', background: 'rgba(0,0,0,0.2)', borderRadius: '8px' }}>
+                  <div style={{ padding: '12px', textAlign: 'center', color: 'var(--text-secondary)', background: 'rgba(0,0,0,0.03)', borderRadius: '8px' }}>
                     Không có slide bài giảng
                   </div>
                 )}
 
+                {(() => {
+                  const weekKey = week.num.toString().replace(/ /g, "");
+                  const weekTextbooks = textbooksData[weekKey] || [];
+                  if (weekTextbooks.length > 0) {
+                    return (
+                      <div style={{ marginTop: '5px', marginBottom: '5px', background: 'rgba(0,0,0,0.02)', padding: '10px', borderRadius: '8px' }}>
+                        <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '8px', fontWeight: 500 }}>Sách / Giáo trình:</p>
+                        {weekTextbooks.length === 1 ? (
+                          <button 
+                            onClick={() => setSelectedPdf(`${import.meta.env.BASE_URL}textbooks/${weekTextbooks[0]}`)}
+                            className="btn btn-secondary" 
+                            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%', background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)' }}
+                            title={weekTextbooks[0]}
+                          >
+                            <BookOpen size={18} />
+                            Đọc Tài Liệu
+                          </button>
+                        ) : (
+                          <div style={{ display: 'flex', gap: '8px', flexDirection: 'column' }}>
+                            <select 
+                              id={`select-tb-${weekKey}`}
+                              style={{ width: '100%', padding: '8px', borderRadius: '6px', background: 'rgba(255, 255, 255, 0.9)', color: 'var(--text-primary)', border: '1px solid rgba(0,0,0,0.1)' }}
+                            >
+                              {weekTextbooks.map((tb, i) => (
+                                <option key={i} value={tb}>{tb.length > 45 ? tb.substring(0, 45) + '...' : tb}</option>
+                              ))}
+                            </select>
+                            <button 
+                              onClick={() => {
+                                const selectEl = document.getElementById(`select-tb-${weekKey}`);
+                                if (selectEl) {
+                                  setSelectedPdf(`${import.meta.env.BASE_URL}textbooks/${selectEl.value}`);
+                                }
+                              }}
+                              className="btn btn-secondary" 
+                              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%', background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)' }}
+                            >
+                              <BookOpen size={18} />
+                              Đọc Tài Liệu Đã Chọn
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  }
+                  return null;
+                })()}
+
                 {week.infographic && (
                   <button 
-                    onClick={() => setSelectedImage(`${import.meta.env.BASE_URL}media/Infographic/${week.infographic}`)}
+                    onClick={() => {
+                      setSelectedImage(`${import.meta.env.BASE_URL}media/Infographic/${week.infographic}`);
+                      setIsZoomed(false);
+                    }}
                     className="btn btn-secondary" 
                     style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%' }}
                   >
@@ -104,11 +157,24 @@ const Syllabus = () => {
 
       {selectedImage && (
         <div className="pdf-modal-overlay" onClick={() => setSelectedImage(null)}>
-          <div className="pdf-modal-content" onClick={e => e.stopPropagation()} style={{ background: 'transparent', border: 'none', boxShadow: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <button className="close-btn" onClick={() => setSelectedImage(null)} style={{ position: 'absolute', top: '10px', right: '10px' }}>
+          <div className="pdf-modal-content" onClick={e => e.stopPropagation()} style={{ background: 'transparent', border: 'none', boxShadow: 'none', display: 'flex', flexDirection: 'column', overflow: 'auto', alignItems: 'center', justifyContent: isZoomed ? 'flex-start' : 'center', padding: isZoomed ? '20px 0' : '0' }}>
+            <button className="close-btn" onClick={() => setSelectedImage(null)} style={{ position: 'fixed', top: '20px', right: '20px', zIndex: 1000, background: 'rgba(0,0,0,0.5)', color: 'white' }}>
               <X size={20} />
             </button>
-            <img src={selectedImage} alt="Infographic" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '12px' }} />
+            <img 
+              src={selectedImage} 
+              alt="Infographic" 
+              onClick={() => setIsZoomed(!isZoomed)}
+              style={{ 
+                maxWidth: '100%', 
+                maxHeight: isZoomed ? 'none' : '100%', 
+                width: isZoomed ? '100%' : 'auto',
+                objectFit: 'contain', 
+                borderRadius: '12px',
+                cursor: isZoomed ? 'zoom-out' : 'zoom-in',
+                transition: 'all 0.3s ease'
+              }} 
+            />
           </div>
         </div>
       )}
