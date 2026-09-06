@@ -1,0 +1,98 @@
+Slide 1: AI ỨNG DỤNG TRONG NÔNG NGHIỆP - Buổi 2: Học Máy (Machine Learning) trong Nông nghiệp
+Người 1: Chào các em sinh viên. Nối tiếp bức tranh tổng quan ở Buổi 1, hôm nay chúng ta sẽ đi sâu vào "trái tim" của hệ thống Trí tuệ nhân tạo. Đó chính là Học máy, hay còn gọi là Machine Learning. Buổi học số 2 này sẽ chia làm hai phần. Phần 1, chúng ta sẽ xây dựng nền tảng lý thuyết vững chắc về Học máy.
+Người 2: Dạ em chào thầy. Khái niệm Học máy nghe rất quen thuộc, nhưng để hiểu rõ bản chất nó hoạt động thế nào thì quả thực không dễ. Hôm nay chúng ta sẽ bóc tách những dòng code đó ra để xem máy tính thực sự "học" bằng cách nào phải không ạ?
+
+Slide 2: Lộ trình hôm nay: Từ Nguyên lý đến Công cụ
+Người 1: Chính xác. Lộ trình của chúng ta bắt đầu bằng việc hiểu "Sự thay đổi tư duy" - tại sao chúng ta không dùng cách lập trình cũ nữa. Tiếp theo là "Giải mã Học máy" để xem một dự án thực tế chạy qua những bước nào. Sau đó, chúng ta sẽ phân loại các "Họ" trong gia đình Machine Learning, và cuối cùng là mở "Hộp dụng cụ" điểm qua các thuật toán nền tảng.
+Người 2: Vậy là chúng ta sẽ đi từ cái gốc rễ tư tưởng trước khi chạm vào các công cụ cụ thể. Phương pháp này rất logic, giúp chúng em không bị lạc lối giữa rừng thuật toán.
+
+Slide 3: Một Sự Thay Đổi Lớn: Từ Ra Lệnh Sang Dạy Học
+Người 1: Hãy bắt đầu với sự thay đổi tư duy lớn nhất lịch sử Khoa học máy tính. Hãy nhìn vào sơ đồ bên trái. Trong Lập trình Truyền thống, con người đóng vai trò là người "Ra lệnh". Các em nhập Dữ liệu và các Quy tắc (hay còn gọi là các dòng code If-Else) vào máy tính, máy sẽ tính toán và nhả ra Kết quả.
+Người 2: Dạ đúng, ví dụ như để lọc thư rác, một lập trình viên phải vất vả liệt kê hàng ngàn từ khóa như "miễn phí", "trúng thưởng", "bấm vào link này". Nếu kẻ gian đổi từ khóa, hệ thống sẽ trở nên vô dụng ngay lập tức vì code quá cứng nhắc.
+Người 1: Rất chuẩn. Đó là lý do Machine Learning ra đời. Hãy nhìn sang sơ đồ bên phải, đây là tư duy "Dạy học". Chúng ta đảo ngược quy trình: Ta nhập Dữ liệu và cả Kết quả (đáp án có sẵn) vào hệ thống. Máy tính sẽ tự động chạy thuật toán để "đẻ ra" các Quy tắc. Máy tính đã tự học!
+
+Slide 4: Vậy, Học Máy Chính Xác Là Gì?
+Người 1: Về mặt học thuật, định nghĩa kinh điển của Arthur Samuel năm 1959 là: Cung cấp cho máy tính khả năng học hỏi mà không cần được lập trình một cách tường minh. Còn Tom Mitchell định nghĩa chi tiết hơn: Máy tính học từ Kinh nghiệm E đối với Nhiệm vụ T, và tự cải thiện Hiệu suất P.
+Người 2: Tóm lại cốt lõi ở đây là chữ "Quy luật", thưa thầy. Như sơ đồ minh họa, từ một đống dữ liệu lộn xộn đầu vào, Mô hình Học máy đóng vai trò là một cái rây lọc khổng lồ, tìm ra các quy luật ẩn giấu bên trong, rồi sắp xếp chúng lại thành một cấu trúc gọn gàng để có thể đưa ra dự đoán cho tương lai.
+
+Slide 5: Vòng Đời Của Một Dự Án Học Máy
+Người 1: Để xây dựng được chiếc "rây lọc" đó, một dự án Học máy phải đi qua 5 bước cốt lõi. Bước 1: Thu thập & Chuẩn bị dữ liệu - đây là bước tốn thời gian nhất. Nhớ kỹ nguyên tắc "Rác đầu vào, rác đầu ra" (Garbage in, Garbage out). Bước 2: Lựa chọn Mô hình - giống như chọn dao mổ trâu hay dao mổ gà. Bước 3: Huấn luyện - nạp dữ liệu để máy tự điều chỉnh tham số. Bước 4: Đánh giá độ chính xác, và Bước 5: Triển khai & Giám sát trên thực tế.
+Người 2: Nguyên tắc "Rác đầu vào, rác đầu ra" thực sự rất đáng sợ. Nếu chúng ta chụp ảnh lá lúa bị bệnh nấm nhưng lại dán nhãn nhầm là bệnh vi khuẩn, thì dù thuật toán có siêu việt đến đâu, mô hình AI cuối cùng cũng sẽ nhận diện sai lệch hoàn toàn trên thực tế.
+
+Slide 6: Thế Giới Học Máy: Ba Hướng Tiếp Cận Chính
+Người 1: Khi bước vào thế giới Học máy, các em sẽ thấy nó được chia thành 3 gia đình lớn, dựa trên cách chúng ta cung cấp dữ liệu cho máy. Đó là: Học có Giám sát (Supervised Learning), Học không Giám sát (Unsupervised Learning) và Học Tăng cường (Reinforcement Learning).
+Người 2: Để dễ hình dung, em có thể liên tưởng thế này: Học có giám sát giống như học sinh giải toán có kèm theo sách giải (đáp án có sẵn). Học không giám sát là thả học sinh vào một thư viện lộn xộn để tự phân loại sách. Còn Học tăng cường là cho học sinh tập chạy xe đạp, ngã thì đau (bị phạt), giữ thăng bằng thì đi nhanh (được thưởng). Không biết em hiểu vậy có đúng không ạ?
+Người 1: Ẩn dụ của em vô cùng chính xác và dễ hiểu! Thầy sẽ đi sâu vào từng loại ngay sau đây.
+
+Slide 7: Học có Giám sát: Học từ Dữ liệu đã được Gán nhãn
+Người 1: Đầu tiên là Học có Giám sát. Đặc trưng của nó là dữ liệu đầu vào luôn đi kèm với kết quả đúng (Gán nhãn - Labeled data). Nó giải quyết 2 bài toán chính: Phân loại (Classification) dùng để trả lời câu hỏi "Đây là loại nào?". Ví dụ: phân loại lá khỏe mạnh và lá bị bệnh. Bài toán thứ hai là Hồi quy (Regression) dùng để trả lời "Giá trị là bao nhiêu?". Ví dụ: Dựa vào lượng mưa dự đoán sản lượng lúa thu được là bao nhiêu tấn.
+Người 2: Bài toán Hồi quy có vẻ sát với thực tế kinh tế nông nghiệp hơn thưa thầy. Nông dân không chỉ muốn biết cây có bệnh hay không, mà còn muốn dự tính được cuối mùa thu hoạch sẽ bán được bao nhiêu tiền để tính toán đầu tư phân bón cho hợp lý.
+
+Slide 8: Học không Giám sát: Khai phá những Cấu trúc Ẩn
+Người 1: Chuyển sang Học không Giám sát, lúc này dữ liệu hoàn toàn là một "đống hỗn độn", không có nhãn. Bài toán phổ biến nhất là Phân cụm (Clustering). Thuật toán sẽ tự đo đạc khoảng cách giữa các điểm dữ liệu và gom chúng thành từng nhóm có đặc tính giống nhau. Ví dụ: hệ thống tự động phân loại các vùng đất trong một trang trại khổng lồ dựa trên độ pH và dinh dưỡng, giúp nông dân quy hoạch vùng trồng trọt tối ưu.
+Người 2: Kỹ thuật thứ hai là Luật kết hợp (Association Rule) cũng rất thú vị. Nó giống như thuật toán gợi ý sản phẩm của Shopee hay Amazon. Nếu khách hàng mua phân bón A, họ có xác suất cao sẽ mua thêm hạt giống B. Điều này giúp các đại lý vật tư nông nghiệp sắp xếp kho bãi và tung ra các gói khuyến mãi rất hiệu quả.
+
+Slide 9: Học Tăng cường: Học thông qua Tương tác và Trải nghiệm
+Người 1: Cuối cùng, hướng tiếp cận tiên tiến nhất hiện nay là Học Tăng cường. Nó xoay quanh một Tác nhân (Agent) học cách hành động trong một Môi trường (Environment). Quy trình lặp lại gồm: Quan sát trạng thái -> Thực hiện Hành động -> Nhận lại phần Thưởng hoặc Hình phạt từ môi trường -> Cập nhật lại kiến thức.
+Người 2: Đây chính xác là cách mà các Robot nông nghiệp tự học cách di chuyển giữa các luống cây. Ban đầu nó có thể đi loạng choạng dẫm lên cây trồng và bị trừ điểm (hình phạt). Nhưng sau hàng triệu lần chạy thử nghiệm trên máy tính, nó sẽ tìm ra quỹ đạo đi mượt mà nhất để nhổ cỏ mà không chạm vào cây lúa.
+
+Slide 10: Hộp Dụng Cụ ML: Các Thuật Toán Nền Tảng
+Người 1: Mở "hộp dụng cụ" của Machine Learning, chúng ta có vô vàn thuật toán. Bốn đại diện nền tảng nhất là: Hồi quy Tuyến tính (Linear Regression) dùng cho dự báo giá trị liên tục bằng đường thẳng. Cây Quyết định (Decision Tree) dùng cho phân loại bằng chuỗi câu hỏi Có/Không rất trực quan. K-Means dùng để gom cụm điểm ảnh không giám sát. Và cuối cùng là "trùm cuối" Mạng Nơ-ron nhân tạo (Neural Network), bắt chước bộ não người để giải quyết các dữ liệu siêu phức tạp như ảnh hay video.
+Người 2: Em thấy Cây Quyết định là thuật toán dễ giải thích nhất cho người nông dân. Nó giống hệt như một sơ đồ tư duy: "Nếu lá màu vàng -> Nếu độ ẩm đất thấp -> Kết luận: Cây thiếu nước". Tính minh bạch này giúp họ dễ dàng tin tưởng vào kết quả của máy tính hơn.
+
+Slide 11: Tóm Tắt Phần 1 & Hướng Tới Ứng Dụng Thực Tế
+Người 1: Rất tốt. Chốt lại Phần 1, các em cần khắc cốt ghi tâm: Học máy là sự dịch chuyển từ việc "code ra quy tắc" sang việc "để máy tự học quy luật từ dữ liệu". Chúng ta có 3 họ lớn là Có giám sát, Không giám sát và Tăng cường. Các thuật toán như Hồi quy, Phân loại là công cụ sắc bén. Bây giờ, với chiếc hộp dụng cụ này, chúng ta đã sẵn sàng bước ra đồng ruộng thực tế.
+Người 2: Lý thuyết tuy hơi khô khan nhưng đã giúp định hình được bộ khung. Việc tiếp theo là nắp ghép những khối block đó vào các vấn đề thực tiễn để xem chúng giải bài toán như thế nào.
+
+Slide 12: HỎI & ĐÁP - Nền tảng Lý thuyết
+Người 1: Trước khi sang phần 2, thầy có câu hỏi để kiểm tra bài cũ: Sự khác biệt lớn nhất giữa Hồi quy (Regression) và Phân loại (Classification) là gì?
+Người 2: Dạ, Hồi quy dự đoán một con số cụ thể, một giá trị liên tục, ví dụ như dự đoán nhiệt độ ngày mai là 32 độ C. Còn Phân loại dự đoán một hạng mục hay nhóm rời rạc, ví dụ như nhận diện xem con vật đang đứng trước camera là con gà hay con vịt ạ.
+Người 1: Một câu trả lời xuất sắc! Thầy đánh giá cao việc nắm chắc bản chất thuật toán của em. Chúng ta cùng đi tiếp nào.
+
+Slide 13: Học Máy trong Nông nghiệp - Phần 2: Từ Thuật toán đến Hành động trên Cánh đồng
+Người 1: Chào mừng đến với Phần 2. Giờ là lúc cởi bỏ lớp áo lý thuyết hàn lâm. Chúng ta sẽ cùng nhau "mổ xẻ" 2 Case Study thực tế, xem các thuật toán phức tạp kia đã cứu sống mùa màng và tối ưu lợi nhuận cho người nông dân như thế nào. Hình ảnh một chiếc Drone tự động phun thuốc trên slide chính là đại diện cho sức mạnh của thuật toán khi biến thành hành động vật lý.
+
+Slide 14: Học Máy Giải quyết những Bài toán Nào?
+Người 1: Trên thực tế, Học máy tập trung đánh sập hai pháo đài khó khăn nhất của nông nghiệp. Số 1 là "Chế ngự sự bất định" (Taming Uncertainty). Nông nghiệp vốn phụ thuộc vào ông trời, nhưng ML giúp ta dự đoán được lượng mưa, nhiệt độ chính xác để chuyển từ thế bị động sang chủ động. Số 2 là "Tối ưu hóa quyết định" (Optimizing Decisions). Giữa hàng trăm loại phân bón và giống cây, ML sẽ chỉ ra phương án sinh lời cao nhất.
+Người 2: Thay vì "nhìn trời, nhìn đất, nhìn mây" như kinh nghiệm dân gian, ML đã số hóa thiên nhiên. Việc chế ngự được thời tiết và đưa ra quyết định chuẩn xác sẽ làm giảm hẳn tính chất rủi ro cao đặc thù của ngành nông nghiệp.
+
+Slide 15: Case Study 1: Dự báo Thời tiết Ngắn hạn để Giảm thiểu Rủi ro
+Người 1: Chúng ta đi vào Case Study 1: Dự báo thời tiết. Bối cảnh ở đây là nông dân rất sợ những đợt sương muối hay mưa đá đột ngột làm hỏng lịch gieo hạt. Các trạm khí tượng truyền thống sử dụng Mô hình Số trị (NWP) cần những siêu máy tính khổng lồ để tính toán, rất tốn kém và không sát thực tế địa phương. Mục tiêu của chúng ta là dùng một mạng Học sâu (Deep Learning) gọn nhẹ để dự báo Nhiệt độ tối đa, tối thiểu và Lượng mưa.
+Người 2: Yêu cầu bài toán là phải nhanh, rẻ nhưng độ phân giải phải chi tiết đến từng địa phương (micro-climate) đúng không thầy? Các mô hình thời tiết cấp quốc gia thường chỉ đưa ra dự báo chung chung cho cả một tỉnh, không thể áp dụng cho từng khu vực thung lũng hay sườn đồi của riêng một trang trại được.
+
+Slide 16: Giải pháp: Mạng Nơ-ron Hồi quy (RNN) và Dữ liệu Lịch sử
+Người 1: Rất chuẩn xác. Và vũ khí được chọn ở đây là Mạng Nơ-ron Hồi quy, viết tắt là RNN (Recurrent Neural Network). Điểm độc đáo của RNN là nó có vòng lặp bộ nhớ (memory loop). Nghĩa là kết quả của ngày hôm nay bị ảnh hưởng bởi nhiệt độ của ngày hôm qua, và ngày hôm qua lại bị ảnh hưởng bởi ngày hôm kia. Dữ liệu thời tiết tuần tự theo thời gian (time-series) cực kỳ phù hợp với mô hình này.
+Người 2: Nhìn vào quy trình 4 bước, việc "Tiền xử lý" dữ liệu có vẻ rất quan trọng. Phải Làm mịn (Smoothing) bằng trung bình trượt để bỏ qua các nhiễu sóng ngẫu nhiên, và Chuẩn hóa (Normalization) để đưa lượng mưa (mm) và nhiệt độ (độ C) về cùng một thang đo. Có như vậy thuật toán học sâu mới chạy ổn định được.
+
+Slide 17: Kết quả: Độ chính xác được Chứng minh bằng Số liệu
+Người 1: Đúng vậy! Và công sức đó đã được đền đáp bằng những con số ấn tượng. Dữ liệu thực tế tại 3 trạm Jammu, Srinagar và Leh ở Ấn Độ cho thấy hiệu suất của mô hình RNN là cực kỳ tốt. Lỗi Tuyệt đối Trung bình (MAE) và Căn Lỗi Bình phương Trung bình (RMSE) dao động ở mức vô cùng nhỏ (từ 0.03 đến 0.05). Lỗi phần trăm MAPE chỉ loanh quanh 12% đến 15%.
+Người 2: MAE và RMSE càng tiến về 0 thì dự báo càng sát với thực tế. Một mô hình gọn nhẹ, chi phí thấp mà đạt được độ chính xác tới 85-88% trong dự báo thời tiết cục bộ là một công cụ thực sự vô giá, giúp nông dân quyết định chính xác ngày nào nên xuống giống hay bón phân để không bị trôi tuột vì mưa rào.
+
+Slide 18: Case Study 2: Hệ thống Khuyến nghị Cây trồng Tối ưu
+Người 1: Sang Case Study 2, một bài toán đau đầu không kém: Trồng cây gì trên mảnh đất này để bán được nhiều tiền nhất? Lựa chọn sai ngay từ đầu mùa vụ sẽ dẫn đến hệ lụy mất trắng. Chúng ta sẽ xây dựng một Hệ thống Gợi ý (Recommender System) sử dụng ML. Đầu vào là 7 chỉ số sinh hóa của đất: Ni-tơ (N), Phốt-pho (P), Kali (K), độ pH, Nhiệt độ, Độ ẩm và Lượng mưa.
+Người 2: Em thấy bài toán này là sự giao thoa hoàn hảo giữa Hóa học đất đai và Khí tượng học. Nếu phân tích tay, con người không thể cùng lúc tính toán mức độ tác động chéo của 7 biến số này. ML chính là bộ lọc tối ưu nhất để xử lý khối lượng tham số này.
+
+Slide 19: Giải pháp: Học Ensemble (Bagging) với Cây Quyết định
+Người 1: Vậy thuật toán nào sẽ cáng đáng nổi 7 biến số này một cách chính xác nhất? Câu trả lời là Kỹ thuật Học Ensemble - cụ thể là Bagging. Bản chất của Ensemble là "Trí tuệ tập thể". Thay vì tin tưởng vào dự đoán của một Cây quyết định duy nhất, hệ thống sẽ lấy mẫu ngẫu nhiên (Bootstrap) tạo ra hàng trăm cây quyết định khác nhau. Cuối cùng, chúng sẽ "Bỏ phiếu" (Voting) để đưa ra khuyến nghị cuối cùng.
+Người 2: Nghĩa là hệ thống tuân theo nguyên tắc "Hai cái đầu luôn tốt hơn một cái đầu". Nếu một cây quyết định bị lỗi do dữ liệu nhiễu, các cây còn lại sẽ biểu quyết lấn át cái sai đó, giúp kết quả dự đoán của toàn hệ thống trở nên cực kỳ ổn định và chống được hiện tượng Học vẹt (Overfitting).
+
+Slide 20: Kết quả: Độ chính xác Vượt trội và Tính Ổn định Cao
+Người 1: Khả năng tư duy thuật toán của em rất bén! Nhìn vào bảng kết quả, Cây quyết định đơn lẻ vốn đã rất mạnh với độ chính xác 98%. Nhưng khi kết hợp thành mô hình Bagging Ensemble, độ chính xác (Accuracy), Precision, và F1-Score đồng loạt đẩy lên chạm trần 99%, gần như hoàn hảo. Chỉ số AUROC đạt 0.998 chứng tỏ khả năng phân biệt xuất sắc giữa các nhóm cây trồng.
+Người 2: Một kết quả tiệm cận sự hoàn mỹ! Nếu hệ thống này được đóng gói thành một ứng dụng trên điện thoại di động, người nông dân chỉ việc nhập kết quả xét nghiệm đất vào là ngay lập tức nhận được lời khuyên vàng: nên trồng lúa, trồng ngô hay đậu nành để thu lãi cao nhất.
+
+Slide 21: Bức tranh Toàn cảnh: ML đang Cách mạng hóa Mọi khía cạnh Nông nghiệp
+Người 1: Dự báo thời tiết và Gợi ý cây trồng chỉ là bề nổi của tảng băng chìm. Trên bức tranh toàn cảnh, ML đã thâm nhập vào mọi khâu của chuỗi giá trị. Thị giác máy tính phát hiện sâu bệnh sớm. Robot tự động gieo hạt, nhổ cỏ. Phân tích di truyền bằng ML giúp lai tạo ra các giống lúa chịu mặn, chịu hạn. Và chăn nuôi sử dụng thiết bị IoT để tối ưu hóa khẩu phần ăn, cảnh báo dịch bệnh. ML thực sự đang tạo ra một cuộc cách mạng xanh lần thứ hai.
+Người 2: Nhìn vào hệ sinh thái này, rõ ràng ranh giới giữa một nông trại và một nhà máy sản xuất công nghệ cao đã bị xóa nhòa. Đất đai không chỉ sinh ra lúa gạo, mà còn liên tục sinh ra lượng Dữ liệu Lớn vô giá.
+
+Slide 22: Công cụ Mạnh mẽ, nhưng không phải là Đũa thần
+Người 1: Tuy nhiên, hãy chậm lại một chút. ML là công cụ cực kỳ uy lực, nhưng nó không phải là đũa thần. Peter Norvig - chuyên gia hàng đầu về AI của Google từng nói: "Dữ liệu quan trọng hơn thuật toán". Một mô hình Deep Learning đỉnh cao cỡ nào cũng sẽ sụp đổ nếu nạp vào nó bộ dữ liệu rác. Chất lượng và số lượng dữ liệu là linh hồn của dự án.
+Người 2: Câu nói này như một gáo nước lạnh giúp chúng ta tỉnh táo lại. Nếu chúng ta chỉ mải mê chạy đua mua sắm máy chủ mạnh, code ra thuật toán phức tạp nhưng lại bỏ bê việc lắp đặt cảm biến chuẩn xác để thu thập dữ liệu đầu vào, thì dự án ML đó coi như vứt đi.
+
+Slide 23: Phân tích các Thách thức Chính trong Thực tiễn
+Người 1: Đúng như vậy. Việc mang thuật toán từ phòng lab ra bùn đất đồng ruộng đối mặt với 2 nhóm rào cản chí mạng. Nhóm 1 là Vấn đề dữ liệu: dữ liệu thu thập không đủ, bị thiếu đại diện (thiên lệch), hoặc chất lượng kém do cảm biến hỏng hóc vì thời tiết. Nhóm 2 là Rào cản triển khai: đó là gánh nặng khổng lồ về chi phí hạ tầng, tình trạng mù mờ công nghệ của nông dân, và sự thiếu thốn trầm trọng của mạng Internet 4G/5G ở vùng sâu vùng xa.
+Người 2: Đây thực sự là những bài toán đau đầu thưa thầy. Đặc biệt là "Dữ liệu không đại diện". Nếu chúng ta dùng dữ liệu huấn luyện của đồng bằng sông Cửu Long để mang lên áp dụng cho Tây Nguyên thì AI chắc chắn sẽ đưa ra lời khuyên sai bét vì đặc thù khí hậu và thổ nhưỡng hoàn toàn khác biệt.
+
+Slide 24: Vượt trên Công nghệ: Những câu hỏi về Đạo đức và Xã hội
+Người 1: Hơn cả kỹ thuật, sự bùng nổ của ML chạm đến ranh giới đạo đức. Ai sở hữu kho dữ liệu hàng terabyte sinh ra từ cánh đồng của người nông dân? Các tập đoàn lớn hay người dân? Nếu mô hình AI xúi bậy khiến nông dân mất trắng cả mùa, ai sẽ là người bồi thường thiệt hại? Sự phân chia số hóa (Digital Divide) có đang dồn các nông hộ nhỏ lẻ vào bước đường cùng không?
+Người 2: Thưa thầy, theo em đây là những câu hỏi mà thuật toán không thể giải quyết được, nó cần sự can thiệp của các nhà làm luật và chính phủ. Việc chuyển giao công nghệ phải đi kèm với một hành lang pháp lý vững chắc bảo vệ quyền lợi của nhóm yếu thế, nếu không cuộc cách mạng công nghệ này sẽ chỉ làm người giàu càng giàu thêm.
+Người 1: Em có một tư duy phản biện xuất sắc và cái nhìn rất sâu sắc về sự vận động của xã hội. Việc làm chủ công nghệ không chỉ là viết được thuật toán, mà là dùng thuật toán đó phục vụ con người một cách nhân văn nhất. Bài học Buổi 2 xin phép khép lại tại đây. Hẹn gặp lại các em vào buổi sau, chúng ta sẽ bắt tay vào thực hành phân tích bộ dữ liệu thực tế! Chào các em!

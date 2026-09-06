@@ -1,0 +1,96 @@
+Slide 1: Buổi 7: Báo Cáo Nhóm và Thảo Luận Dự Án
+Người 1: Chào các em sinh viên. Hôm nay chúng ta đã bước sang buổi học thứ 7, cũng là buổi học lý thuyết cuối cùng mang tính chất đúc kết của toàn bộ khóa học "Ứng dụng AI trong Nông nghiệp". Hôm nay, chúng ta sẽ không ngồi code thêm thuật toán mới, mà sẽ tập trung vào hai phần cực kỳ quan trọng: Hướng dẫn triển khai dự án cuối kỳ và Thảo luận về Đạo đức trong AI nông nghiệp.
+Người 2: Dạ vâng em chào thầy. Xuyên suốt khóa học, tụi em đã làm quen với Computer Vision để nhận diện bệnh lá cây, hay DRL để tối ưu hóa lượng nước tưới. Nhưng thú thực, làm sao để xâu chuỗi tất cả lại thành một dự án hoàn chỉnh để báo cáo cuối kỳ thì tụi em vẫn còn khá bối rối.
+
+Slide 2: Mục Tiêu Của Báo Cáo Dự Án Cuối Kỳ
+Người 1: Chuyện đó rất bình thường! Mục tiêu của bài báo cáo cuối kỳ không phải là đánh đố các em về mặt toán học hay những dòng code phức tạp, mà là để kiểm tra khả năng giải quyết một vấn đề thực tế trong nông nghiệp từ đầu đến cuối bằng công nghệ.
+Người 2: Có nghĩa là nhóm tụi em cần phải trình bày toàn bộ vòng đời của một dự án, thay vì chỉ nộp một đoạn code nhận diện hình ảnh thôi đúng không ạ?
+
+Slide 3: Machine Learning Project Checklist (8 Bước)
+Người 1: Chính xác. Đó là lý do thầy sẽ hướng dẫn các bạn "Machine Learning Project Checklist" - một quy trình 8 bước chuẩn chỉnh dựa trên tài liệu Phụ lục A mà lớp chúng ta đã có. Nó bắt đầu từ việc hiểu vấn đề và kết thúc bằng việc triển khai hệ thống.
+Người 2: Dạ, có 8 bước rõ ràng như vậy thì tụi em sẽ dễ dàng phân công công việc cho từng thành viên trong nhóm hơn.
+
+Slide 4: Bước 1 - Xác Định Vấn Đề Và Nhìn Vào Bức Tranh Lớn
+Người 1: Bước 1 luôn là "Xác định vấn đề và nhìn vào bức tranh lớn". Các em đừng vội lao vào code, hãy tự hỏi: Giải pháp của nhóm mình đang giải quyết nỗi đau gì của người nông dân? Mục tiêu kinh doanh ở đây là gì? Hệ thống sẽ được dùng trên điện thoại hay trên máy kéo?
+Người 2: Nghĩa là tụi em phải đóng vai trò như một Startup nông nghiệp đi tìm hiểu thị trường trước khi bắt tay vào làm sản phẩm.
+
+Slide 5: Bước 2 và 3 - Lấy Dữ Liệu và Khám Phá Dữ Liệu
+Người 1: Đúng vậy. Sau khi xác định được bài toán, chúng ta chuyển sang Bước 2 (Lấy dữ liệu) và Bước 3 (Khám phá dữ liệu). Dữ liệu nông nghiệp có thể lấy từ Kaggle, hoặc dữ liệu cảm biến IoT mà các em tự thu thập.
+Người 2: Nói đến dữ liệu, em thấy bước này trong lĩnh vực nông nghiệp khó hơn rất nhiều so với các ngành khác. Dữ liệu ngoài đồng ruộng bị nhiễu rất nhiều bởi thời tiết, ánh sáng, hoặc đơn giản là cảm biến bị hỏng.
+
+Slide 6: Bước 4 - Chuẩn Bị Dữ Liệu (Data Preparation)
+Người 1: Câu hỏi rất hay và chạm đúng thực tế! Đó là lúc các em phải dồn lực vào Bước 4: Chuẩn bị dữ liệu. Dữ liệu nông nghiệp đúng là "dữ liệu bẩn" theo cả nghĩa đen lẫn nghĩa bóng. Các em phải thực hiện Data Cleaning, xử lý các giá trị bị khuyết do rớt mạng, hoặc dùng Data Augmentation đối với hình ảnh.
+
+Slide 7: Bước 5 và 6 - Khám Phá Và Tinh Chỉnh Mô Hình
+Người 1: Khi đã có dữ liệu sạch, chúng ta mới đến Bước 5 (Khám phá các mô hình khác nhau) như SVM, Random Forest, CNN... và Bước 6 (Tinh chỉnh mô hình) để chọn ra giải pháp tối ưu nhất, không bị underfitting hay overfitting.
+
+Slide 8: Bước 7 - Trình Bày Giải Pháp
+Người 1: Bước 7 chính là lúc các em đứng trên bục để thuyết trình. Hãy trình bày kết quả một cách trực quan, giải thích rõ tại sao mô hình này lại phù hợp với bài toán nông nghiệp mà nhóm đã chọn.
+
+Slide 9: Bước 8 - Khởi Chạy, Giám Sát và Bảo Trì
+Người 1: Cuối cùng là Bước 8. Báo cáo nhóm của các em không chỉ dừng lại ở Slide trình bày. Một bài báo cáo xuất sắc và đạt điểm tối đa là bài có thể demo được hệ thống, dù chỉ là qua giao diện Web app Streamlit. Việc có sản phẩm demo chứng minh mô hình đã thực sự sẵn sàng hoạt động.
+Người 2: Dạ em hiểu quy trình rồi. Vậy là thay vì chỉ đưa ra bảng kết quả độ chính xác 95%, tụi em nên cho người dùng upload một bức ảnh lá cây lên web để AI trực tiếp chẩn đoán bệnh ngay tại buổi báo cáo luôn.
+
+Slide 10: Tiêu Chí Đánh Giá Dự Án
+Người 1: Hoàn toàn chính xác! Tiêu chí chấm điểm sẽ dồn trọng số vào sự chỉn chu trong quy trình xử lý dữ liệu và tính khả thi khi ứng dụng thực tế. Tạm kết phần 1 ở đây, các nhóm hãy bám sát 8 bước này để làm bài.
+
+Slide 11: Phần 2: Đạo Đức và Dữ Liệu Lớn Trong Nông Nghiệp
+Người 1: Bây giờ, chúng ta sẽ chuyển sang phần 2, một khía cạnh mà ít kỹ sư công nghệ nào chịu nghĩ tới khi viết code: Đạo đức trong AI Nông nghiệp.
+
+Slide 12: Hệ Thống Thông Tin Thông Minh (SIS)
+Người 1: Hiện nay, các tập đoàn nông nghiệp đa quốc gia đang triển khai các Hệ thống thông tin thông minh (SIS) thu thập hàng terabyte dữ liệu mỗi ngày từ các trang trại trên toàn cầu, từ dữ liệu thời tiết, độ ẩm đến năng suất mùa màng.
+Người 2: Theo logic thông thường thì dữ liệu của ruộng nhà ai thì phải thuộc về người đó chứ ạ? Tại sao các tập đoàn lại thu thập lượng dữ liệu lớn đến như vậy?
+
+Slide 13: Nghịch Lý Của Việc Thu Thập Dữ Liệu
+Người 1: Khi nông dân tải phần mềm hay mua cảm biến của tập đoàn lớn, trong "Điều khoản sử dụng" đã có mục yêu cầu chia sẻ dữ liệu. Dựa trên tạp chí ORBIT, chúng ta thấy một nghịch lý: Nông dân cung cấp dữ liệu miễn phí cho tập đoàn, rồi tập đoàn dùng nó huấn luyện AI và bán lại dịch vụ tư vấn cho chính nông dân.
+
+Slide 14: Quyền Sở Hữu Dữ Liệu
+Người 1: Điều này dẫn đến tranh cãi gay gắt về Quyền sở hữu dữ liệu. Ai mới là chủ thực sự của Dữ liệu Nông nghiệp? Nông dân - người tạo ra nó, hay Công ty công nghệ - người có công cụ thu thập và phân tích nó?
+Người 2: Nghe có vẻ người nông dân đang ở thế yếu và bị bóc lột dữ liệu trắng trợn thưa thầy.
+
+Slide 15: Nguy Cơ Vi Phạm Quyền Riêng Tư
+Người 1: Chưa dừng lại ở đó. Hãy tưởng tượng dữ liệu về năng suất kém của một trang trại bị rò rỉ cho công ty bảo hiểm, hoặc rơi vào tay đối thủ cạnh tranh mua buôn ép giá. Quyền riêng tư trong nông nghiệp số đang bị đe dọa nghiêm trọng.
+
+Slide 16: Vấn Đề Thiên Vị Thuật Toán (Algorithm Bias)
+Người 2: Em thắc mắc về tính "thiên vị thuật toán" (Algorithm Bias). Liệu AI có tự động ưu tiên đưa ra các gợi ý có lợi cho các trang trại quy mô lớn, chỉ vì dữ liệu của họ nhiều và chất lượng hơn các hộ nông dân nhỏ lẻ không ạ?
+
+Slide 17: Phân Tích Sự Thiên Vị Trong AI
+Người 1: Tư duy phản biện của em rất xuất sắc! Đó chính xác là nguy cơ lớn nhất. Nếu hệ thống chỉ học từ dữ liệu của các trang trại công nghiệp khổng lồ ở Mỹ, khi áp dụng về Việt Nam với kiểu canh tác nhỏ lẻ, mô hình sẽ đưa ra khuyến cáo sai lệch, gây thiệt hại nặng nề.
+
+Slide 18: Minh Bạch Thuật Toán (Explainable AI)
+Người 1: Do đó, Giải pháp bắt buộc là "Minh bạch thuật toán" (Explainable AI). Hệ thống AI không được là một chiếc hộp đen. Nó phải giải thích được TẠI SAO nó lại khuyên nông dân bón 5kg phân bón vào ngày mai thay vì 3kg.
+
+Slide 19: Trách Nhiệm Của Người Kỹ Sư AI
+Người 1: Trách nhiệm thiết kế các hệ thống công bằng, minh bạch và bảo mật dữ liệu đặt nặng lên vai những kỹ sư AI tương lai như các em. Chúng ta code không chỉ vì tiền, mà còn vì đạo đức nghề nghiệp.
+Người 2: Bài toán công nghệ hóa ra lại đi liền với bài toán xã hội sâu sắc đến vậy.
+
+Slide 20: Phần 3: Thảo Luận Mở - AI Sẽ Thay Thế Nông Dân?
+Người 1: Để khép lại khóa học, thầy muốn chúng ta cùng thảo luận một câu hỏi kinh điển mà ai cũng hỏi khi áp dụng công nghệ mới: "Liệu AI có thay thế người nông dân không?".
+
+Slide 21: Góc Nhìn Về Sự Thay Thế
+Người 2: Sau 7 buổi học đồng hành cùng môn này, em nghĩ câu trả lời chắc chắn là KHÔNG ạ. AI, dù thông minh đến đâu, cũng chỉ đóng vai trò như một người trợ lý đắc lực, giúp nông dân tính toán nhanh hơn và nhìn ra những mầm bệnh tiềm ẩn.
+
+Slide 22: AI - Công Cụ Hỗ Trợ Đắc Lực
+Người 1: Một góc nhìn rất trưởng thành! Quyết định cuối cùng vẫn cần bề dày kinh nghiệm và sự thấu cảm của con người đối với đất đai, thời tiết.
+
+Slide 23: Giải Phóng Sức Lao Động
+Người 1: Công nghệ sinh ra không phải để gạt bỏ con người, mà để giải phóng con người khỏi những lao động thủ công cực nhọc, rủi ro cao, hướng tới một nền "Nông nghiệp chính xác".
+
+Slide 24: Thông Điệp: Chăm Sóc Đất Đai, Nuôi Sống Thế Giới
+Người 1: Thông điệp "Chăm sóc đất đai, nuôi sống thế giới" vẫn luôn là kim chỉ nam tối thượng cho tất cả các giải pháp công nghệ mà chúng ta xây dựng.
+
+Slide 25: Lăng Kính Mới Về Công Nghệ
+Người 2: Khóa học thực sự đã mở ra cho tụi em một lăng kính hoàn toàn mới. Từ những dòng code Python khô khan, giờ đây tụi em hiểu rằng công nghệ phải gắn liền với thực tiễn bùn đất của ruộng đồng và phải có trách nhiệm với xã hội.
+
+Slide 26: Sẵn Sàng Cho Dự Án Cuối Kỳ
+Người 2: Nhóm tụi em sẽ vận dụng hết tốc lực cho bài báo cáo dự án nhóm sắp tới.
+
+Slide 27: Kỳ Vọng Từ Giảng Viên
+Người 1: thầy rất vui vì các em đã cảm nhận được điều đó. thầy rất mong chờ những giải pháp công nghệ sáng tạo, đột phá nhưng vẫn mang đậm tính nhân văn từ các nhóm.
+
+Slide 28: Đúc Kết Buổi 7
+Người 1: Chốt lại, hãy nhớ áp dụng triệt để 8 bước ML Checklist và luôn đặt đạo đức dữ liệu lên hàng đầu khi làm sản phẩm.
+
+Slide 29: Lời Kết Khóa Học
+Người 1: Hẹn gặp lại tất cả các bạn ở buổi bảo vệ dự án cuối kỳ. Chúc các bạn làm bài thật tốt và trở thành những kỹ sư AI nông nghiệp tài năng! Tạm biệt các bạn.
+Người 2: Chúng em cảm ơn thầy. Tạm biệt ạ!

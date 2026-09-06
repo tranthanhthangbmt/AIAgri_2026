@@ -11,15 +11,15 @@ const Syllabus = () => {
   const tutorLink = "https://notebooklm.google.com/notebook/dc66dc0c-d176-4024-aac8-4680a4f0b4bd?authuser=9";
 
   const weeks = [
-    { num: 1, title: "Tổng quan về AI và Nông nghiệp thông minh", slide: "slide Chương 1_ Tổng quan về AI và Nông nghiệp thông minh.pdf", notebookLink: tutorLink, audio: "Buổi 1_Nông_nghiệp_Chính_xác_AI_và_Cuộc_Chiến_Dữ_liệu.m4a", infographic: "Buổi 1_Nông_Nghiệp_Chính_Xác_Dùng_AI_.png", video: "Buổi 1_AI_trong_Nông_nghiệp.mp4" },
-    { num: 2, title: "Học máy (Machine Learning) trong nông nghiệp", slide: "slide Chương 2_ Học máy (Machine Learning) trong nông nghiệp.pdf", notebookLink: tutorLink, audio: "Buổi 2_AI_và_Dữ_liệu_Thay_đổi_Nông_nghiệp_Cũ_Kỹ.m4a", infographic: "Buổi 2_Tổng_quan_học_máy_nông_nghiệp.png", video: "Buổi 2_Học_Máy_trong_Nông_nghiệp.mp4" },
-    { num: 3, title: "Học sâu (Deep Learning) và Mạng Nơ-ron", slide: "slide Chương 3_ Học sâu (Deep Learning) và Mạng Nơ-ron.pdf", notebookLink: tutorLink, audio: "Buổi 3_Học_sâu_chẩn_bệnh_lá_cây_chính_xác.m4a", infographic: "Buổi 3_Sức_Mạnh_Học_Sâu_Nông_Nghiệp.png", video: "Buổi 3_Học_Sâu_Cứu_Vãn_Mùa_Màng.mp4" },
-    { num: 4, title: "Thị giác máy tính (Computer Vision) ứng dụng", slide: "slide Chương 4_ Thị giác máy tính (Computer Vision) ứng dụng.pdf", notebookLink: tutorLink, audio: "Buổi 4_Thị_giác_máy_tính_và_Nông_nghiệp_số.m4a", infographic: "Buổi 4_Thị_Giác_Máy_Tính_Cho_Nông_Nghiệp.png", video: "Buổi 4_Thị_giác_máy_tính__Dạy_máy_cách_nhìn.mp4" },
-    { num: 5, title: "Ứng dụng AI trong quản lý nước và dinh dưỡng", slide: "slide Chương 5_ Ứng dụng AI trong quản lý nước và dinh dưỡng.pdf", notebookLink: tutorLink, audio: null, infographic: null, video: null },
-    { num: 6, title: "Ứng dụng AI trong dự báo & hoạch định sản xuất", slide: "slide Chương 6_ Ứng dụng AI trong dự báo & hoạch định sản xuất.pdf", notebookLink: tutorLink, audio: "Buổi 6_Tính_toán_từng_giọt_nước_bằng_AI.m4a", infographic: "Buổi 6_Nông_nghiệp_thông_minh__AI_tối_ưu_hóa.png", video: "Buổi 6_AI_trong_Nông_nghiệp.mp4" },
-    { num: 7, title: "Báo cáo nhóm và Thảo luận dự án", slide: "slide Chương 7_ Báo cáo nhóm và Thảo luận dự án.pdf", notebookLink: tutorLink, audio: "Buổi 7_AI_biến_nông_nghiệp_thành_khoa_học_dữ_liệu.m4a", infographic: "Buổi 7_AI_Nâng_Cao_Năng_Suất,_Sản_Xuất.png", video: "Buổi 7_AI__Gieo_Mầm_Tương_Lai_Nông_Nghiệp.mp4" },
+    { num: 1, title: "Tổng quan về AI và Nông nghiệp thông minh", slide: "slide Chương 1_ Tổng quan về AI và Nông nghiệp thông minh.pdf", notebookLink: tutorLink, audio: "Buổi 1_Nông_nghiệp_Chính_xác_AI_và_Cuộc_Chiến_Dữ_liệu.m4a", infographic: "Buổi 1_Nông_Nghiệp_Chính_Xác_Dùng_AI_.png", video: "Buổi 1_AI_trong_Nông_nghiệp.mp4", interactiveVideo: "Video2/Buổi 1/index.html" },
+    { num: 2, title: "Học máy (Machine Learning) trong nông nghiệp", slide: "slide Chương 2_ Học máy (Machine Learning) trong nông nghiệp.pdf", notebookLink: tutorLink, audio: "Buổi 2_AI_và_Dữ_liệu_Thay_đổi_Nông_nghiệp_Cũ_Kỹ.m4a", infographic: "Buổi 2_Tổng_quan_học_máy_nông_nghiệp.png", video: "Buổi 2_Học_Máy_trong_Nông_nghiệp.mp4", interactiveVideo: "Video2/Buổi 2/index.html" },
+    { num: 3, title: "Học sâu (Deep Learning) và Mạng Nơ-ron", slide: "slide Chương 3_ Học sâu (Deep Learning) và Mạng Nơ-ron.pdf", notebookLink: tutorLink, audio: "Buổi 3_Học_sâu_chẩn_bệnh_lá_cây_chính_xác.m4a", infographic: "Buổi 3_Sức_Mạnh_Học_Sâu_Nông_Nghiệp.png", video: "Buổi 3_Học_Sâu_Cứu_Vãn_Mùa_Màng.mp4", interactiveVideo: "Video2/Buổi 3/index.html" },
+    { num: 4, title: "Thị giác máy tính (Computer Vision) ứng dụng", slide: "slide Chương 4_ Thị giác máy tính (Computer Vision) ứng dụng.pdf", notebookLink: tutorLink, audio: "Buổi 4_Thị_giác_máy_tính_và_Nông_nghiệp_số.m4a", infographic: "Buổi 4_Thị_Giác_Máy_Tính_Cho_Nông_Nghiệp.png", video: "Buổi 4_Thị_giác_máy_tính__Dạy_máy_cách_nhìn.mp4", interactiveVideo: "Video2/Buổi 4/index.html" },
+    { num: 5, title: "Ứng dụng AI trong quản lý nước và dinh dưỡng", slide: "slide Chương 5_ Ứng dụng AI trong quản lý nước và dinh dưỡng.pdf", notebookLink: tutorLink, audio: null, infographic: null, video: null, interactiveVideo: "Video2/Buổi 5/index.html" },
+    { num: 6, title: "Ứng dụng AI trong dự báo & hoạch định sản xuất", slide: "slide Chương 6_ Ứng dụng AI trong dự báo & hoạch định sản xuất.pdf", notebookLink: tutorLink, audio: "Buổi 6_Tính_toán_từng_giọt_nước_bằng_AI.m4a", infographic: "Buổi 6_Nông_nghiệp_thông_minh__AI_tối_ưu_hóa.png", video: "Buổi 6_AI_trong_Nông_nghiệp.mp4", interactiveVideo: "Video2/Buổi 6/index.html" },
+    { num: 7, title: "Báo cáo nhóm và Thảo luận dự án", slide: "slide Chương 7_ Báo cáo nhóm và Thảo luận dự án.pdf", notebookLink: tutorLink, audio: "Buổi 7_AI_biến_nông_nghiệp_thành_khoa_học_dữ_liệu.m4a", infographic: "Buổi 7_AI_Nâng_Cao_Năng_Suất,_Sản_Xuất.png", video: "Buổi 7_AI__Gieo_Mầm_Tương_Lai_Nông_Nghiệp.mp4", interactiveVideo: "Video2/Buổi 7/index.html" },
     { num: 8, title: "Ôn tập và Kiểm tra giữa kỳ", slide: null, notebookLink: tutorLink, audio: "Buổi 8_Cân_Bằng_Kỹ_Thuật_Và_Đạo_Đức_AI_Nông_Nghiệp.m4a", infographic: "Buổi 8_Báo_cáo_Dự_án_AI_Nông_nghiệp.png", video: "Buổi 8_Xây_dựng_AI_trong_Nông_nghiệp_một_cách_có_trách_nhiệm.mp4" },
-    { num: "9&10", title: "Thực hành (Phần 1 - tại doanh nghiệp/trang trại)", slide: "slide Chương 9&10_Thực hành (Phần 1 - tại doanh nghiệp_trang trại).pdf", notebookLink: tutorLink, audio: null, infographic: null, video: null },
+    { num: "9&10", title: "Thực hành (Phần 1 - tại doanh nghiệp/trang trại)", slide: "slide Chương 9&10_Thực hành (Phần 1 - tại doanh nghiệp_trang trại).pdf", notebookLink: tutorLink, audio: null, infographic: null, video: null, interactiveVideo: "Video2/Buổi 9_10/index.html" },
   ];
 
   return (
@@ -52,6 +52,19 @@ const Syllabus = () => {
                   <div style={{ padding: '12px', textAlign: 'center', color: 'var(--text-secondary)', background: 'rgba(0,0,0,0.03)', borderRadius: '8px' }}>
                     Không có slide bài giảng
                   </div>
+                )}
+                
+                {week.interactiveVideo && (
+                  <a 
+                    href={`${import.meta.env.BASE_URL}${week.interactiveVideo}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-secondary" 
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%', background: 'var(--primary-color)', borderColor: 'var(--primary-color)', color: 'white', textDecoration: 'none', marginTop: '5px' }}
+                  >
+                    <PlayCircle size={18} />
+                    Xem Video Bài Giảng
+                  </a>
                 )}
 
                 {(() => {
@@ -120,10 +133,10 @@ const Syllabus = () => {
                   <button 
                     onClick={() => setSelectedVideo(`${import.meta.env.BASE_URL}media/Video/${week.video}`)}
                     className="btn btn-secondary" 
-                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%', background: 'var(--primary-dark)', borderColor: 'var(--primary-dark)' }}
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%', background: 'var(--primary-color)', borderColor: 'var(--primary-color)', color: 'white' }}
                   >
                     <PlayCircle size={18} />
-                    Xem Video Bài Giảng
+                    Xem Video (Tóm Tắt)
                   </button>
                 )}
 

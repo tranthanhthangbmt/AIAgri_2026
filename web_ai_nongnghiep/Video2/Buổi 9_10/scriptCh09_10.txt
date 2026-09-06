@@ -1,0 +1,96 @@
+Slide 1: Buổi 9 & 10 - Thực Hành Tại Doanh Nghiệp (Phần 1)
+Người 1: Chào mừng các em sinh viên đến với Nông trường Công nghệ cao AgriTech! Thầy là Hoàng, Kỹ sư Trưởng tại đây, và hôm nay thầy sẽ thay mặt nhà trường dẫn dắt các em trong chuyến đi thực tế (Field Trip) của Buổi 9 và 10. Hãy tạm quên những dòng code Python khô khan trong phòng máy lạnh đi. Hôm nay, chúng ta sẽ đi ủng, đội nón lá và xem Trí tuệ nhân tạo (AI) đang thực sự "đổ mồ hôi" ngoài đồng ruộng như thế nào!
+Người 2: Dạ em chào anh Hoàng! Cả lớp tụi em đã háo hức mong chờ chuyến đi này từ đầu khóa học. Học lý thuyết mãi về Computer Vision hay Machine Learning, tụi em rất tò mò không biết những thuật toán đó khi đem ra ngoài trời nắng gió, bùn lầy thì hình thù nó sẽ ra sao ạ.
+
+Slide 2: Giới Thiệu Tổng Quan Về Trang Trại Nông Nghiệp Số
+Người 1: Các em đang đứng giữa một cánh đồng rộng 50 hecta. Nếu là 10 năm trước, để quản lý 50 hecta này cần tới 30 nhân công đi tuần tra mỗi ngày. Còn bây giờ, toàn bộ khu vực này được vận hành chỉ bởi 5 kỹ sư ngồi trong phòng điều khiển, nhờ vào một hệ sinh thái AI toàn diện.
+
+Slide 3: Các Công Cụ AI (Tools for Artificial Intelligence)
+Người 1: Hãy bắt đầu với chủ đề đầu tiên: Các công cụ AI (Tools for AI). Khác với dân IT làm web hay app chỉ cần một chiếc laptop, làm AI trong nông nghiệp đòi hỏi sự kết hợp chặt chẽ giữa Phần cứng (Hardware) và Phần mềm (Software).
+
+Slide 4: Trạm Thời Tiết Mini (IoT Weather Station)
+Người 1: Các em nhìn thấy cột trụ cao có gắn cánh quạt nhỏ đằng kia không? Đó là Trạm thời tiết mini (IoT). Cứ mỗi 5 phút, nó lại đo nhiệt độ, độ ẩm, sức gió và lượng mưa, rồi gửi thẳng dữ liệu về máy chủ thông qua sóng LoRa hoặc 4G. 
+Người 2: Nó giống như một "người lính gác" không bao giờ ngủ đúng không anh? Nhưng lỡ trời mưa bão làm nó mất điện thì sao ạ?
+Người 1: Rất tinh ý! Đó là lý do trên đỉnh cột luôn có một tấm pin năng lượng mặt trời nhỏ. Phần cứng nông nghiệp luôn phải được thiết kế để tự sinh tồn.
+
+Slide 5: Mắt Thần Trên Không - Drone Nông Nghiệp
+Người 1: Công cụ thứ hai, và cũng là công cụ đắt tiền nhất: Drone nông nghiệp. Drone không chỉ để bay lên quay phim cho đẹp. Phiên bản công nghiệp có thể mang theo bình chứa 30 lít thuốc bảo vệ thực vật và tự động bay theo tọa độ GPS chính xác đến từng centimet.
+
+Slide 6: Camera Quang Phổ (Multispectral Camera)
+Người 2: Em thấy dưới gầm chiếc Drone kia có gắn một cụm camera rất lạ, nó có nhiều ống kính nhỏ chứ không giống camera điện thoại bình thường.
+Người 1: Đó chính là Camera quang phổ (Multispectral). Nó thu được tia hồng ngoại và tử ngoại mà mắt người không thấy. Nhờ nó, AI có thể tính được chỉ số NDVI, giúp ta biết được cái cây nào đang bị bệnh từ trước khi lá của nó bắt đầu chuyển sang màu vàng!
+
+Slide 7: Robot Nông Nghiệp Dưới Mặt Đất (Ag-Bots)
+Người 1: Trên trời có Drone, thì dưới đất chúng ta có Ag-Bots (Robot nông nghiệp). Nhìn chiếc xe nhỏ có bánh xích đằng kia, đó là robot diệt cỏ tự động.
+Người 2: Nó dùng Computer Vision để nhận diện đâu là cỏ dại và đâu là cây trồng chính, sau đó dùng cánh tay máy để nhổ cỏ phải không anh? Giống y chang bài học Computer Vision tụi em đã làm ở Buổi 4!
+
+Slide 8: Hệ Thống Tưới Nhỏ Giọt Thông Minh (Smart Drip Irrigation)
+Người 1: Đúng vậy! Tiếp theo, hãy nhìn xuống luống cây dưới chân các em. Thấy những đường ống nhựa màu đen chạy dọc không? Đây là Hệ thống tưới nhỏ giọt tự động.
+Người 2: Van nước sẽ được kết nối với AI. Nếu thuật toán Deep Learning dự báo cây đang thiếu nước, nó sẽ tự mở van và nhỏ từng giọt trực tiếp vào rễ cây, giúp tiết kiệm hàng triệu lít nước so với tưới phun sương.
+
+Slide 9: Phần Mềm Quản Lý Trang Trại (Farm Management Software)
+Người 1: Và để điều khiển toàn bộ "đội quân" phần cứng đó, chúng ta có một Trung tâm chỉ huy: Phần mềm Quản lý Trang trại. Nó là nơi hội tụ toàn bộ dữ liệu từ trạm IoT, hình ảnh từ Drone, và đưa ra các bảng báo cáo Dashboard trực quan cho người kỹ sư.
+
+Slide 10: Tạm Kết Phần Giới Thiệu Công Cụ
+Người 1: Tổng kết lại, AI trong nông nghiệp là một cơ thể hoàn chỉnh: Cảm biến là Giác quan, Phần mềm là Bộ não, và Drone, Robot, Hệ thống tưới chính là Tay chân để hành động.
+
+Slide 11: Phần 2: Nghiên Cứu Tình Huống Thực Tiễn (Case Studies)
+Người 1: Bây giờ, mời các em vào phòng điều hành. Thầy sẽ chia sẻ các "Case Studies" - những tình huống kinh doanh thực tế mà doanh nghiệp đã trải qua. Lý thuyết trong sách thì luôn đẹp, nhưng thực tế thì luôn phũ phàng!
+
+Slide 12: Case Study 1 - Bài Toán Bệnh Chổi Rồng Trên Cây Nhãn
+Người 1: Tình huống đầu tiên: Bệnh chổi rồng. Doanh nghiệp từng mất trắng 40% sản lượng vì phát hiện bệnh quá trễ. Chúng tôi quyết định dùng AI để nhận diện bệnh. Trên phòng lab, mô hình Computer Vision đạt độ chính xác 98%. Quá tự hào, chúng tôi đem ra áp dụng thực tế.
+
+Slide 13: Lý Thuyết vs Thực Tế - Bức Tường "Nhiễu"
+Người 2: Em đoán là khi ra thực tế, độ chính xác đã sụt giảm nghiêm trọng đúng không ạ? Vì ảnh chụp ngoài đồng có nắng gắt, có bóng râm, lại bị lá cây che khuất, không hề lý tưởng như ảnh chụp trong phòng lab sáng rực rỡ.
+Người 1: Hoàn toàn chính xác! Độ chính xác rớt thê thảm xuống còn... 45%. AI liên tục nhận diện nhầm bóng râm thành vết bệnh đen trên lá. Mọi người bắt đầu hoài nghi và muốn vứt bỏ hệ thống AI.
+
+Slide 14: Cách Kỹ Sư Giải Quyết Vấn Đề
+Người 1: Chúng tôi không bỏ cuộc. Giải pháp đưa ra là phải mang laptop ra giữa đồng để thu thập thêm 10.000 bức ảnh với đủ mọi góc độ ánh sáng: sáng sớm, giữa trưa, chiều tối, lúc trời mưa. Sau đó dùng kỹ thuật Data Augmentation để huấn luyện lại. Kết quả, mô hình thực tế đã ổn định ở mức 92%. Bài học: Dữ liệu thực địa mới là vua!
+
+Slide 15: Case Study 2 - Tối Ưu Hóa Phân Bón Biến Thiên
+Người 1: Tình huống thứ hai là về Hoạch định sản xuất. Trái ngược với khó khăn ở Case 1, dự án dùng AI kết hợp Drone để lập "Bản đồ dinh dưỡng" lại thành công rực rỡ ngoài mong đợi.
+Người 2: Có phải đó là hệ thống Bón phân theo Nhu cầu Cụ thể (VRT) mà tụi em được học ở Buổi 6 không ạ? Chỗ nào đất nghèo thì bón nhiều, chỗ nào đất tốt thì bón ít đi.
+
+Slide 16: Lợi Ích Kinh Tế Chuyển Hóa Từ AI
+Người 1: Chính xác. Nhờ tấm bản đồ đó, chúng tôi tiết kiệm được 25% lượng phân hóa học. Các em biết 25% của một trang trại 50 hecta quy ra tiền là bao nhiêu không? Là hàng trăm triệu đồng mỗi tháng! AI không chỉ là khoa học, AI là công cụ sinh lời sắc bén nhất của doanh nghiệp.
+
+Slide 17: Case Study 3 - Cứu Vườn Trái Cây Khỏi Sương Giá
+Người 1: Một tình huống sinh tử khác. Vào đợt sương muối kỷ lục năm ngoái, AI phân tích dữ liệu nhiệt độ đang tụt giảm cực nhanh. Nó lập tức gửi tin nhắn cảnh báo đỏ lúc 2 giờ sáng. Nhờ đó, công nhân kịp bật hệ thống máy sưởi và phun nước ấm, cứu sống toàn bộ vườn cây. 
+
+Slide 18: Thất Bại Đáng Nhớ - Robot Lầy Lội
+Người 1: Nhưng cũng có lúc chúng tôi nếm mùi thất bại. Chúng tôi nhập khẩu một đàn robot nhổ cỏ bánh lốp rất hiện đại từ châu Âu. Nhưng chỉ sau một trận mưa nhiệt đới của Việt Nam, bùn nhão nhoét khiến 100% robot bị kẹt cứng ngoài đồng, phải lấy máy cày ra kéo về.
+Người 2: Đúng là thiết kế ở nước ngoài thì rất khó tương thích hoàn toàn với điều kiện đất đai ở Việt Nam. Khâu khảo sát hạ tầng phần cứng thật sự quá quan trọng.
+
+Slide 19: Bài Học Rút Ra: AI Phải Thích Nghi Với Mẹ Thiên Nhiên
+Người 1: Bài học xương máu: Mẹ thiên nhiên không bao giờ thay đổi vì AI của bạn. AI và phần cứng của bạn phải thay đổi để thích nghi với Mẹ thiên nhiên. Cuối cùng, chúng tôi phải độ lại bánh xe robot thành bánh xích để đi được trên bùn.
+
+Slide 20: Tầm Quan Trọng Của Kỹ Năng Bảo Trì
+Người 1: Và đừng quên khâu Bảo trì (Maintenance). Nếu cảm biến đất bị đóng phèn làm sai lệch số liệu, AI sẽ lập tức đưa ra quyết định sai lầm. Kỹ sư AI nông nghiệp là người phải biết cầm mỏ lết đi lau chùi cảm biến!
+
+Slide 21: Phần 3 - Demo Trải Nghiệm Thực Hành
+Người 1: Đủ rồi, nói lý thuyết suông mãi không hay. Bây giờ đến phần các em mong chờ nhất: Thực hành trực tiếp! Trước mặt các em là màn hình điều khiển trung tâm (Dashboard). Em nào muốn thử vận hành trang trại không?
+
+Slide 22: Sinh Viên Mở Van Tưới Bằng Giao Diện
+Người 2: Dạ để em ạ! Giao diện này giống hệt Web App tụi em từng làm. Hiện tại khu vực A báo độ ẩm đất đang là 40% (màu vàng). Em sẽ click vào nút "Mở van tưới khu vực A" nhé.
+Người 1: Các em nhìn ra ngoài cửa sổ đi. (Tiếng rào rào). Hệ thống vòi phun khu A đã chạy rồi đó. Độ trễ từ lúc click chuột đến lúc van mở chỉ là 0.5 giây qua mạng 4G.
+
+Slide 23: Trải Nghiệm Điều Khiển Drone Đi Tuần
+Người 1: Bây giờ, thầy sẽ giao nhiệm vụ khó hơn. Hãy thiết lập một lộ trình bay cho chiếc Drone số 2 để đi tuần tra khu vực B và quét ảnh quang phổ.
+
+Slide 24: Thiết Lập Lộ Trình Bay Tự Động
+Người 2: Dạ vâng, em sẽ dùng chuột khoanh vùng khu vực B trên bản đồ vệ tinh này. Đặt cao độ bay là 20 mét, tốc độ 5m/s. Bấm "Upload Mission" và... "Take Off". 
+Người 1: (Tiếng vù vù cất cánh). Drone đã nhận lệnh. Các em thấy không, không cần phải cầm Remote điều khiển bằng tay như chơi đồ chơi. Drone hoàn toàn bay tự động theo lộ trình AI đã vạch sẵn.
+
+Slide 25: Xem Dữ Liệu Thời Gian Thực (Real-Time)
+Người 2: Oa! Hình ảnh quang phổ từ Drone đang truyền trực tiếp (real-time) về màn hình của tụi em luôn này. Những mảng màu đỏ báo hiệu khu vực đó lá cây đang quang hợp rất kém. Chúng em có thể khoanh vùng ổ dịch ngay lập tức!
+
+Slide 26: Phần 4 - Hỏi Đáp Và Định Hướng Nghề Nghiệp
+Người 1: Các em đã làm rất tốt! Chúng ta sẽ dành vài phút cuối để hỏi đáp. Sau chuyến đi thực tế sáng nay, các em có suy nghĩ gì về định hướng nghề nghiệp của mình không?
+
+Slide 27: Biết Code Là Chưa Đủ, Phải Hiểu Nông Nghiệp
+Người 2: Dạ thưa anh, trước đây em cứ nghĩ kỹ sư AI chỉ việc ngồi văn phòng gõ code mô hình Deep Learning. Nhưng hôm nay em nhận ra, để mô hình chạy được, mình phải lội bùn đo đất, phải hiểu loại cây đó rễ cắm sâu bao nhiêu, phải rành rọt về khí hậu.
+Người 1: Một nhận thức cực kỳ chín chắn! Doanh nghiệp không cần một thợ gõ code, doanh nghiệp cần những "Kỹ sư lai" - người vừa biết viết code, vừa sẵn sàng cầm cuốc, hiểu được hơi thở của cây trồng. Đó mới là những nhân tài mà ngành Nông nghiệp Công nghệ cao đang khát khao săn đón.
+
+Slide 28: Tổng Kết Và Lời Chào
+Người 1: Chuyến tham quan thực tế Phần 1 của Buổi 9&10 xin được khép lại tại đây. Hy vọng mồ hôi và bùn đất ngày hôm nay đã truyền cho các em ngọn lửa đam mê thực sự với ngành AI Nông nghiệp. Chúc các em hoàn thành xuất sắc dự án cuối khóa!
+Người 2: Chuyến đi tuyệt vời quá ạ. Chúng em cảm ơn anh Hoàng và ban giám đốc trang trại rất nhiều. Hẹn gặp lại anh ạ!

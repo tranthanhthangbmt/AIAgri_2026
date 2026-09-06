@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BookOpen, FileText, CheckCircle } from 'lucide-react';
+import { BookOpen, FileText, CheckCircle, PlayCircle } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -11,7 +11,13 @@ const Home = () => {
             Môn học cung cấp kiến thức nền tảng và chuyên sâu về cách ứng dụng trí tuệ nhân tạo (AI), học máy (Machine Learning) 
             và học sâu (Deep Learning) vào các bài toán nông nghiệp thông minh.
           </p>
-          <Link to="/syllabus" className="btn btn-primary">Bắt đầu học ngay</Link>
+          <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a href={`${import.meta.env.BASE_URL}Video2/Giới thiệu môn học/index.html`} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'var(--primary-color)', borderColor: 'var(--primary-color)', color: 'white', textDecoration: 'none' }}>
+              <PlayCircle size={18} />
+              Xem Video Giới Thiệu
+            </a>
+            <Link to="/syllabus" className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', height: '100%' }}>Bắt đầu học ngay</Link>
+          </div>
         </div>
       </section>
 

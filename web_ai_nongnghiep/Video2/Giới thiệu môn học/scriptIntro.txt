@@ -1,0 +1,44 @@
+Slide 1: Chào Mừng Đến Với Học Phần "Ứng Dụng AI Trong Nông Nghiệp"
+Người 1: Chào mừng tất cả các em tân sinh viên đã đến với giảng đường của Khoa Thực phẩm, Trường Đại học Đông Á! Hôm nay, thầy rất hân hạnh được đồng hành cùng các em trong một học phần vô cùng đặc biệt và mang tính tiên phong: "Ứng dụng Trí tuệ nhân tạo trong Nông nghiệp".
+Người 2: Dạ tụi em chào thầy ạ. Nghe tên môn học là "Trí tuệ nhân tạo", thú thực là lớp em đang rất tò mò nhưng cũng khá là hồi hộp. Đa số tụi em chọn học ngành Nông nghiệp vì yêu thích cây cỏ, sinh học... tự nhiên bây giờ lại thấy xuất hiện chữ AI của dân công nghệ thông tin.
+
+Slide 2: Tại Sao Sinh Viên Nông Nghiệp Lại Cần Học Trí Tuệ Nhân Tạo?
+Người 1: Sự hồi hộp của các em là hoàn toàn dễ hiểu! Rất nhiều người nghĩ rằng nông nghiệp là chuyện của bùn đất, của cuốc xẻng, còn AI là chuyện của những siêu máy tính trong phòng lạnh. Nhưng sự thật là, ranh giới đó đã bị xóa nhòa. Thế giới đang đối mặt với biến đổi khí hậu khắc nghiệt và áp lực dân số khổng lồ. Chúng ta không thể chỉ dùng cuốc xẻng để nuôi sống 10 tỷ người vào năm 2050 được.
+Người 2: Dạ, ở quê em bây giờ thời tiết thất thường lắm, lúc thì hạn hán kéo dài, lúc thì mưa bão trái mùa, nông dân cứ sản xuất theo kinh nghiệm cũ thì rủi ro mất mùa rất cao ạ.
+
+Slide 3: Kỷ Nguyên Nông Nghiệp Thông Minh (Smart Agriculture)
+Người 1: Đúng vậy! Và đó là lúc chúng ta cần đến "Nông nghiệp Thông minh" (Smart Agriculture). AI sẽ là "vũ khí" mới của các em. Thay vì dựa vào trực giác "nhìn trời nhìn đất", các em sẽ dùng AI để phân tích chính xác hàng triệu thông số về độ ẩm, nhiệt độ, chất đất để đưa ra quyết định canh tác tối ưu nhất. Các em sẽ là thế hệ "Nông dân tri thức mới".
+
+Slide 4: Thông Tin Chung Về Đề Cương Học Phần (AGRI2306)
+Người 1: Để chuẩn bị cho hành trình đó, chúng ta hãy cùng lướt qua Đề cương chi tiết học phần. Mã học phần của chúng ta là AGRI2306. Đây là môn học cốt lõi trong Chương trình Nông nghiệp bậc Đại học của trường chúng ta.
+Người 2: Dạ thưa thầy, vậy môn này có yêu cầu tụi em phải học trước các môn lập trình phức tạp như C++ hay Java không ạ?
+
+Slide 5: Mục Tiêu Cốt Lõi Của Môn Học
+Người 1: Một tin vui cho các em: Môn học này KHÔNG có học phần tiên quyết về lập trình. Mục tiêu số 1 của môn học không phải là biến các em thành những "thợ gõ code" chuyên nghiệp, mà là cung cấp cho các em TƯ DUY ỨNG DỤNG. Các em sẽ học cách dùng các công cụ như Học máy (Machine Learning), Xử lý ngôn ngữ tự nhiên (NLP) hay Thị giác máy tính (Computer Vision) để cải thiện hiệu suất, lợi nhuận và sự bền vững của nông trại.
+
+Slide 6: Phân Bổ Thời Lượng Học Tập
+Người 1: Về cấu trúc, môn học được thiết kế rất cân bằng giữa lý thuyết và thực tiễn. Chúng ta có tổng cộng 22.5 tiết cho phần Lý thuyết và Bài tập nhóm trên lớp. Sau đó, chúng ta sẽ dành riêng 7.5 tiết cho phần Thực hành ứng dụng.
+Người 2: Dạ 7.5 tiết thực hành đó là tụi em sẽ được xuống phòng máy tính của trường để làm bài tập đúng không ạ?
+
+Slide 7: Giải Tỏa Nỗi Sợ "Phải Viết Code"
+Người 1: Ồ không chỉ có phòng máy tính đâu! Phần thực hành này đặc biệt hơn nhiều. Như thầy đã hứa, môn này tập trung vào tính ứng dụng. Các đoạn code Python mà các em sử dụng trong khóa học sẽ được cung cấp dưới dạng các mẫu (templates) có sẵn. Các em chỉ cần học cách hiểu logic của chúng, điều chỉnh các thông số và chạy thử nghiệm. Đừng để nỗi sợ "lập trình" cản bước các em khám phá công nghệ.
+
+Slide 8: Bản Đồ Hành Trình Khóa Học
+Người 2: Nghe thầy nói vậy tụi em thở phào nhẹ nhõm hẳn. Vậy cụ thể trong các tuần tới, tụi em sẽ được học những "phép thuật" gì của AI ạ?
+Người 1: Bản đồ hành trình của chúng ta cực kỳ thú vị! Các em sẽ được học Computer Vision để chế tạo một "con mắt AI" có khả năng chụp ảnh lá cây và chẩn đoán chính xác cây đang mắc bệnh gì chỉ trong 1 giây.
+
+Slide 9: Các Chủ Đề Hấp Dẫn Sắp Tới
+Người 1: Tiếp theo, các em sẽ tiếp cận Deep Reinforcement Learning (Học tăng cường sâu) - thuật toán giúp AI tự động phân tích thời tiết và quyết định mở van tưới nước sao cho tiết kiệm từng giọt nước nhất. Cuối cùng, chúng ta sẽ học cách dùng AI để dự báo sản lượng mùa màng, giúp nông dân né được thảm cảnh "được mùa mất giá".
+Người 2: Oa, toàn là những công nghệ giải quyết đúng các "nỗi đau" ngoài đời thực của người nông dân. Em đặc biệt hứng thú với con AI bắt bệnh lá cây ạ!
+
+Slide 10: Điểm Nhấn Của Khóa Học: Thực Hành Tại Doanh Nghiệp (Field Trip)
+Người 1: Và phần tuyệt vời nhất, trả lời cho câu hỏi về 7.5 tiết thực hành lúc nãy của em. Chúng ta sẽ có 5 tiết đi "Field trip" - Thực hành trực tiếp tại các doanh nghiệp và trang trại nông nghiệp công nghệ cao. Các em sẽ được tận mắt thấy Drone phun thuốc, cảm biến IoT đo đất và robot nhổ cỏ tự động hoạt động ngoài đời thực như thế nào.
+Người 2: Tuyệt vời quá! Không gì bằng việc được xỏ ủng lội ruộng và xem công nghệ "chạy bằng da bằng thịt" thưa thầy.
+
+Slide 11: Tiêu Chí Đánh Giá Và Tính Điểm
+Người 1: Để ghi nhận những trải nghiệm tuyệt vời đó, tiêu chí chấm điểm của chúng ta sẽ rất thực tế. Điểm số sẽ không phụ thuộc vào việc em học thuộc lòng giỏi thế nào, mà phụ thuộc vào Bài báo cáo cuối kỳ (Bài tập nhóm). Các em sẽ chọn một bài toán nông nghiệp thực tế, đưa ra giải pháp ứng dụng AI, và thuyết trình bảo vệ trước lớp. Ngoài ra, 2.5 tiết Báo cáo kết quả thực hành sau chuyến đi doanh nghiệp cũng sẽ chiếm trọng số quan trọng.
+Người 2: Dạ, tụi em sẽ lập nhóm ngay hôm nay để bắt đầu lên ý tưởng dự án dần ạ.
+
+Slide 12: Khởi Động Hành Trình!
+Người 1: Rất hoan nghênh tinh thần chủ động của em! "Công cụ tốt nhất của người nông dân hiện đại không chỉ là chiếc máy cày, mà còn là dữ liệu". Khóa học này hứa hẹn sẽ mở ra cho các em một lăng kính hoàn toàn mới về nghề Nông. Nào, các em đã sẵn sàng chưa? Chúng ta cùng bước vào Bài số 1 nhé!
+Người 2: Dạ tụi em đã hoàn toàn sẵn sàng rồi ạ!

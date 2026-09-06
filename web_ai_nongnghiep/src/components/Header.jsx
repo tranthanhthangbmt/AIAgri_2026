@@ -16,6 +16,7 @@ const Header = () => {
           <Link to="/syllabus" className={`nav-link ${location.pathname === '/syllabus' ? 'active' : ''}`}>Bài giảng</Link>
           <Link to="/resources" className={`nav-link ${location.pathname === '/resources' ? 'active' : ''}`}>Tài liệu</Link>
           <Link to="/quizzes" className={`nav-link ${location.pathname === '/quizzes' ? 'active' : ''}`}>Trắc nghiệm</Link>
+          <Link to="/exercises" className={`nav-link ${location.pathname === '/exercises' ? 'active' : ''}`}>Bài tập</Link>
         </nav>
       </div>
     </header>

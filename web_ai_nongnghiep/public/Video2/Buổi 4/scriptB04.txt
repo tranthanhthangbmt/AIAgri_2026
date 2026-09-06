@@ -1,0 +1,111 @@
+Slide 1: AI ỨNG DỤNG TRONG NÔNG NGHIỆP - Buổi 4: Thị Giác Máy Tính (Computer Vision)
+Người 1: Xin chào các em sinh viên. Tôi là Giáo sư Nguyễn Văn An từ Đại học Nông Lâm TP.HCM. Chào mừng các em đến với Buổi học số 4: Thị Giác Máy Tính (Computer Vision). Nếu như ở các buổi trước chúng ta nói về việc máy tính "suy nghĩ" như thế nào, thì hôm nay, chúng ta sẽ khám phá cách mà máy tính "nhìn" thế giới xung quanh.
+Người 2: Dạ em chào thầy. Khái niệm "Thị giác máy tính" nghe thật kỳ diệu. Việc trang bị cho máy móc một đôi mắt để chúng tự động đi tuần tra cánh đồng, tự động phát hiện trái cây chín hay đo lường sức khỏe của hàng triệu cây lúa nho nhỏ như hình trên slide quả là một bước tiến phi thường so với việc con người phải đi đếm từng cây một thưa thầy.
+
+Slide 2: Lộ Trình Buổi Học Hôm Nay
+Người 1: Đúng vậy em. Để hiểu được điều kỳ diệu đó, lộ trình hôm nay của chúng ta có 2 phần. Phần 1: Máy tính "Nhìn" như thế nào? Chúng ta sẽ đi tìm nguồn cảm hứng từ sinh học, khám phá quy trình 6 bước cốt lõi và mổ xẻ "trái tim" của hệ thống là Mạng Nơ-ron Tích chập (CNN). Phần 2: Ứng Dụng Thực Tế. Chúng ta sẽ làm quen với thư viện OpenCV lừng danh, và phân tích hai Case Study điển hình: Giám sát dịch bệnh và Phân loại chất lượng nông sản.
+Người 2: Việc kết hợp giữa nguyên lý lý thuyết ở Phần 1 và code thực hành bằng OpenCV ở Phần 2 sẽ giúp chúng em không chỉ hiểu bề nổi mà còn thực sự biết cách chế tạo ra "đôi mắt" đó. Em rất hào hứng ạ!
+
+Slide 3: Làm Thế Nào Để Máy Móc Có Thể "Nhìn"?
+Người 1: Đầu tiên, hãy định nghĩa lại Thị giác máy tính là gì. Về cơ bản, nó là một nhánh của AI chuyên trích xuất, phân tích và "hiểu" thông tin từ hình ảnh hoặc video. Mục tiêu tối thượng của nó không chỉ là bắt chước, mà đôi khi là vượt qua cả khả năng thị giác của con người trong các tác vụ lặp đi lặp lại.
+Người 2: Có phải sự khác biệt lớn nhất là mắt người khi nhìn vào chiếc lá sẽ nhận thức ngay đó là "bệnh đốm đen", còn máy tính thì thực chất chỉ nhìn thấy một ma trận khổng lồ các con số đại diện cho các điểm ảnh (pixel), sau đó nó phải dùng toán học để phân tích các con số đó đúng không thầy?
+
+Slide 4: Cảm Hứng Từ Tự Nhiên: Vỏ Não Thị Giác
+Người 1: Chính xác! Vậy làm sao máy tính biến đống con số đó thành "sự hiểu biết"? Các nhà khoa học AI đã vay mượn ý tưởng từ một nghiên cứu đoạt giải Nobel năm 1959 của Hubel và Wiesel về Vỏ não thị giác của động vật. Khám phá cốt lõi là: Nơ-ron trong mắt chúng ta không nhìn toàn bộ bức tranh cùng lúc. Chúng có các "trường tiếp nhận cục bộ" (local receptive field).
+Người 2: Nghĩa là chúng ta xử lý hình ảnh theo phân cấp đúng không ạ? Cấp thấp thì nơ-ron chỉ phản ứng với một đường thẳng hoặc một góc. Sau đó nó truyền tín hiệu lên cấp cao hơn, nơ-ron cấp cao sẽ tổng hợp các đường thẳng đó lại thành hình dạng một ngôi nhà. 
+
+Slide 5: Từ Não Bộ Đến Thuật Toán: Ba Cấp Độ Xử Lý
+Người 1: Phân tích của em hoàn toàn trùng khớp với cách thuật toán vận hành. Máy tính cũng "nhìn" qua 3 cấp độ. Cấp thấp nhất (Stage 2) nó chỉ trích xuất được ranh giới, các đường viền mờ nhạt của quả táo. Lên Cấp trung (Stage 3), nó bắt đầu ghép nối và phân đoạn được khối màu đỏ đục để tách đối tượng ra khỏi nền. Và cuối cùng ở Cấp cao (Stage 4), nó mới đủ dữ kiện để đưa ra kết luận: "Đây là quả táo".
+Người 2: Nhìn sơ đồ này em mới thấy để máy tính thốt ra được chữ "Táo", nó đã phải trải qua một hành trình bóc tách dữ liệu cực kỳ gian nan từ những pixel vô nghĩa.
+
+Slide 6: Quy Trình 6 Bước Của Một Hệ Thống Thị Giác Máy Tính
+Người 1: Và hành trình gian nan đó trong thực tế được kỹ sư AI chuẩn hóa thành một quy trình 6 bước không thể phá vỡ. 1. Thu thập ảnh từ camera/drone. 2. Tiền xử lý (cắt cúp, làm sáng ảnh). 3. Trích xuất đặc trưng (tìm góc, viền). 4. Phân đoạn (tách vật thể). 5. Xử lý cấp cao (gán nhãn bằng AI). 6. Ra quyết định (ví dụ: kích hoạt vòi phun thuốc).
+Người 2: Nếu đem áp dụng vào việc phân loại cà chua tự động, thì bước Tiền xử lý có vẻ rất quan trọng để loại bỏ những bức ảnh bị lóa sáng mặt trời, giúp AI ở bước 5 không bị nhầm lẫn đúng không thưa thầy?
+
+Slide 7: "Trái Tim" Của Thị Giác Hiện Đại: Mạng Nơ-ron Tích chập (CNN)
+Người 1: Đúng thế. Và đảm nhiệm vai trò trung tâm từ bước số 3 đến bước số 5 chính là "Trái tim" của thị giác hiện đại: Mạng Nơ-ron Tích chập (CNN). Điểm ưu việt của CNN so với các mạng nơ-ron thông thường là khả năng giữ nguyên cấu trúc lưới (grid) không gian của bức ảnh. CNN gồm hai thành phần siêu việt: Lớp Tích chập (Convolution Layer) và Lớp Gộp (Pooling Layer).
+Người 2: Nếu Mạng nơ-ron truyền thống giống như việc đập dẹt bức ảnh ra thành một sợi dây dài để phân tích, làm mất hết khái niệm "trên-dưới, trái-phải", thì CNN giữ nguyên bức tranh để phân tích, giúp nó nhận dạng vật thể một cách logic hơn rất nhiều.
+
+Slide 8: Thành Phần #1: Lớp Tích Chập - "Đôi Mắt" Dò Tìm Đặc Trưng
+Người 1: Hãy đi vào bộ phận thứ nhất: Lớp Tích Chập. Mục đích của nó là đóng vai trò như một "đôi mắt" đi dò tìm các đặc trưng cụ thể. Cơ chế hoạt động là nó dùng các Bộ lọc (Filters) – là những ma trận số rất nhỏ – trượt dọc, trượt ngang qua toàn bộ bức ảnh. Kết quả tạo ra một "Bản đồ đặc trưng" (Feature Map).
+Người 2: Nếu nhìn vào ví dụ ngôi đền ở slide, khi ta cho một bộ lọc dạng "kẻ sọc" trượt qua, bản đồ đặc trưng thu được chỉ làm sáng rực lên các cột dọc của ngôi đền (Vertical filter). Rõ ràng là mỗi bộ lọc đã được chuyên môn hóa để đi "săn" một loại họa tiết nhất định.
+
+Slide 9: Phép Tích Chập Hoạt Động Như Thế Nào?
+Người 1: Về bản chất toán học, phép "Tích chập" (Convolution) chẳng qua là việc lấy ma trận của Bộ lọc nhân tương ứng từng ô với vùng ảnh đang quét, sau đó cộng tổng lại thành 1 con số duy nhất. Ví dụ trong slide, (3x1) + (0x0) + (1x1)... cộng hết lại bằng 12. Con số 12 này chính là một pixel đại diện trên Bản đồ đặc trưng.
+Người 2: Thật thú vị! Ma thuật của AI hóa ra lại là những phép cộng trừ nhân chia ma trận cấp 1, cấp 2. Hàng triệu phép nhân như thế này lặp lại liên tục sẽ tạo ra sự "hiểu biết" của máy tính.
+
+Slide 10: Thành Phần #2: Lớp Gộp - Giảm Tải và Giữ Lại Tinh Hoa
+Người 1: Tuy nhiên, sau khi quét hàng trăm bộ lọc, bức ảnh sẽ phình to ra và máy tính sẽ bị quá tải bộ nhớ. Đó là lúc Lớp Gộp (Pooling Layer) xuất hiện. Mục đích của nó là Giảm kích thước ảnh (Downsampling) nhưng vẫn giữ lại đặc trưng mạnh nhất. Kỹ thuật phổ biến nhất là Max Pooling: Cứ trong một ô 2x2, nó sẽ lấy số lớn nhất. Ví dụ lấy số 5 trong cụm (1,5,3,2) bỏ sang ô mới.
+Người 2: Tính năng này quả là "một mũi tên trúng hai đích". Vừa giúp thu nhỏ ảnh lại để giảm chi phí RAM, vừa tạo ra tính "bất biến" (Invariance). Tức là dù chiếc lá bị dịch sang trái một chút hay xoay nghiêng đi, số lớn nhất vẫn được bốc sang, giúp máy tính không bị "học vẹt".
+
+Slide 11: Lắp Ráp Hoàn Chỉnh: Kiến Trúc CNN Điển Hình
+Người 1: Bây giờ, chúng ta sẽ lắp ráp các mảnh lego đó lại. Một kiến trúc CNN hoàn chỉnh sẽ xếp chồng xen kẽ khối Tích chập và khối Gộp (CONV -> POOL). Giai đoạn 1 trích xuất đặc trưng thấp, giai đoạn 2 trích xuất hình dạng phức tạp. Cuối cùng, chúng ta mới "làm phẳng" (Flatten) để đẩy vào một mạng nơ-ron truyền thống nối đầy đủ (Fully Connected) nhằm đưa ra kết luận cuối cùng: "Lá Bệnh".
+Người 2: Nó giống như một dây chuyền nhà máy thưa thầy. Khâu đầu tiên nhặt từng sợi chỉ, khâu giữa dệt thành tấm vải, và khâu cuối cùng (Fully Connected) mới là người thợ may quyết định xem đây là chiếc áo hay chiếc quần.
+
+Slide 12: Bên Trong "Tâm Trí" Của Mạng Nơ-ron
+Người 1: Chắc hẳn các em thắc mắc vậy các Lớp Ẩn đó "nhìn" thấy gì đúng không? Nhờ công nghệ trực quan hóa, chúng ta có thể "mở nắp não" của CNN ra xem. Ảnh bông hoa đi vào. Ở lớp đầu (Shallow Layers), máy chỉ thấy các vạch chéo, mảng sáng tối. Đến lớp giữa (Mid Layers), nó đã tổng hợp được thành cánh hoa, nhụy hoa. Và ở lớp cuối cùng (Deep Layers), nó mới hiển thị nguyên vẹn bông hoa hướng dương.
+Người 2: Hình ảnh này đã dập tắt hoàn toàn định kiến cho rằng AI chỉ là một "chiếc hộp đen" bí ẩn. Chúng ta hoàn toàn có thể theo dõi tiến trình tư duy của thuật toán để biết nó đang chú ý vào điều gì trên bức ảnh.
+
+Slide 13: Tóm Tắt Những Ý Chính (Phần 1)
+Người 1: Tóm lại Phần 1, Thị giác máy tính mô phỏng lại cấu trúc phân cấp của vỏ não. "Vũ khí" mạnh nhất của chúng ta là CNN, với sự hỗ trợ của Lớp Tích chập để dò đặc trưng và Lớp Gộp để nén tinh hoa. Bây giờ, chúng ta đã nắm vững nguyên lý. Hãy nghỉ giải lao 5 phút trước khi áp dụng sức mạnh này vào các bài toán NÔNG NGHIỆP thực tế ở Phần 2.
+
+Slide 14: HỎI & ĐÁP - Nghỉ giải lao 5 phút
+Người 2: Nội dung Phần 1 rất hấp dẫn thầy ạ. Tuy kiến trúc mạng CNN khá đồ sộ, nhưng thông qua cách thầy bóc tách từ Lớp tích chập tới Lớp gộp, em cảm giác việc thiết kế mô hình AI cũng mang tính nghệ thuật như việc xếp các khối Lego vậy.
+
+Slide 15: Phần 2: Công Cụ & Ứng Dụng Thực Tiễn
+Người 1: Chào mừng các em quay trở lại. Trong Phần 2 này, chúng ta sẽ đi "từ Lý Thuyết CNN đến Giải pháp Nông Nghiệp Thông minh". Chúng ta sẽ rời bảng đen để bước xuống ruộng, xem cách các công cụ phần mềm định hình lại cách nông dân làm việc.
+
+Slide 16: Từ "Cách Máy Nhìn" đến "Cách Máy Giải Quyết"
+Người 1: Nếu Phần 1 đã trả lời câu hỏi "Máy tính nhìn thế nào?", thì Phần 2 sẽ trả lời câu hỏi "Máy tính giải quyết vấn đề thế nào?". Chúng ta sẽ giới thiệu thư viện "quốc dân" OpenCV. Sau đó, thầy sẽ trình bày hai hướng tiếp cận hoàn toàn trái ngược nhau: 1 là dùng Học Sâu (Deep Learning) để giải bài toán phức tạp, 2 là dùng Xử lý ảnh cổ điển (không dùng AI) để giải quyết các bài toán đo đạc hình học một cách siêu tốc.
+Người 2: Ồ, vậy không phải bài toán hình ảnh nào cũng cần phải vác "dao mổ trâu" là Deep Learning ra để giải quyết phải không thầy? Điều này thật sự mới mẻ và thực tế.
+
+Slide 17: OpenCV: 'Con Mắt' của Lập trình viên
+Người 1: Đúng vậy! Và để xử lý ảnh, công cụ đầu tiên mọi kỹ sư AI phải biết là OpenCV. Đây là thư viện mã nguồn mở tối ưu cho thời gian thực bằng ngôn ngữ C++ và Python. Chỉ với 3 dòng code đơn giản: `cv2.imread` để đọc ảnh, `cv2.cvtColor` chuyển sang ảnh xám để giảm dung lượng, và `cv2.imshow` để hiển thị. Nó chính là "con mắt" trung gian kết nối camera với thuật toán AI.
+Người 2: Em thấy tốc độ của OpenCV rất khủng khiếp thưa thầy. Trên các drone nông nghiệp bay tốc độ cao, chỉ cần phần mềm lag vài phần trăm giây là đã bỏ lỡ việc phun thuốc cho cây rồi. Thư viện này có lẽ được tối ưu riêng cho các tác vụ thời gian thực đó.
+
+Slide 18: Bài toán 1: Giám Sát Cây Trồng & Phát Hiện Bệnh
+Người 1: Hãy lấy OpenCV và CNN áp dụng vào Bài toán 1: Phát hiện bệnh. Thách thức truyền thống là bác nông dân phải lật từng chiếc lá, rất tốn thời gian, mệt mỏi và dễ sai sót nếu quy mô trang trại lên tới hàng trăm hecta. Giải pháp AI sử dụng drone bay lướt qua, chụp ảnh liên tục và nạp vào mô hình phân tích tự động, khách quan, và không bao giờ biết mệt mỏi.
+Người 2: Lợi thế lớn nhất của AI ở đây là "phát hiện sớm". Mắt người chỉ thấy bệnh khi lá đã ố vàng diện rộng, nhưng camera đa phổ kết hợp với AI có thể nhìn thấy những dấu hiệu bệnh li ti từ rất sớm để cứu vãn cả vườn cây.
+
+Slide 19: Quy Trình Xây Dựng Mô Hình Chẩn Đoán Bệnh
+Người 1: Để xây dựng được mô hình chẩn đoán đó, các kỹ sư phải qua 6 bước cốt lõi: 1. Thu thập ảnh thô. 2. Tiền xử lý & Gán nhãn bởi chuyên gia. 3. Chia tập dữ liệu thành Train/Validation/Test. 4. Đưa vào Huấn luyện (Training) mạng CNN. 5. Tinh chỉnh và Đánh giá (Tune). 6. Thu được kết quả xuất ra là nhãn "Lá Bệnh".
+Người 2: Ở Bước 3, việc chia tập dữ liệu (Data Split) có phải là để chống học vẹt không thầy? Nghĩa là ta giấu đi một phần dữ liệu (tập Test) không cho máy tính nhìn thấy trong lúc học, để cuối cùng đem ra kiểm tra xem máy có thực sự "hiểu bài" hay không?
+Người 1: Cực kỳ chính xác! Nếu ta thi bằng chính đề cương ôn tập thì không thể đo lường được thực lực của học sinh.
+
+Slide 20: Kỹ Thuật Then Chốt: Làm Giàu Dữ Liệu (Data Augmentation)
+Người 1: Một vấn đề cực lớn trong nông nghiệp là "thiếu dữ liệu". Việc thu thập hàng vạn bức ảnh cây bị bệnh nấm rất tốn kém. Giải pháp là thuật toán "Làm Giàu Dữ Liệu" (Data Augmentation). Từ 1 bức ảnh nấm gốc, chúng ta dùng OpenCV xoay nghiêng, lật ngang, giảm độ sáng, thu phóng... để tạo ra 8-10 bức ảnh phiên bản khác nhau. Điều này ép mô hình CNN phải học được bản chất của cây nấm bất chấp điều kiện ánh sáng hay góc chụp.
+Người 2: Kỹ thuật này quá thông minh! Nó mô phỏng lại đúng môi trường gió rung, nắng chói ngoài đời thực. Việc này chắc chắn sẽ dập tắt hiện tượng "Học vẹt" (Overfitting), giúp mô hình bền vững hơn rất nhiều khi đem ra chạy trên ứng dụng điện thoại của nông dân.
+
+Slide 21: Case Study A (Học Sâu): Nhận Dạng 5 Loài Hoa
+Người 1: Hãy áp dụng toàn bộ quy trình trên vào Case Study A: Xây dựng mô hình CNN phân loại 5 loài hoa (cúc họa mi, bồ công anh, hoa hồng, hướng dương, tulip). Pipeline ở đây là: Lấy 4242 ảnh đầu vào, dùng OpenCV Resize về cỡ 150x150, Áp dụng Data Augmentation. Sau đó đẩy qua mạng CNN có 4 Lớp Tích chập và 2 Lớp Fully Connected. Đầu ra dự đoán 1 trong 5 loài.
+Người 2: Bài toán nhận dạng loài thực vật (Species Recognition) này ứng dụng rất mạnh trong việc nhận diện các loại cỏ dại xâm lấn để robot có thể tự động nhổ bỏ hoặc phun thuốc diệt cỏ chọn lọc thưa thầy.
+
+Slide 22: Kết Quả Huấn Luyện & Đánh Giá Mô Hình Hoa
+Người 1: Nhìn vào biểu đồ kết quả, chúng ta thấy đường Model Accuracy của tập huấn luyện (màu cam) tăng dần lên 89%, và tập kiểm chứng (màu xanh lá) bám sát đạt 78%. Bên biểu đồ Loss, sai số giảm đều xuống tiệm cận 0. Điều này chứng minh rằng với một kiến trúc CNN đơn giản kết hợp với Data Augmentation, chúng ta đã thu được một mô hình ổn định, không bị Overfitting nghiêm trọng.
+Người 2: Thật tuyệt vời, chỉ qua 50 vòng lặp (Epochs) mà máy tính đã học được cách phân biệt 5 loài hoa mọc hoang dã. Một kết quả đầy hứa hẹn để đưa vào tích hợp trên phần cứng máy kéo tự hành.
+
+Slide 23: Hướng Tiếp Cận 2: Xử Lý Ảnh Cổ Điển
+Người 1: Tuy nhiên, không phải cái đinh nào cũng cần búa tạ để đóng. Có những bài toán, việc đưa Học Sâu vào là quá tốn kém và chậm chạp. Đó là lúc chúng ta tìm đến Hướng tiếp cận 2: Xử Lý Ảnh Cổ Điển (Classic CV). Ý tưởng cốt lõi là: Thay vì để mạng nơ-ron tự "học mờ mịt", con người sẽ định nghĩa các quy tắc hình học rõ ràng (đo góc, đo chiều dài) để trích xuất thông tin. Ở đây, chúng ta "Đo đạc" chứ không cần "Học".
+Người 2: Em hiểu rồi. Nếu bài toán chỉ đơn giản là đếm xem trên băng chuyền có bao nhiêu quả cam dựa vào hình dáng tròn và màu cam, thì một vài dòng code OpenCV tính toán hình học sẽ nhanh gấp hàng trăm lần việc tải một mô hình AI nặng nề vào bộ nhớ.
+
+Slide 24: Case Study B (Cổ điển): Phân Tích Chất Lượng Gạo
+Người 1: Chẳng hạn như Case Study B: Đếm số lượng và Phân loại tỷ lệ hạt gạo. Thay vì dùng AI, chúng ta dùng quy trình 6 bước của OpenCV cực kỳ chớp nhoáng: 1. Đổi sang ảnh xám. 2. Nhị phân hóa (Binary) biến gạo thành màu trắng, nền thành màu đen tuyệt đối. 3. Lọc nhiễu. 4. Dùng thuật toán Co lại (Erode) để tách các hạt gạo bị dính chùm vào nhau. 5. Tìm đường viền (Contours) bao quanh hạt gạo. 6. Đo tỷ lệ Dài/Rộng từ đường viền đó. Hoàn toàn bằng toán học hình học!
+Người 2: Thuật toán Nhị phân hóa và Co lại (Erode) ở bước 2 và 4 thực sự là nghệ thuật xử lý ảnh. Nó lọc sạch mọi hạt bụi rác trên nền đen và làm lộ rõ từng hạt gạo, cung cấp một dữ liệu "sạch sẽ tuyệt đối" cho bước tính toán Dài/Rộng ở cuối cùng.
+
+Slide 25: Từ Thuật Toán đến Kết Quả Phân Loại Gạo
+Người 1: Đây là đoạn code cốt lõi. Chúng ta dùng lệnh `cv2.findContours` để đếm số hạt gạo. Rất nhanh chóng, lệnh in ra: "Số lượng hạt gạo = 30". Tiếp đó, một vòng lặp vẽ hình chữ nhật bao quanh từng hạt gạo (BoundingRect) và chia tỷ lệ Dài/Rộng. Kết quả trả về ngay tức khắc: Tỷ lệ trung bình 2.3 (Loại Medium). Chẳng cần một GPU đắt tiền nào, chỉ vài dòng code CPU thông thường đã giải quyết gọn gàng một bài toán công nghiệp phân loại nông sản.
+Người 2: Đoạn code này thực sự truyền cảm hứng thầy ạ. Sự kết hợp giữa tư duy tối giản và sức mạnh của toán học đã chiến thắng sự cồng kềnh của Học sâu trong trường hợp cụ thể này. Nó cho thấy kỹ sư AI giỏi là người biết dùng đúng công cụ cho đúng bài toán.
+
+Slide 26: Học Sâu vs Xử lý ảnh Cổ điển: Khi nào dùng phương pháp nào?
+Người 1: Tóm lại, bảng so sánh này là kim chỉ nam cho các kỹ sư. Học sâu (CNN) tự động tìm đặc trưng, giải quyết các bài toán siêu phức tạp, tinh vi (nhận dạng bệnh) nhưng đòi hỏi dữ liệu khổng lồ và mang tính "hộp đen". Ngược lại, Xử lý ảnh cổ điển (Classic CV) dựa trên thuật toán con người thiết kế, độ phức tạp thấp, tốc độ nhanh, phù hợp cho đo lường, đếm số lượng với quy luật rõ ràng. Lựa chọn nằm ở "Bản chất bài toán".
+Người 2: Dạ, bài học rút ra là: nếu bài toán mang tính logic hình học tuyến tính, hãy dùng Classic CV. Nếu bài toán có mức độ biến thiên vô hạn như thiên nhiên mây trời, bệnh dịch thực vật, thì hãy phó thác cho sức mạnh tự học của Deep Learning.
+
+Slide 27: Tổng Kết Buổi Học
+Người 1: Tổng kết buổi học hôm nay: Chúng ta đã đi từ việc hiểu Nguyên lý mạng lưới CNN mô phỏng não bộ, đến việc khám phá thư viện OpenCV. Nắm vững Học sâu cho các bài toán phức tạp và Xử lý ảnh cổ điển cho các bài toán hình học. Nắm được cả hai trường phái này sẽ biến các em thành những Kỹ sư AI nông nghiệp vô cùng linh hoạt và hiệu quả.
+
+Slide 28: Hướng Đi Tiếp Theo: From Slide to Code
+Người 1: Những dòng code khô khan nãy giờ có lẽ chưa đủ làm các em thỏa mãn. Hướng đi tiếp theo, chúng ta sẽ chuyển "From Slide to Code". Ngay sau đây, thầy sẽ Live Demo viết một đoạn code Python ngắn kết hợp OpenCV và Streamlit để xây dựng một ứng dụng Web trực tiếp trên lớp. Ứng dụng này cho phép người dùng tải lên bức ảnh hạt gạo và nó sẽ đếm, phân loại trong nháy mắt. Các em đã sẵn sàng chưa?
+Người 2: Oa, một ứng dụng Web thực tế ngay tại lớp học! Sự trực quan này sẽ giúp chúng em tiêu hóa toàn bộ lý thuyết từ nãy đến giờ một cách dễ dàng nhất. Chúng em đã sẵn sàng thưa thầy!
+
+Slide 29: Hỏi & Đáp
+Người 1: Cảm ơn các em đã theo dõi bài giảng. Slide cuối là thông tin liên hệ của thầy và đường link GitHub chứa toàn bộ mã nguồn bài thực hành. Chúc các em một buổi học hiệu quả và hẹn gặp lại ở buổi code thực hành!

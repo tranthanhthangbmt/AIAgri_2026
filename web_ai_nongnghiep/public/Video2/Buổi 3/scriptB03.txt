@@ -1,0 +1,85 @@
+Slide 1: AI ỨNG DỤNG TRONG NÔNG NGHIỆP - Buổi 3: Học Sâu (Deep Learning) & Mạng Nơ-ron
+Người 1: Chào các em. Ở buổi trước, chúng ta đã mở ra hộp công cụ của Machine Learning. Hôm nay, ở Buổi số 3, chúng ta sẽ đi đến cảnh giới cao nhất của AI hiện đại: Học sâu (Deep Learning) và Mạng nơ-ron nhân tạo. Phần 1 của bài học có tên: "Từ Bệnh Cây Trồng Đến Nền Tảng Lý Thuyết".
+Người 2: Dạ em chào thầy. Thuật ngữ Deep Learning dạo gần đây xuất hiện rầm rộ trên mọi phương tiện truyền thông cùng với ChatGPT hay Midjourney. Thật tò mò không biết công nghệ có vẻ rất "viễn tưởng" này sẽ giải quyết bài toán bùn đất, ruộng đồng như thế nào ạ?
+
+Slide 2: Thách thức toàn cầu đối với An Ninh Lương Thực
+Người 1: Để hiểu tại sao chúng ta cần Deep Learning, hãy nhìn vào một nỗi đau có thật của nông nghiệp: Bệnh cây trồng. Tổ chức Nông Lương Liên Hợp Quốc (FAO) đã chỉ ra rằng, sâu bệnh làm giảm đáng kể năng suất cây trồng toàn cầu, đẩy hàng tỷ người vào nguy cơ thiếu đói. Các nông hộ nhỏ lẻ là những người dễ bị tổn thương nhất.
+Người 2: Nếu một vụ lúa bị rầy nâu hay một vườn cà phê bị nấm tấn công mà không phát hiện kịp, nông dân có thể mất trắng toàn bộ vốn liếng của cả một năm trời. Bài toán phát hiện sớm bệnh dịch thực sự là vấn đề sống còn thưa thầy.
+
+Slide 3: Vì sao phương pháp truyền thống không còn hiệu quả?
+Người 1: Chính xác. Vậy tại sao chúng ta không dùng mắt thường để chẩn đoán như cha ông hàng ngàn năm nay? Bởi vì phương pháp thủ công có 4 điểm yếu chí mạng. Thứ nhất, nó chậm và tốn kém, nhất là khi phải gửi mẫu lá đến phòng thí nghiệm sinh học. Thứ hai, nó rất dễ sai sót vì phụ thuộc vào cảm tính. Thứ ba, nó đòi hỏi kiến thức chuyên môn sâu mà không phải nông dân nào cũng có. Và cuối cùng, nếu chẩn đoán sai, việc phun nhầm thuốc sẽ làm hỏng đất và tốn tiền vô ích.
+Người 2: Việc chờ đợi kết quả xét nghiệm mẫu lá mất vài ngày thì có khi dịch bệnh đã lây lan sang cả cánh đồng bên cạnh rồi. Nông dân cần một kết quả "ngay lập tức" ngay tại ruộng để kịp thời khoanh vùng phun thuốc.
+
+Slide 4: Giải pháp từ tương lai: Tự động hóa với Học Sâu
+Người 1: Và đó là lúc Học Sâu (Deep Learning) xuất hiện như một đấng cứu tinh. Hãy nhìn hình ảnh bên phải. Thay vì mang kính lúp ra đồng, nông dân chỉ cần giơ điện thoại lên, chụp một bức ảnh. Thuật toán Học sâu bên trong ứng dụng sẽ "nhìn" vào lá cây và trả về kết quả "Bệnh Cháy Sớm - Độ chính xác 97.68%" ngay lập tức!
+Người 2: Thật tuyệt vời! Một ứng dụng như vậy sẽ giúp mang trí tuệ của một chuyên gia nông nghiệp hàng chục năm kinh nghiệm thu nhỏ lại và nằm gọn trong túi áo của bất kỳ người nông dân nào. Nhưng làm sao chiếc điện thoại có thể "nhìn" và "hiểu" được hình ảnh thưa thầy?
+
+Slide 5: Nguồn cảm hứng vượt thời gian: Bộ não con người
+Người 1: Câu hỏi rất hay. Để làm cho máy tính có thể "nhìn", các nhà khoa học đã tìm đến cỗ máy xử lý hình ảnh vĩ đại nhất vũ trụ: Bộ não con người. Nền tảng của Học sâu chính là Mạng nơ-ron nhân tạo (Artificial Neural Networks - ANN). Ý tưởng cốt lõi là: Nếu bộ não chứa hàng tỷ tế bào nơ-ron liên kết với nhau có thể học hỏi, thì tại sao chúng ta không viết các dòng code mô phỏng lại mạng lưới đó?
+Người 2: Đây đúng là một ý tưởng thiên tài của sự sao chép sinh học (Biomimicry). Máy tính thay vì dùng dây thần kinh sinh học thì dùng các phép toán ma trận để kết nối thông tin lại với nhau.
+
+Slide 6: Giải phẫu một "tế bào não" nhân tạo
+Người 1: Hãy cùng giải phẫu một nơ-ron nhân tạo xem bên trong có gì nhé. Quá trình xử lý diễn ra qua 4 bước. Đầu tiên là Đầu vào (Inputs) - ví dụ như các điểm ảnh pixel. Bước 2: Mỗi đầu vào được nhân với một Trọng số (Weights) để xác định mức độ quan trọng. Bước 3: Tính tổng tất cả lại và cộng thêm Độ lệch (Bias). Bước cuối cùng cực kỳ quan trọng: Hàm kích hoạt (Activation Function). Nó quyết định xem tín hiệu này có đủ mạnh để truyền sang nơ-ron tiếp theo hay không.
+Người 2: Em thấy cấu trúc này giống như việc ra quyết định của con người. "Trọng số" giống như việc ta ưu tiên yếu tố nào hơn. Ví dụ khi chẩn đoán bệnh lá, đốm màu nâu sẽ có "trọng số" cao hơn là kích thước của chiếc lá.
+
+Slide 7: Sức mạnh của tập thể: Mạng Perceptron Đa Lớp (MLP)
+Người 1: Rất thông minh! Nhưng một nơ-ron đơn lẻ thì rất ngốc nghếch. Bí quyết nằm ở sự kết nối. Khi chúng ta xếp chồng hàng ngàn nơ-ron thành nhiều lớp, ta có Mạng Perceptron Đa Lớp (MLP). Nó gồm 1 Lớp Đầu vào, nhiều Lớp Ẩn (Hidden Layers) ở giữa để suy nghĩ, và 1 Lớp Đầu ra. Chữ "Sâu" (Deep) trong Deep Learning chính là ám chỉ việc chúng ta có rất nhiều Lớp Ẩn xếp chồng lên nhau.
+Người 2: Như vậy, Lớp ẩn thứ nhất có thể chỉ nhận diện được đường kẻ, lớp thứ hai nhận diện được hình tròn, và đến lớp cuối cùng thì mạng nơ-ron đã có thể ghép chúng lại để nhận ra đó là một đốm nấm bệnh hoàn chỉnh phải không ạ?
+
+Slide 8: Cỗ máy học tập: Sai, sửa và hoàn thiện
+Người 1: Chính xác. Nhưng làm sao mạng lưới này biết các "Trọng số" bao nhiêu là đúng? Chúng học thông qua cơ chế "Sai, sửa và hoàn thiện" với 2 thuật toán huyền thoại. Đầu tiên là Lan truyền ngược (Backpropagation): Máy tính đối chiếu kết quả dự đoán với thực tế để "Tính Lỗi", sau đó truyền tín hiệu lỗi này ngược về các lớp trước. Thuật toán thứ hai là Hạ Gradient (Gradient Descent) - giúp mạng nơ-ron điều chỉnh các trọng số dần dần để đưa mức sai số xuống điểm thấp nhất, giống như việc tìm đường đi xuống đáy của một thung lũng.
+Người 2: Quá trình này hoàn toàn giống như một đứa trẻ học đi xe đạp. Lần đầu đạp sai, xe đổ, đứa trẻ cảm thấy đau (tính lỗi). Lần sau, não bộ sẽ điều chỉnh lại lực chân và độ nghiêng của tay lái (cập nhật trọng số) để không bị ngã nữa. Thật kỳ diệu!
+
+Slide 9: Sự trỗi dậy của một ý tưởng lâu đời
+Người 1: Dù kỳ diệu nhưng lịch sử của Mạng nơ-ron đầy thăng trầm. Thuật toán Perceptron đầu tiên đã có từ 1957. Nhưng suốt thập niên 80-90, thế giới bước vào "Mùa đông AI" vì máy tính thời đó quá yếu. Phải đến năm 2012, Cách mạng Học Sâu mới bùng nổ nhờ sự hội tụ của 3 yếu tố: Dữ liệu lớn (Big Data) làm nhiên liệu, Card đồ họa (GPU) siêu mạnh làm động cơ, và Thuật toán được cải tiến.
+Người 2: Vâng, giống như chúng ta có bản vẽ của một siêu xe từ thế kỷ trước, nhưng đến ngày nay chúng ta mới có đủ xăng (dữ liệu) và động cơ (GPU) để chiếc xe đó thực sự lăn bánh.
+
+Slide 10: Học Sâu (DL) khác gì Học Máy (ML) truyền thống?
+Người 1: Vậy rốt cuộc Học sâu khác gì ML truyền thống? Điểm khác biệt lớn nhất nằm ở "Trích xuất đặc trưng" (Feature Extraction). Với ML, con người phải lập trình bằng tay các đặc trưng như: "Hãy tìm đốm màu nâu, kích thước 2cm". Rất thủ công! Với Học sâu, mạng nơ-ron tự nuốt dữ liệu thô (pixel) và tự động tìm ra các đặc trưng đó. Đổi lại, Học sâu rất "đói" dữ liệu và cần phần cứng GPU vô cùng mạnh mẽ.
+Người 2: Đặc tính tự động hóa việc trích xuất đặc trưng này (End-to-End) có vẻ giúp các kỹ sư nông nghiệp tiết kiệm được rất nhiều công sức ngồi phân tích hình thái sinh học của từng loại nấm bệnh.
+
+Slide 11: Ưu thế quyết định: Khả năng tự học đặc trưng
+Người 1: Slide này minh họa rõ nét hơn ý em vừa nói. Với ML truyền thống, ta phải đóng vai trò "chỉ việc". Nhưng với Học Sâu, qua nhiều lớp ẩn, mạng nơ-ron tự động nâng cấp mức độ hiểu biết từ cấp thấp (nhận diện góc, cạnh, đường chéo) lên cấp cao (nhận diện kết cấu, hoa văn đốm bệnh). Đây là lý do Học Sâu thống trị tuyệt đối trong các bài toán về Xử lý Hình ảnh.
+Người 2: Việc tự học này cũng giúp AI nhận ra được những dấu hiệu bệnh ẩn giấu cực kỳ nhỏ trên lá mà mắt thường của con người, hoặc thậm chí là các chuyên gia đôi khi cũng bỏ sót.
+
+Slide 12: Tóm tắt những ý chính (Phần 1)
+Người 1: Để chốt lại Phần 1, các em cần nhớ: Bối cảnh bệnh cây trồng đòi hỏi giải pháp tự động. Nền tảng của giải pháp là Mạng nơ-ron nhân tạo học hỏi qua Gradient Descent và Lan truyền ngược. Bước tiến vĩ đại nhất của nó là khả năng tự động học các đặc trưng phức tạp từ ảnh thô mà không cần con người mớm lời.
+Người 2: Cấu trúc lý thuyết này đã giúp em hiểu rõ vì sao Deep Learning lại trở thành "ngôi sao sáng nhất" hiện nay. Nhưng em thắc mắc là mạng nơ-ron thông thường có vẻ hơi "cồng kềnh" nếu xử lý ảnh độ phân giải cao thưa thầy?
+
+Slide 13: Phần 2: CÔNG NGHỆ CỐT LÕI (CNN), THỰC TIỄN & CÔNG CỤ
+Người 1: Một câu hỏi rất sắc sảo! Đó là lý do chúng ta bước sang Phần 2. Để xử lý ảnh hiệu quả, người ta phải phát minh ra một kiến trúc mạng nơ-ron đặc biệt. Thầy sẽ giới thiệu với các em "Vũ khí" chuyên dụng đó: Mạng Nơ-ron Tích chập (CNN). Sau đó chúng ta sẽ xem xét 2 Case Study thực tế và cuối cùng là khám phá hệ sinh thái lập trình Keras.
+
+Slide 14: Mạng Nơ-ron Tích chập (CNN): "Vũ khí" cho Thị giác Máy tính
+Người 1: Mạng ANN thông thường bộc lộ điểm yếu khi xử lý ảnh: nó phải làm phẳng (flatten) bức ảnh 2D thành một đường thẳng 1D. Điều này làm phá vỡ hoàn toàn mối quan hệ không gian (vị trí trên-dưới-trái-phải của các điểm ảnh) và làm "bùng nổ" số lượng tham số khiến máy tính quá tải. Giải pháp chính là CNN. CNN có "Lớp Tích chập" dùng các bộ lọc (filter) quét qua bức ảnh để trích xuất đặc trưng không gian. Tiếp theo là "Lớp Gộp" (Pooling Layer) giúp thu nhỏ bức ảnh lại nhưng vẫn giữ lại các đặc trưng quan trọng nhất để giảm chi phí tính toán.
+Người 2: Em hiểu rồi! Lớp tích chập giống như việc chúng ta dùng một chiếc kính lúp soi từng khu vực nhỏ trên chiếc lá, còn Lớp gộp thì giống như việc nén bức ảnh lại cho nhẹ đi mà vẫn không làm mờ đốm bệnh. Một sự kết hợp rất thông minh!
+
+Slide 15: Nghiên cứu Thực tiễn
+Người 1: Bây giờ, hãy xem CNN phô diễn sức mạnh ngoài đời thực. Thầy sẽ giới thiệu 2 trường hợp. Trường hợp 1: Tự xây dựng một mô hình CNN từ đầu để phân loại bệnh trên lá khoai tây. Trường hợp 2: Đối mặt với bài toán khó hơn là lá táo, chúng ta sẽ học một chiến thuật cực kỳ nổi tiếng mang tên 'Học chuyển giao' (Transfer Learning).
+
+Slide 16: Case Study 1: Bệnh trên lá Khoai tây (Dataset: Plant Village)
+Người 1: Ở Case Study 1, chúng ta phân loại lá khoai tây thành 3 lớp: Khỏe mạnh, Cháy sớm và Cháy muộn. Chúng ta sử dụng thư viện Keras để xây dựng mô hình CNN theo cấu trúc Tuần tự (Sequential). Nhìn vào đoạn code, các em sẽ thấy sự sắp xếp xen kẽ: Convolution2D (để trích xuất đặc trưng), tiếp theo là MaxPooling2D (để thu nhỏ). Cuối cùng là Flatten và Dense (lớp nơ-ron kết nối đầy đủ) để đưa ra dự đoán.
+Người 2: Đoạn code khá ngắn gọn nhưng mang lại một thành tựu khổng lồ. Nhìn vào biểu đồ Accuracy, chỉ sau khoảng 10 chu kỳ học (epoch), đường màu xanh và màu cam đã tiệm cận mức 1. Độ chính xác đạt tới 97.68%! Nghĩa là một mô hình CNN có kiến trúc đơn giản tự thiết kế vẫn có thể xuất sắc giải quyết được một bài toán cụ thể.
+
+Slide 17: Case Study 2: Bệnh trên lá Táo & Bài học về 'Học chuyển giao'
+Người 1: Nhưng đời không như là mơ. Sang Case Study 2 về bệnh trên lá Táo, dữ liệu phức tạp hơn và có nhiều lớp bệnh hơn. Nếu tự xây mô hình Custom CNN như trên, độ chính xác chỉ dừng ở 80%. Lúc này, chiến lược là "Không cần phát minh lại bánh xe". Chúng ta sử dụng Học chuyển giao (Transfer Learning): lấy những mô hình CNN khổng lồ đã được các tập đoàn lớn huấn luyện sẵn như VGG16, ResNet-50. Kết quả là VGG16 đã đẩy độ chính xác lên 85%!
+Người 2: Kỹ thuật này thực dụng quá thưa thầy. Giống như thay vì đào tạo một sinh viên y khoa mới tinh từ đầu, chúng ta thuê hẳn một giáo sư y khoa giàu kinh nghiệm và chỉ cần bổ túc thêm cho ông ấy kiến thức về riêng lá táo thôi, hiệu quả sẽ nhanh và cao hơn hẳn.
+
+Slide 18: Hệ sinh thái Công cụ: Keras & TensorFlow
+Người 1: Vậy bằng công cụ nào mà chúng ta viết ra được những mô hình đó? Chào mừng các em đến với hệ sinh thái lập trình phổ biến nhất thế giới: TensorFlow do Google phát triển, và Keras - một giao diện lập trình cấp cao giúp việc viết code TensorFlow trở nên dễ dàng như chơi Lego.
+Người 2: Việc có những thư viện mạnh mẽ và mã nguồn mở như Keras đã hạ thấp rào cản kỹ thuật rất nhiều, giúp những kỹ sư nông nghiệp hoặc sinh viên như chúng em có thể tự phát triển ứng dụng AI mà không cần phải là chuyên gia về toán học ma trận thưa thầy.
+
+Slide 19: 3 API Xây dựng Mô hình: Từ Đơn giản đến Tùy biến sâu
+Người 1: Keras cung cấp 3 cách để xây mô hình. Đơn giản nhất là Sequential API - xếp chồng các lớp nối tiếp nhau thành một chuỗi duy nhất, rất dễ dùng cho người mới bắt đầu. Nâng cao hơn là Functional API - cho phép xây dựng mô hình phức tạp có nhiều đầu vào, đầu ra hoặc chẻ nhánh. Và cuối cùng là Subclassing API dành cho các nhà nghiên cứu chuyên sâu muốn tùy biến mọi logic thuật toán.
+Người 2: Theo em thì với khoảng 80% các bài toán nhận diện bệnh cây trồng ngoài thực địa, chúng ta chỉ cần thành thạo Sequential và Functional API là đã đủ để triển khai các mô hình thực tế cực kỳ mạnh mẽ rồi.
+
+Slide 20: Huấn luyện Thông minh hơn: Callbacks & TensorBoard
+Người 1: Khi nhấn nút "Huấn luyện", mô hình có thể chạy hàng giờ đồng hồ. Làm sao để giám sát nó? Keras cung cấp các "trợ lý" gọi là Callbacks. Ví dụ, 'ModelCheckpoint' giúp tự động lưu lại phiên bản tốt nhất đề phòng cúp điện. 'EarlyStopping' giúp dừng sớm nếu mô hình không học thêm được gì nữa, chống lãng phí thời gian và tránh việc Học vẹt (Overfitting). Để nhìn thấy rõ hơn, chúng ta dùng TensorBoard để vẽ biểu đồ đường cong học tập trực tiếp như hình bên phải.
+Người 2: Công cụ 'EarlyStopping' giống như một giáo viên biết nhắc học sinh dừng việc ôn tủ khi thấy học sinh đó bắt đầu mệt mỏi và học vẹt. Việc có dashboard trực quan như TensorBoard giúp "mở hộp đen" của AI, cho phép lập trình viên biết mô hình của mình đang suy nghĩ tốt hay xấu.
+
+Slide 21: Tối ưu hóa Siêu tham số: Từ 'Đoán mò' đến Tự động
+Người 1: Bước cuối cùng để đạt sự hoàn hảo là tinh chỉnh mô hình. Làm sao biết mạng nơ-ron cần 50 hay 100 lớp ẩn? Tốc độ học bao nhiêu là vừa? Đó gọi là Siêu tham số (Hyperparameter). Nếu ngồi thử thủ công từng số thì sẽ mất cả đời. Rất may, công cụ Keras Tuner sẽ giúp tự động tìm kiếm bộ tham số tốt nhất thông qua các thuật toán thông minh như RandomSearch, Hyperband hay BayesianOptimization.
+Người 2: Tức là máy tính lại dùng thuật toán để đi tìm cấu hình thuật toán tốt nhất cho máy tính! Keras Tuner giống như một chuyên gia tự động dò đài radio cho đến khi bắt được tần số nét nhất mà không bị nhiễu sóng thưa thầy.
+
+Slide 22: Tóm tắt Phần 2 & Gợi ý Tiếp theo
+Người 1: Tổng kết Phần 2, các em hãy lưu lại 3 bài học vàng: Một là, CNN là kiến trúc bá chủ trong lĩnh vực nhận diện hình ảnh nhờ khả năng hiểu cấu trúc không gian. Hai là, hãy luôn nhớ tới chiến thuật Học chuyển giao (Transfer Learning) để tiết kiệm thời gian. Ba là, hãy làm chủ hệ sinh thái Keras và TensorFlow. Tiếp theo, thầy sẽ mở trình duyệt và chạy một đoạn code Live Demo phân loại lá khoai tây để các em tận mắt chứng kiến nhé!
+Người 2: Bài giảng lý thuyết đi kèm với Live demo và code mẫu thực sự quá thực tiễn. Buổi 3 hôm nay đã phá vỡ sự "bí ẩn" của Deep Learning và cho thấy bất kỳ ai cũng có thể làm chủ công nghệ này để giúp ích cho ngành nông nghiệp. Em cảm ơn thầy!
