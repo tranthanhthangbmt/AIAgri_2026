@@ -70,20 +70,60 @@ const Syllabus = () => {
                 {(() => {
                   const weekKey = week.num.toString().replace(/ /g, "");
                   const weekTextbooks = textbooksData[weekKey] || [];
+                  
+                  const getSlideForTextbook = (tbName, wKey) => {
+                    const knownSlides = {
+                      "[AI-Agri] Chapter 1_ Artificial Intelligence.pdf": "Slide_Day_01_AI_Agriculture.pdf",
+                      "[AI-Agri] Chapter 12_ Precision Farming.pdf": "Slide_Day_01_AI_in_Precision_Agriculture.pdf",
+                      "[Ethics]_Đạo đức trong AI Nông nghiệp.pdf": "Slide_Day_01_Agricultural_AI_Ethics.pdf",
+                      "[Data-Driven] Chapter 7 Harvesting Intelligence.pdf": "Slide_Day_01_AI_Powered_Farming.pdf"
+                    };
+                    if (knownSlides[tbName]) return knownSlides[tbName];
+                    
+                    const day = String(wKey).padStart(2, '0');
+                    const chapMatch = tbName.match(/Chapter (\d+)_/);
+                    if (chapMatch) {
+                      const chapNum = chapMatch[1].padStart(2, '0');
+                      return `Slide_Day_${day}_AIAgri_Chap${chapNum}.pdf`;
+                    }
+                    if (tbName.includes("[Ethics]")) {
+                      return `Slide_Day_${day}_AIAgri_Ethics.pdf`;
+                    }
+                    return null;
+                  };
+
                   if (weekTextbooks.length > 0) {
                     return (
                       <div style={{ marginTop: '5px', marginBottom: '5px', background: 'rgba(0,0,0,0.02)', padding: '10px', borderRadius: '8px' }}>
                         <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '8px', fontWeight: 500 }}>Sách / Giáo trình:</p>
                         {weekTextbooks.length === 1 ? (
-                          <button 
-                            onClick={() => setSelectedPdf(`${import.meta.env.BASE_URL}textbooks/${weekTextbooks[0]}`)}
-                            className="btn btn-secondary" 
-                            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%', background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)' }}
-                            title={weekTextbooks[0]}
-                          >
-                            <BookOpen size={18} />
-                            Đọc Tài Liệu
-                          </button>
+                          <div style={{ display: 'flex', gap: '8px', width: '100%' }}>
+                            <button 
+                              onClick={() => setSelectedPdf(`${import.meta.env.BASE_URL}textbooks/${weekTextbooks[0]}`)}
+                              className="btn btn-secondary" 
+                              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', width: '50%', background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)', padding: '8px 4px', fontSize: '0.9rem' }}
+                              title={weekTextbooks[0]}
+                            >
+                              <BookOpen size={16} />
+                              Đọc Tài Liệu
+                            </button>
+                            <button 
+                              onClick={() => {
+                                const slideName = getSlideForTextbook(weekTextbooks[0], weekKey);
+                                if (slideName) {
+                                  setSelectedPdf(`${import.meta.env.BASE_URL}slides/${slideName}`);
+                                } else {
+                                  alert("Chưa có slide tóm tắt cho tài liệu này.");
+                                }
+                              }}
+                              className="btn btn-secondary" 
+                              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', width: '50%', background: 'var(--primary-light)', border: 'none', color: 'white', padding: '8px 4px', fontSize: '0.9rem' }}
+                              title="Xem Slide Tóm Tắt"
+                            >
+                              <Eye size={16} />
+                              Xem Slide
+                            </button>
+                          </div>
                         ) : (
                           <div style={{ display: 'flex', gap: '8px', flexDirection: 'column' }}>
                             <select 
@@ -94,19 +134,39 @@ const Syllabus = () => {
                                 <option key={i} value={tb}>{tb.length > 45 ? tb.substring(0, 45) + '...' : tb}</option>
                               ))}
                             </select>
-                            <button 
-                              onClick={() => {
-                                const selectEl = document.getElementById(`select-tb-${weekKey}`);
-                                if (selectEl) {
-                                  setSelectedPdf(`${import.meta.env.BASE_URL}textbooks/${selectEl.value}`);
-                                }
-                              }}
-                              className="btn btn-secondary" 
-                              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', cursor: 'pointer', width: '100%', background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)' }}
-                            >
-                              <BookOpen size={18} />
-                              Đọc Tài Liệu Đã Chọn
-                            </button>
+                            <div style={{ display: 'flex', gap: '8px', width: '100%' }}>
+                              <button 
+                                onClick={() => {
+                                  const selectEl = document.getElementById(`select-tb-${weekKey}`);
+                                  if (selectEl) {
+                                    setSelectedPdf(`${import.meta.env.BASE_URL}textbooks/${selectEl.value}`);
+                                  }
+                                }}
+                                className="btn btn-secondary" 
+                                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', width: '50%', background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)', padding: '8px 4px', fontSize: '0.9rem' }}
+                              >
+                                <BookOpen size={16} />
+                                Đọc Tài Liệu
+                              </button>
+                              <button 
+                                onClick={() => {
+                                  const selectEl = document.getElementById(`select-tb-${weekKey}`);
+                                  if (selectEl) {
+                                    const slideName = getSlideForTextbook(selectEl.value, weekKey);
+                                    if (slideName) {
+                                      setSelectedPdf(`${import.meta.env.BASE_URL}slides/${slideName}`);
+                                    } else {
+                                      alert("Chưa có slide tóm tắt cho tài liệu này.");
+                                    }
+                                  }
+                                }}
+                                className="btn btn-secondary" 
+                                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', width: '50%', background: 'var(--primary-light)', border: 'none', color: 'white', padding: '8px 4px', fontSize: '0.9rem' }}
+                              >
+                                <Eye size={16} />
+                                Xem Slide
+                              </button>
+                            </div>
                           </div>
                         )}
                       </div>
