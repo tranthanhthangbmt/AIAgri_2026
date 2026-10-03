@@ -76,7 +76,12 @@ const Syllabus = () => {
                       "[AI-Agri] Chapter 1_ Artificial Intelligence.pdf": "Slide_Day_01_AI_Agriculture.pdf",
                       "[AI-Agri] Chapter 12_ Precision Farming.pdf": "Slide_Day_01_AI_in_Precision_Agriculture.pdf",
                       "[Ethics]_Đạo đức trong AI Nông nghiệp.pdf": "Slide_Day_01_Agricultural_AI_Ethics.pdf",
-                      "[Data-Driven] Chapter 7 Harvesting Intelligence.pdf": "Slide_Day_01_AI_Powered_Farming.pdf"
+                      "[Data-Driven] Chapter 7 Harvesting Intelligence.pdf": "Slide_Day_01_AI_Powered_Farming.pdf",
+                      "[AI-Agri] Chapter 3_ Machine Learning.pdf": "Học_Máy_Trong_Nông_Nghiệp_Hiện_Đại.pdf",
+                      "[AI-Agri] Chapter 9_ Machine Learning Algorithms.pdf": "Các_Thuật_Toán_Học_Máy.pdf",
+                      "[Data-Driven] Chapter 5_ Crop Recommender.pdf": "Từ_Đất_đai_đến_Silicon.pdf",
+                      "[Data-Driven] Chapter 14_ Short-Term Weather Forecasting.pdf": "Dự_Báo_Thời_Tiết_Nông_Nghiệp_Bằng_Học_Sâu.pdf",
+                      "[Hands-On] Chapter 1_ The Machine Learning Landscape.pdf": "Học_Máy_Tổng_Quan.pdf"
                     };
                     if (knownSlides[tbName]) return knownSlides[tbName];
                     
