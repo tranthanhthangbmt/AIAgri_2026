@@ -7,6 +7,7 @@ const Syllabus = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [isZoomed, setIsZoomed] = useState(false);
+  const [selectedTextbooks, setSelectedTextbooks] = useState({});
 
   const tutorLink = "https://notebooklm.google.com/notebook/dc66dc0c-d176-4024-aac8-4680a4f0b4bd?authuser=9";
 
@@ -71,7 +72,7 @@ const Syllabus = () => {
                   const weekKey = week.num.toString().replace(/ /g, "");
                   const weekTextbooks = textbooksData[weekKey] || [];
                   
-                  const getSlideForTextbook = (tbName, wKey) => {
+                  const getSlideForTextbook = (tbName) => {
                     const knownSlides = {
                       "[AI-Agri] Chapter 1_ Artificial Intelligence.pdf": "Slide_Day_01_AI_Agriculture.pdf",
                       "[AI-Agri] Chapter 12_ Precision Farming.pdf": "Slide_Day_01_AI_in_Precision_Agriculture.pdf",
@@ -85,31 +86,35 @@ const Syllabus = () => {
                     };
                     if (knownSlides[tbName]) return knownSlides[tbName];
                     
-                    const day = String(wKey).padStart(2, '0');
                     const chapMatch = tbName.match(/Chapter (\d+)_/);
                     if (chapMatch) {
                       const chapNum = chapMatch[1].padStart(2, '0');
-                      return `Slide_Day_${day}_AIAgri_Chap${chapNum}.pdf`;
+                      return `Slide_Day_${weekKey.padStart(2, '0')}_AIAgri_Chap${chapNum}.pdf`;
                     }
                     if (tbName.includes("[Ethics]")) {
-                      return `Slide_Day_${day}_AIAgri_Ethics.pdf`;
+                      return `Slide_Day_${weekKey.padStart(2, '0')}_AIAgri_Ethics.pdf`;
                     }
                     return null;
                   };
 
-                  const getVideoForTextbook = (tbName, wKey) => {
-                    if (wKey === "2") {
-                      const knownVideos = {
-                        "[AI-Agri] Chapter 3_ Machine Learning.pdf": "Học_Máy_Trong_Nông_Nghiệp_Hiện_Đại",
-                        "[AI-Agri] Chapter 9_ Machine Learning Algorithms.pdf": "Các_Thuật_Toán_Học_Máy",
-                        "[Data-Driven] Chapter 5_ Crop Recommender.pdf": "Từ_Đất_đai_đến_Silicon",
-                        "[Data-Driven] Chapter 14_ Short-Term Weather Forecasting.pdf": "Dự_Báo_Thời_Tiết_Nông_Nghiệp_Bằng_Học_Sâu",
-                        "[Hands-On] Chapter 1_ The Machine Learning Landscape.pdf": "Học_Máy_Tổng_Quan"
-                      };
-                      return knownVideos[tbName] ? `Videos/${knownVideos[tbName]}/index.html` : null;
-                    }
-                    return null;
+                  const getVideoForTextbook = (tbName) => {
+                    const knownVideos = {
+                      // Tuần 1
+                      "[AI-Agri] Chapter 1_ Artificial Intelligence.pdf": "Slide_Day_01_AIAgri_Chap01",
+                      "[Data-Driven] Chapter 7 Harvesting Intelligence.pdf": "Slide_Day_01_AIAgri_Chap07",
+                      "[AI-Agri] Chapter 12_ Precision Farming.pdf": "Slide_Day_01_AIAgri_Chap12",
+                      "[Ethics]_Đạo đức trong AI Nông nghiệp.pdf": "Slide_Day_01_AIAgri_Ethics",
+                      // Tuần 2
+                      "[AI-Agri] Chapter 3_ Machine Learning.pdf": "Học_Máy_Trong_Nông_Nghiệp_Hiện_Đại",
+                      "[AI-Agri] Chapter 9_ Machine Learning Algorithms.pdf": "Các_Thuật_Toán_Học_Máy",
+                      "[Data-Driven] Chapter 5_ Crop Recommender.pdf": "Từ_Đất_đai_đến_Silicon",
+                      "[Data-Driven] Chapter 14_ Short-Term Weather Forecasting.pdf": "Dự_Báo_Thời_Tiết_Nông_Nghiệp_Bằng_Học_Sâu",
+                      "[Hands-On] Chapter 1_ The Machine Learning Landscape.pdf": "Học_Máy_Tổng_Quan"
+                    };
+                    return knownVideos[tbName] ? `Videos/${knownVideos[tbName]}/index.html` : null;
                   };
+
+                  const currentTb = weekTextbooks.length > 1 ? (selectedTextbooks[weekKey] || weekTextbooks[0]) : weekTextbooks[0];
 
                   if (weekTextbooks.length > 0) {
                     return (
@@ -118,17 +123,17 @@ const Syllabus = () => {
                         {weekTextbooks.length === 1 ? (
                           <div style={{ display: 'flex', gap: '8px', width: '100%' }}>
                             <button 
-                              onClick={() => setSelectedPdf(`${import.meta.env.BASE_URL}textbooks/${weekTextbooks[0]}`)}
+                              onClick={() => setSelectedPdf(`${import.meta.env.BASE_URL}textbooks/${currentTb}`)}
                               className="btn btn-secondary" 
                               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', flex: 1, background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)', padding: '8px 4px', fontSize: '0.9rem' }}
-                              title={weekTextbooks[0]}
+                              title={currentTb}
                             >
                               <BookOpen size={16} />
                               Đọc Tài Liệu
                             </button>
                             <button 
                               onClick={() => {
-                                const slideName = getSlideForTextbook(weekTextbooks[0], weekKey);
+                                const slideName = getSlideForTextbook(currentTb);
                                 if (slideName) {
                                   setSelectedPdf(`${import.meta.env.BASE_URL}slides/${slideName}`);
                                 } else {
@@ -142,10 +147,10 @@ const Syllabus = () => {
                               <Eye size={16} />
                               Xem Slide
                             </button>
-                            {getVideoForTextbook(weekTextbooks[0], weekKey) && (
+                            {getVideoForTextbook(currentTb) && (
                               <button 
                                 onClick={() => {
-                                  const videoPath = getVideoForTextbook(weekTextbooks[0], weekKey);
+                                  const videoPath = getVideoForTextbook(currentTb);
                                   if (videoPath) {
                                     window.open(`${import.meta.env.BASE_URL}${videoPath}`, '_blank');
                                   }
@@ -163,6 +168,8 @@ const Syllabus = () => {
                           <div style={{ display: 'flex', gap: '8px', flexDirection: 'column' }}>
                             <select 
                               id={`select-tb-${weekKey}`}
+                              value={currentTb}
+                              onChange={(e) => setSelectedTextbooks(prev => ({...prev, [weekKey]: e.target.value}))}
                               style={{ width: '100%', padding: '8px', borderRadius: '6px', background: 'rgba(255, 255, 255, 0.9)', color: 'var(--text-primary)', border: '1px solid rgba(0,0,0,0.1)' }}
                             >
                               {weekTextbooks.map((tb, i) => (
@@ -172,10 +179,7 @@ const Syllabus = () => {
                             <div style={{ display: 'flex', gap: '8px', width: '100%' }}>
                               <button 
                                 onClick={() => {
-                                  const selectEl = document.getElementById(`select-tb-${weekKey}`);
-                                  if (selectEl) {
-                                    setSelectedPdf(`${import.meta.env.BASE_URL}textbooks/${selectEl.value}`);
-                                  }
+                                  setSelectedPdf(`${import.meta.env.BASE_URL}textbooks/${currentTb}`);
                                 }}
                                 className="btn btn-secondary" 
                                 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', flex: 1, background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)', padding: '8px 4px', fontSize: '0.9rem' }}
@@ -185,14 +189,11 @@ const Syllabus = () => {
                               </button>
                               <button 
                                 onClick={() => {
-                                  const selectEl = document.getElementById(`select-tb-${weekKey}`);
-                                  if (selectEl) {
-                                    const slideName = getSlideForTextbook(selectEl.value, weekKey);
-                                    if (slideName) {
-                                      setSelectedPdf(`${import.meta.env.BASE_URL}slides/${slideName}`);
-                                    } else {
-                                      alert("Chưa có slide tóm tắt cho tài liệu này.");
-                                    }
+                                  const slideName = getSlideForTextbook(currentTb);
+                                  if (slideName) {
+                                    setSelectedPdf(`${import.meta.env.BASE_URL}slides/${slideName}`);
+                                  } else {
+                                    alert("Chưa có slide tóm tắt cho tài liệu này.");
                                   }
                                 }}
                                 className="btn btn-secondary" 
@@ -201,17 +202,12 @@ const Syllabus = () => {
                                 <Eye size={16} />
                                 Xem Slide
                               </button>
-                              {weekKey === "2" && (
+                              {getVideoForTextbook(currentTb) && (
                                 <button 
                                   onClick={() => {
-                                    const selectEl = document.getElementById(`select-tb-${weekKey}`);
-                                    if (selectEl) {
-                                      const videoPath = getVideoForTextbook(selectEl.value, weekKey);
-                                      if (videoPath) {
-                                        window.open(`${import.meta.env.BASE_URL}${videoPath}`, '_blank');
-                                      } else {
-                                        alert("Chưa có video cho tài liệu này.");
-                                      }
+                                    const videoPath = getVideoForTextbook(currentTb);
+                                    if (videoPath) {
+                                      window.open(`${import.meta.env.BASE_URL}${videoPath}`, '_blank');
                                     }
                                   }}
                                   className="btn btn-secondary" 
