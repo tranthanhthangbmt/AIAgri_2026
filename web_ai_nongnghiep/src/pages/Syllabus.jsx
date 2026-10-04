@@ -97,6 +97,20 @@ const Syllabus = () => {
                     return null;
                   };
 
+                  const getVideoForTextbook = (tbName, wKey) => {
+                    if (wKey === "2") {
+                      const knownVideos = {
+                        "[AI-Agri] Chapter 3_ Machine Learning.pdf": "Học_Máy_Trong_Nông_Nghiệp_Hiện_Đại",
+                        "[AI-Agri] Chapter 9_ Machine Learning Algorithms.pdf": "Các_Thuật_Toán_Học_Máy",
+                        "[Data-Driven] Chapter 5_ Crop Recommender.pdf": "Từ_Đất_đai_đến_Silicon",
+                        "[Data-Driven] Chapter 14_ Short-Term Weather Forecasting.pdf": "Dự_Báo_Thời_Tiết_Nông_Nghiệp_Bằng_Học_Sâu",
+                        "[Hands-On] Chapter 1_ The Machine Learning Landscape.pdf": "Học_Máy_Tổng_Quan"
+                      };
+                      return knownVideos[tbName] ? `Videos/${knownVideos[tbName]}/index.html` : null;
+                    }
+                    return null;
+                  };
+
                   if (weekTextbooks.length > 0) {
                     return (
                       <div style={{ marginTop: '5px', marginBottom: '5px', background: 'rgba(0,0,0,0.02)', padding: '10px', borderRadius: '8px' }}>
@@ -106,7 +120,7 @@ const Syllabus = () => {
                             <button 
                               onClick={() => setSelectedPdf(`${import.meta.env.BASE_URL}textbooks/${weekTextbooks[0]}`)}
                               className="btn btn-secondary" 
-                              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', width: '50%', background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)', padding: '8px 4px', fontSize: '0.9rem' }}
+                              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', flex: 1, background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)', padding: '8px 4px', fontSize: '0.9rem' }}
                               title={weekTextbooks[0]}
                             >
                               <BookOpen size={16} />
@@ -122,12 +136,28 @@ const Syllabus = () => {
                                 }
                               }}
                               className="btn btn-secondary" 
-                              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', width: '50%', background: 'var(--primary-light)', border: 'none', color: 'white', padding: '8px 4px', fontSize: '0.9rem' }}
+                              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', flex: 1, background: 'var(--primary-light)', border: 'none', color: 'white', padding: '8px 4px', fontSize: '0.9rem' }}
                               title="Xem Slide Tóm Tắt"
                             >
                               <Eye size={16} />
                               Xem Slide
                             </button>
+                            {getVideoForTextbook(weekTextbooks[0], weekKey) && (
+                              <button 
+                                onClick={() => {
+                                  const videoPath = getVideoForTextbook(weekTextbooks[0], weekKey);
+                                  if (videoPath) {
+                                    window.open(`${import.meta.env.BASE_URL}${videoPath}`, '_blank');
+                                  }
+                                }}
+                                className="btn btn-secondary" 
+                                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', flex: 1, background: 'var(--primary-color)', border: 'none', color: 'white', padding: '8px 4px', fontSize: '0.9rem' }}
+                                title="Xem Video Bài Giảng"
+                              >
+                                <PlayCircle size={16} />
+                                Xem Video
+                              </button>
+                            )}
                           </div>
                         ) : (
                           <div style={{ display: 'flex', gap: '8px', flexDirection: 'column' }}>
@@ -148,7 +178,7 @@ const Syllabus = () => {
                                   }
                                 }}
                                 className="btn btn-secondary" 
-                                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', width: '50%', background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)', padding: '8px 4px', fontSize: '0.9rem' }}
+                                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', flex: 1, background: 'transparent', border: '1px solid var(--primary-light)', color: 'var(--primary-light)', padding: '8px 4px', fontSize: '0.9rem' }}
                               >
                                 <BookOpen size={16} />
                                 Đọc Tài Liệu
@@ -166,11 +196,31 @@ const Syllabus = () => {
                                   }
                                 }}
                                 className="btn btn-secondary" 
-                                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', width: '50%', background: 'var(--primary-light)', border: 'none', color: 'white', padding: '8px 4px', fontSize: '0.9rem' }}
+                                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', flex: 1, background: 'var(--primary-light)', border: 'none', color: 'white', padding: '8px 4px', fontSize: '0.9rem' }}
                               >
                                 <Eye size={16} />
                                 Xem Slide
                               </button>
+                              {weekKey === "2" && (
+                                <button 
+                                  onClick={() => {
+                                    const selectEl = document.getElementById(`select-tb-${weekKey}`);
+                                    if (selectEl) {
+                                      const videoPath = getVideoForTextbook(selectEl.value, weekKey);
+                                      if (videoPath) {
+                                        window.open(`${import.meta.env.BASE_URL}${videoPath}`, '_blank');
+                                      } else {
+                                        alert("Chưa có video cho tài liệu này.");
+                                      }
+                                    }
+                                  }}
+                                  className="btn btn-secondary" 
+                                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', cursor: 'pointer', flex: 1, background: 'var(--primary-color)', border: 'none', color: 'white', padding: '8px 4px', fontSize: '0.9rem' }}
+                                >
+                                  <PlayCircle size={16} />
+                                  Xem Video
+                                </button>
+                              )}
                             </div>
                           </div>
                         )}
