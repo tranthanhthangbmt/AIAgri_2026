@@ -82,7 +82,17 @@ const Syllabus = () => {
                       "[AI-Agri] Chapter 9_ Machine Learning Algorithms.pdf": "Các_Thuật_Toán_Học_Máy.pdf",
                       "[Data-Driven] Chapter 5_ Crop Recommender.pdf": "Từ_Đất_đai_đến_Silicon.pdf",
                       "[Data-Driven] Chapter 14_ Short-Term Weather Forecasting.pdf": "Dự_Báo_Thời_Tiết_Nông_Nghiệp_Bằng_Học_Sâu.pdf",
-                      "[Hands-On] Chapter 1_ The Machine Learning Landscape.pdf": "Học_Máy_Tổng_Quan.pdf"
+                      "[Hands-On] Chapter 1_ The Machine Learning Landscape.pdf": "Học_Máy_Tổng_Quan.pdf",
+                      // Tuần 3
+                      "[AI-Agri] Chapter 10_ Disease Classification and Detection in Plants.pdf": "[AI-Agri] slide Chapter 10_ Disease Classification and Detection in Plants.pdf",
+                      "[AI-Agri] Chapter 4_ Deep Learning.pdf": "[AI-Agri] slide Chapter 4_ Deep Learning.pdf",
+                      "[Data-Driven] Chapter 8_ Using Deep Learning to Detect Apple Leaf Disease.pdf": "[Data-Driven] slide Chapter 8_ Using Deep Learning to Detect Apple Leaf Disease.pdf",
+                      "[Hands-On] Chapter 10_ Introduction to Artificial Neural Networks.pdf": "[Hands-On] slide Chapter 10_ Introduction to Artificial Neural Networks.pdf",
+                      // Tuần 4
+                      "[AI-Agri] Chapter 11_ Species Recognition in Flowers.pdf": "[AI-Agri] slide Chapter 11_ Species Recognition in Flowers.pdf",
+                      "[AI-Agri] Chapter 5_ Computer Vision.pdf": "[AI-Agri] slide Chapter 5_ Computer Vision.pdf",
+                      "[Data-Driven] Chapter 2_ Significance of Machine Learning in Apple Disease Detection.pdf": "[Data-Driven] slide Chapter 2_ Significance of Machine Learning in Apple Disease Detection.pdf",
+                      "[Hands-On] Chapter 14_ Deep Computer Vision Using CNNs.pdf": "[Hands-On] slide Chapter 14_ Deep Computer Vision Using CNNs.pdf"
                     };
                     if (knownSlides[tbName]) return knownSlides[tbName];
                     
@@ -109,9 +119,19 @@ const Syllabus = () => {
                       "[AI-Agri] Chapter 9_ Machine Learning Algorithms.pdf": "Các_Thuật_Toán_Học_Máy",
                       "[Data-Driven] Chapter 5_ Crop Recommender.pdf": "Từ_Đất_đai_đến_Silicon",
                       "[Data-Driven] Chapter 14_ Short-Term Weather Forecasting.pdf": "Dự_Báo_Thời_Tiết_Nông_Nghiệp_Bằng_Học_Sâu",
-                      "[Hands-On] Chapter 1_ The Machine Learning Landscape.pdf": "Học_Máy_Tổng_Quan"
+                      "[Hands-On] Chapter 1_ The Machine Learning Landscape.pdf": "Học_Máy_Tổng_Quan",
+                      // Tuần 3
+                      "[AI-Agri] Chapter 10_ Disease Classification and Detection in Plants.pdf": "[AI-Agri] Chapter 10_ Disease Classification and Detection in Plants",
+                      "[AI-Agri] Chapter 4_ Deep Learning.pdf": "[AI-Agri] Chapter 4_ Deep Learning",
+                      "[Data-Driven] Chapter 8_ Using Deep Learning to Detect Apple Leaf Disease.pdf": "[Data-Driven] Chapter 8_ Using Deep Learning to Detect Apple Leaf Disease",
+                      "[Hands-On] Chapter 10_ Introduction to Artificial Neural Networks.pdf": "[Hands-On] Chapter 10_ Introduction to Artificial Neural Networks",
+                      // Tuần 4
+                      "[AI-Agri] Chapter 11_ Species Recognition in Flowers.pdf": "[AI-Agri] Chapter 11_ Species Recognition in Flowers",
+                      "[AI-Agri] Chapter 5_ Computer Vision.pdf": "[AI-Agri] Chapter 5_ Computer Vision",
+                      "[Data-Driven] Chapter 2_ Significance of Machine Learning in Apple Disease Detection.pdf": "[Data-Driven] Chapter 2_ Significance of Machine Learning in Apple Disease Detection",
+                      "[Hands-On] Chapter 14_ Deep Computer Vision Using CNNs.pdf": "[Hands-On] Chapter 14_ Deep Computer Vision Using CNNs"
                     };
-                    return knownVideos[tbName] ? `Videos/${knownVideos[tbName]}/index.html` : null;
+                    return knownVideos[tbName] ? `Videos/${encodeURI(knownVideos[tbName])}/index.html` : null;
                   };
 
                   const currentTb = weekTextbooks.length > 1 ? (selectedTextbooks[weekKey] || weekTextbooks[0]) : weekTextbooks[0];
