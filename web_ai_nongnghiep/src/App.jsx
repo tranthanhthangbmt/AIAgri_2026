@@ -7,6 +7,7 @@ import Syllabus from './pages/Syllabus';
 import Resources from './pages/Resources';
 import Quizzes from './pages/Quizzes';
 import Exercises from './pages/Exercises';
+import Exam from './pages/Exam';
 import './index.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/syllabus" element={<Syllabus />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/quizzes" element={<Quizzes />} />
+            <Route path="/exam" element={<Exam />} />
             <Route path="/exercises" element={<Exercises />} />
           </Routes>
         </main>

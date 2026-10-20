@@ -1,6 +1,11 @@
 {
   "1": [
     {
+      "id": 1,
+      "local_id": 1,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Theo định nghĩa chung trong tài liệu, mục tiêu chính của Trí tuệ nhân tạo (AI) là gì?",
       "options": [
         {
@@ -24,6 +29,11 @@
       "explanation": "Tài liệu định nghĩa AI là “Làm cho một cỗ máy trở nên thông minh, có thể bắt chước hành vi của con người” và là “nhánh Khoa học Máy tính có thể thực hiện các hoạt động giống con người, bao gồm suy nghĩ, học hỏi”."
     },
     {
+      "id": 2,
+      "local_id": 2,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trí tuệ nhân tạo hẹp (ANI) còn được gọi là gì?",
       "options": [
         {
@@ -47,6 +57,11 @@
       "explanation": "Trí tuệ nhân tạo hẹp (ANI) còn được gọi là AI yếu (Weak AI), chỉ có thể thực hiện các nhiệm vụ được xác định hẹp và không có khả năng nhận thức."
     },
     {
+      "id": 3,
+      "local_id": 3,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Đâu là ví dụ của Trí tuệ nhân tạo hẹp (ANI) hiện nay?",
       "options": [
         {
@@ -70,6 +85,11 @@
       "explanation": "Tài liệu liệt kê Siri, Alexa, xe tự lái, Alpha Go, và robot hình người Sophia là những ví dụ của ANI mà chúng ta đã phát triển cho đến nay."
     },
     {
+      "id": 4,
+      "local_id": 4,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Đặc điểm chính của “Trí tuệ nhân tạo phản ứng” (Reactive Machine AI) là gì?",
       "options": [
         {
@@ -93,6 +113,11 @@
       "explanation": "Loại hệ thống AI này nhận đầu vào là dữ liệu hiện tại và thực hiện nhiệm vụ dựa trên các tình huống hiện tại. Hệ thống này không thể phân tích và dự đoán nhiệm vụ tương lai ,."
     },
     {
+      "id": 5,
+      "local_id": 5,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Loại AI nào chủ yếu dựa trên dữ liệu đã lưu trữ và thực hiện nhiệm vụ bằng cách nghiên cứu các nhiệm vụ đã thực hiện trước đó?",
       "options": [
         {
@@ -116,6 +141,11 @@
       "explanation": "AI có bộ nhớ hạn chế (Limited Memory AI) dựa trên dữ liệu chúng đã lưu trữ và thường thực hiện nhiệm vụ bằng cách nghiên cứu các nhiệm vụ đã thực hiện trước đó."
     },
     {
+      "id": 6,
+      "local_id": 6,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trí tuệ nhân tạo chung (AGI) hay “AI mạnh” được định nghĩa như thế nào?",
       "options": [
         {
@@ -139,6 +169,11 @@
       "explanation": "AGI là giai đoạn thứ hai của quá trình tiến hóa AI, sở hữu khả năng suy nghĩ và đưa ra quyết định giống như con người."
     },
     {
+      "id": 7,
+      "local_id": 7,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Giai đoạn nào của AI được xem là một tình huống giả định mà khả năng của hệ thống sẽ vượt qua mọi giới hạn và lấn át con người?",
       "options": [
         {
@@ -162,6 +197,11 @@
       "explanation": "Siêu trí tuệ nhân tạo (ASI) là giai đoạn mà khả năng của hệ thống AI sẽ vượt qua mọi giới hạn và có thể lấn át con người."
     },
     {
+      "id": 8,
+      "local_id": 8,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Đâu KHÔNG phải là một nhánh công nghệ chính của Trí tuệ nhân tạo được liệt kê trong tài liệu?",
       "options": [
         {
@@ -185,6 +225,11 @@
       "explanation": "Tài liệu liệt kê các nhánh của AI bao gồm: Học máy, Học sâu, Thị giác máy tính, Khoa học dữ liệu và Dữ liệu lớn. Công nghệ in 3D không được đề cập là một nhánh của AI trong ngữ cảnh này , ,."
     },
     {
+      "id": 9,
+      "local_id": 9,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "“AI Lý thuyết về Tâm trí” (Theory of Mind AI) đóng vai trò chính trong lĩnh vực nào và liên quan đến yếu tố gì?",
       "options": [
         {
@@ -208,6 +253,11 @@
       "explanation": "AI Lý thuyết về Tâm trí là những hệ thống tiên tiến hơn, đóng vai trò chính trong lĩnh vực tâm lý học và thực hiện các nhiệm vụ liên quan đến Trí tuệ cảm xúc ,."
     },
     {
+      "id": 10,
+      "local_id": 10,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Theo tài liệu, tại sao việc sử dụng AI trong nông nghiệp lại quan trọng trong bối cảnh hiện nay?",
       "options": [
         {
@@ -231,6 +281,11 @@
       "explanation": "Dân số luôn gia tăng dẫn đến tăng tiêu thụ lương thực và giảm 20% sản lượng sản xuất. AI giúp tự động hóa và tăng sản lượng để giải quyết vấn đề này."
     },
     {
+      "id": 11,
+      "local_id": 11,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Ngành nông nghiệp đóng góp khoảng bao nhiêu phần trăm vào doanh thu hàng năm cho nền kinh tế (theo bối cảnh trong tài liệu)?",
       "options": [
         {
@@ -254,6 +309,11 @@
       "explanation": "Về doanh thu hàng năm, ngành nông nghiệp đóng góp gần 17% cho nền kinh tế."
     },
     {
+      "id": 12,
+      "local_id": 12,
+      "section": "PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Giai đoạn cuối cùng của Trí tuệ nhân tạo, nơi hệ thống có ý thức và tự nhận thức được mọi thứ, được gọi là gì?",
       "options": [
         {
@@ -274,9 +334,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "AI Tự nhận thức là hệ thống tiên tiến nhất cho đến nay và thuộc giai đoạn cuối cùng của Trí tuệ nhân tạo, nơi hệ thống AI có ý thức và tự nhận thức được mọi thứ.\nPHẦN 2: NÔNG NGHIỆP CHÍNH XÁC - NỀN TẢNG CỦA NÔNG NGHIỆP 4.0"
+      "explanation": "AI Tự nhận thức là hệ thống tiên tiến nhất cho đến nay và thuộc giai đoạn cuối cùng của Trí tuệ nhân tạo, nơi hệ thống AI có ý thức và tự nhận thức được mọi thứ."
     },
     {
+      "id": 13,
+      "local_id": 13,
+      "section": "PHẦN 2: NÔNG NGHIỆP CHÍNH XÁC - NỀN TẢNG CỦA NÔNG NGHIỆP 4.0",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Định nghĩa cốt lõi của “Nông nghiệp chính xác” (Precision Farming) được mô tả trong tài liệu là gì?",
       "options": [
         {
@@ -300,6 +365,11 @@
       "explanation": "Tài liệu định nghĩa “Nông nghiệp chính xác (Precision agriculture hay precision farming) có nghĩa là làm đúng việc, đúng cách, đúng nơi và đúng thời điểm”."
     },
     {
+      "id": 14,
+      "local_id": 14,
+      "section": "PHẦN 2: NÔNG NGHIỆP CHÍNH XÁC - NỀN TẢNG CỦA NÔNG NGHIỆP 4.0",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Mục tiêu trọng tâm của Hệ thống Nông nghiệp Chính xác (PFS) là quản lý yếu tố nào trên cánh đồng?",
       "options": [
         {
@@ -323,6 +393,11 @@
       "explanation": "PFS tập trung vào việc nhận diện “sự biến đổi theo không gian và thời gian” trong quá trình phát triển của cây trồng để tăng năng suất và giảm rủi ro môi trường."
     },
     {
+      "id": 15,
+      "local_id": 15,
+      "section": "PHẦN 2: NÔNG NGHIỆP CHÍNH XÁC - NỀN TẢNG CỦA NÔNG NGHIỆP 4.0",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Thuật ngữ SSCM trong bối cảnh nông nghiệp chính xác là viết tắt của khái niệm nào?",
       "options": [
         {
@@ -346,6 +421,11 @@
       "explanation": "Chương trình nông nghiệp chính xác trong một cánh đồng thường được gọi là “quản lý canh tác theo địa điểm cụ thể (SSCM)”."
     },
     {
+      "id": 16,
+      "local_id": 16,
+      "section": "PHẦN 2: NÔNG NGHIỆP CHÍNH XÁC - NỀN TẢNG CỦA NÔNG NGHIỆP 4.0",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Theo Segarra (2002), đâu KHÔNG phải là một trong những lợi ích chính của nông nghiệp chính xác?",
       "options": [
         {
@@ -369,6 +449,11 @@
       "explanation": "Tài liệu liệt kê các lợi ích gồm: Tăng tổng sản lượng, Cải thiện hiệu quả, Giảm chi phí sản xuất, Hỗ trợ ra quyết định, Giảm tác động đến khí hậu, và Tích lũy kiến thức . Không có ý nào nói về việc loại bỏ nước tưới."
     },
     {
+      "id": 17,
+      "local_id": 17,
+      "section": "PHẦN 2: NÔNG NGHIỆP CHÍNH XÁC - NỀN TẢNG CỦA NÔNG NGHIỆP 4.0",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Bước đầu tiên và quan trọng nhất trong quy trình nông nghiệp chính xác là gì?",
       "options": [
         {
@@ -392,6 +477,11 @@
       "explanation": "Bước quan trọng đầu tiên là “đánh giá sự biến đổi”, vì tài liệu nhấn mạnh rằng “bạn không thể quản lý những gì bạn không biết” ."
     },
     {
+      "id": 18,
+      "local_id": 18,
+      "section": "PHẦN 2: NÔNG NGHIỆP CHÍNH XÁC - NỀN TẢNG CỦA NÔNG NGHIỆP 4.0",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong bước “Quản lý sự biến đổi”, nông dân cần thực hiện hành động gì?",
       "options": [
         {
@@ -415,29 +505,39 @@
       "explanation": "Nông dân phải điều chỉnh các yếu tố đầu vào nông nghiệp cho phù hợp với các điều kiện đã được thiết lập, theo đặc thù của từng địa điểm."
     },
     {
+      "id": 19,
+      "local_id": 19,
+      "section": "PHẦN 2: NÔNG NGHIỆP CHÍNH XÁC - NỀN TẢNG CỦA NÔNG NGHIỆP 4.0",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Quy trình triển khai Trí tuệ nhân tạo (AI) trong nông nghiệp chính xác gồm 3 bước chính theo thứ tự nào?",
       "options": [
         {
           "id": "A",
-          "text": "Phân tích dữ liệu  Thu thập dữ liệu  Hành động cuối cùng."
+          "text": "Phân tích dữ liệu Thu thập dữ liệu Hành động cuối cùng."
         },
         {
           "id": "B",
-          "text": "Thu thập dữ liệu  Hành động cuối cùng  Báo cáo."
+          "text": "Thu thập dữ liệu Hành động cuối cùng Báo cáo."
         },
         {
           "id": "C",
-          "text": "Thu thập dữ liệu  Phân tích dữ liệu  Hành động cuối cùng."
+          "text": "Thu thập dữ liệu Phân tích dữ liệu Hành động cuối cùng."
         },
         {
           "id": "D",
-          "text": "Mua thiết bị  Lắp đặt  Vận hành."
+          "text": "Mua thiết bị Lắp đặt Vận hành."
         }
       ],
       "answer": "C",
-      "explanation": "Tài liệu mô tả quy trình 3 bước: 1. Thu thập dữ liệu (Acquiring)  2. Phân tích dữ liệu (Analysis)  3. Hành động cuối cùng (Final Action) ."
+      "explanation": "Tài liệu mô tả quy trình 3 bước: 1. Thu thập dữ liệu (Acquiring) 2. Phân tích dữ liệu (Analysis) 3. Hành động cuối cùng (Final Action) ."
     },
     {
+      "id": 20,
+      "local_id": 20,
+      "section": "PHẦN 2: NÔNG NGHIỆP CHÍNH XÁC - NỀN TẢNG CỦA NÔNG NGHIỆP 4.0",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Công nghệ nào sau đây giúp xác định thời điểm tưới cây tốt nhất từ xa thông qua việc đo độ ẩm đất?",
       "options": [
         {
@@ -461,6 +561,11 @@
       "explanation": "Tài liệu nêu rõ: “Cảm biến độ ẩm của đất (IoT) giúp xác định thời điểm tốt nhất để tưới cây từ xa”."
     },
     {
+      "id": 21,
+      "local_id": 21,
+      "section": "PHẦN 2: NÔNG NGHIỆP CHÍNH XÁC - NỀN TẢNG CỦA NÔNG NGHIỆP 4.0",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Việc sử dụng phương pháp quang phổ và quét cánh đồng để bón phân chính xác (chỉ bón vào điểm cần thiết) có thể giúp giảm lượng phân bón sử dụng lên đến bao nhiêu phần trăm?",
       "options": [
         {
@@ -484,6 +589,11 @@
       "explanation": "Việc chỉ bón phân vào những điểm cần thiết sau khi quét cánh đồng giúp “giảm việc sử dụng phân bón lên đến 30%”."
     },
     {
+      "id": 22,
+      "local_id": 22,
+      "section": "PHẦN 2: NÔNG NGHIỆP CHÍNH XÁC - NỀN TẢNG CỦA NÔNG NGHIỆP 4.0",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Đâu là một trong những thách thức lớn nhất về mặt “Kết nối” (Connectivity) đối với việc triển khai nông nghiệp chính xác hiện đại?",
       "options": [
         {
@@ -504,9 +614,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Trong các ứng dụng hiện tại, việc giới thiệu mạng 5G là bắt buộc để truyền dữ liệu an toàn và nhanh chóng, hỗ trợ xử lý thời gian thực.\nPHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)"
+      "explanation": "Trong các ứng dụng hiện tại, việc giới thiệu mạng 5G là bắt buộc để truyền dữ liệu an toàn và nhanh chóng, hỗ trợ xử lý thời gian thực."
     },
     {
+      "id": 23,
+      "local_id": 23,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong quy trình dự đoán năng suất cây trồng bằng Học máy (ML), bước “Kỹ thuật đặc trưng” (Feature Engineering) liên quan đến hoạt động nào?",
       "options": [
         {
@@ -530,6 +645,11 @@
       "explanation": "Kỹ thuật đặc trưng bao gồm việc chọn và thiết kế các đặc trưng liên quan từ dữ liệu đã thu thập có thể ảnh hưởng đến năng suất cây trồng."
     },
     {
+      "id": 24,
+      "local_id": 24,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Công nghệ nào được coi là “yếu tố thay đổi cuộc chơi” cho phép phát hiện sớm bệnh trên cây trồng bằng cách phân tích hình ảnh lá cây?",
       "options": [
         {
@@ -553,6 +673,11 @@
       "explanation": "Tận dụng thị giác máy tính và phân tích hình ảnh để phát hiện bệnh trên cây trồng đã trở thành một yếu tố thay đổi cuộc chơi, cho phép xác định bệnh nhanh chóng và chính xác ."
     },
     {
+      "id": 25,
+      "local_id": 25,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Robot nông nghiệp (Agricultural Bots) sử dụng AI tiên tiến có khả năng thực hiện tác vụ phức tạp nào sau đây mà máy móc truyền thống khó làm được?",
       "options": [
         {
@@ -576,6 +701,11 @@
       "explanation": "Các robot thu hoạch tiên tiến sử dụng AI để phát hiện trái cây chín, điều chỉnh theo hình dạng và kích thước của chúng và hái cẩn thận khỏi cành."
     },
     {
+      "id": 26,
+      "local_id": 26,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Hệ thống giám sát vật nuôi tự động sử dụng thiết bị đeo (wearables) và cảm biến để theo dõi các chỉ số sinh tồn nào?",
       "options": [
         {
@@ -599,6 +729,11 @@
       "explanation": "Các cảm biến này có thể theo dõi các dấu hiệu sinh tồn như nhiệt độ cơ thể, nhịp tim, nhịp thở và mức độ hoạt động của động vật."
     },
     {
+      "id": 27,
+      "local_id": 27,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Mục tiêu chính của việc áp dụng Học máy (ML) trong “Tối ưu hóa thức ăn chăn nuôi” là gì?",
       "options": [
         {
@@ -622,6 +757,11 @@
       "explanation": "Mục tiêu là xác định hàm mục tiêu, thường là tối đa hóa năng suất động vật trong khi giảm thiểu chi phí thức ăn."
     },
     {
+      "id": 28,
+      "local_id": 28,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong ứng dụng “Chọn lọc giống” (Species Breeding), các thuật toán Học sâu (Deep Learning) cần dữ liệu gì để dự đoán gen tốt nhất?",
       "options": [
         {
@@ -645,6 +785,11 @@
       "explanation": "Các thuật toán học sâu đòi hỏi hàng thập kỷ dữ liệu thực địa để phân tích và dự đoán gen nào đóng góp nhiều nhất vào lợi ích của cây trồng ."
     },
     {
+      "id": 29,
+      "local_id": 29,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Học tăng cường sâu (Deep Reinforcement Learning) được ứng dụng như thế nào trong hệ thống tưới tiêu thông minh?",
       "options": [
         {
@@ -668,6 +813,11 @@
       "explanation": "[Hình 7.5] mô tả Học tăng cường trong lịch trình tưới tiêu bao gồm các yếu tố như “thăm dò vs khai thác”, “ra quyết định động” và “học tập liên tục” để cân bằng các đánh đổi ."
     },
     {
+      "id": 30,
+      "local_id": 30,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Công nghệ nào giúp nông dân tiêu diệt cỏ dại một cách chính xác bằng một liều thuốc diệt cỏ hoặc laser, giảm thiểu tác động môi trường?",
       "options": [
         {
@@ -691,6 +841,11 @@
       "explanation": "Các máy chạy bằng năng lượng mặt trời có thể xác định cỏ dại và tiêu diệt chúng một cách chính xác bằng một liều thuốc diệt cỏ hoặc laser."
     },
     {
+      "id": 31,
+      "local_id": 31,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "AI hỗ trợ “Thu hoạch trong nhà” (Indoor Harvest) như thủy canh hoặc aquaponics như thế nào?",
       "options": [
         {
@@ -714,6 +869,11 @@
       "explanation": "AI giúp thu hoạch trong nhà trở nên đơn giản hơn vì nó có thể phân tích mọi thứ trong một môi trường khép kín và tự động hóa quá trình thu hoạch."
     },
     {
+      "id": 32,
+      "local_id": 32,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Vai trò của “Hệ thống chuyên gia nông nghiệp” (Agriculture Expert Systems) là gì?",
       "options": [
         {
@@ -737,6 +897,11 @@
       "explanation": "Hệ thống chuyên gia là hệ thống lưu trữ kiến thức cấp chuyên gia, được thu thập từ các chuyên gia khác nhau để cung cấp hướng dẫn phù hợp ."
     },
     {
+      "id": 33,
+      "local_id": 33,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Một trong những lợi ích của việc sử dụng AI kết hợp với Máy bay không người lái (Drones) là gì?",
       "options": [
         {
@@ -760,6 +925,11 @@
       "explanation": "Công nghệ máy bay không người lái giúp nông dân cải thiện năng suất cây trồng, giảm chi phí và cung cấp thông tin thời gian thực về nhu cầu của cây trồng."
     },
     {
+      "id": 34,
+      "local_id": 34,
+      "section": "PHẦN 3: ỨNG DỤNG VÀ VAI TRÒ CỦA AI TRONG NÔNG NGHIỆP (12 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "AI giúp “Quản lý đất đai” (Soil Management) hiệu quả hơn thông qua cơ chế nào?",
       "options": [
         {
@@ -780,9 +950,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Các thuật toán học máy nghiên cứu quá trình bốc hơi, độ ẩm và nhiệt độ của đất để hiểu động thái của hệ sinh thái.\nPHẦN 4: THÁCH THỨC VÀ ĐẠO ĐỨC TRONG AI NÔNG NGHIỆP (6 câu)"
+      "explanation": "Các thuật toán học máy nghiên cứu quá trình bốc hơi, độ ẩm và nhiệt độ của đất để hiểu động thái của hệ sinh thái."
     },
     {
+      "id": 35,
+      "local_id": 35,
+      "section": "PHẦN 4: THÁCH THỨC VÀ ĐẠO ĐỨC TRONG AI NÔNG NGHIỆP (6 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Một trong những thách thức kỹ thuật lớn nhất về “Phần cứng” (Hardware) khi triển khai Nông nghiệp chính xác là gì?",
       "options": [
         {
@@ -806,6 +981,11 @@
       "explanation": "Các cảm biến và thiết bị này có nhiều nhược điểm, bao gồm chi phí phát triển, bảo trì và vận hành cao."
     },
     {
+      "id": 36,
+      "local_id": 36,
+      "section": "PHẦN 4: THÁCH THỨC VÀ ĐẠO ĐỨC TRONG AI NÔNG NGHIỆP (6 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Tại sao “Thay đổi thời tiết” lại là một thách thức đối với độ chính xác của dữ liệu trong hệ thống AI nông nghiệp?",
       "options": [
         {
@@ -829,6 +1009,11 @@
       "explanation": "Sự nhiễu loạn do các xáo trộn khí quyển trong các kênh không dây sẽ làm gián đoạn liên lạc; ô nhiễm và mây cũng ảnh hưởng đến hình ảnh vệ tinh ."
     },
     {
+      "id": 37,
+      "local_id": 37,
+      "section": "PHẦN 4: THÁCH THỨC VÀ ĐẠO ĐỨC TRONG AI NÔNG NGHIỆP (6 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Vấn đề đạo đức về “Quyền sở hữu dữ liệu” (Data Ownership) nảy sinh từ mâu thuẫn nào?",
       "options": [
         {
@@ -852,6 +1037,11 @@
       "explanation": "Có một sự căng thẳng giữa việc đảm bảo tài sản trí tuệ của doanh nghiệp nông nghiệp và việc bảo vệ quyền sở hữu dữ liệu của người nông dân."
     },
     {
+      "id": 38,
+      "local_id": 38,
+      "section": "PHẦN 4: THÁCH THỨC VÀ ĐẠO ĐỨC TRONG AI NÔNG NGHIỆP (6 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "“Sự phân chia kỹ thuật số” (Digital Divide) trong nông nghiệp thông minh đề cập đến nguy cơ gì?",
       "options": [
         {
@@ -875,6 +1065,11 @@
       "explanation": "Việc sử dụng các công nghệ SIS tương đối tốn kém có thể ngăn cản những nông dân nghèo hơn áp dụng chúng, dẫn đến sự phân chia kỹ thuật số ."
     },
     {
+      "id": 39,
+      "local_id": 39,
+      "section": "PHẦN 4: THÁCH THỨC VÀ ĐẠO ĐỨC TRONG AI NÔNG NGHIỆP (6 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Về vấn đề “Việc làm” (Employment), các công ty cung cấp giải pháp AI thường lập luận như thế nào để trấn an công chúng?",
       "options": [
         {
@@ -898,6 +1093,11 @@
       "explanation": "Nhóm dự án tuyên bố rằng SIS của họ được thiết kế để bổ sung cho chuyên gia con người, chứ không phải thay thế họ."
     },
     {
+      "id": 40,
+      "local_id": 40,
+      "section": "PHẦN 4: THÁCH THỨC VÀ ĐẠO ĐỨC TRONG AI NÔNG NGHIỆP (6 câu)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Tại sao “Quyền riêng tư” (Privacy) vẫn là mối lo ngại dù dữ liệu nông nghiệp có vẻ không nhạy cảm như dữ liệu y tế?",
       "options": [
         {
@@ -923,6 +1123,11 @@
   ],
   "2": [
     {
+      "id": 41,
+      "local_id": 1,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Định nghĩa kinh điển về Học máy (Machine Learning) của Arthur Samuel (1959) là gì?",
       "options": [
         {
@@ -946,6 +1151,11 @@
       "explanation": "Arthur Samuel định nghĩa ML là “lĩnh vực nghiên cứu cung cấp cho máy tính khả năng học hỏi mà không cần được lập trình rõ ràng”."
     },
     {
+      "id": 42,
+      "local_id": 2,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Sự khác biệt cơ bản nhất giữa “Lập trình truyền thống” và “Học máy” là gì?",
       "options": [
         {
@@ -954,7 +1164,7 @@
         },
         {
           "id": "B",
-          "text": "Lập trình truyền thống: Con người nhập quy tắc  Máy ra đáp án. Học máy: Con người nhập dữ liệu + đáp án  Máy tự tìm ra quy tắc."
+          "text": "Lập trình truyền thống: Con người nhập quy tắc Máy ra đáp án. Học máy: Con người nhập dữ liệu + đáp án Máy tự tìm ra quy tắc."
         },
         {
           "id": "C",
@@ -969,6 +1179,11 @@
       "explanation": "Trong lập trình truyền thống, người lập trình viết ra các quy tắc tường minh. Trong học máy, hệ thống tự động học các quy tắc hoặc mẫu từ dữ liệu."
     },
     {
+      "id": 43,
+      "local_id": 3,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong “Học có giám sát” (Supervised Learning), dữ liệu huấn luyện có đặc điểm gì quan trọng nhất?",
       "options": [
         {
@@ -992,6 +1207,11 @@
       "explanation": "Trong học có giám sát, dữ liệu huấn luyện được cung cấp cho thuật toán bao gồm các giải pháp mong muốn, được gọi là nhãn (labels)."
     },
     {
+      "id": 44,
+      "local_id": 4,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Bài toán dự đoán “Giá nhà” hoặc “Nhiệt độ ngày mai” (giá trị liên tục) thuộc loại nào trong Học có giám sát?",
       "options": [
         {
@@ -1015,6 +1235,11 @@
       "explanation": "Hồi quy (Regression) là bài toán dự đoán một giá trị đầu ra liên tục, ví dụ như dự đoán giá nhà, nhiệt độ, năng suất cây trồng."
     },
     {
+      "id": 45,
+      "local_id": 5,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Bài toán lọc thư rác (Spam/Non-spam) là ví dụ điển hình của loại vấn đề nào?",
       "options": [
         {
@@ -1038,6 +1263,11 @@
       "explanation": "Phân loại (Classification) là dự đoán một đầu ra thuộc một danh mục rời rạc, ví dụ “thư rác” hoặc “không phải thư rác”."
     },
     {
+      "id": 46,
+      "local_id": 6,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Đặc điểm chính của “Học không giám sát” (Unsupervised Learning) là gì?",
       "options": [
         {
@@ -1061,6 +1291,11 @@
       "explanation": "Trong học không giám sát, dữ liệu huấn luyện không có nhãn. Hệ thống phải cố gắng học và tìm ra các cấu trúc hoặc mẫu tiềm ẩn trong dữ liệu ."
     },
     {
+      "id": 47,
+      "local_id": 7,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Thuật toán nào sau đây thuộc nhóm “Học không giám sát”?",
       "options": [
         {
@@ -1084,6 +1319,11 @@
       "explanation": "K-Means là thuật toán phổ biến dùng cho bài toán Phân cụm (Clustering) trong học không giám sát."
     },
     {
+      "id": 48,
+      "local_id": 8,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "“Học tăng cường” (Reinforcement Learning) hoạt động dựa trên cơ chế nào?",
       "options": [
         {
@@ -1107,6 +1347,11 @@
       "explanation": "Tác nhân (agent) học bằng cách tương tác với môi trường, thực hiện hành động và nhận lại phần thưởng hoặc hình phạt, thông qua quá trình thử và sai ."
     },
     {
+      "id": 49,
+      "local_id": 9,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Sự khác biệt giữa “Học theo lô” (Batch Learning) và “Học trực tuyến” (Online Learning) là gì?",
       "options": [
         {
@@ -1130,6 +1375,11 @@
       "explanation": "Học theo lô sử dụng tất cả dữ liệu có sẵn cùng lúc (ngoại tuyến). Học trực tuyến huấn luyện tăng dần bằng cách cung cấp dữ liệu theo từng phần nhỏ (mini-batches) ."
     },
     {
+      "id": 50,
+      "local_id": 10,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Hiện tượng “Quá khớp” (Overfitting) xảy ra khi nào?",
       "options": [
         {
@@ -1153,6 +1403,11 @@
       "explanation": "Overfitting xảy ra khi mô hình hoạt động tốt trên dữ liệu huấn luyện nhưng không tổng quát hóa tốt cho dữ liệu mới, thường do mô hình quá phức tạp so với lượng dữ liệu."
     },
     {
+      "id": 51,
+      "local_id": 11,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Hiện tượng “Chưa khớp” (Underfitting) là gì?",
       "options": [
         {
@@ -1176,6 +1431,11 @@
       "explanation": "Underfitting xảy ra khi mô hình quá đơn giản để nắm bắt cấu trúc cơ bản của dữ liệu. Nó hoạt động kém trên cả dữ liệu huấn luyện và dữ liệu mới."
     },
     {
+      "id": 52,
+      "local_id": 12,
+      "section": "PHẦN 1: TỔNG QUAN VÀ PHÂN LOẠI HỌC MÁY",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Đâu là một thách thức về chất lượng dữ liệu thường gặp trong dự án ML (“Dữ liệu kém”)?",
       "options": [
         {
@@ -1196,9 +1456,14 @@
         }
       ],
       "answer": "A",
-      "explanation": "Dữ liệu chất lượng kém (chứa lỗi, giá trị ngoại lai hoặc nhiễu) sẽ làm cho việc phát hiện các mẫu cơ bản trở nên khó khăn, dẫn đến hiệu suất hệ thống kém.\nPHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN"
+      "explanation": "Dữ liệu chất lượng kém (chứa lỗi, giá trị ngoại lai hoặc nhiễu) sẽ làm cho việc phát hiện các mẫu cơ bản trở nên khó khăn, dẫn đến hiệu suất hệ thống kém."
     },
     {
+      "id": 53,
+      "local_id": 13,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Thuật toán “Hồi quy tuyến tính” (Linear Regression) thường được sử dụng cho mục đích gì?",
       "options": [
         {
@@ -1222,6 +1487,11 @@
       "explanation": "Hồi quy tuyến tính mô hình hóa mối quan hệ tuyến tính giữa một biến phụ thuộc và một hoặc nhiều biến độc lập, tìm đường thẳng phù hợp nhất với dữ liệu ."
     },
     {
+      "id": 54,
+      "local_id": 14,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Thuật toán “Hồi quy Logistic” (Logistic Regression) khác Hồi quy tuyến tính ở điểm nào cơ bản nhất?",
       "options": [
         {
@@ -1245,6 +1515,11 @@
       "explanation": "Hồi quy Logistic ước tính xác suất một đầu vào thuộc về một lớp cụ thể (Phân loại), sử dụng hàm sigmoid để đưa đầu ra về khoảng [0, 1] ."
     },
     {
+      "id": 55,
+      "local_id": 15,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Cấu trúc của thuật toán “Cây quyết định” (Decision Tree) bao gồm các thành phần nào?",
       "options": [
         {
@@ -1268,6 +1543,11 @@
       "explanation": "Mỗi nút bên trong đại diện cho một “bài kiểm tra” trên một thuộc tính, mỗi nhánh là kết quả của bài kiểm tra và mỗi nút lá là một nhãn lớp ."
     },
     {
+      "id": 56,
+      "local_id": 16,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Tại sao thuật toán “Rừng ngẫu nhiên” (Random Forest) thường được ưa chuộng hơn một “Cây quyết định” đơn lẻ?",
       "options": [
         {
@@ -1291,6 +1571,11 @@
       "explanation": "Random Forest là phương pháp học ensemble, xây dựng nhiều cây quyết định; nó ít bị quá khớp hơn cây quyết định đơn lẻ và độ chính xác cao ."
     },
     {
+      "id": 57,
+      "local_id": 17,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Mục tiêu chính của thuật toán “Máy Vector Hỗ trợ” (SVM) trong bài toán phân loại là gì?",
       "options": [
         {
@@ -1314,6 +1599,11 @@
       "explanation": "SVM tìm một siêu phẳng trong không gian n-chiều để phân loại các điểm dữ liệu. Mục tiêu là tối đa hóa lề (margin) giữa các lớp ."
     },
     {
+      "id": 58,
+      "local_id": 18,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Thuật toán “Naïve Bayes” dựa trên định lý toán học nào và có giả định “ngây thơ” gì?",
       "options": [
         {
@@ -1337,6 +1627,11 @@
       "explanation": "Naïve Bayes dựa trên định lý Bayes với giả định “ngây thơ” về sự độc lập có điều kiện giữa các đặc trưng ."
     },
     {
+      "id": 59,
+      "local_id": 19,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Thuật toán “K-Láng giềng gần nhất” (KNN) phân loại một điểm dữ liệu mới dựa trên nguyên tắc nào?",
       "options": [
         {
@@ -1360,6 +1655,11 @@
       "explanation": "KNN phân loại một điểm dữ liệu mới bằng cách bỏ phiếu theo đa số của K láng giềng gần nhất của nó ."
     },
     {
+      "id": 60,
+      "local_id": 20,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Nhược điểm lớn nhất của thuật toán KNN khi làm việc với tập dữ liệu lớn là gì?",
       "options": [
         {
@@ -1383,6 +1683,11 @@
       "explanation": "KNN tốn kém về mặt tính toán, yêu cầu bộ nhớ cao, và nhạy cảm với quy mô dữ liệu."
     },
     {
+      "id": 61,
+      "local_id": 21,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Thuật toán “K-Means” thuộc loại học máy nào và nhiệm vụ chính là gì?",
       "options": [
         {
@@ -1406,6 +1711,11 @@
       "explanation": "K-Means là thuật toán học không giám sát dùng để phân chia n quan sát vào k cụm ."
     },
     {
+      "id": 62,
+      "local_id": 22,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trong thuật toán K-Means, người dùng phải xác định trước tham số nào?",
       "options": [
         {
@@ -1429,6 +1739,11 @@
       "explanation": "Nhược điểm của K-Means là phải chọn trước số cụm (k)."
     },
     {
+      "id": 63,
+      "local_id": 23,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Hàm kích hoạt nào thường được sử dụng ở đầu ra của mô hình Hồi quy Logistic để ép giá trị về khoảng [0,1]?",
       "options": [
         {
@@ -1452,6 +1767,11 @@
       "explanation": "Hồi quy Logistic sử dụng hàm sigmoid để đưa đầu ra về khoảng [0, 1]."
     },
     {
+      "id": 64,
+      "local_id": 24,
+      "section": "PHẦN 2: CÁC THUẬT TOÁN HỌC MÁY PHỔ BIẾN",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Để giải quyết vấn đề “Quá khớp” (Overfitting) trong Cây quyết định (Decision Tree), phương pháp nào thường được sử dụng?",
       "options": [
         {
@@ -1472,9 +1792,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Cây quyết định dễ bị quá khớp. Rừng ngẫu nhiên (kết hợp nhiều cây) ít bị quá khớp hơn cây quyết định đơn lẻ.\nPHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)"
+      "explanation": "Cây quyết định dễ bị quá khớp. Rừng ngẫu nhiên (kết hợp nhiều cây) ít bị quá khớp hơn cây quyết định đơn lẻ."
     },
     {
+      "id": 65,
+      "local_id": 25,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Mục tiêu chính của hệ thống “Khuyến nghị cây trồng” (Crop Recommender) dựa trên ML là gì?",
       "options": [
         {
@@ -1498,6 +1823,11 @@
       "explanation": "Hệ thống nhằm mục đích giải quyết vấn đề nông dân chọn sai cây trồng gây năng suất thấp bằng cách đề xuất loại cây phù hợp nhất với điều kiện đất ."
     },
     {
+      "id": 66,
+      "local_id": 26,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong bài toán Khuyến nghị cây trồng (Chapter 5), đâu là các đặc trưng đầu vào (Input features) quan trọng nhất của đất?",
       "options": [
         {
@@ -1521,6 +1851,11 @@
       "explanation": "Dữ liệu đầu vào bao gồm các đặc điểm của đất như hàm lượng N, P, K và độ pH ."
     },
     {
+      "id": 67,
+      "local_id": 27,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Ngoài các yếu tố về đất, hệ thống khuyến nghị cây trồng còn cần dữ liệu môi trường nào để tăng độ chính xác?",
       "options": [
         {
@@ -1544,6 +1879,11 @@
       "explanation": "Hệ thống cũng xem xét các yếu tố môi trường như nhiệt độ, độ ẩm và lượng mưa."
     },
     {
+      "id": 68,
+      "local_id": 28,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong các thử nghiệm nghiên cứu (Chapter 5), nhóm thuật toán nào thường cho độ chính xác cao nhất (lên tới 99%) cho bài toán khuyến nghị cây trồng?",
       "options": [
         {
@@ -1567,6 +1907,11 @@
       "explanation": "Tài liệu nêu rõ: “Các mô hình ensemble đã chứng tỏ hiệu quả vượt trội, đạt độ chính xác lên tới 99%” ."
     },
     {
+      "id": 69,
+      "local_id": 29,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong quy trình xây dựng mô hình ML cho nông nghiệp, bước “Tiền xử lý” (Preprocessing) như “Feature Scaling” (Co giãn đặc trưng) có tác dụng gì?",
       "options": [
         {
@@ -1590,6 +1935,11 @@
       "explanation": "Feature Scaling giúp đưa các đặc trưng về một phạm vi chung, tránh việc một đặc trưng có giá trị lớn lấn át các đặc trưng khác."
     },
     {
+      "id": 70,
+      "local_id": 30,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Bài toán “Dự báo thời tiết ngắn hạn” (Chapter 14) sử dụng loại dữ liệu đặc thù nào?",
       "options": [
         {
@@ -1613,6 +1963,11 @@
       "explanation": "Dự báo thời tiết sử dụng “Dữ liệu chuỗi thời gian hàng ngày” về nhiệt độ, lượng mưa, v.v.."
     },
     {
+      "id": 71,
+      "local_id": 31,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Tại sao các Mạng Nơ-ron Hồi quy (RNN) lại phù hợp cho bài toán dự báo thời tiết hơn là các mạng nơ-ron truyền thống?",
       "options": [
         {
@@ -1636,6 +1991,11 @@
       "explanation": "RNN được thiết kế đặc biệt cho dữ liệu chuỗi thời gian vì chúng có các kết nối hồi quy cho phép duy trì “bộ nhớ”."
     },
     {
+      "id": 72,
+      "local_id": 32,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong nghiên cứu về dự báo thời tiết (Chapter 14), cấu hình mô hình nào cho kết quả tốt hơn khi dự báo nhiều biến thời tiết?",
       "options": [
         {
@@ -1659,6 +2019,11 @@
       "explanation": "Tài liệu kết luận rằng “cấu hình SISO (mỗi mô hình dự báo một biến) cho kết quả tốt hơn, cho thấy các biến thời tiết có thể được mô hình hóa hiệu quả một cách độc lập” ."
     },
     {
+      "id": 73,
+      "local_id": 33,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Để đánh giá sai số của mô hình dự báo thời tiết (giá trị liên tục như nhiệt độ), chỉ số nào thường được sử dụng?",
       "options": [
         {
@@ -1682,6 +2047,11 @@
       "explanation": "Đối với các bài toán hồi quy/dự báo giá trị liên tục như nhiệt độ, các chỉ số đo lường sai số như MSE, RMSE được sử dụng."
     },
     {
+      "id": 74,
+      "local_id": 34,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Kỹ thuật “Làm mịn dữ liệu” (Data Smoothing) như EMA (Exponential Moving Average) trong dự báo thời tiết có tác dụng gì?",
       "options": [
         {
@@ -1705,6 +2075,11 @@
       "explanation": "Tiền xử lý bao gồm “làm mịn dữ liệu (EMA)” để xử lý nhiễu."
     },
     {
+      "id": 75,
+      "local_id": 35,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong bài toán “Phân loại độ phì nhiêu của đất” (Soil Fertility Analysis), nếu sử dụng thuật toán “Phân cụm” (Clustering) thay vì Phân loại, điều đó có nghĩa là gì?",
       "options": [
         {
@@ -1728,6 +2103,11 @@
       "explanation": "Phân cụm là học không giám sát, dùng để nhóm các điểm dữ liệu tương tự (các mẫu đất) khi chưa có nhãn định trước ."
     },
     {
+      "id": 76,
+      "local_id": 36,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Một trong những lợi ích lớn nhất của việc áp dụng ML vào dự báo thời tiết so với các phương pháp vật lý truyền thống là gì?",
       "options": [
         {
@@ -1751,6 +2131,11 @@
       "explanation": "Các mô hình ML/Deep Learning như RNN có khả năng nắm bắt các mối quan hệ phi tuyến tính phức tạp trong dữ liệu thời tiết ."
     },
     {
+      "id": 77,
+      "local_id": 37,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Khi xây dựng hệ thống gợi ý cây trồng, nếu dữ liệu huấn luyện chỉ lấy từ vùng đồng bằng nhưng áp dụng mô hình cho vùng núi, vấn đề gì sẽ xảy ra?",
       "options": [
         {
@@ -1774,6 +2159,11 @@
       "explanation": "Nếu dữ liệu huấn luyện không đại diện cho các trường hợp mới (khác vùng địa lý), mô hình sẽ không thể tổng quát hóa tốt ."
     },
     {
+      "id": 78,
+      "local_id": 38,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong biểu đồ đánh giá mô hình dự báo (như Hình 7.1 Chapter 7), bước nào giúp đảm bảo mô hình không bị “lỗi thời” theo thời gian?",
       "options": [
         {
@@ -1797,6 +2187,11 @@
       "explanation": "Bước “Giám sát và Cập nhật liên tục” với dữ liệu mới giúp mô hình thích ứng với các thay đổi của môi trường theo thời gian ."
     },
     {
+      "id": 79,
+      "local_id": 39,
+      "section": "PHẦN 3: ỨNG DỤNG THỰC TẾ (PHÂN LOẠI ĐẤT & DỰ BÁO THỜI TIẾT)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Đâu là một ví dụ về “Kỹ thuật đặc trưng” (Feature Engineering) trong bài toán dự báo năng suất cây trồng?",
       "options": [
         {
@@ -1822,6 +2217,11 @@
   ],
   "3": [
     {
+      "id": 80,
+      "local_id": 1,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Mô hình nơ-ron nhân tạo đầu tiên được đề xuất vào năm 1943 bởi ai, đặt nền móng cho lĩnh vực này?",
       "options": [
         {
@@ -1845,6 +2245,11 @@
       "explanation": "Ý tưởng về ANN xuất hiện lần đầu tiên vào năm 1943 với mô hình của McCulloch và Pitts ."
     },
     {
+      "id": 81,
+      "local_id": 2,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong mô hình một nơ-ron nhân tạo, thành phần nào đóng vai trò tương tự như “khớp nối thần kinh” (synapse) trong não bộ, quyết định tầm quan trọng của tín hiệu đầu vào?",
       "options": [
         {
@@ -1868,7 +2273,12 @@
       "explanation": "Mỗi nơ-ron nhận đầu vào và tính tổng có trọng số của chúng. Trọng số (Weights) đại diện cho cường độ kết nối giữa các nơ-ron, tương tự như khớp nối thần kinh ."
     },
     {
-      "question": "Công thức tính toán đầu ra  của một nơ-ron trước khi đi qua hàm kích hoạt là gì (với  là đầu vào,  là trọng số,  là độ lệch)?",
+      "id": 82,
+      "local_id": 3,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
+      "question": "Công thức tính toán đầu ra của một nơ-ron trước khi đi qua hàm kích hoạt là gì (với là đầu vào, là trọng số, là độ lệch)?",
       "options": [
         {
           "id": "A",
@@ -1888,9 +2298,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Một nơ-ron nhân tạo tính tổng có trọng số của các đầu vào, cộng thêm một giá trị độ lệch (bias):  ."
+      "explanation": "Một nơ-ron nhân tạo tính tổng có trọng số của các đầu vào, cộng thêm một giá trị độ lệch (bias): ."
     },
     {
+      "id": 83,
+      "local_id": 4,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Mạng Perceptron (mạng nơ-ron đơn giản nhất) có một hạn chế nổi tiếng được Minsky và Papert chỉ ra vào năm 1969, đó là gì?",
       "options": [
         {
@@ -1914,6 +2329,11 @@
       "explanation": "Perceptron có điểm yếu nghiêm trọng là không thể giải quyết một số vấn đề đơn giản như bài toán XOR (Exclusive OR) do nó chỉ vẽ được đường phân chia tuyến tính ."
     },
     {
+      "id": 84,
+      "local_id": 5,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Để giải quyết hạn chế của Perceptron đối với bài toán XOR, người ta đã phát triển kiến trúc nào?",
       "options": [
         {
@@ -1937,6 +2357,11 @@
       "explanation": "Các hạn chế của Perceptron có thể được loại bỏ bằng cách xếp chồng nhiều Perceptron lại với nhau, tạo thành Mạng Perceptron Đa lớp (MLP) ."
     },
     {
+      "id": 85,
+      "local_id": 6,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong kiến trúc MLP, lớp nằm giữa “Lớp đầu vào” (Input Layer) và “Lớp đầu ra” (Output Layer) được gọi là gì?",
       "options": [
         {
@@ -1960,6 +2385,11 @@
       "explanation": "Một MLP bao gồm một lớp đầu vào, một hoặc nhiều lớp TLU gọi là lớp ẩn (hidden layers), và một lớp TLU cuối cùng gọi là lớp đầu ra ."
     },
     {
+      "id": 86,
+      "local_id": 7,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Thuật toán huấn luyện phổ biến nhất giúp tính toán gradient của lỗi và cập nhật trọng số trong mạng nơ-ron đa lớp được gọi là gì?",
       "options": [
         {
@@ -1983,6 +2413,11 @@
       "explanation": "Thuật toán huấn luyện phổ biến nhất cho mạng nơ-ron là lan truyền ngược (backpropagation), được giới thiệu bởi Rumelhart và cộng sự năm 1986."
     },
     {
+      "id": 87,
+      "local_id": 8,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Vai trò chính của “Hàm kích hoạt” (Activation Function) phi tuyến tính (như ReLU, Sigmoid) trong mạng nơ-ron là gì?",
       "options": [
         {
@@ -2006,6 +2441,11 @@
       "explanation": "Sự phi tuyến tính được đưa vào bởi các hàm kích hoạt là yếu tố then chốt, cho phép MLP xấp xỉ bất kỳ hàm liên tục nào. Nếu không có hàm kích hoạt phi tuyến, mạng sâu bao nhiêu cũng chỉ tương đương một mô hình tuyến tính đơn giản ."
     },
     {
+      "id": 88,
+      "local_id": 9,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong quá trình huấn luyện mạng nơ-ron, thuật toán “Gradient Descent” được sử dụng để làm gì?",
       "options": [
         {
@@ -2029,6 +2469,11 @@
       "explanation": "Backpropagation tính toán gradient của hàm mất mát đối với từng tham số và sau đó cập nhật các tham số này thông qua thuật toán Gradient Descent để giảm thiểu lỗi ."
     },
     {
+      "id": 89,
+      "local_id": 10,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "“Học sâu” (Deep Learning) khác biệt so với mạng nơ-ron truyền thống chủ yếu ở điểm nào về mặt kiến trúc?",
       "options": [
         {
@@ -2052,6 +2497,11 @@
       "explanation": "Deep Learning đề cập đến các mạng nơ-ron có cấu trúc sâu (nhiều lớp xếp chồng), cho phép học các biểu diễn dữ liệu ở nhiều mức độ trừu tượng ."
     },
     {
+      "id": 90,
+      "local_id": 11,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Bước “Forward Pass” (Lan truyền xuôi) trong thuật toán Backpropagation thực hiện nhiệm vụ gì?",
       "options": [
         {
@@ -2075,6 +2525,11 @@
       "explanation": "Trong bước forward pass, thuật toán đưa dữ liệu qua mạng từ đầu vào đến đầu ra để tính toán dự đoán và đo lường lỗi ."
     },
     {
+      "id": 91,
+      "local_id": 12,
+      "section": "PHẦN 1: NỀN TẢNG MẠNG NƠ-RON NHÂN TẠO (ANN)",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Tại sao mạng nơ-ron cần quá trình “Huấn luyện” (Training)?",
       "options": [
         {
@@ -2095,9 +2550,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Mục tiêu của huấn luyện là tìm kiếm các giá trị tham số của mô hình (trọng số và độ lệch) để tối ưu hóa thước đo hiệu suất (giảm thiểu lỗi) .\nPHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)"
+      "explanation": "Mục tiêu của huấn luyện là tìm kiếm các giá trị tham số của mô hình (trọng số và độ lệch) để tối ưu hóa thước đo hiệu suất (giảm thiểu lỗi) ."
     },
     {
+      "id": 92,
+      "local_id": 13,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Sự khác biệt cơ bản nhất giữa “Học máy truyền thống” (Machine Learning) và “Học sâu” (Deep Learning) về khía cạnh trích xuất đặc trưng (Feature Extraction) là gì?",
       "options": [
         {
@@ -2121,6 +2581,11 @@
       "explanation": "Trong ML truyền thống, chuyên gia cần xác định và trích xuất đặc trưng thủ công. DL tự động học và trích xuất các đặc trưng từ dữ liệu thô ở nhiều cấp độ ."
     },
     {
+      "id": 93,
+      "local_id": 14,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Tại sao Học sâu (Deep Learning) lại yêu cầu phần cứng mạnh mẽ (như GPU) hơn so với Học máy thông thường?",
       "options": [
         {
@@ -2144,6 +2609,11 @@
       "explanation": "Học sâu yêu cầu máy móc cấu hình cao (đặc biệt là GPU) để hoạt động hiệu quả do khối lượng tính toán lớn của các mạng nơ-ron sâu."
     },
     {
+      "id": 94,
+      "local_id": 15,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Kiến trúc mạng nơ-ron nào được coi là “khối xây dựng cốt lõi” cho các bài toán thị giác máy tính (như nhận diện ảnh bệnh cây trồng)?",
       "options": [
         {
@@ -2167,6 +2637,11 @@
       "explanation": "Mạng Nơ-ron Tích chập (CNN) là khối xây dựng quan trọng nhất của các hệ thống thị giác máy tính hiện đại, thiết kế đặc biệt cho dữ liệu dạng lưới như hình ảnh ."
     },
     {
+      "id": 95,
+      "local_id": 16,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trong mạng CNN, nhiệm vụ chính của “Lớp Tích chập” (Convolutional Layer) là gì?",
       "options": [
         {
@@ -2190,6 +2665,11 @@
       "explanation": "Mỗi nơ-ron trong lớp tích chập kết nối với các pixel trong trường tiếp nhận cục bộ. Các bộ lọc (filters) được sử dụng để phát hiện các đặc trưng cụ thể như cạnh, góc."
     },
     {
+      "id": 96,
+      "local_id": 17,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "“Bản đồ đặc trưng” (Feature Map) trong CNN được tạo ra như thế nào?",
       "options": [
         {
@@ -2213,6 +2693,11 @@
       "explanation": "Mỗi bộ lọc sẽ tạo ra một bản đồ đặc trưng, làm nổi bật các vùng trong ảnh kích hoạt mạnh mẽ bộ lọc đó."
     },
     {
+      "id": 97,
+      "local_id": 18,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Mục tiêu chính của “Lớp Gộp” (Pooling Layer), ví dụ như Max Pooling, là gì?",
       "options": [
         {
@@ -2236,6 +2721,11 @@
       "explanation": "Mục tiêu của lớp gộp là lấy mẫu con (subsample) hoặc thu nhỏ kích thước không gian để giảm tải tính toán, yêu cầu bộ nhớ và số lượng tham số ."
     },
     {
+      "id": 98,
+      "local_id": 19,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trong kỹ thuật tích chập, tham số “Stride” (Sải bước) có ý nghĩa gì?",
       "options": [
         {
@@ -2259,6 +2749,11 @@
       "explanation": "Sải bước (strides) là khoảng cách dịch chuyển của bộ lọc trên ảnh đầu vào. Sải bước lớn hơn 1 sẽ làm giảm kích thước đầu ra ."
     },
     {
+      "id": 99,
+      "local_id": 20,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Kỹ thuật “Padding” (Đệm) thường được sử dụng trong CNN để làm gì?",
       "options": [
         {
@@ -2282,6 +2777,11 @@
       "explanation": "Padding là việc thêm các giá trị 0 xung quanh ảnh đầu vào. ‘padding=“same”’ đảm bảo kích thước đầu ra bằng kích thước đầu vào."
     },
     {
+      "id": 100,
+      "local_id": 21,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Lớp nào trong CNN có nhiệm vụ chuyển đổi dữ liệu 3D (từ các lớp tích chập/gộp) thành vector 1D để đưa vào mạng kết nối đầy đủ?",
       "options": [
         {
@@ -2305,6 +2805,11 @@
       "explanation": "Lớp làm phẳng (Flatten) chuyển đổi đầu ra 3D từ các lớp tích chập thành một vector 1D để đưa vào mạng kết nối đầy đủ."
     },
     {
+      "id": 101,
+      "local_id": 22,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trong bài toán phân loại bệnh cây trồng, đầu ra của mạng CNN thường đi qua hàm nào để tính xác suất thuộc về từng loại bệnh (ví dụ: Bệnh phấn trắng, Bệnh gỉ sắt, Khỏe mạnh)?",
       "options": [
         {
@@ -2328,6 +2833,11 @@
       "explanation": "Lớp đầu ra thường sử dụng một lớp softmax cho bài toán phân loại đa lớp để xuất ra dự đoán cuối cùng."
     },
     {
+      "id": 102,
+      "local_id": 23,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "VGG16, ResNet-50, InceptionV3 là tên gọi của cái gì?",
       "options": [
         {
@@ -2351,6 +2861,11 @@
       "explanation": "Đây là các kiến trúc nổi tiếng. Tài liệu nhắc đến việc so sánh hiệu quả của VGG16, ResNet-50, InceptionV3 trong việc phân loại bệnh lá táo."
     },
     {
+      "id": 103,
+      "local_id": 24,
+      "section": "PHẦN 2: HỌC SÂU (DEEP LEARNING) & MẠNG NƠ-RON TÍCH CHẬP (CNN)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "“Học chuyển giao” (Transfer Learning) giúp ích gì cho bài toán nhận diện bệnh cây trồng khi chúng ta có ít dữ liệu ảnh?",
       "options": [
         {
@@ -2371,9 +2886,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Học chuyển giao là kỹ thuật phổ biến, tái sử dụng mô hình CNN đã huấn luyện trước, giúp đạt hiệu suất cao ngay cả với bộ dữ liệu nhỏ .\nPHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)"
+      "explanation": "Học chuyển giao là kỹ thuật phổ biến, tái sử dụng mô hình CNN đã huấn luyện trước, giúp đạt hiệu suất cao ngay cả với bộ dữ liệu nhỏ ."
     },
     {
+      "id": 104,
+      "local_id": 25,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong quy trình phát hiện bệnh cây trồng bằng AI, bước “Thu thập dữ liệu” (Data Acquisition) thường gặp thách thức lớn nhất là gì?",
       "options": [
         {
@@ -2397,6 +2917,11 @@
       "explanation": "Một trong những thách thức lớn là sự thiếu hụt các bộ dữ liệu công khai, chuẩn hóa và đại diện cho điều kiện thực tế (ánh sáng thay đổi, nền phức tạp) để huấn luyện mô hình."
     },
     {
+      "id": 105,
+      "local_id": 26,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Kỹ thuật “Tăng cường dữ liệu” (Data Augmentation) bao gồm những thao tác nào sau đây?",
       "options": [
         {
@@ -2420,6 +2945,11 @@
       "explanation": "Tăng cường dữ liệu sử dụng các kỹ thuật như xoay, lật, thu phóng, cắt xén để tạo ra dữ liệu mới từ dữ liệu hiện có, giúp mô hình học tốt hơn và tránh overfitting."
     },
     {
+      "id": 106,
+      "local_id": 27,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Tại sao kỹ thuật Tăng cường dữ liệu lại quan trọng trong các dự án nông nghiệp?",
       "options": [
         {
@@ -2443,6 +2973,11 @@
       "explanation": "Kỹ thuật này giúp giải quyết vấn đề thiếu dữ liệu huấn luyện, làm cho mô hình mạnh mẽ hơn (robust) trước các thay đổi nhỏ của hình ảnh đầu vào."
     },
     {
+      "id": 107,
+      "local_id": 28,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong Case Study về bệnh lá táo (Chapter 8), ba loại bệnh chính được nghiên cứu là gì?",
       "options": [
         {
@@ -2466,6 +3001,11 @@
       "explanation": "Nghiên cứu tập trung vào phân loại 4 nhãn: Khỏe mạnh, Bệnh đốm lá Alternaria, Bệnh ghẻ táo, và Bệnh thối táo ."
     },
     {
+      "id": 108,
+      "local_id": 29,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong nghiên cứu này, các tác giả đã so sánh hiệu suất của mô hình CNN tự xây dựng (Custom CNN) với các mô hình nào?",
       "options": [
         {
@@ -2489,6 +3029,11 @@
       "explanation": "Nghiên cứu so sánh Custom CNN với các mô hình học sâu tiên tiến (SOTA) là VGG16, ResNet-50 và InceptionV3 ."
     },
     {
+      "id": 109,
+      "local_id": 30,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Kết quả thực nghiệm trong Chapter 8 cho thấy mô hình nào đạt hiệu suất cao nhất trong việc phân loại bệnh lá táo?",
       "options": [
         {
@@ -2512,6 +3057,11 @@
       "explanation": "VGG16 đạt độ chính xác cao nhất là 85%, cùng với độ chuẩn xác, độ phủ và điểm F1 tốt nhất so với các mô hình khác."
     },
     {
+      "id": 110,
+      "local_id": 31,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Chỉ số “Precision” (Độ chuẩn xác) trong bài toán phát hiện bệnh có ý nghĩa gì?",
       "options": [
         {
@@ -2535,6 +3085,11 @@
       "explanation": "Precision đo lường độ chính xác của các dự đoán tích cực. Nếu Precision thấp, nông dân sẽ tốn tiền phun thuốc cho cả những cây khỏe mạnh (dương tính giả)."
     },
     {
+      "id": 111,
+      "local_id": 32,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Chỉ số “Recall” (Độ phủ/Độ thu hồi) quan trọng như thế nào trong nông nghiệp?",
       "options": [
         {
@@ -2558,6 +3113,11 @@
       "explanation": "Recall đo lường khả năng tìm ra tất cả các trường hợp bệnh thực tế. Trong dịch bệnh, Recall quan trọng vì bỏ sót một cây bệnh (âm tính giả) có thể lây lan cho cả vườn."
     },
     {
+      "id": 112,
+      "local_id": 33,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Bộ dữ liệu nổi tiếng nào thường được sử dụng làm chuẩn (benchmark) cho các nghiên cứu về bệnh cây trồng (được nhắc đến trong Chapter 10)?",
       "options": [
         {
@@ -2581,6 +3141,11 @@
       "explanation": "Bộ dữ liệu Plant Village là kho lưu trữ phổ biến chứa hơn 50.000 hình ảnh lá cây khỏe mạnh và bị bệnh của nhiều loại cây trồng khác nhau ."
     },
     {
+      "id": 113,
+      "local_id": 34,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong dự án phát hiện bệnh khoai tây (Chapter 10), mô hình CNN được xây dựng đã đạt độ chính xác khoảng bao nhiêu?",
       "options": [
         {
@@ -2604,6 +3169,11 @@
       "explanation": "Biểu đồ và kết quả cho thấy mô hình đạt độ chính xác xác thực là 97.68% và độ chính xác huấn luyện là 99.42% ."
     },
     {
+      "id": 114,
+      "local_id": 35,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Khi triển khai mô hình AI ra thực tế (ví dụ: ứng dụng di động cho nông dân), yếu tố nào sau đây là rào cản kỹ thuật lớn nhất bên cạnh độ chính xác?",
       "options": [
         {
@@ -2627,6 +3197,11 @@
       "explanation": "Nông dân thường dùng điện thoại thường hoặc kết nối mạng kém. Các mô hình DL như VGG16 rất nặng (hàng trăm MB), khó chạy mượt mà trên thiết bị biên nếu không tối ưu hóa."
     },
     {
+      "id": 115,
+      "local_id": 36,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Bước “Chia tách dữ liệu” (Train/Test Split) thường chia theo tỷ lệ nào trong các nghiên cứu này?",
       "options": [
         {
@@ -2650,6 +3225,11 @@
       "explanation": "Tỷ lệ phổ biến là 80/20 hoặc 70/30 để đảm bảo mô hình có đủ dữ liệu để học nhưng vẫn có đủ dữ liệu mới để đánh giá khách quan."
     },
     {
+      "id": 116,
+      "local_id": 37,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Hàm mất mát (Loss Function) thường được sử dụng cho bài toán phân loại nhiều loại bệnh (Multi-class Classification) là gì?",
       "options": [
         {
@@ -2673,6 +3253,11 @@
       "explanation": "Categorical Cross-Entropy là hàm mất mát tiêu chuẩn cho các bài toán phân loại đa lớp (ví dụ: Táo bị 1 trong 4 loại bệnh)."
     },
     {
+      "id": 117,
+      "local_id": 38,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Một mô hình bị “Overfitting” trong biểu đồ Accuracy/Loss sẽ có biểu hiện gì?",
       "options": [
         {
@@ -2696,6 +3281,11 @@
       "explanation": "Overfitting thể hiện khi mô hình học quá kỹ dữ liệu huấn luyện (Train Acc cao) nhưng không tổng quát được trên dữ liệu mới (Val Acc thấp/ngừng tăng)."
     },
     {
+      "id": 118,
+      "local_id": 39,
+      "section": "PHẦN 3: ỨNG DỤNG & CASE STUDY (PHÁT HIỆN BỆNH TRÊN CÂY TRỒNG)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Lợi ích lớn nhất của việc tự động hóa phát hiện bệnh bằng AI so với phương pháp thủ công là gì?",
       "options": [
         {
@@ -2721,6 +3311,11 @@
   ],
   "4": [
     {
+      "id": 119,
+      "local_id": 1,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Định nghĩa cơ bản nhất của “Thị giác máy tính” (Computer Vision) là gì?",
       "options": [
         {
@@ -2744,6 +3339,11 @@
       "explanation": "Thị giác máy tính được mô tả như một lĩnh vực của AI dùng để trích xuất thông tin từ hình ảnh kỹ thuật số."
     },
     {
+      "id": 120,
+      "local_id": 2,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "So với thị giác của con người, thị giác máy tính khác biệt ở điểm nào về mặt “đầu vào”?",
       "options": [
         {
@@ -2767,6 +3367,11 @@
       "explanation": "Con người trải nghiệm thế giới vật lý qua mắt và não, trong khi máy tính phải xử lý dữ liệu số hóa (ma trận pixel) để “hiểu” hình ảnh."
     },
     {
+      "id": 121,
+      "local_id": 3,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Bước đầu tiên trong quy trình xử lý ảnh điển hình là gì?",
       "options": [
         {
@@ -2790,6 +3395,11 @@
       "explanation": "Quy trình bắt đầu bằng việc thu thập hình ảnh thông qua các cảm biến (camera)."
     },
     {
+      "id": 122,
+      "local_id": 4,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Kỹ thuật “Chuyển đổi sang ảnh xám” (Grayscale Conversion) thường được thực hiện ở giai đoạn nào và mục đích là gì?",
       "options": [
         {
@@ -2813,6 +3423,11 @@
       "explanation": "Trong xử lý ảnh, chuyển đổi sang ảnh xám là bước tiền xử lý phổ biến để đơn giản hóa dữ liệu đầu vào cho các thuật toán tiếp theo (như phát hiện cạnh)."
     },
     {
+      "id": 123,
+      "local_id": 5,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Ảnh nhị phân (Binary Image) là loại ảnh như thế nào?",
       "options": [
         {
@@ -2836,6 +3451,11 @@
       "explanation": "Ảnh nhị phân (như kết quả của kỹ thuật Thresholding) chỉ chứa các pixel đen và trắng, giúp tách đối tượng khỏi nền."
     },
     {
+      "id": 124,
+      "local_id": 6,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Kỹ thuật “Lọc nhiễu” (Filtering), ví dụ như sử dụng bộ lọc trung bình (Mean filter), có tác dụng gì?",
       "options": [
         {
@@ -2859,6 +3479,11 @@
       "explanation": "Lọc nhiễu giúp loại bỏ các tín hiệu nhiễu ngẫu nhiên trong ảnh (như trong hình minh họa “Filtered image”) để chuẩn bị cho các bước xử lý sau."
     },
     {
+      "id": 125,
+      "local_id": 7,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong xử lý hình thái học (Morphological Operations), phép “Co” (Erosion) có tác dụng gì đối với đối tượng trong ảnh nhị phân?",
       "options": [
         {
@@ -2882,6 +3507,11 @@
       "explanation": "Phép co (Erosion) làm xói mòn biên của đối tượng, giúp loại bỏ nhiễu nhỏ và tách rời các đối tượng dính nhau."
     },
     {
+      "id": 126,
+      "local_id": 8,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Ngược lại với phép Co, phép “Giãn” (Dilation) làm gì?",
       "options": [
         {
@@ -2905,6 +3535,11 @@
       "explanation": "Phép giãn (Dilation) thêm pixel vào biên của đối tượng, làm nó to ra và lấp đầy các khoảng trống."
     },
     {
+      "id": 127,
+      "local_id": 9,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Thuật toán Canny hoặc Sobel thường được sử dụng cho mục đích gì trong thị giác máy tính?",
       "options": [
         {
@@ -2928,6 +3563,11 @@
       "explanation": "Trong hình minh họa quy trình, bước cuối cùng thường là “Edge detect” để xác định biên dạng của hạt gạo hoặc vật thể."
     },
     {
+      "id": 128,
+      "local_id": 10,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Thư viện mã nguồn mở phổ biến nhất được sử dụng trong Python cho các tác vụ xử lý ảnh này là gì?",
       "options": [
         {
@@ -2951,6 +3591,11 @@
       "explanation": "Tài liệu nhắc đến OpenCV (Open Source Computer Vision Library) như là công cụ chính để triển khai các thuật toán này."
     },
     {
+      "id": 129,
+      "local_id": 11,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong ví dụ phân loại hạt gạo (Chapter 5), hệ thống tính toán “Tỷ lệ khung hình” (Aspect Ratio) bằng cách nào?",
       "options": [
         {
@@ -2974,6 +3619,11 @@
       "explanation": "Kết quả đầu ra hiển thị “Average Aspect Ratio = 2.3”, được tính từ các kích thước hình học của đối tượng sau khi phân đoạn."
     },
     {
+      "id": 130,
+      "local_id": 12,
+      "section": "PHẦN 1: NGUYÊN LÝ CƠ BẢN CỦA THỊ GIÁC MÁY TÍNH & XỬ LÝ ẢNH",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Tại sao bước “Phân đoạn” (Segmentation) lại quan trọng trong bài toán đếm số lượng hạt gạo?",
       "options": [
         {
@@ -2994,9 +3644,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Phân đoạn giúp xác định vùng quan tâm (ROI), tách hạt gạo khỏi nền để thực hiện đo lường và đếm.\nPHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)"
+      "explanation": "Phân đoạn giúp xác định vùng quan tâm (ROI), tách hạt gạo khỏi nền để thực hiện đo lường và đếm."
     },
     {
+      "id": 131,
+      "local_id": 13,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Cảm hứng sinh học cho sự ra đời của Mạng Nơ-ron Tích chập (CNN) đến từ nghiên cứu về bộ phận nào của con người/động vật?",
       "options": [
         {
@@ -3020,6 +3675,11 @@
       "explanation": "CNN ra đời từ nghiên cứu về vỏ não thị giác của não bộ (đặc biệt là nghiên cứu của Hubel và Wiesel trên mèo), nơi các nơ-ron chỉ phản ứng với một vùng nhỏ của trường thị giác."
     },
     {
+      "id": 132,
+      "local_id": 14,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Khái niệm “Trường tiếp nhận” (Receptive Field) trong CNN có nghĩa là gì?",
       "options": [
         {
@@ -3043,6 +3703,11 @@
       "explanation": "Trong vỏ não thị giác, nhiều nơ-ron có trường tiếp nhận cục bộ nhỏ, nghĩa là chúng chỉ phản ứng với các kích thích thị giác nằm trong một vùng hạn chế."
     },
     {
+      "id": 133,
+      "local_id": 15,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trong kiến trúc CNN, các nơ-ron ở các lớp đầu tiên (cấp thấp) thường phát hiện các đặc trưng gì?",
       "options": [
         {
@@ -3066,6 +3731,11 @@
       "explanation": "Các nơ-ron cấp thấp phản ứng với các mẫu đơn giản (như đường ngang/dọc), và các nơ-ron cấp cao hơn kết hợp chúng thành các mẫu phức tạp hơn."
     },
     {
+      "id": 134,
+      "local_id": 16,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Một “Bộ lọc” (Filter) hay Kernel trong lớp Tích chập thực chất là gì?",
       "options": [
         {
@@ -3089,6 +3759,11 @@
       "explanation": "Bộ lọc là một tập hợp các trọng số được học, trượt qua ảnh để tạo ra bản đồ đặc trưng."
     },
     {
+      "id": 135,
+      "local_id": 17,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Tại sao CNN lại ưu việt hơn mạng kết nối đầy đủ (Dense Network) khi xử lý hình ảnh?",
       "options": [
         {
@@ -3112,6 +3787,11 @@
       "explanation": "Một khi CNN học được một mẫu ở một vị trí, nó có thể nhận ra mẫu đó ở bất kỳ vị trí nào khác (nhờ chia sẻ trọng số), trong khi mạng Dense phải học lại từ đầu."
     },
     {
+      "id": 136,
+      "local_id": 18,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Khi một bộ lọc (filter) quét qua ảnh, đầu ra của nó được gọi là gì?",
       "options": [
         {
@@ -3135,6 +3815,11 @@
       "explanation": "Mỗi bộ lọc tạo ra một bản đồ đặc trưng (feature map), làm nổi bật những nơi mà đặc trưng đó xuất hiện trong ảnh."
     },
     {
+      "id": 137,
+      "local_id": 19,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Nếu bạn sử dụng một bộ lọc kích thước 3x3 với padding='same' và strides=1, kích thước của bản đồ đặc trưng đầu ra so với ảnh đầu vào sẽ như thế nào?",
       "options": [
         {
@@ -3158,6 +3843,11 @@
       "explanation": "padding='same' sử dụng đệm zero để đảm bảo kích thước đầu ra bằng kích thước đầu vào (chia cho stride, nếu stride=1 thì bằng nhau)."
     },
     {
+      "id": 138,
+      "local_id": 20,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Lớp “Gộp cực đại” (Max Pooling) hoạt động như thế nào?",
       "options": [
         {
@@ -3181,6 +3871,11 @@
       "explanation": "Max pooling hoạt động bằng cách trượt cửa sổ và chỉ lấy giá trị lớn nhất trong mỗi cửa sổ."
     },
     {
+      "id": 139,
+      "local_id": 21,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Mục đích chính của việc sử dụng nhiều lớp Tích chập xếp chồng lên nhau (Deep CNN) là gì?",
       "options": [
         {
@@ -3189,7 +3884,7 @@
         },
         {
           "id": "B",
-          "text": "Để tạo ra sự phân cấp đặc trưng: từ cạnh  hình dạng  bộ phận  vật thể hoàn chỉnh."
+          "text": "Để tạo ra sự phân cấp đặc trưng: từ cạnh hình dạng bộ phận vật thể hoàn chỉnh."
         },
         {
           "id": "C",
@@ -3204,6 +3899,11 @@
       "explanation": "Cấu trúc phân cấp cho phép các nơ-ron cấp cao tổng hợp đầu ra của nơ-ron cấp thấp để nhận diện các mẫu phức tạp hơn."
     },
     {
+      "id": 140,
+      "local_id": 22,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "“Stride” (Sải bước) trong lớp tích chập ảnh hưởng như thế nào đến bản đồ đặc trưng?",
       "options": [
         {
@@ -3227,6 +3927,11 @@
       "explanation": "Sải bước là khoảng cách giữa hai cửa sổ tiếp nhận liên tiếp. Sải bước lớn giúp giảm kích thước đầu ra."
     },
     {
+      "id": 141,
+      "local_id": 23,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trong một mạng CNN điển hình để phân loại (ví dụ: LeNet-5 hoặc AlexNet), các lớp cuối cùng thường là loại lớp nào?",
       "options": [
         {
@@ -3250,6 +3955,11 @@
       "explanation": "Sau khi trích xuất đặc trưng qua các lớp Conv/Pool, dữ liệu được làm phẳng và đưa vào các lớp Dense để thực hiện phân loại cuối cùng."
     },
     {
+      "id": 142,
+      "local_id": 24,
+      "section": "PHẦN 2: CÁCH MÁY TÍNH “NHÌN” BẰNG CNN (CONVOLUTIONAL NEURAL NETWORKS)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Khi huấn luyện CNN, các giá trị trong bộ lọc (filter weights) được xác định như thế nào?",
       "options": [
         {
@@ -3270,9 +3980,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Các trọng số của bộ lọc là các tham số có thể học được (learnable parameters), thay đổi dần dần để giảm thiểu hàm mất mát.\nPHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN"
+      "explanation": "Các trọng số của bộ lọc là các tham số có thể học được (learnable parameters), thay đổi dần dần để giảm thiểu hàm mất mát."
     },
     {
+      "id": 143,
+      "local_id": 25,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Theo Chapter 2, tại sao các phương pháp phát hiện bệnh táo truyền thống (kiểm tra trực quan bởi chuyên gia) lại trở nên không hiệu quả trong nền nông nghiệp hiện đại?",
       "options": [
         {
@@ -3296,6 +4011,11 @@
       "explanation": "Tài liệu nhấn mạnh việc kiểm tra thủ công tốn kém, chậm chạp và dễ sai sót, dẫn đến việc phát hiện chậm và lây lan dịch bệnh."
     },
     {
+      "id": 144,
+      "local_id": 26,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Các bệnh phổ biến trên cây táo được liệt kê trong tài liệu nghiên cứu (Chapter 2) bao gồm những loại nào?",
       "options": [
         {
@@ -3319,6 +4039,11 @@
       "explanation": "Đây là các bệnh do nấm, vi khuẩn và virus gây ra, ảnh hưởng trực tiếp đến chất lượng và năng suất quả táo."
     },
     {
+      "id": 145,
+      "local_id": 27,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Mục tiêu kinh tế chính của việc áp dụng Học máy (ML) vào phát hiện bệnh táo là gì?",
       "options": [
         {
@@ -3342,6 +4067,11 @@
       "explanation": "Bệnh tật làm giảm năng suất và tăng chi phí. Phát hiện sớm giúp giảm thiểu thiệt hại kinh tế và tối ưu hóa đầu vào."
     },
     {
+      "id": 146,
+      "local_id": 28,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong dự án “Nhận dạng loài hoa” (Chapter 11), tại sao chúng ta cần AI trong khi con người có thể tự phân biệt các loài hoa bằng mắt thường?",
       "options": [
         {
@@ -3365,6 +4095,11 @@
       "explanation": "Tài liệu nêu rõ: “có hàng ngàn loài thực vật mà một người không thể nhận dạng hết được… sử dụng AI thu được kết quả nhanh hơn và chi tiết hơn”."
     },
     {
+      "id": 147,
+      "local_id": 29,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Dự án nhận dạng loài hoa trong Chapter 11 là sự kết hợp của các nhánh AI nào?",
       "options": [
         {
@@ -3388,6 +4123,11 @@
       "explanation": "Dự án sử dụng kết hợp các nhánh khác nhau: ML, DL và CV để xây dựng hệ thống."
     },
     {
+      "id": 148,
+      "local_id": 30,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Để triển khai dự án nhận dạng hoa bằng Python, thư viện nào sau đây là KHÔNG cần thiết hoặc ít liên quan nhất trong danh sách cài đặt?",
       "options": [
         {
@@ -3411,6 +4151,11 @@
       "explanation": "Tài liệu liệt kê các thư viện cần thiết: NumPy, Pandas, Matplotlib, Seaborn, Pillow, TensorFlow, Keras. PyGame không được nhắc đến."
     },
     {
+      "id": 149,
+      "local_id": 31,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong bài toán phân loại hoa, đặc điểm hình thái học nào của thực vật thường được AI phân tích kỹ lưỡng nhất?",
       "options": [
         {
@@ -3434,6 +4179,11 @@
       "explanation": "AI phân tích “hình thái của lá” (leaf morphology) và các đặc tính thị giác khác để phân biệt loài."
     },
     {
+      "id": 150,
+      "local_id": 32,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong quá trình chuẩn bị dữ liệu cho mô hình CNN nhận diện hoa, thao tác “Resize” (thay đổi kích thước ảnh) có ý nghĩa gì?",
       "options": [
         {
@@ -3457,6 +4207,11 @@
       "explanation": "Mạng CNN yêu cầu kích thước đầu vào đồng nhất (vector input cố định), do đó việc resize là bắt buộc trong bước tiền xử lý."
     },
     {
+      "id": 151,
+      "local_id": 33,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Thư viện tqdm được cài đặt trong dự án Chapter 11 có tác dụng gì?",
       "options": [
         {
@@ -3480,6 +4235,11 @@
       "explanation": "tqdm là thư viện Python phổ biến dùng để hiển thị thanh tiến trình (progress bars) trong terminal."
     },
     {
+      "id": 152,
+      "local_id": 34,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Khi một hệ thống CV được ứng dụng để “Phân loại nông sản” (ví dụ: phân loại cà chua chín/xanh), nó dựa vào đặc trưng nào là chủ yếu?",
       "options": [
         {
@@ -3503,6 +4263,11 @@
       "explanation": "Màu sắc là chỉ dấu rõ nhất cho độ chín, và hình dạng giúp phát hiện dị tật. CV sử dụng các đặc trưng này để phân loại."
     },
     {
+      "id": 153,
+      "local_id": 35,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Một trong những lợi ích “phi kỹ thuật” quan trọng của việc áp dụng các ứng dụng nhận diện bệnh trên điện thoại di động cho nông dân là gì?",
       "options": [
         {
@@ -3526,6 +4291,11 @@
       "explanation": "Hệ thống giúp “dân chủ hóa” kiến thức, cho phép nông dân không có chuyên môn sâu vẫn có thể chẩn đoán bệnh chính xác như chuyên gia."
     },
     {
+      "id": 154,
+      "local_id": 36,
+      "section": "PHẦN 3: ỨNG DỤNG - GIÁM SÁT BỆNH & PHÂN LOẠI NÔNG SẢN",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong sơ đồ khối của một hệ thống giám sát cây trồng bằng CV, sau khi Camera thu thập ảnh và Máy tính xử lý ra kết quả (ví dụ: phát hiện sâu), bước tiếp theo thường là gì trong hệ thống tự động hóa?",
       "options": [
         {

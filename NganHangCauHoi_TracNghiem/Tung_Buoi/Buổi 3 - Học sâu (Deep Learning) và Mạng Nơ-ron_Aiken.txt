@@ -1,0 +1,273 @@
+Mô hình nơ-ron nhân tạo đầu tiên được đề xuất vào năm 1943 bởi ai, đặt nền móng cho lĩnh vực này?
+A. Frank Rosenblatt.
+B. Warren McCulloch và Walter Pitts.
+C. Geoffrey Hinton.
+D. Alan Turing.
+ANSWER: B
+
+Trong mô hình một nơ-ron nhân tạo, thành phần nào đóng vai trò tương tự như “khớp nối thần kinh” (synapse) trong não bộ, quyết định tầm quan trọng của tín hiệu đầu vào?
+A. Hàm kích hoạt (Activation Function).
+B. Trọng số (Weights).
+C. Độ lệch (Bias).
+D. Lớp ẩn (Hidden Layer).
+ANSWER: B
+
+Công thức tính toán đầu ra của một nơ-ron trước khi đi qua hàm kích hoạt là gì (với là đầu vào, là trọng số, là độ lệch)?
+A. 
+B. (Tổng trọng số cộng độ lệch)
+C. 
+D. 
+ANSWER: B
+
+Mạng Perceptron (mạng nơ-ron đơn giản nhất) có một hạn chế nổi tiếng được Minsky và Papert chỉ ra vào năm 1969, đó là gì?
+A. Không thể học được dữ liệu hình ảnh.
+B. Không thể giải quyết được các bài toán không phân tách tuyến tính (ví dụ: bài toán XOR).
+C. Tốc độ tính toán quá chậm.
+D. Cần quá nhiều dữ liệu huấn luyện.
+ANSWER: B
+
+Để giải quyết hạn chế của Perceptron đối với bài toán XOR, người ta đã phát triển kiến trúc nào?
+A. Perceptron đơn lớp (Single-Layer Perceptron).
+B. Hồi quy tuyến tính (Linear Regression).
+C. Mạng Perceptron đa lớp (MLP - Multi-Layer Perceptron).
+D. Máy Vector Hỗ trợ (SVM).
+ANSWER: C
+
+Trong kiến trúc MLP, lớp nằm giữa “Lớp đầu vào” (Input Layer) và “Lớp đầu ra” (Output Layer) được gọi là gì?
+A. Lớp xử lý trung gian.
+B. Lớp ẩn (Hidden Layer).
+C. Lớp kết nối.
+D. Lớp nhúng (Embedding Layer).
+ANSWER: B
+
+Thuật toán huấn luyện phổ biến nhất giúp tính toán gradient của lỗi và cập nhật trọng số trong mạng nơ-ron đa lớp được gọi là gì?
+A. K-Means Clustering.
+B. Lan truyền ngược (Backpropagation).
+C. Decision Tree Learning.
+D. Naive Bayes.
+ANSWER: B
+
+Vai trò chính của “Hàm kích hoạt” (Activation Function) phi tuyến tính (như ReLU, Sigmoid) trong mạng nơ-ron là gì?
+A. Để làm cho mạng nơ-ron trông phức tạp hơn.
+B. Để giúp mạng nơ-ron có thể học và xấp xỉ các hàm phi tuyến tính phức tạp (nếu không có nó, mạng chỉ là hàm tuyến tính).
+C. Để tăng tốc độ tính toán của máy tính.
+D. Để loại bỏ các giá trị âm.
+ANSWER: B
+
+Trong quá trình huấn luyện mạng nơ-ron, thuật toán “Gradient Descent” được sử dụng để làm gì?
+A. Tăng lỗi dự đoán lên mức cao nhất.
+B. Tìm giá trị trọng số tối ưu để giảm thiểu hàm mất mát (loss function).
+C. Tạo ra thêm dữ liệu huấn luyện.
+D. Vẽ biểu đồ cấu trúc mạng.
+ANSWER: B
+
+“Học sâu” (Deep Learning) khác biệt so với mạng nơ-ron truyền thống chủ yếu ở điểm nào về mặt kiến trúc?
+A. Nó sử dụng ít nơ-ron hơn.
+B. Nó có rất nhiều lớp ẩn (deep stack of layers) để trích xuất các đặc trưng ở mức độ trừu tượng cao dần.
+C. Nó không sử dụng máy tính.
+D. Nó chỉ giải quyết được các bài toán toán học đơn giản.
+ANSWER: B
+
+Bước “Forward Pass” (Lan truyền xuôi) trong thuật toán Backpropagation thực hiện nhiệm vụ gì?
+A. Tính toán lỗi và đi ngược lại để sửa trọng số.
+B. Đưa dữ liệu đầu vào qua các lớp để tính toán đầu ra dự đoán.
+C. Xóa sạch trọng số của mạng.
+D. Cập nhật nhãn của dữ liệu.
+ANSWER: B
+
+Tại sao mạng nơ-ron cần quá trình “Huấn luyện” (Training)?
+A. Để máy tính nóng lên trước khi làm việc.
+B. Để tìm ra bộ trọng số (Weights) và độ lệch (Bias) tốt nhất giúp giảm thiểu sai số giữa dự đoán và thực tế.
+C. Để người lập trình có thời gian nghỉ ngơi.
+D. Để cài đặt phần mềm vào máy.
+ANSWER: B
+
+Sự khác biệt cơ bản nhất giữa “Học máy truyền thống” (Machine Learning) và “Học sâu” (Deep Learning) về khía cạnh trích xuất đặc trưng (Feature Extraction) là gì?
+A. Học máy tự động trích xuất đặc trưng; Học sâu cần con người làm thủ công.
+B. Học máy cần chuyên gia trích xuất đặc trưng thủ công; Học sâu tự động học và trích xuất đặc trưng từ dữ liệu thô.
+C. Cả hai đều cần con người làm thủ công.
+D. Học sâu không cần đặc trưng nào cả.
+ANSWER: B
+
+Tại sao Học sâu (Deep Learning) lại yêu cầu phần cứng mạnh mẽ (như GPU) hơn so với Học máy thông thường?
+A. Vì nó cần màn hình độ phân giải cao để hiển thị.
+B. Vì nó thực hiện một lượng khổng lồ các phép tính ma trận trên hàng triệu tham số trong mạng nơ-ron nhiều lớp.
+C. Vì nó cần kết nối Internet tốc độ cao liên tục.
+D. Vì nó chiếm nhiều dung lượng ổ cứng hơn.
+ANSWER: B
+
+Kiến trúc mạng nơ-ron nào được coi là “khối xây dựng cốt lõi” cho các bài toán thị giác máy tính (như nhận diện ảnh bệnh cây trồng)?
+A. RNN (Recurrent Neural Network).
+B. CNN (Convolutional Neural Network - Mạng Nơ-ron Tích chập).
+C. K-Means Clustering.
+D. Linear Regression.
+ANSWER: B
+
+Trong mạng CNN, nhiệm vụ chính của “Lớp Tích chập” (Convolutional Layer) là gì?
+A. Giảm kích thước ảnh ngay lập tức.
+B. Sử dụng các bộ lọc (filters) để quét qua ảnh và phát hiện các đặc trưng cục bộ (cạnh, góc, màu sắc).
+C. Biến đổi ảnh thành văn bản.
+D. Phân loại ảnh ra kết quả cuối cùng.
+ANSWER: B
+
+“Bản đồ đặc trưng” (Feature Map) trong CNN được tạo ra như thế nào?
+A. Do người dùng vẽ tay.
+B. Là kết quả đầu ra khi áp dụng một bộ lọc (filter) lên ảnh đầu vào.
+C. Là bản đồ vị trí địa lý của bức ảnh.
+D. Là danh sách các màu sắc trong ảnh.
+ANSWER: B
+
+Mục tiêu chính của “Lớp Gộp” (Pooling Layer), ví dụ như Max Pooling, là gì?
+A. Tăng độ phân giải của ảnh lên gấp đôi.
+B. Giảm kích thước không gian của bản đồ đặc trưng (lấy mẫu con) để giảm tải tính toán và hạn chế quá khớp (overfitting).
+C. Tô màu cho bức ảnh.
+D. Xoay bức ảnh 90 độ.
+ANSWER: B
+
+Trong kỹ thuật tích chập, tham số “Stride” (Sải bước) có ý nghĩa gì?
+A. Là kích thước của bộ lọc.
+B. Là khoảng cách dịch chuyển của bộ lọc trên ảnh đầu vào mỗi lần quét.
+C. Là số lượng lớp ẩn.
+D. Là độ sáng của ảnh.
+ANSWER: B
+
+Kỹ thuật “Padding” (Đệm) thường được sử dụng trong CNN để làm gì?
+A. Thêm các giá trị 0 xung quanh ảnh đầu vào để giữ nguyên kích thước ảnh sau khi tích chập.
+B. Xóa bớt các pixel ở viền ảnh.
+C. Làm mờ ảnh để bảo mật.
+D. Tăng độ tương phản của ảnh.
+ANSWER: A
+
+Lớp nào trong CNN có nhiệm vụ chuyển đổi dữ liệu 3D (từ các lớp tích chập/gộp) thành vector 1D để đưa vào mạng kết nối đầy đủ?
+A. Lớp Convolution.
+B. Lớp Flatten (Làm phẳng).
+C. Lớp Pooling.
+D. Lớp Softmax.
+ANSWER: B
+
+Trong bài toán phân loại bệnh cây trồng, đầu ra của mạng CNN thường đi qua hàm nào để tính xác suất thuộc về từng loại bệnh (ví dụ: Bệnh phấn trắng, Bệnh gỉ sắt, Khỏe mạnh)?
+A. Hàm ReLU.
+B. Hàm Softmax.
+C. Hàm Linear.
+D. Hàm Step.
+ANSWER: B
+
+VGG16, ResNet-50, InceptionV3 là tên gọi của cái gì?
+A. Các loại virus máy tính.
+B. Các kiến trúc mạng CNN nổi tiếng đã được huấn luyện trước (Pre-trained models) thường dùng trong Học chuyển giao.
+C. Tên các loại cảm biến IoT.
+D. Tên các vệ tinh nông nghiệp.
+ANSWER: B
+
+“Học chuyển giao” (Transfer Learning) giúp ích gì cho bài toán nhận diện bệnh cây trồng khi chúng ta có ít dữ liệu ảnh?
+A. Nó giúp tạo ra thêm ảnh giả.
+B. Nó cho phép tái sử dụng một mô hình đã được huấn luyện trên bộ dữ liệu lớn (như ImageNet) và tinh chỉnh lại cho bài toán cụ thể, giúp tiết kiệm thời gian và đạt hiệu suất cao.
+C. Nó giúp chuyển dữ liệu từ máy tính này sang máy tính khác nhanh hơn.
+D. Nó không có tác dụng gì.
+ANSWER: B
+
+Trong quy trình phát hiện bệnh cây trồng bằng AI, bước “Thu thập dữ liệu” (Data Acquisition) thường gặp thách thức lớn nhất là gì?
+A. Không có máy ảnh để chụp.
+B. Thiếu dữ liệu hình ảnh chất lượng cao và được gán nhãn chính xác (đặc biệt là ảnh chụp thực tế ngoài đồng ruộng với nền phức tạp).
+C. Dữ liệu quá nhiều không thể lưu trữ hết.
+D. Cây trồng không bao giờ bị bệnh.
+ANSWER: B
+
+Kỹ thuật “Tăng cường dữ liệu” (Data Augmentation) bao gồm những thao tác nào sau đây?
+A. Xoay ảnh, lật ảnh, cắt ảnh, thay đổi độ sáng để tạo ra các biến thể mới từ ảnh gốc.
+B. Chụp thêm ảnh mới bằng máy ảnh khác.
+C. Tăng độ phân giải của ảnh lên 4K.
+D. Viết mô tả văn bản cho từng bức ảnh.
+ANSWER: A
+
+Tại sao kỹ thuật Tăng cường dữ liệu lại quan trọng trong các dự án nông nghiệp?
+A. Vì nó giúp tiết kiệm dung lượng ổ cứng.
+B. Vì việc thu thập hàng nghìn bức ảnh bệnh cây trong thực tế rất tốn kém và khó khăn; tăng cường giúp mở rộng bộ dữ liệu nhân tạo để mô hình học được nhiều biến thể hơn.
+C. Vì nó làm cho bức ảnh đẹp hơn.
+D. Vì nó giúp máy tính chạy mát hơn.
+ANSWER: B
+
+Trong Case Study về bệnh lá táo (Chapter 8), ba loại bệnh chính được nghiên cứu là gì?
+A. Sốt xuất huyết, Cúm A, Covid-19.
+B. Bệnh đốm lá Alternaria, Bệnh ghẻ táo (Apple Scab), và Bệnh thối táo (Apple Rot).
+C. Bệnh vàng lá, Bệnh rụng lá, Bệnh khô cành.
+D. Bệnh phấn trắng, Bệnh sương mai, Bệnh gỉ sắt.
+ANSWER: B
+
+Trong nghiên cứu này, các tác giả đã so sánh hiệu suất của mô hình CNN tự xây dựng (Custom CNN) với các mô hình nào?
+A. Linear Regression, SVM, KNN.
+B. VGG16, ResNet-50, InceptionV3.
+C. RNN, LSTM, GRU.
+D. Photoshop, Paint, Canva.
+ANSWER: B
+
+Kết quả thực nghiệm trong Chapter 8 cho thấy mô hình nào đạt hiệu suất cao nhất trong việc phân loại bệnh lá táo?
+A. Custom CNN (80%).
+B. ResNet-50 (81%).
+C. InceptionV3 (83%).
+D. VGG16 (85%).
+ANSWER: D
+
+Chỉ số “Precision” (Độ chuẩn xác) trong bài toán phát hiện bệnh có ý nghĩa gì?
+A. Tỷ lệ số lần mô hình dự đoán đúng trên tổng số ảnh.
+B. Trong số các ảnh mô hình dự đoán là “Bệnh A”, có bao nhiêu phần trăm thực sự là “Bệnh A”.
+C. Trong số tất cả các cây bị “Bệnh A” thực tế, mô hình tìm ra được bao nhiêu phần trăm.
+D. Tốc độ dự đoán của mô hình.
+ANSWER: B
+
+Chỉ số “Recall” (Độ phủ/Độ thu hồi) quan trọng như thế nào trong nông nghiệp?
+A. Nó cho biết mô hình bỏ sót bao nhiêu cây bị bệnh. Recall cao nghĩa là ít bỏ sót bệnh.
+B. Nó cho biết mô hình chạy nhanh hay chậm.
+C. Nó cho biết mô hình tốn bao nhiêu điện.
+D. Nó không quan trọng bằng Accuracy.
+ANSWER: A
+
+Bộ dữ liệu nổi tiếng nào thường được sử dụng làm chuẩn (benchmark) cho các nghiên cứu về bệnh cây trồng (được nhắc đến trong Chapter 10)?
+A. ImageNet.
+B. Plant Village.
+C. COCO Dataset.
+D. MNIST.
+ANSWER: B
+
+Trong dự án phát hiện bệnh khoai tây (Chapter 10), mô hình CNN được xây dựng đã đạt độ chính xác khoảng bao nhiêu?
+A. 50%.
+B. 70%.
+C. 85%.
+D. Trên 97% (cụ thể là 97.68% trên tập xác thực).
+ANSWER: D
+
+Khi triển khai mô hình AI ra thực tế (ví dụ: ứng dụng di động cho nông dân), yếu tố nào sau đây là rào cản kỹ thuật lớn nhất bên cạnh độ chính xác?
+A. Màu sắc của ứng dụng.
+B. Kích thước mô hình và tốc độ xử lý (độ trễ) trên các thiết bị di động cấu hình thấp.
+C. Tên của mô hình.
+D. Số lượng nút bấm trên màn hình.
+ANSWER: B
+
+Bước “Chia tách dữ liệu” (Train/Test Split) thường chia theo tỷ lệ nào trong các nghiên cứu này?
+A. 50% Huấn luyện - 50% Kiểm tra.
+B. 80% Huấn luyện - 20% Kiểm tra (hoặc xấp xỉ 70-30).
+C. 10% Huấn luyện - 90% Kiểm tra.
+D. 100% Huấn luyện - 0% Kiểm tra.
+ANSWER: B
+
+Hàm mất mát (Loss Function) thường được sử dụng cho bài toán phân loại nhiều loại bệnh (Multi-class Classification) là gì?
+A. Mean Squared Error (MSE).
+B. Categorical Cross-Entropy.
+C. Binary Cross-Entropy.
+D. Hinge Loss.
+ANSWER: B
+
+Một mô hình bị “Overfitting” trong biểu đồ Accuracy/Loss sẽ có biểu hiện gì?
+A. Training Accuracy thấp, Validation Accuracy thấp.
+B. Training Accuracy tăng cao (gần 100%), nhưng Validation Accuracy dậm chân tại chỗ hoặc giảm đi (khoảng cách giữa 2 đường lớn dần).
+C. Hai đường Training và Validation dính chặt vào nhau và cùng tăng.
+D. Loss của tập Validation giảm xuống bằng 0.
+ANSWER: B
+
+Lợi ích lớn nhất của việc tự động hóa phát hiện bệnh bằng AI so với phương pháp thủ công là gì?
+A. AI có thể phát hiện bệnh ở giai đoạn rất sớm (khi mắt thường khó thấy) và giám sát liên tục trên diện rộng (qua drone).
+B. AI không tốn tiền điện.
+C. AI có thể chữa bệnh cho cây.
+D. AI giúp cây lớn nhanh hơn.
+ANSWER: A
+

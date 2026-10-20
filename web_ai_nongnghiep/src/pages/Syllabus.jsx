@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Download, MessageSquare, Eye, X, Image as ImageIcon, PlayCircle, BookOpen } from 'lucide-react';
+import { Download, MessageSquare, Eye, X, Image as ImageIcon, PlayCircle, BookOpen, CheckCircle } from 'lucide-react';
 import textbooksData from '../data/textbooks.json';
 
 const Syllabus = () => {
@@ -73,6 +73,31 @@ const Syllabus = () => {
                   const weekTextbooks = textbooksData[weekKey] || [];
                   
                   const getSlideForTextbook = (tbName) => {
+                    const weekSpecificSlides = {
+                      // Tuần 1
+                      "1_[AI-Agri] Chapter 1_ Artificial Intelligence.pdf": "Slide_Day_01_AI_Agriculture.pdf",
+                      "1_[AI-Agri] Chapter 12_ Precision Farming.pdf": "Slide_Day_01_AI_in_Precision_Agriculture.pdf",
+                      "1_[Ethics]_Đạo đức trong AI Nông nghiệp.pdf": "Slide_Day_01_Agricultural_AI_Ethics.pdf",
+                      "1_[Data-Driven] Chapter 7 Harvesting Intelligence.pdf": "Slide_Day_01_AI_Powered_Farming.pdf",
+                      // Tuần 6
+                      "6_[AI-Agri] Chapter 12_ Precision Farming.pdf": "[AI-Agri] slide Chapter 12_ Precision Farming.pdf",
+                      "6_[Data-Driven] Chapter 15_ Deep Reinforcement Learning for Smart Irrigation.pdf": "[Data-Driven] slide Chapter 15_ Deep Reinforcement Learning for Smart Irrigation.pdf",
+                      "6_[Data-Driven] Chapter 1_ Leveraging IoT for Precision Health Monitoring.pdf": "[Data-Driven] slide Chapter 1_ Leveraging IoT for Precision Health Monitoring.pdf",
+                      // Tuần 7
+                      "7_[Data-Driven] Chapter 3_ Intelligent Inputs Revolutionizing Agriculture.pdf": "[Data-Driven] slide Chapter 3_ Intelligent Inputs Revolutionizing Agriculture.pdf",
+                      "7_[Data-Driven] Chapter 6_ A Perusal of Machine-Learning Algorithms in Crop-Yield Predictions.pdf": "[Data-Driven] slide Chapter 6_ A Perusal of Machine-Learning Algorithms in Crop-Yield Predictions.pdf",
+                      "7_[Data-Driven] Chapter 9_ Agricultural Crop-Yield Prediction.pdf": "[Data-Driven] slide Chapter 9_ Agricultural Crop-Yield Prediction.pdf",
+                      // Tuần 8
+                      "8_[Ethics]_Đạo đức trong AI Nông nghiệp.pdf": "[Ethics] slide _Đạo đức trong AI Nông nghiệp.pdf",
+                      "8_[Hands-On] Appendix A_ Machine Learning Project Checklist.pdf": "[Hands-On] slide Appendix A_ Machine Learning Project Checklist.pdf",
+                      // Tuần 9&10
+                      "9&10_[AI-Agri] Chapter 7_ Tools for Artificial Intelligence.pdf": "[AI-Agri] slide Chapter 7_ Tools for Artificial Intelligence.pdf",
+                      "9&10_[Data-Driven] Chapter 4_ Case Studies on the Initiatives.pdf": "[Data-Driven] slide Chapter 4_ Case Studies on the Initiatives.pdf",
+                    };
+
+                    const weekSpecificKey = `${weekKey}_${tbName}`;
+                    if (weekSpecificSlides[weekSpecificKey]) return weekSpecificSlides[weekSpecificKey];
+
                     const knownSlides = {
                       "[AI-Agri] Chapter 1_ Artificial Intelligence.pdf": "Slide_Day_01_AI_Agriculture.pdf",
                       "[AI-Agri] Chapter 12_ Precision Farming.pdf": "Slide_Day_01_AI_in_Precision_Agriculture.pdf",
@@ -92,7 +117,16 @@ const Syllabus = () => {
                       "[AI-Agri] Chapter 11_ Species Recognition in Flowers.pdf": "[AI-Agri] slide Chapter 11_ Species Recognition in Flowers.pdf",
                       "[AI-Agri] Chapter 5_ Computer Vision.pdf": "[AI-Agri] slide Chapter 5_ Computer Vision.pdf",
                       "[Data-Driven] Chapter 2_ Significance of Machine Learning in Apple Disease Detection.pdf": "[Data-Driven] slide Chapter 2_ Significance of Machine Learning in Apple Disease Detection.pdf",
-                      "[Hands-On] Chapter 14_ Deep Computer Vision Using CNNs.pdf": "[Hands-On] slide Chapter 14_ Deep Computer Vision Using CNNs.pdf"
+                      "[Hands-On] Chapter 14_ Deep Computer Vision Using CNNs.pdf": "[Hands-On] slide Chapter 14_ Deep Computer Vision Using CNNs.pdf",
+                      // Tuần 7
+                      "[Data-Driven] Chapter 3_ Intelligent Inputs Revolutionizing Agriculture.pdf": "[Data-Driven] slide Chapter 3_ Intelligent Inputs Revolutionizing Agriculture.pdf",
+                      "[Data-Driven] Chapter 6_ A Perusal of Machine-Learning Algorithms in Crop-Yield Predictions.pdf": "[Data-Driven] slide Chapter 6_ A Perusal of Machine-Learning Algorithms in Crop-Yield Predictions.pdf",
+                      "[Data-Driven] Chapter 9_ Agricultural Crop-Yield Prediction.pdf": "[Data-Driven] slide Chapter 9_ Agricultural Crop-Yield Prediction.pdf",
+                      // Tuần 8
+                      "[Hands-On] Appendix A_ Machine Learning Project Checklist.pdf": "[Hands-On] slide Appendix A_ Machine Learning Project Checklist.pdf",
+                      // Tuần 9&10
+                      "[AI-Agri] Chapter 7_ Tools for Artificial Intelligence.pdf": "[AI-Agri] slide Chapter 7_ Tools for Artificial Intelligence.pdf",
+                      "[Data-Driven] Chapter 4_ Case Studies on the Initiatives.pdf": "[Data-Driven] slide Chapter 4_ Case Studies on the Initiatives.pdf",
                     };
                     if (knownSlides[tbName]) return knownSlides[tbName];
                     
@@ -269,6 +303,32 @@ const Syllabus = () => {
                     <PlayCircle size={18} />
                     Xem Video (Tóm Tắt)
                   </button>
+                )}
+
+                {['1', '2', '3', '4'].includes(week.num.toString()) && (
+                  <a 
+                    href={`${import.meta.env.BASE_URL}quizzes/Day0${week.num}/index.html`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                    style={{ 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      justifyContent: 'center', 
+                      gap: '8px', 
+                      width: '100%', 
+                      background: 'linear-gradient(135deg, #15803d 0%, #166534 100%)', 
+                      color: 'white', 
+                      textDecoration: 'none', 
+                      marginTop: '6px', 
+                      padding: '10px', 
+                      fontWeight: 600, 
+                      borderRadius: '8px' 
+                    }}
+                  >
+                    <CheckCircle size={18} />
+                    📝 Làm Bài Trắc Nghiệm Buổi {week.num}
+                  </a>
                 )}
 
                 {week.audio && (
