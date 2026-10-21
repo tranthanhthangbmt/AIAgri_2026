@@ -60,6 +60,56 @@ const SESSION_DETAILS = {
     wordFile: "Buổi 4 - Thị giác máy tính (Computer Vision) ứng dụng.docx",
     excelFile: "Buổi 4 - Thị giác máy tính (Computer Vision) ứng dụng.xlsx",
     aikenFile: "Buổi 4 - Thị giác máy tính (Computer Vision) ứng dụng_Aiken.txt"
+  },
+  "5": {
+    day: "Day05",
+    title: "Buổi 5: Ứng dụng AI trong quản lý nước và dinh dưỡng",
+    subtitle: "Hạ tầng IoT, cảm biến độ ẩm đất, tưới tiêu chính xác & cân bằng dinh dưỡng",
+    badge: "Buổi 5",
+    color: "#ea580c",
+    wordFile: "Buổi 5 - Ứng dụng AI trong quản lý nước và dinh dưỡng.docx",
+    excelFile: "Buổi 5 - Ứng dụng AI trong quản lý nước và dinh dưỡng.xlsx",
+    aikenFile: "Buổi 5 - Ứng dụng AI trong quản lý nước và dinh dưỡng_Aiken.txt"
+  },
+  "6": {
+    day: "Day06",
+    title: "Buổi 6: Ứng dụng AI trong dự báo & hoạch định sản xuất",
+    subtitle: "Mô hình dự báo năng suất cây trồng, chuỗi thời gian & tối ưu hóa mùa vụ",
+    badge: "Buổi 6",
+    color: "#d97706",
+    wordFile: "Buổi 6 - Ứng dụng AI trong dự báo & hoạch định sản xuất.docx",
+    excelFile: "Buổi 6 - Ứng dụng AI trong dự báo & hoạch định sản xuất.xlsx",
+    aikenFile: "Buổi 6 - Ứng dụng AI trong dự báo & hoạch định sản xuất_Aiken.txt"
+  },
+  "7": {
+    day: "Day07",
+    title: "Buổi 7: Báo cáo nhóm và Thảo luận dự án",
+    subtitle: "Quy trình chuẩn dự án Machine Learning (Checklist), thu thập & tiền xử lý dữ liệu thực tế",
+    badge: "Buổi 7",
+    color: "#0284c7",
+    wordFile: "Buổi 7 - Báo cáo nhóm và Thảo luận dự án.docx",
+    excelFile: "Buổi 7 - Báo cáo nhóm và Thảo luận dự án.xlsx",
+    aikenFile: "Buổi 7 - Báo cáo nhóm và Thảo luận dự án_Aiken.txt"
+  },
+  "8": {
+    day: "Day08",
+    title: "Buổi 8: Ôn tập và Kiểm tra giữa kỳ",
+    subtitle: "Chuẩn bị & an toàn lắp đặt thiết bị ngoại địa, tổng hợp kiến thức & đạo đức AI",
+    badge: "Buổi 8",
+    color: "#dc2626",
+    wordFile: "Buổi 8 - Ôn tập và Kiểm tra giữa kỳ.docx",
+    excelFile: "Buổi 8 - Ôn tập và Kiểm tra giữa kỳ.xlsx",
+    aikenFile: "Buổi 8 - Ôn tập và Kiểm tra giữa kỳ_Aiken.txt"
+  },
+  "9&10": {
+    day: "Day09_10",
+    title: "Buổi 9&10: Thực hành (tại doanh nghiệp/trang trại)",
+    subtitle: "Công cụ vận hành, thư viện Python (Pandas/Scikit-learn) & phân tích số liệu thực tế",
+    badge: "Buổi 9&10",
+    color: "#4f46e5",
+    wordFile: "Buổi 9&10 - Thực hành (tại doanh nghiệp_trang trại).docx",
+    excelFile: "Buổi 9&10 - Thực hành (tại doanh nghiệp_trang trại).xlsx",
+    aikenFile: "Buổi 9&10 - Thực hành (tại doanh nghiệp_trang trại)_Aiken.txt"
   }
 };
 
@@ -225,7 +275,8 @@ const Quizzes = () => {
   // VIEW 1: DASHBOARD (SELECTION OF SESSIONS & DOWNLOADS)
   // -------------------------------------------------------------
   if (!selectedWeek) {
-    const weeksList = ["1", "2", "3", "4"];
+    const weeksList = ["1", "2", "3", "4", "5", "6", "7", "8", "9&10"];
+    const totalQuestions = Object.values(quizzesData).reduce((acc, qList) => acc + (qList?.length || 0), 0);
 
     return (
       <div className="container page-enter" style={{ paddingTop: '40px', paddingBottom: '60px' }}>
@@ -246,7 +297,7 @@ const Quizzes = () => {
             Bài Tập Trắc Nghiệm Môn Học
           </h2>
           <p style={{ color: 'var(--text-secondary)', maxWidth: '750px', margin: '0 auto', fontSize: '1.05rem', lineHeight: '1.6' }}>
-            Ngân hàng <strong>154 câu hỏi trắc nghiệm chuẩn</strong> theo đề cương học phần AI trong nông nghiệp. 
+            Ngân hàng <strong>{totalQuestions} câu hỏi trắc nghiệm chuẩn</strong> theo đề cương toàn bộ môn học AI trong nông nghiệp (Buổi 1 đến 10). 
             Hỗ trợ 2 chế độ làm bài: <strong>Luyện tập từng câu kèm giải thích chi tiết</strong> và <strong>Thi thử tính giờ</strong>.
           </p>
         </div>
@@ -350,7 +401,7 @@ const Quizzes = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
             <Download size={26} color="var(--primary-color)" />
             <h3 style={{ fontSize: '1.4rem', fontWeight: 700, margin: 0 }}>
-              Tải Ngân Hàng Câu Hỏi & Đề Thi (Buổi 1 - 4)
+              Tải Ngân Hàng Câu Hỏi & Đề Thi (Toàn Bộ 10 Buổi Học)
             </h3>
           </div>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', fontSize: '0.98rem' }}>
@@ -366,14 +417,14 @@ const Quizzes = () => {
             marginBottom: '28px'
           }}>
             <h4 style={{ color: 'var(--primary-color)', fontSize: '1.15rem', marginBottom: '8px', fontWeight: 700 }}>
-              🌟 Trọn bộ Ngân hàng 154 câu hỏi (Buổi 1 đến 4)
+              🌟 Trọn bộ Ngân hàng {totalQuestions} câu hỏi (Buổi 1 đến 10)
             </h4>
             <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', marginBottom: '16px' }}>
-              Bao gồm đầy đủ 154 câu hỏi có lời giải thích chi tiết, mã chuẩn hóa Azota (*A.), bảng Excel 2 sheet, Moodle Aiken và mẫu Quizizz.
+              Bao gồm đầy đủ {totalQuestions} câu hỏi có lời giải thích chi tiết, mã chuẩn hóa Azota (*A.), bảng Excel 2 sheet, Moodle Aiken và mẫu Quizizz.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
               <a 
-                href={`${import.meta.env.BASE_URL}downloads/quizzes/NganHang_154_CauHoi_AI_NongNghiep_Buoi_1_den_4.docx`}
+                href={`${import.meta.env.BASE_URL}downloads/quizzes/NganHang_${totalQuestions}_CauHoi_AI_NongNghiep_Buoi_1_den_10.docx`}
                 download
                 className="btn btn-primary"
                 style={{ fontSize: '0.9rem', padding: '9px 16px' }}
@@ -383,7 +434,7 @@ const Quizzes = () => {
               </a>
 
               <a 
-                href={`${import.meta.env.BASE_URL}downloads/quizzes/NganHang_154_CauHoi_AI_NongNghiep_Buoi_1_den_4.xlsx`}
+                href={`${import.meta.env.BASE_URL}downloads/quizzes/NganHang_${totalQuestions}_CauHoi_AI_NongNghiep_Buoi_1_den_10.xlsx`}
                 download
                 className="btn btn-secondary"
                 style={{ fontSize: '0.9rem', padding: '9px 16px' }}
@@ -393,7 +444,7 @@ const Quizzes = () => {
               </a>
 
               <a 
-                href={`${import.meta.env.BASE_URL}downloads/quizzes/Moodle_Aiken_154_CauHoi_Buoi_1_den_4.txt`}
+                href={`${import.meta.env.BASE_URL}downloads/quizzes/Moodle_Aiken_${totalQuestions}_CauHoi_Buoi_1_den_10.txt`}
                 download
                 className="btn btn-secondary"
                 style={{ fontSize: '0.9rem', padding: '9px 16px' }}
@@ -403,7 +454,7 @@ const Quizzes = () => {
               </a>
 
               <a 
-                href={`${import.meta.env.BASE_URL}downloads/quizzes/Quizizz_Template_154_CauHoi_Buoi_1_den_4.xlsx`}
+                href={`${import.meta.env.BASE_URL}downloads/quizzes/Quizizz_Template_${totalQuestions}_CauHoi_Buoi_1_den_10.xlsx`}
                 download
                 className="btn btn-secondary"
                 style={{ fontSize: '0.9rem', padding: '9px 16px' }}

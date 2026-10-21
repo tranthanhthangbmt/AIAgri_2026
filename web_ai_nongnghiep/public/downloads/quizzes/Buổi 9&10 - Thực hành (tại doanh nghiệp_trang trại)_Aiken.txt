@@ -1,0 +1,105 @@
+Theo tài liệu [AI-Agri] Chapter 7, ngôn ngữ lập trình phổ biến nhất hiện nay để triển khai các dự án AI trong nông nghiệp là gì?
+A. C++.
+B. Python.
+C. Java.
+D. 
+ANSWER: B
+
+Công cụ “Google Colaboratory” (Google Colab) được khuyến nghị sử dụng cho sinh viên thực hành vì lý do chính nào?
+A. Nó có giao diện đẹp.
+B. Nó chạy trên trình duyệt (đám mây), không yêu cầu cài đặt phần mềm phức tạp trên máy cá nhân và cung cấp miễn phí quyền truy cập GPU.
+C. Nó hoạt động không cần Internet.
+D. 
+ANSWER: B
+
+Để vẽ biểu đồ (ví dụ: biểu đồ biến thiên độ ẩm đất theo thời gian) trong báo cáo, thư viện Python nào thường được sử dụng nhất?
+A. PyGame.
+B. Matplotlib (hoặc Seaborn).
+C. TensorFlow.
+D. 
+ANSWER: B
+
+Khi bạn muốn chia sẻ code và kết quả thực hành của mình cho giảng viên hoặc thành viên nhóm qua Google Colab, bạn có thể làm gì?
+A. Chụp ảnh màn hình gửi qua Zalo.
+B. Nhấn nút “Share” để tạo liên kết (Link) có thể truy cập hoặc mời qua email, tương tự như Google Docs.
+C. Phải tải code về in ra giấy.
+D. 
+ANSWER: B
+
+Thư viện nào đóng vai trò quan trọng trong việc xử lý dữ liệu dạng bảng (như file Excel chứa dữ liệu cảm biến) trong Python?
+A. Pandas.
+B. OpenCV.
+C. Keras.
+D. 
+ANSWER: A
+
+“AI Biên” (Edge AI) - công nghệ thường thấy trong các hệ thống nông nghiệp hiện đại (Chapter 4) - hoạt động theo nguyên lý nào?
+A. Gửi tất cả dữ liệu thô lên đám mây (Cloud) để xử lý rồi mới gửi kết quả về.
+B. Xử lý dữ liệu cục bộ ngay trên thiết bị phần cứng (như Camera, Gateway) tại trang trại, không cần gửi về Cloud.
+C. Thuê người ngồi canh máy tính.
+D. 
+ANSWER: B
+
+Tại sao Edge AI lại quan trọng đối với việc “Vận hành” hệ thống tại các vùng nông thôn hẻo lánh?
+A. Vì nó rẻ tiền hơn.
+B. Vì nó giúp hệ thống vẫn hoạt động và ra quyết định được ngay cả khi mất kết nối Internet hoặc mạng chập chờn (giảm độ trễ).
+C. Vì nó đẹp hơn.
+D. 
+ANSWER: B
+
+Thiết bị nào sau đây là ví dụ điển hình của một thiết bị Edge AI mà sinh viên có thể gặp khi đi thực tế?
+A. Máy chủ siêu máy tính (Supercomputer).
+B. Raspberry Pi, Jetson Nano hoặc các vi điều khiển nhúng (Embedded systems).
+C. Laptop Gaming.
+D. 
+ANSWER: B
+
+Phần đầu tiên của một báo cáo thực hành/nghiên cứu khoa học (như các Case Study trong sách) thường là gì, có chức năng tóm tắt toàn bộ nội dung?
+A. Kết luận (Conclusion).
+B. Tóm tắt (Abstract).
+C. Tài liệu tham khảo (References).
+D. 
+ANSWER: B
+
+Trong phần “Phương pháp nghiên cứu” (Methodology) của báo cáo thực hành, bạn cần trình bày điều gì?
+A. Cảm nghĩ cá nhân về buổi đi thực tế.
+B. Mô tả chi tiết các bước đã thực hiện, công cụ đã sử dụng (phần cứng, phần mềm), và cách thu thập dữ liệu để người khác có thể lặp lại thí nghiệm.
+C. Kết quả đạt được.
+D. 
+ANSWER: B
+
+Khi trình bày “Kết quả” (Results), ngoài việc đưa ra các con số, bạn cần làm gì để báo cáo trực quan hơn?
+A. Viết thật nhiều chữ.
+B. Sử dụng Biểu đồ (Charts), Hình ảnh minh họa (Figures) và Bảng số liệu (Tables).
+C. Dùng nhiều màu sắc sặc sỡ cho văn bản.
+D. 
+ANSWER: B
+
+Phần “Thảo luận” (Discussion) trong báo cáo dùng để làm gì?
+A. Để khen ngợi các thành viên trong nhóm.
+B. Để giải thích ý nghĩa của kết quả, so sánh với lý thuyết, phân tích nguyên nhân sai số (nếu có) và đề xuất hướng cải thiện.
+C. Để chép lại phần Kết quả.
+D. 
+ANSWER: B
+
+Tại sao việc trích dẫn “Tài liệu tham khảo” (References) ở cuối báo cáo là bắt buộc?
+A. Để cho bài báo cáo dài hơn.
+B. Để tôn trọng quyền sở hữu trí tuệ, tránh đạo văn và giúp người đọc kiểm chứng nguồn thông tin.
+C. Để khoe khoang kiến thức.
+D. 
+ANSWER: B
+
+Mục tiêu cuối cùng của việc ứng dụng AI và Chuyển đổi số trong nông nghiệp (xuyên suốt khóa học này) là gì?
+A. Thay thế hoàn toàn con người.
+B. Tối ưu hóa năng suất, giảm chi phí/rủi ro, bảo vệ môi trường và phát triển nông nghiệp bền vững.
+C. Làm cho nông nghiệp trở nên đắt đỏ hơn.
+D. 
+ANSWER: B
+
+Theo bạn, rào cản lớn nhất để nông dân Việt Nam tiếp cận các công nghệ này (như đã thảo luận trong phần Đạo đức) là gì?
+A. Nông dân không thích công nghệ.
+B. Chi phí đầu tư ban đầu cao và yêu cầu về kỹ năng/kiến thức vận hành.
+C. Không có điện.
+D. 
+ANSWER: B
+

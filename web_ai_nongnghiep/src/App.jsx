@@ -8,6 +8,7 @@ import Resources from './pages/Resources';
 import Quizzes from './pages/Quizzes';
 import Exercises from './pages/Exercises';
 import Exam from './pages/Exam';
+import AgriExperts from './pages/AgriExperts';
 import './index.css';
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
             <Route path="/quizzes" element={<Quizzes />} />
             <Route path="/exam" element={<Exam />} />
             <Route path="/exercises" element={<Exercises />} />
+            <Route path="/experts" element={<AgriExperts />} />
+            <Route path="/expert-systems" element={<AgriExperts />} />
           </Routes>
         </main>
         <Footer />

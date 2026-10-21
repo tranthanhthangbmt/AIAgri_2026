@@ -32,6 +32,36 @@ SESSION_META = {
         "title": "Buổi 4: Thị giác máy tính (Computer Vision) ứng dụng",
         "badge": "Buổi 4",
         "theme_color": "#0d9488"
+    },
+    "5": {
+        "folder": "Day05",
+        "title": "Buổi 5: Ứng dụng AI trong quản lý nước và dinh dưỡng",
+        "badge": "Buổi 5",
+        "theme_color": "#ea580c"
+    },
+    "6": {
+        "folder": "Day06",
+        "title": "Buổi 6: Ứng dụng AI trong dự báo & hoạch định sản xuất",
+        "badge": "Buổi 6",
+        "theme_color": "#d97706"
+    },
+    "7": {
+        "folder": "Day07",
+        "title": "Buổi 7: Báo cáo nhóm và Thảo luận dự án",
+        "badge": "Buổi 7",
+        "theme_color": "#0284c7"
+    },
+    "8": {
+        "folder": "Day08",
+        "title": "Buổi 8: Ôn tập và Kiểm tra giữa kỳ",
+        "badge": "Buổi 8",
+        "theme_color": "#dc2626"
+    },
+    "9&10": {
+        "folder": "Day09_10",
+        "title": "Buổi 9&10: Thực hành (tại doanh nghiệp/trang trại)",
+        "badge": "Buổi 9&10",
+        "theme_color": "#4f46e5"
     }
 }
 

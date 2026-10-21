@@ -4321,6 +4321,11 @@
   ],
   "5": [
     {
+      "id": 155,
+      "local_id": 1,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "“Internet vạn vật” (IoT) trong nông nghiệp được định nghĩa tốt nhất là gì?",
       "options": [
         {
@@ -4344,6 +4349,11 @@
       "explanation": "IoT là mạng lưới các đối tượng vật lý được kết nối điện tử để thu thập và tổng hợp dữ liệu, cho phép quản lý tài nguyên chủ động."
     },
     {
+      "id": 156,
+      "local_id": 2,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong kiến trúc hệ thống IoT 3 lớp điển hình, lớp dưới cùng có nhiệm vụ thu thập dữ liệu trực tiếp từ môi trường được gọi là gì?",
       "options": [
         {
@@ -4367,6 +4377,11 @@
       "explanation": "Lớp Cảm biến (Perception Layer) bao gồm các thiết bị như cảm biến độ ẩm, nhiệt độ… tiếp xúc trực tiếp với môi trường để thu thập dữ liệu thô."
     },
     {
+      "id": 157,
+      "local_id": 3,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Cảm biến độ ẩm đất (Soil Moisture Sensor) đóng vai trò gì trong hệ thống tưới tiêu thông minh?",
       "options": [
         {
@@ -4390,6 +4405,11 @@
       "explanation": "Cảm biến độ ẩm của đất giúp xác định thời điểm tưới tiêu tối ưu bằng cách cung cấp dữ liệu về lượng nước thực tế trong đất."
     },
     {
+      "id": 158,
+      "local_id": 4,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Vai trò của “Lớp Mạng” (Network Layer) hoặc Gateway trong hệ thống IoT là gì?",
       "options": [
         {
@@ -4413,6 +4433,11 @@
       "explanation": "Lớp mạng chịu trách nhiệm kết nối và truyền dữ liệu từ các thiết bị biên (cảm biến) đến hệ thống xử lý trung tâm."
     },
     {
+      "id": 159,
+      "local_id": 5,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Tại sao dữ liệu “Thời gian thực” (Real-time data) lại quan trọng đối với quản lý tưới tiêu và dinh dưỡng?",
       "options": [
         {
@@ -4436,6 +4461,11 @@
       "explanation": "Để đưa ra các lựa chọn sáng suốt (như tưới nước), việc có sẵn dữ liệu định lượng thời gian thực là rất quan trọng để phản ứng với các biến động tức thời."
     },
     {
+      "id": 160,
+      "local_id": 6,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Thiết bị nào sau đây thường được sử dụng như một bộ điều khiển trung tâm nhỏ gọn (Edge device) tại trang trại để thu thập dữ liệu từ cảm biến trước khi gửi lên Cloud?",
       "options": [
         {
@@ -4459,6 +4489,11 @@
       "explanation": "Raspberry Pi thường được nhắc đến trong các tài liệu IoT như một bộ điều khiển chi phí thấp để thu thập và xử lý dữ liệu tại biên."
     },
     {
+      "id": 161,
+      "local_id": 7,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Một trong những thách thức lớn nhất khi triển khai hệ thống cảm biến IoT trên các cánh đồng rộng lớn ở vùng nông thôn là gì?",
       "options": [
         {
@@ -4482,6 +4517,11 @@
       "explanation": "Các vùng nông thôn thường thiếu hạ tầng mạng ổn định (như 5G/Wi-Fi diện rộng) và nguồn điện lưới, gây khó khăn cho việc truyền dữ liệu liên tục."
     },
     {
+      "id": 162,
+      "local_id": 8,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Công nghệ “Viễn thám” (Remote Sensing) qua vệ tinh khác với Cảm biến IoT tại chỗ (In-situ sensors) ở điểm nào?",
       "options": [
         {
@@ -4505,6 +4545,11 @@
       "explanation": "Vệ tinh/Drone mang lại cái nhìn tổng quan trên quy mô lớn, trong khi cảm biến IoT cung cấp dữ liệu chi tiết tại một điểm cụ thể."
     },
     {
+      "id": 163,
+      "local_id": 9,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Cảm biến NPK được sử dụng để đo thông số gì?",
       "options": [
         {
@@ -4528,6 +4573,11 @@
       "explanation": "NPK là viết tắt của 3 chất dinh dưỡng chính cần thiết cho cây trồng, cảm biến này giúp quyết định lượng phân bón cần thiết."
     },
     {
+      "id": 164,
+      "local_id": 10,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Tại sao cần đưa dữ liệu từ cảm biến lên “Điện toán đám mây” (Cloud Computing)?",
       "options": [
         {
@@ -4551,6 +4601,11 @@
       "explanation": "Dữ liệu được gửi đến nền tảng đám mây để lưu trữ an toàn và phân tích bằng các thuật toán AI/ML phức tạp."
     },
     {
+      "id": 165,
+      "local_id": 11,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Khái niệm “Khả năng tương tác” (Interoperability) trong IoT nông nghiệp đề cập đến vấn đề gì?",
       "options": [
         {
@@ -4574,6 +4629,11 @@
       "explanation": "Sự thiếu khả năng tương tác giữa các thiết bị do các tiêu chuẩn kỹ thuật số khác nhau là một thách thức lớn, cản trở việc tích hợp hệ thống."
     },
     {
+      "id": 166,
+      "local_id": 12,
+      "section": "Phần 3: Quản lý dinh dưỡng & Bón phân chính xác",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Hệ thống IoT trong nông nghiệp thường kết hợp với công nghệ nào để xác định vị trí chính xác của dữ liệu thu thập được?",
       "options": [
         {
@@ -4594,9 +4654,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Nông nghiệp chính xác yêu cầu “đúng nơi”, do đó dữ liệu cảm biến thường phải đi kèm với tọa độ GPS để lập bản đồ biến đổi của cánh đồng.\nPHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)"
+      "explanation": "Nông nghiệp chính xác yêu cầu “đúng nơi”, do đó dữ liệu cảm biến thường phải đi kèm với tọa độ GPS để lập bản đồ biến đổi của cánh đồng."
     },
     {
+      "id": 167,
+      "local_id": 13,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Hạn chế lớn nhất của phương pháp tưới tiêu truyền thống “theo lịch trình cố định” (Fixed Schedule) là gì?",
       "options": [
         {
@@ -4620,6 +4685,11 @@
       "explanation": "Phương pháp tưới theo lịch trình định trước thường không hiệu quả vì nó không xem xét các điều kiện môi trường thay đổi năng động, dẫn đến tưới quá nhiều hoặc quá ít."
     },
     {
+      "id": 168,
+      "local_id": 14,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "“Học tăng cường sâu” (Deep Reinforcement Learning - DRL) là sự kết hợp của hai công nghệ nào?",
       "options": [
         {
@@ -4643,6 +4713,11 @@
       "explanation": "DRL kết hợp khả năng nhận thức của học sâu (xử lý dữ liệu đầu vào phức tạp) với khả năng ra quyết định của học tăng cường."
     },
     {
+      "id": 169,
+      "local_id": 15,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trong mô hình Học tăng cường áp dụng cho tưới tiêu, “Tác nhân” (Agent) đóng vai trò là gì?",
       "options": [
         {
@@ -4666,6 +4741,11 @@
       "explanation": "Agent là thực thể đưa ra quyết định (tưới bao nhiêu nước) dựa trên quan sát môi trường."
     },
     {
+      "id": 170,
+      "local_id": 16,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "“Môi trường” (Environment) trong bài toán tưới tiêu bao gồm những yếu tố nào?",
       "options": [
         {
@@ -4689,6 +4769,11 @@
       "explanation": "Môi trường là nơi Tác nhân tương tác, bao gồm trạng thái vật lý của đất, cây và thời tiết."
     },
     {
+      "id": 171,
+      "local_id": 17,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "“Hành động” (Action) mà Tác nhân AI thực hiện trong hệ thống tưới tiêu là gì?",
       "options": [
         {
@@ -4712,6 +4797,11 @@
       "explanation": "Hành động là quyết định điều khiển của hệ thống, cụ thể là lượng nước tưới tiêu được áp dụng."
     },
     {
+      "id": 172,
+      "local_id": 18,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Cơ chế “Phần thưởng” (Reward) giúp AI học cách tưới tiêu tối ưu như thế nào?",
       "options": [
         {
@@ -4735,6 +4825,11 @@
       "explanation": "Mục tiêu của Agent là tối đa hóa tổng phần thưởng tích lũy. Phần thưởng được thiết kế để khuyến khích việc duy trì độ ẩm tối ưu và tiết kiệm nước."
     },
     {
+      "id": 173,
+      "local_id": 19,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Dữ liệu đầu vào để mô tả “Trạng thái” (State) của cánh đồng cho AI thường bao gồm những gì?",
       "options": [
         {
@@ -4758,6 +4853,11 @@
       "explanation": "Trạng thái (State) cung cấp thông tin ngữ cảnh để AI ra quyết định, bao gồm các thông số môi trường và sinh lý cây trồng."
     },
     {
+      "id": 174,
+      "local_id": 20,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Khái niệm “Thử và Sai” (Trial and Error) trong Học tăng cường có nghĩa là gì?",
       "options": [
         {
@@ -4781,6 +4881,11 @@
       "explanation": "Học tăng cường hoạt động dựa trên nguyên tắc khám phá (thử các hành động mới) và khai thác (sử dụng hành động tốt nhất đã biết), học từ kết quả của các thử nghiệm đó."
     },
     {
+      "id": 175,
+      "local_id": 21,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Tại sao DRL lại ưu việt hơn các hệ thống tưới tự động dựa trên quy tắc (Rule-based, ví dụ: “Nếu độ ẩm < 30% thì tưới”)?",
       "options": [
         {
@@ -4804,6 +4909,11 @@
       "explanation": "DRL có khả năng xử lý các không gian trạng thái phức tạp và học các chiến lược dài hạn (như dự đoán mưa) thay vì chỉ phản ứng tức thì theo quy tắc cứng nhắc."
     },
     {
+      "id": 176,
+      "local_id": 22,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trong nghiên cứu điển hình về tưới tiêu cho cây hạnh nhân (Almond trees) được nhắc đến trong tài liệu, hệ thống DRL đã giúp tiết kiệm được bao nhiêu phần trăm lượng nước so với phương pháp thông thường?",
       "options": [
         {
@@ -4827,6 +4937,11 @@
       "explanation": "Một nghiên cứu điển hình cho thấy hệ thống DRL đã tiết kiệm được 7.8% lượng nước trong khi vẫn duy trì năng suất."
     },
     {
+      "id": 177,
+      "local_id": 23,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Thuật toán DRL nào thường được sử dụng trong các bài toán điều khiển liên tục như tưới tiêu (quyết định lượng nước là số thực)?",
       "options": [
         {
@@ -4850,6 +4965,11 @@
       "explanation": "Đối với không gian hành động liên tục (lượng nước tưới có thể là bất kỳ giá trị nào), các thuật toán như DDPG thường được sử dụng thay vì Q-Learning truyền thống."
     },
     {
+      "id": 178,
+      "local_id": 24,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Một thách thức lớn khi huấn luyện mô hình DRL cho nông nghiệp trong thực tế là gì?",
       "options": [
         {
@@ -4873,6 +4993,11 @@
       "explanation": "Việc huấn luyện trực tiếp trên thực địa rất tốn thời gian và rủi ro. Do đó, người ta thường huấn luyện Agent trên môi trường mô phỏng (Simulators) trước khi đưa ra thực tế."
     },
     {
+      "id": 179,
+      "local_id": 25,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Hệ thống tưới tiêu thông minh DRLIC (Deep Reinforcement Learning for Irrigation Control) xem xét yếu tố nào để ra quyết định?",
       "options": [
         {
@@ -4893,9 +5018,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Hệ thống DRLIC học chính sách tối ưu bằng cách xem xét động lực học của nước trong đất, bao gồm cả sự mất nước trong tương lai.\nPHẦN 3: QUẢN LÝ DINH DƯỠNG & BÓN PHÂN CHÍNH XÁC"
+      "explanation": "Hệ thống DRLIC học chính sách tối ưu bằng cách xem xét động lực học của nước trong đất, bao gồm cả sự mất nước trong tương lai. PHẦN 3: QUẢN LÝ DINH DƯỠNG & BÓN PHÂN CHÍNH XÁC"
     },
     {
+      "id": 180,
+      "local_id": 26,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Khái niệm “Quản lý canh tác theo địa điểm cụ thể” (Site-Specific Crop Management - SSCM) trong bón phân nghĩa là gì?",
       "options": [
         {
@@ -4919,6 +5049,11 @@
       "explanation": "SSCM tập trung vào việc xử lý sự biến đổi không gian, nghĩa là bón phân đúng liều lượng cho đúng vị trí thay vì bón đồng loạt."
     },
     {
+      "id": 181,
+      "local_id": 27,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Công nghệ “VRT” trong máy rải phân bón thông minh là viết tắt của từ gì?",
       "options": [
         {
@@ -4942,6 +5077,11 @@
       "explanation": "VRT (Variable Rate Technology) cho phép máy móc tự động điều chỉnh lưu lượng phân bón/thuốc trừ sâu khi di chuyển qua các vùng khác nhau của cánh đồng."
     },
     {
+      "id": 182,
+      "local_id": 28,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trước khi thực hiện bón phân chính xác, bước quan trọng nhất để hiểu tình trạng dinh dưỡng của đất là gì?",
       "options": [
         {
@@ -4965,6 +5105,11 @@
       "explanation": "Để quản lý sự biến đổi, trước tiên phải “Đánh giá sự biến đổi” thông qua việc thu thập dữ liệu mẫu đất (độ pH, N, P, K)."
     },
     {
+      "id": 183,
+      "local_id": 29,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Việc áp dụng bón phân quá mức (Over-fertilization) theo phương pháp truyền thống gây ra hậu quả môi trường nghiêm trọng nào?",
       "options": [
         {
@@ -4988,6 +5133,11 @@
       "explanation": "Nông nghiệp chính xác giúp tránh dư lượng hóa chất quá mức trong đất và nước, giảm thiểu ô nhiễm môi trường."
     },
     {
+      "id": 184,
+      "local_id": 30,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Phương pháp “Quang phổ học” (Spectroscopy) giúp ích gì trong quản lý dinh dưỡng cây trồng?",
       "options": [
         {
@@ -5011,6 +5161,11 @@
       "explanation": "Tài liệu đề cập đến việc “sử dụng phương pháp quang phổ để phân tích hàm lượng nitơ, phốt pho và kali” để đưa ra quyết định bón phân."
     },
     {
+      "id": 185,
+      "local_id": 31,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Bản đồ quy định liều lượng bón phân được tạo ra bởi AI thường được gọi là gì?",
       "options": [
         {
@@ -5034,6 +5189,11 @@
       "explanation": "Dữ liệu phân tích được chuyển đổi thành một “Prescription Map” (Bản đồ toa thuốc/chỉ dẫn), nạp vào máy VRT để máy biết đi đến đâu thì bón bao nhiêu."
     },
     {
+      "id": 186,
+      "local_id": 32,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Theo tài liệu [AI-Agri] Chapter 12, việc áp dụng công nghệ quét cánh đồng và bón phân chính xác có thể giảm lượng phân bón sử dụng lên đến bao nhiêu phần trăm?",
       "options": [
         {
@@ -5057,6 +5217,11 @@
       "explanation": "Tài liệu nêu rõ con số: “Cách tiếp cận này đã được chứng minh là có thể giảm việc sử dụng phân bón lên đến 30%”."
     },
     {
+      "id": 187,
+      "local_id": 33,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "“Ba đỉnh tam giác” của Nông nghiệp chính xác thường được nhắc đến là Kinh tế, Môi trường và yếu tố nào nữa?",
       "options": [
         {
@@ -5080,6 +5245,11 @@
       "explanation": "Nông nghiệp chính xác hướng tới sự cân bằng giữa lợi ích kinh tế (lợi nhuận), bảo vệ môi trường và lợi ích xã hội (an ninh lương thực)."
     },
     {
+      "id": 188,
+      "local_id": 34,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Khi AI phân tích dữ liệu dinh dưỡng đất, nếu phát hiện một vùng có độ pH quá thấp (đất chua), hệ thống sẽ đề xuất hành động gì?",
       "options": [
         {
@@ -5103,6 +5273,11 @@
       "explanation": "Đây là kiến thức vận dụng cơ bản trong nông nghiệp chính xác: Điều chỉnh pH là bước đầu tiên để cây hấp thụ được dinh dưỡng, AI sẽ tính toán lượng vôi cần thiết cho từng điểm."
     },
     {
+      "id": 189,
+      "local_id": 35,
+      "section": "PHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Lợi ích “Tích lũy kiến thức” (Knowledge accumulation) trong hệ thống quản lý dinh dưỡng thông minh có ý nghĩa gì?",
       "options": [
         {
@@ -5128,6 +5303,11 @@
   ],
   "6": [
     {
+      "id": 190,
+      "local_id": 1,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Theo tài liệu [Data-Driven] Chapter 6, năng suất cây trồng (Crop Yield) là kết quả tương tác phức tạp của ba nhóm yếu tố chính nào?",
       "options": [
         {
@@ -5151,6 +5331,11 @@
       "explanation": "Năng suất cây trồng chịu ảnh hưởng bởi sự tương tác giữa đặc tính di truyền (Gen), điều kiện môi trường (Đất, khí hậu) và các biện pháp quản lý canh tác (G x E x M)."
     },
     {
+      "id": 191,
+      "local_id": 2,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong các yếu tố môi trường ảnh hưởng đến dự báo năng suất, yếu tố nào được coi là quan trọng nhất và khó kiểm soát nhất?",
       "options": [
         {
@@ -5174,6 +5359,11 @@
       "explanation": "Biến đổi khí hậu và các kiểu thời tiết (nhiệt độ, lượng mưa) ảnh hưởng trực tiếp và mạnh mẽ nhất đến sự phát triển của cây trồng và rất khó dự đoán chính xác."
     },
     {
+      "id": 192,
+      "local_id": 3,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Chỉ số thực vật nào thường được trích xuất từ hình ảnh vệ tinh hoặc UAV để đánh giá sức khỏe cây trồng và dự báo năng suất?",
       "options": [
         {
@@ -5197,6 +5387,11 @@
       "explanation": "NDVI là chỉ số phổ biến nhất trong viễn thám nông nghiệp, phản ánh mật độ chất diệp lục và sinh khối xanh, tương quan chặt chẽ với năng suất tiềm năng."
     },
     {
+      "id": 193,
+      "local_id": 4,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Tại sao dữ liệu thu thập từ cảm biến hoặc nhật ký canh tác (Raw Data) cần phải trải qua bước “Làm sạch dữ liệu” (Data Cleaning) trước khi đưa vào mô hình AI?",
       "options": [
         {
@@ -5220,6 +5415,11 @@
       "explanation": "Dữ liệu thô thường chứa lỗi. Việc xử lý giá trị thiếu và ngoại lai là bắt buộc để đảm bảo mô hình học được các mẫu chính xác."
     },
     {
+      "id": 194,
+      "local_id": 5,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Kỹ thuật “Chuẩn hóa dữ liệu” (Data Normalization/Scaling) có tác dụng gì khi chúng ta có các biến số khác nhau như “Lượng mưa (mm)” và “Nhiệt độ (°C)”?",
       "options": [
         {
@@ -5243,6 +5443,11 @@
       "explanation": "Các thuật toán ML hoạt động tốt hơn khi các đặc trưng đầu vào có cùng thang đo. Nếu không chuẩn hóa, thuật toán có thể thiên vị các đặc trưng có giá trị số học lớn hơn."
     },
     {
+      "id": 195,
+      "local_id": 6,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "“Dữ liệu lịch sử” (Historical Data) đóng vai trò gì trong bài toán dự báo năng suất?",
       "options": [
         {
@@ -5266,6 +5471,11 @@
       "explanation": "Các mô hình ML cần được huấn luyện trên dữ liệu lịch sử (năng suất các năm trước kèm theo điều kiện thời tiết tương ứng) để học mối quan hệ giữa các biến."
     },
     {
+      "id": 196,
+      "local_id": 7,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong quản lý đầu vào thông minh (Chapter 3), công nghệ UAV (Drone) giúp thu thập loại dữ liệu nào mà vệ tinh khó đáp ứng được?",
       "options": [
         {
@@ -5289,6 +5499,11 @@
       "explanation": "UAV cung cấp hình ảnh độ phân giải cao và linh hoạt về thời gian bay, khắc phục hạn chế về độ phân giải thấp và vấn đề mây che phủ của vệ tinh."
     },
     {
+      "id": 197,
+      "local_id": 8,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Yếu tố nào sau đây thuộc nhóm “Yếu tố quản lý” (Management Factors) mà con người có thể chủ động điều chỉnh để tối ưu hóa năng suất?",
       "options": [
         {
@@ -5312,6 +5527,11 @@
       "explanation": "Trong mô hình GxExM, các yếu tố quản lý như tưới tiêu, bón phân, thời điểm gieo hạt là những biến số con người có thể can thiệp dựa trên dự báo của AI."
     },
     {
+      "id": 198,
+      "local_id": 9,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "“Phân tích tương quan” (Correlation Analysis), ví dụ như Ma trận nhiệt (Heatmap), được sử dụng ở bước tiền xử lý để làm gì?",
       "options": [
         {
@@ -5335,6 +5555,11 @@
       "explanation": "Phân tích tương quan giúp loại bỏ các biến ít ảnh hưởng hoặc các biến tương quan tuyến tính mạnh với nhau (đa cộng tuyến), giữ lại những yếu tố ảnh hưởng nhất đến năng suất."
     },
     {
+      "id": 199,
+      "local_id": 10,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Dữ liệu về “Độ phì nhiêu của đất” (Soil Fertility) bao gồm các thông số hóa học nào quan trọng nhất cho dự báo năng suất?",
       "options": [
         {
@@ -5358,6 +5583,11 @@
       "explanation": "N, P, K, pH là các chất dinh dưỡng đa lượng và chỉ số hóa học quyết định khả năng sinh trưởng của cây, là đầu vào bắt buộc cho các mô hình dự báo chính xác."
     },
     {
+      "id": 200,
+      "local_id": 11,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Một tập dữ liệu dự báo năng suất bị “Mất cân bằng” (Imbalanced) có nghĩa là gì?",
       "options": [
         {
@@ -5381,6 +5611,11 @@
       "explanation": "Mất cân bằng dữ liệu làm cho mô hình có xu hướng dự báo nghiêng về lớp đa số (ví dụ: luôn dự báo được mùa) và dự báo kém các sự kiện hiếm gặp (thiên tai/mất mùa)."
     },
     {
+      "id": 201,
+      "local_id": 12,
+      "section": "PHẦN 1: CÁC YẾU TỐ ẢNH HƯỞNG & QUY TRÌNH XỬ LÝ DỮ LIỆU",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Vai trò của “Kỹ thuật đặc trưng” (Feature Engineering) trong bài toán này là gì?",
       "options": [
         {
@@ -5401,9 +5636,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Feature Engineering biến đổi dữ liệu thô thành các đặc trưng đại diện tốt hơn cho vấn đề cơ bản, giúp cải thiện độ chính xác của mô hình dự báo.\nPHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)"
+      "explanation": "Feature Engineering biến đổi dữ liệu thô thành các đặc trưng đại diện tốt hơn cho vấn đề cơ bản, giúp cải thiện độ chính xác của mô hình dự báo."
     },
     {
+      "id": 202,
+      "local_id": 13,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Bài toán “Dự báo năng suất” (ví dụ: dự báo thu được bao nhiêu tấn lúa/ha) thuộc loại bài toán nào trong Học máy?",
       "options": [
         {
@@ -5427,6 +5667,11 @@
       "explanation": "Năng suất là một con số liên tục (ví dụ: 5.4 tấn, 6.2 tấn), do đó đây là bài toán Hồi quy. Phân loại chỉ dùng khi dự đoán nhãn (ví dụ: Được mùa/Mất mùa)."
     },
     {
+      "id": 203,
+      "local_id": 14,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Tại sao thuật toán “Hồi quy tuyến tính” (Linear Regression) thường có hiệu suất thấp khi dự báo năng suất cây trồng thực tế?",
       "options": [
         {
@@ -5450,6 +5695,11 @@
       "explanation": "Năng suất chịu ảnh hưởng phức tạp của nhiều yếu tố. Hồi quy tuyến tính quá đơn giản để nắm bắt các biến động này."
     },
     {
+      "id": 204,
+      "local_id": 15,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Thuật toán “Rừng ngẫu nhiên” (Random Forest) hoạt động dựa trên nguyên lý nào?",
       "options": [
         {
@@ -5473,6 +5723,11 @@
       "explanation": "Random Forest kết hợp nhiều cây quyết định (Decision Trees) để cải thiện độ chính xác và giảm thiểu rủi ro overfitting."
     },
     {
+      "id": 205,
+      "local_id": 16,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Một ưu điểm lớn của thuật toán Random Forest so với Decision Tree đơn lẻ được nhắc đến trong Chapter 6 là gì?",
       "options": [
         {
@@ -5496,6 +5751,11 @@
       "explanation": "Random Forest giảm thiểu overfitting bằng cách lấy trung bình kết quả của nhiều cây con, làm cho mô hình tổng quát hóa tốt hơn trên dữ liệu mới."
     },
     {
+      "id": 206,
+      "local_id": 17,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Mạng Nơ-ron nhân tạo (ANN) phù hợp nhất với loại dữ liệu nông nghiệp nào?",
       "options": [
         {
@@ -5519,6 +5779,11 @@
       "explanation": "ANN, lấy cảm hứng từ não bộ, rất hiệu quả trong việc nắm bắt các mối quan hệ cực kỳ phức tạp và phi tuyến tính trong dữ liệu lớn."
     },
     {
+      "id": 207,
+      "local_id": 18,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Kiến trúc mạng nơ-ron nào đặc biệt hiệu quả khi dữ liệu đầu vào là chuỗi thời gian (ví dụ: nhiệt độ thay đổi theo từng ngày trong suốt vụ mùa)?",
       "options": [
         {
@@ -5542,6 +5807,11 @@
       "explanation": "LSTM là một biến thể của RNN, được thiết kế để ghi nhớ các phụ thuộc dài hạn trong dữ liệu chuỗi thời gian, rất phù hợp cho dữ liệu thời tiết."
     },
     {
+      "id": 208,
+      "local_id": 19,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trong nghiên cứu so sánh các thuật toán dự báo năng suất Đậu gà (Chickpea) tại Iran (Chapter 6), thuật toán nào cho kết quả sai số thấp nhất?",
       "options": [
         {
@@ -5565,6 +5835,11 @@
       "explanation": "Tài liệu trích dẫn nghiên cứu cho thấy “RF là mô hình cho ít lỗi nhất” khi so sánh với SVR và các mô hình khác."
     },
     {
+      "id": 209,
+      "local_id": 20,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Thuật toán “Hồi quy Vectơ Hỗ trợ” (SVR - Support Vector Regression) hoạt động bằng cách nào?",
       "options": [
         {
@@ -5588,6 +5863,11 @@
       "explanation": "SVR (biến thể của SVM cho hồi quy) tìm siêu phẳng tối ưu để mô hình hóa mối quan hệ giữa các biến."
     },
     {
+      "id": 210,
+      "local_id": 21,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Thuật toán KNN (K-Láng giềng gần nhất) dự báo năng suất cho một thửa ruộng mới dựa trên cơ sở nào?",
       "options": [
         {
@@ -5611,6 +5891,11 @@
       "explanation": "KNN là thuật toán “dựa trên trường hợp” (instance-based), dự đoán dựa trên các điểm dữ liệu gần nhất (tương tự nhất) trong tập huấn luyện."
     },
     {
+      "id": 211,
+      "local_id": 22,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Nhược điểm của KNN khi áp dụng cho dữ liệu lớn (Big Data) trong nông nghiệp là gì?",
       "options": [
         {
@@ -5634,6 +5919,11 @@
       "explanation": "KNN là thuật toán “lười” (lazy learning), không học mô hình trước mà tính toán tại thời điểm dự báo, gây tốn kém tài nguyên với dữ liệu lớn."
     },
     {
+      "id": 212,
+      "local_id": 23,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Thuật toán XGBoost (được nhắc đến như mô hình Tăng cường/Boosting) nổi tiếng vì điều gì?",
       "options": [
         {
@@ -5657,6 +5947,11 @@
       "explanation": "XGBoost là một thuật toán học tập tập hợp tiên tiến (Boosting), nổi tiếng về tốc độ và hiệu suất cao với các bộ dữ liệu lớn."
     },
     {
+      "id": 213,
+      "local_id": 24,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Khi lựa chọn mô hình dự báo cho một loại cây trồng cụ thể (ví dụ: Lúa), yếu tố nào quan trọng nhất cần xem xét?",
       "options": [
         {
@@ -5677,9 +5972,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Không có thuật toán nào tốt nhất cho mọi bài toán (“No Free Lunch” theorem). Việc chọn mô hình phụ thuộc vào bản chất dữ liệu (tuyến tính hay phi tuyến tính, ít hay nhiều).\nPHẦN 3: ĐÁNH GIÁ MÔ HÌNH & TỐI ƯU HÓA SẢN XUẤT (12 Câu)"
+      "explanation": "Không có thuật toán nào tốt nhất cho mọi bài toán (“No Free Lunch” theorem). Việc chọn mô hình phụ thuộc vào bản chất dữ liệu (tuyến tính hay phi tuyến tính, ít hay nhiều). PHẦN 3: ĐÁNH GIÁ MÔ HÌNH & TỐI ƯU HÓA SẢN XUẤT (12 Câu)"
     },
     {
+      "id": 214,
+      "local_id": 25,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Chỉ số RMSE (Root Mean Square Error - Căn bậc hai sai số bình phương trung bình) dùng để đánh giá điều gì của mô hình dự báo năng suất?",
       "options": [
         {
@@ -5703,7 +6003,12 @@
       "explanation": "RMSE đo lường độ lớn của sai số dự báo. Giá trị RMSE càng nhỏ nghĩa là dự báo càng sát với thực tế."
     },
     {
-      "question": "Hệ số xác định  (R-squared) có giá trị nằm trong khoảng nào và ý nghĩa là gì?",
+      "id": 215,
+      "local_id": 26,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
+      "question": "Hệ số xác định (R-squared) có giá trị nằm trong khoảng nào và ý nghĩa là gì?",
       "options": [
         {
           "id": "A",
@@ -5723,10 +6028,15 @@
         }
       ],
       "answer": "B",
-      "explanation": "cho biết tỷ lệ phương sai của biến phụ thuộc có thể dự đoán được từ các biến độc lập.  nghĩa là mô hình giải thích được 81% sự thay đổi của năng suất."
+      "explanation": "cho biết tỷ lệ phương sai của biến phụ thuộc có thể dự đoán được từ các biến độc lập. nghĩa là mô hình giải thích được 81% sự thay đổi của năng suất."
     },
     {
-      "question": "Nếu mô hình có  cao trên tập huấn luyện (Training set) nhưng rất thấp trên tập kiểm tra (Test set), mô hình đang gặp vấn đề gì?",
+      "id": 216,
+      "local_id": 27,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
+      "question": "Nếu mô hình có cao trên tập huấn luyện (Training set) nhưng rất thấp trên tập kiểm tra (Test set), mô hình đang gặp vấn đề gì?",
       "options": [
         {
           "id": "A",
@@ -5749,6 +6059,11 @@
       "explanation": "Đây là dấu hiệu kinh điển của Overfitting: Mô hình học quá kỹ dữ liệu cũ nhưng không áp dụng được cho dữ liệu mới."
     },
     {
+      "id": 217,
+      "local_id": 28,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Chỉ số MAE (Mean Absolute Error - Sai số tuyệt đối trung bình) khác RMSE ở điểm nào?",
       "options": [
         {
@@ -5772,6 +6087,11 @@
       "explanation": "RMSE bình phương sai số nên sẽ phạt rất nặng các sai số lớn (outliers), trong khi MAE đánh giá đều các sai số."
     },
     {
+      "id": 218,
+      "local_id": 29,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trong Case Study dự báo năng suất Lúa (Chapter 9), việc sử dụng AI giúp các nhà hoạch định chính sách điều gì?",
       "options": [
         {
@@ -5795,6 +6115,11 @@
       "explanation": "Dự báo chính xác giúp chính phủ và nhà hoạch định đưa ra quyết định tốt hơn về xuất nhập khẩu và an ninh lương thực."
     },
     {
+      "id": 219,
+      "local_id": 30,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "“Tối ưu hóa đầu vào” (Input Optimization) dựa trên dự báo năng suất (Chapter 3) có nghĩa là gì?",
       "options": [
         {
@@ -5818,6 +6143,11 @@
       "explanation": "Mục tiêu là tối ưu hóa hiệu quả sử dụng tài nguyên (resource use efficiency), giảm lãng phí đầu vào mà vẫn đảm bảo năng suất."
     },
     {
+      "id": 220,
+      "local_id": 31,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Khái niệm “AI có thể diễn giải” (Explainable AI - XAI) được đề xuất trong hướng phát triển tương lai (Chapter 6) nhằm giải quyết vấn đề gì?",
       "options": [
         {
@@ -5841,6 +6171,11 @@
       "explanation": "Nông dân cần hiểu lý do đằng sau dự đoán để tin tưởng và hành động. XAI giúp minh bạch hóa quá trình ra quyết định của các mô hình phức tạp."
     },
     {
+      "id": 221,
+      "local_id": 32,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Dữ liệu “Bất thường” (Anomaly) được phát hiện trong quá trình giám sát sản xuất (ví dụ: nhiệt độ tăng đột biến) sẽ kích hoạt hành động gì trong hệ thống AI?",
       "options": [
         {
@@ -5864,6 +6199,11 @@
       "explanation": "Hệ thống giám sát thời gian thực giúp phát hiện bất thường và cảnh báo để giảm thiểu thiệt hại."
     },
     {
+      "id": 222,
+      "local_id": 33,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Trong bảng so sánh các mô hình (Chapter 9), nếu Mô hình A có RMSE = 0.5 tấn/ha và Mô hình B có RMSE = 0.8 tấn/ha, ta nên chọn mô hình nào?",
       "options": [
         {
@@ -5887,6 +6227,11 @@
       "explanation": "RMSE càng thấp nghĩa là sai số càng nhỏ, dự báo càng chính xác."
     },
     {
+      "id": 223,
+      "local_id": 34,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Công nghệ “Tỷ lệ biến đổi” (VRT - Variable Rate Technology) sử dụng kết quả dự báo năng suất để làm gì?",
       "options": [
         {
@@ -5910,6 +6255,11 @@
       "explanation": "VRT là ứng dụng thực tế của tối ưu hóa đầu vào, dựa trên bản đồ năng suất dự báo để phân bổ tài nguyên chính xác."
     },
     {
+      "id": 224,
+      "local_id": 35,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Tại sao việc tích hợp dữ liệu “Đa nguồn” (Multi-source data) từ vệ tinh, drone và cảm biến lại cải thiện độ chính xác của dự báo?",
       "options": [
         {
@@ -5933,6 +6283,11 @@
       "explanation": "Tích hợp dữ liệu đa nguồn là hướng phát triển tương lai để khắc phục hạn chế của từng nguồn dữ liệu riêng lẻ."
     },
     {
+      "id": 225,
+      "local_id": 36,
+      "section": "PHẦN 2: CÁC MÔ HÌNH & THUẬT TOÁN DỰ BÁO NĂNG SUẤT (12 Câu)",
+      "difficulty": "Trung bình",
+      "difficulty_code": "TH",
       "question": "Kết quả cuối cùng của một hệ thống “Hoạch định sản xuất” thông minh là gì?",
       "options": [
         {
@@ -5958,6 +6313,11 @@
   ],
   "7": [
     {
+      "id": 226,
+      "local_id": 1,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Theo quy trình chuẩn, bước đầu tiên và quan trọng nhất cần làm trước khi chạm vào bất kỳ dòng code hay dữ liệu nào là gì?",
       "options": [
         {
@@ -5981,6 +6341,11 @@
       "explanation": "Bạn phải xác định mục tiêu kinh doanh/nghiên cứu là gì, bài toán thuộc loại nào (phân loại/hồi quy), và hiện tại đang giải quyết thủ công như thế nào trước khi bắt đầu."
     },
     {
+      "id": 227,
+      "local_id": 2,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Tại sao việc tách một phần dữ liệu thành “Tập kiểm tra” (Test Set) ngay từ giai đoạn đầu là bắt buộc?",
       "options": [
         {
@@ -6004,6 +6369,11 @@
       "explanation": "Nếu nhìn vào tập test quá sớm, bạn có thể vô thức chọn mô hình hoạt động tốt trên tập đó nhưng không tổng quát hóa được cho dữ liệu mới."
     },
     {
+      "id": 228,
+      "local_id": 3,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong bước “Khám phá dữ liệu”, nếu biểu đồ phân phối (Histogram) của một thuộc tính có dạng “đuôi dài” (Heavy tail - lệch hẳn về một bên), bạn nên làm gì?",
       "options": [
         {
@@ -6027,6 +6397,11 @@
       "explanation": "Các thuật toán ML thường hoạt động tốt hơn với dữ liệu có phân phối chuẩn (Gaussian). Biến đổi logarit giúp xử lý các phân phối bị lệch."
     },
     {
+      "id": 229,
+      "local_id": 4,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Kỹ thuật xử lý dữ liệu bị thiếu (Missing values) bằng cách điền vào giá trị trung bình (Mean) hoặc trung vị (Median) được gọi là gì?",
       "options": [
         {
@@ -6050,6 +6425,11 @@
       "explanation": "Imputation là kỹ thuật điền giá trị giả định vào chỗ trống để giữ lại dòng dữ liệu đó thay vì xóa bỏ gây mất mát thông tin."
     },
     {
+      "id": 230,
+      "local_id": 5,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Mục đích của việc xây dựng một “Mô hình cơ sở” (Baseline Model) đơn giản (ví dụ: luôn đoán giá trị trung bình) là gì?",
       "options": [
         {
@@ -6073,6 +6453,11 @@
       "explanation": "Nếu mô hình phức tạp của bạn không đánh bại được một quy tắc đơn giản, thì mô hình đó vô dụng."
     },
     {
+      "id": 231,
+      "local_id": 6,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Kỹ thuật “Cross-Validation” (Kiểm chứng chéo) được sử dụng để làm gì?",
       "options": [
         {
@@ -6096,6 +6481,11 @@
       "explanation": "Cross-validation (như K-fold) chia dữ liệu thành K phần, lần lượt huấn luyện và kiểm tra để đảm bảo kết quả đánh giá là khách quan."
     },
     {
+      "id": 232,
+      "local_id": 7,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Nếu mô hình hoạt động rất tốt trên tập huấn luyện nhưng tệ trên tập kiểm tra, hiện tượng này gọi là gì và cách sửa cơ bản?",
       "options": [
         {
@@ -6119,6 +6509,11 @@
       "explanation": "Overfitting nghĩa là mô hình “học vẹt” dữ liệu huấn luyện. Cần thêm dữ liệu đa dạng hoặc giảm độ phức tạp của mô hình."
     },
     {
+      "id": 233,
+      "local_id": 8,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "“Grid Search” là kỹ thuật dùng để làm gì?",
       "options": [
         {
@@ -6142,6 +6537,11 @@
       "explanation": "Grid Search quét qua lưới các giá trị tham số do người dùng định nghĩa để tìm ra bộ tham số tốt nhất."
     },
     {
+      "id": 234,
+      "local_id": 9,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Khi trình bày dự án cho các bên liên quan (Stakeholders) không chuyên về kỹ thuật, điều gì quan trọng nhất?",
       "options": [
         {
@@ -6165,6 +6565,11 @@
       "explanation": "Mục tiêu cuối cùng là giải quyết vấn đề. Nông dân/Nhà đầu tư quan tâm đến lợi ích thực tế hơn là thuật toán bên trong."
     },
     {
+      "id": 235,
+      "local_id": 10,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Theo Checklist, sau khi triển khai mô hình, tại sao chúng ta vẫn cần “Giám sát” (Monitoring)?",
       "options": [
         {
@@ -6185,9 +6590,14 @@
         }
       ],
       "answer": "A",
-      "explanation": "Môi trường thực tế luôn thay đổi (ví dụ: xuất hiện loại sâu bệnh mới, khí hậu thay đổi), làm giảm độ chính xác của mô hình theo thời gian.\nPHẦN 2: ĐẠO ĐỨC, XÃ HỘI VÀ RỦI RO (TƯ DUY PHẢN BIỆN)\nMục tiêu: Đánh giá nhận thức xã hội của sinh viên (dựa trên [Ethics])."
+      "explanation": "Môi trường thực tế luôn thay đổi (ví dụ: xuất hiện loại sâu bệnh mới, khí hậu thay đổi), làm giảm độ chính xác của mô hình theo thời gian. PHẦN 2: ĐẠO ĐỨC, XÃ HỘI VÀ RỦI RO (TƯ DUY PHẢN BIỆN) Mục tiêu: Đánh giá nhận thức xã hội của sinh viên (dựa trên [Ethics])."
     },
     {
+      "id": 236,
+      "local_id": 11,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Vấn đề “Quyền sở hữu dữ liệu” (Data Ownership) trong nông nghiệp thông minh thường gây tranh cãi giữa hai đối tượng nào?",
       "options": [
         {
@@ -6211,6 +6621,11 @@
       "explanation": "Có rủi ro là các công ty công nghệ dùng dữ liệu của nông dân để trục lợi (ví dụ: bán dữ liệu thị trường) mà không chia sẻ lợi ích lại cho nông dân."
     },
     {
+      "id": 237,
+      "local_id": 12,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "“Khoảng cách số” (Digital Divide) trong nông nghiệp đề cập đến rủi ro gì khi áp dụng AI?",
       "options": [
         {
@@ -6234,6 +6649,11 @@
       "explanation": "Công nghệ cao thường đắt đỏ, tạo ra sự bất bình đẳng trong tiếp cận, làm gia tăng hố sâu giàu nghèo."
     },
     {
+      "id": 238,
+      "local_id": 13,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Rác thải điện tử (E-waste) từ các dự án IoT nông nghiệp đến từ đâu?",
       "options": [
         {
@@ -6257,6 +6677,11 @@
       "explanation": "Triển khai IoT diện rộng đồng nghĩa với việc đưa lượng lớn rác thải điện tử vào môi trường nếu không có quy trình thu hồi/tái chế."
     },
     {
+      "id": 239,
+      "local_id": 14,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "“Thiên kiến thuật toán” (Algorithmic Bias) có thể xảy ra trong nông nghiệp như thế nào?",
       "options": [
         {
@@ -6280,6 +6705,11 @@
       "explanation": "Dữ liệu huấn luyện không đại diện (non-representative) sẽ tạo ra các mô hình thiên kiến, hoạt động kém ở các vùng địa lý khác."
     },
     {
+      "id": 240,
+      "local_id": 15,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Về mặt thị trường lao động, việc sử dụng robot thu hoạch tự động có thể gây ra tác động tiêu cực gì?",
       "options": [
         {
@@ -6303,6 +6733,11 @@
       "explanation": "Tự động hóa thay thế lao động chân tay là một vấn đề đạo đức lớn cần có giải pháp chuyển đổi nghề nghiệp."
     },
     {
+      "id": 241,
+      "local_id": 16,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trách nhiệm giải trình (Accountability): Nếu một ứng dụng AI tư vấn sai khiến nông dân mất trắng vụ mùa, ai nên chịu trách nhiệm?",
       "options": [
         {
@@ -6323,15 +6758,16 @@
         }
       ],
       "answer": "B",
-      "explanation": "Đây là câu hỏi mở nhằm kích thích tư duy phản biện về khung pháp lý cho AI.\nPHẦN 3: XỬ LÝ TÌNH HUỐNG THỰC TẾ (TROUBLESHOOTING)\nMục tiêu: Kiểm tra khả năng giải quyết vấn đề (Problem Solving) trong các Case Study cụ thể."
+      "explanation": "Đây là câu hỏi mở nhằm kích thích tư duy phản biện về khung pháp lý cho AI. PHẦN 3: XỬ LÝ TÌNH HUỐNG THỰC TẾ (TROUBLESHOOTING) Mục tiêu: Kiểm tra khả năng giải quyết vấn đề (Problem Solving) trong các Case Study cụ thể."
     },
     {
+      "id": 242,
+      "local_id": 17,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong bài toán phát hiện bệnh, nếu bộ dữ liệu của bạn có 950 ảnh cây khỏe và chỉ 50 ảnh cây bệnh (Mất cân bằng dữ liệu), và mô hình dự đoán tất cả cây đều khỏe. Độ chính xác (Accuracy) là 95%. Kết quả này có tốt không?",
       "options": [
-        {
-          "id": "A",
-          "text": "Rất tốt, 95% là điểm"
-        },
         {
           "id": "A",
           "text": ""
@@ -6353,6 +6789,11 @@
       "explanation": "Trong dữ liệu mất cân bằng, Accuracy là chỉ số đánh lừa. Cần dùng Precision, Recall hoặc F1-Score để đánh giá đúng khả năng tìm ra ca bệnh."
     },
     {
+      "id": 243,
+      "local_id": 18,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Để giải quyết vấn đề mất cân bằng dữ liệu nêu trên (Quá ít ảnh bệnh), giải pháp kỹ thuật nào sau đây là phù hợp?",
       "options": [
         {
@@ -6376,6 +6817,11 @@
       "explanation": "Cần tăng số lượng mẫu của lớp thiểu số (cây bệnh) để mô hình có đủ dữ liệu để học."
     },
     {
+      "id": 244,
+      "local_id": 19,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Khi triển khai mô hình nhận diện bệnh lên điện thoại di động cũ của nông dân, mô hình chạy rất chậm. Bạn nên làm gì?",
       "options": [
         {
@@ -6399,6 +6845,11 @@
       "explanation": "Tối ưu hóa cho thiết bị biên (Edge AI) yêu cầu giảm kích thước và độ phức tạp tính toán của mô hình."
     },
     {
+      "id": 245,
+      "local_id": 20,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Nếu hệ thống tưới tiêu IoT của bạn được lắp đặt ở một cánh đồng xa xôi không có sóng 3G/4G hay Wi-Fi, giải pháp thiết kế nào là hợp lý nhất?",
       "options": [
         {
@@ -6422,6 +6873,11 @@
       "explanation": "LoRaWAN hoặc xử lý tại biên (Edge) là giải pháp tiêu chuẩn cho các khu vực hạn chế kết nối."
     },
     {
+      "id": 246,
+      "local_id": 21,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Trong dự báo giá nông sản, nếu mô hình không thể dự báo được các cú sốc giá (price spikes) do đại dịch hay chiến tranh, nguyên nhân chính là gì?",
       "options": [
         {
@@ -6445,6 +6901,11 @@
       "explanation": "Mô hình ML chỉ giỏi dự báo những gì lặp lại từ quá khứ. Nó rất kém trong việc dự báo các sự kiện chưa từng có tiền lệ."
     },
     {
+      "id": 247,
+      "local_id": 22,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Tại sao việc sử dụng “Transfer Learning” (Học chuyển giao) lại được khuyến khích cho các dự án sinh viên về phân loại ảnh cây trồng?",
       "options": [
         {
@@ -6468,6 +6929,11 @@
       "explanation": "Transfer Learning tận dụng tri thức từ các mô hình lớn (đã train trên ImageNet) để áp dụng cho bài toán nhỏ, tiết kiệm thời gian và dữ liệu."
     },
     {
+      "id": 248,
+      "local_id": 23,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Một nhóm sinh viên đề xuất dùng Drone để bay giám sát sâu bệnh 24/7. Điểm yếu thực tế (Practicality) lớn nhất của ý tưởng này là gì?",
       "options": [
         {
@@ -6491,6 +6957,11 @@
       "explanation": "Rào cản lớn nhất của Drone trong nông nghiệp hiện nay là thời lượng pin (Energy constraints), làm giảm khả năng giám sát liên tục."
     },
     {
+      "id": 249,
+      "local_id": 24,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Chỉ số F1-Score là sự kết hợp của hai chỉ số nào?",
       "options": [
         {
@@ -6514,6 +6985,11 @@
       "explanation": "F1-Score là trung bình điều hòa của Precision và Recall, dùng để đánh giá tổng quát khi cần cân bằng giữa hai yếu tố này."
     },
     {
+      "id": 250,
+      "local_id": 25,
+      "section": "Tổng quan",
+      "difficulty": "Dễ",
+      "difficulty_code": "NB",
       "question": "Nếu bạn muốn biết đặc trưng nào (ví dụ: Nhiệt độ, Lượng mưa, hay Phân bón) ảnh hưởng nhiều nhất đến kết quả dự báo của mô hình Random Forest, bạn dùng công cụ gì?",
       "options": [
         {
@@ -6539,6 +7015,11 @@
   ],
   "8": [
     {
+      "id": 251,
+      "local_id": 1,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Khi lắp đặt một hộp điều khiển IoT (chứa mạch điện tử) ngoài trời, chỉ số bảo vệ vỏ hộp nào sau đây là tối thiểu cần thiết để chống mưa và bụi?",
       "options": [
         {
@@ -6562,6 +7043,11 @@
       "explanation": "Thiết bị ngoài đồng ruộng phải chịu mưa, độ ẩm cao và bụi bẩn. Chuẩn IP65/67 là bắt buộc để bảo vệ mạch điện tử bên trong."
     },
     {
+      "id": 252,
+      "local_id": 2,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Bước đầu tiên quan trọng nhất khi tiến hành “Khảo sát địa điểm” (Site Survey) để lắp đặt hệ thống IoT không dây là gì?",
       "options": [
         {
@@ -6585,6 +7071,11 @@
       "explanation": "Nếu lắp xong mà không có sóng để truyền dữ liệu về trung tâm thì hệ thống vô dụng. Việc đo sóng phải thực hiện đầu tiên."
     },
     {
+      "id": 253,
+      "local_id": 3,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Nguồn năng lượng khả thi nhất cho các trạm cảm biến (Sensor Nodes) nằm xa nguồn điện lưới là gì?",
       "options": [
         {
@@ -6605,9 +7096,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Năng lượng mặt trời kết hợp pin lưu trữ là giải pháp tiêu chuẩn cho IoT nông nghiệp vì tính bền vững và không cần kéo dây phức tạp.\nPHẦN 2: QUY TRÌNH LẮP ĐẶT & KẾT NỐI"
+      "explanation": "Năng lượng mặt trời kết hợp pin lưu trữ là giải pháp tiêu chuẩn cho IoT nông nghiệp vì tính bền vững và không cần kéo dây phức tạp. PHẦN 2: QUY TRÌNH LẮP ĐẶT & KẾT NỐI"
     },
     {
+      "id": 254,
+      "local_id": 4,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Khi lắp đặt “Cảm biến độ ẩm đất” (Soil Moisture Sensor), vị trí nào là chính xác để phản ánh đúng nhu cầu nước của cây?",
       "options": [
         {
@@ -6631,6 +7127,11 @@
       "explanation": "Cây hút nước từ rễ. Cảm biến cần đo độ ẩm tại vùng rễ để biết cây có đang khát hay không. Đặt trên mặt đất sẽ bị khô nhanh do nắng gió, không phản ánh đúng."
     },
     {
+      "id": 255,
+      "local_id": 5,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong quy ước màu dây điện chuẩn của các cảm biến công nghiệp, dây màu Đỏ (Red) và Đen (Black) thường đại diện cho chân nào?",
       "options": [
         {
@@ -6654,6 +7155,11 @@
       "explanation": "Quy ước chuẩn: Đỏ là Dương (Power), Đen là Âm (Ground). Đấu ngược cực có thể làm cháy cảm biến ngay lập tức."
     },
     {
+      "id": 256,
+      "local_id": 6,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Tại sao sau khi lắp đặt xong, ta cần thực hiện bước “Hiệu chuẩn” (Calibration) cảm biến độ ẩm đất?",
       "options": [
         {
@@ -6677,6 +7183,11 @@
       "explanation": "Cảm biến đo độ dẫn điện/điện dung. Cùng một giá trị điện áp đọc được nhưng ở đất cát có thể là “ẩm”, ở đất sét có thể là “khô”. Cần hiệu chuẩn thực tế (Lấy mẫu đất khô kiệt và đất bão hòa nước)."
     },
     {
+      "id": 257,
+      "local_id": 7,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Khi lắp đặt cảm biến nhiệt độ & độ ẩm không khí (dạng hộp), cần lưu ý điều gì để số liệu không bị sai lệch?",
       "options": [
         {
@@ -6697,9 +7208,14 @@
         }
       ],
       "answer": "B",
-      "explanation": "Ánh nắng trực tiếp chiếu vào cảm biến sẽ làm nhiệt độ đo được cao hơn nhiệt độ không khí thực tế (do bức xạ nhiệt). Cần có hộp che chắn nhưng vẫn phải thông gió.\nPHẦN 3: KIỂM TRA DỮ LIỆU & XỬ LÝ SỰ CỐ"
+      "explanation": "Ánh nắng trực tiếp chiếu vào cảm biến sẽ làm nhiệt độ đo được cao hơn nhiệt độ không khí thực tế (do bức xạ nhiệt). Cần có hộp che chắn nhưng vẫn phải thông gió. PHẦN 3: KIỂM TRA DỮ LIỆU & XỬ LÝ SỰ CỐ"
     },
     {
+      "id": 258,
+      "local_id": 8,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Tình huống: Trên ứng dụng điện thoại báo độ ẩm đất là 0% liên tục trong nhiều ngày dù trời vừa mưa to. Nguyên nhân có khả năng nhất là gì?",
       "options": [
         {
@@ -6723,6 +7239,11 @@
       "explanation": "Giá trị 0% (hoặc giá trị cực tiểu/cực đại bất thường) thường là dấu hiệu của việc hở mạch (đứt dây) hoặc cảm biến chết, chứ không phải do môi trường thực tế."
     },
     {
+      "id": 259,
+      "local_id": 9,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Để kiểm chứng xem cảm biến độ ẩm đất có đang báo đúng hay không (Data Validation) ngay tại hiện trường, cách đơn giản nhất là gì?",
       "options": [
         {
@@ -6746,6 +7267,11 @@
       "explanation": "Phương pháp đối chứng (Cross-check) với thiết bị cầm tay hoặc cảm nhận xúc giác (nắm đất) giúp phát hiện nhanh các sai số thô của hệ thống IoT."
     },
     {
+      "id": 260,
+      "local_id": 10,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Tần suất gửi dữ liệu (Sampling Rate) của cảm biến nên được cài đặt như thế nào là hợp lý cho cây trồng?",
       "options": [
         {
@@ -6769,6 +7295,11 @@
       "explanation": "Độ ẩm đất biến đổi chậm. Gửi mỗi giây là không cần thiết và làm hao pin, tốn dung lượng 4G rất nhanh. 15-60 phút là khoảng thời gian hợp lý để cân bằng giữa độ chi tiết và năng lượng."
     },
     {
+      "id": 261,
+      "local_id": 11,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Nếu Gateway (bộ thu phát trung tâm) không kết nối được Internet, đèn trạng thái thường sẽ báo hiệu như thế nào?",
       "options": [
         {
@@ -6792,6 +7323,11 @@
       "explanation": "Kỹ năng quan sát đèn trạng thái (LED indicators) là kỹ năng debug phần cứng cơ bản. Thường đèn đỏ hoặc nháy liên tục báo hiệu lỗi kết nối."
     },
     {
+      "id": 262,
+      "local_id": 12,
+      "section": "Phần 3: Kiểm tra dữ liệu & Xử lý sự cố (Troubleshooting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Khi lắp đặt nhiều cảm biến không dây gần nhau, hiện tượng “Nhiễu sóng” (Interference) có thể xảy ra nếu:",
       "options": [
         {
@@ -6817,6 +7353,11 @@
   ],
   "9&10": [
     {
+      "id": 263,
+      "local_id": 1,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Theo tài liệu [AI-Agri] Chapter 7, ngôn ngữ lập trình phổ biến nhất hiện nay để triển khai các dự án AI trong nông nghiệp là gì?",
       "options": [
         {
@@ -6830,12 +7371,21 @@
         {
           "id": "C",
           "text": "Java."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
       "explanation": "Python được chọn làm ngôn ngữ chính xuyên suốt tài liệu vì sự đơn giản và hệ sinh thái thư viện phong phú hỗ trợ AI/ML."
     },
     {
+      "id": 264,
+      "local_id": 2,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Công cụ “Google Colaboratory” (Google Colab) được khuyến nghị sử dụng cho sinh viên thực hành vì lý do chính nào?",
       "options": [
         {
@@ -6849,12 +7399,21 @@
         {
           "id": "C",
           "text": "Nó hoạt động không cần Internet."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
       "explanation": "Colab cho phép viết và thực thi Python trên trình duyệt với cấu hình zero, truy cập miễn phí GPU, rất phù hợp cho giáo dục."
     },
     {
+      "id": 265,
+      "local_id": 3,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Để vẽ biểu đồ (ví dụ: biểu đồ biến thiên độ ẩm đất theo thời gian) trong báo cáo, thư viện Python nào thường được sử dụng nhất?",
       "options": [
         {
@@ -6868,12 +7427,21 @@
         {
           "id": "C",
           "text": "TensorFlow."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
       "explanation": "Matplotlib là thư viện tiêu chuẩn để tạo ra các trực quan hóa dữ liệu tĩnh, động và tương tác."
     },
     {
+      "id": 266,
+      "local_id": 4,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Khi bạn muốn chia sẻ code và kết quả thực hành của mình cho giảng viên hoặc thành viên nhóm qua Google Colab, bạn có thể làm gì?",
       "options": [
         {
@@ -6887,12 +7455,21 @@
         {
           "id": "C",
           "text": "Phải tải code về in ra giấy."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
       "explanation": "Colab hỗ trợ tính năng chia sẻ dễ dàng qua liên kết hoặc email, giúp cộng tác nhóm hiệu quả."
     },
     {
+      "id": 267,
+      "local_id": 5,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Thư viện nào đóng vai trò quan trọng trong việc xử lý dữ liệu dạng bảng (như file Excel chứa dữ liệu cảm biến) trong Python?",
       "options": [
         {
@@ -6906,12 +7483,21 @@
         {
           "id": "C",
           "text": "Keras."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "A",
-      "explanation": "Pandas được sử dụng để thao tác và phân tích dữ liệu, đặc biệt là dữ liệu dạng bảng và chuỗi thời gian.\nPHẦN 2: HIỂU VỀ VẬN HÀNH HỆ THỐNG (AI BIÊN - EDGE AI)"
+      "explanation": "Pandas được sử dụng để thao tác và phân tích dữ liệu, đặc biệt là dữ liệu dạng bảng và chuỗi thời gian. PHẦN 2: HIỂU VỀ VẬN HÀNH HỆ THỐNG (AI BIÊN - EDGE AI)"
     },
     {
+      "id": 268,
+      "local_id": 6,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "“AI Biên” (Edge AI) - công nghệ thường thấy trong các hệ thống nông nghiệp hiện đại (Chapter 4) - hoạt động theo nguyên lý nào?",
       "options": [
         {
@@ -6925,12 +7511,21 @@
         {
           "id": "C",
           "text": "Thuê người ngồi canh máy tính."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
       "explanation": "Edge AI thực hiện tính toán tại rìa của mạng (trên thiết bị), giúp giảm độ trễ và băng thông."
     },
     {
+      "id": 269,
+      "local_id": 7,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Tại sao Edge AI lại quan trọng đối với việc “Vận hành” hệ thống tại các vùng nông thôn hẻo lánh?",
       "options": [
         {
@@ -6944,12 +7539,21 @@
         {
           "id": "C",
           "text": "Vì nó đẹp hơn."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
       "explanation": "Nông thôn thường có kết nối kém. Edge AI đảm bảo các tác vụ quan trọng (như phát hiện sâu bệnh, đóng ngắt bơm) diễn ra tức thì mà không phụ thuộc vào đường truyền Internet ổn định."
     },
     {
+      "id": 270,
+      "local_id": 8,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Thiết bị nào sau đây là ví dụ điển hình của một thiết bị Edge AI mà sinh viên có thể gặp khi đi thực tế?",
       "options": [
         {
@@ -6963,12 +7567,21 @@
         {
           "id": "C",
           "text": "Laptop Gaming."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
-      "explanation": "Các hệ thống nhúng năng lượng thấp như Raspberry Pi thường được sử dụng để triển khai các mô hình AI nhẹ tại biên.\nPHẦN 3: KỸ NĂNG VIẾT BÁO CÁO THỰC HÀNH"
+      "explanation": "Các hệ thống nhúng năng lượng thấp như Raspberry Pi thường được sử dụng để triển khai các mô hình AI nhẹ tại biên. PHẦN 3: KỸ NĂNG VIẾT BÁO CÁO THỰC HÀNH"
     },
     {
+      "id": 271,
+      "local_id": 9,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Phần đầu tiên của một báo cáo thực hành/nghiên cứu khoa học (như các Case Study trong sách) thường là gì, có chức năng tóm tắt toàn bộ nội dung?",
       "options": [
         {
@@ -6982,12 +7595,21 @@
         {
           "id": "C",
           "text": "Tài liệu tham khảo (References)."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
       "explanation": "Abstract cung cấp cái nhìn tổng quan ngắn gọn về mục tiêu, phương pháp, kết quả và kết luận của báo cáo."
     },
     {
+      "id": 272,
+      "local_id": 10,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Trong phần “Phương pháp nghiên cứu” (Methodology) của báo cáo thực hành, bạn cần trình bày điều gì?",
       "options": [
         {
@@ -7001,12 +7623,21 @@
         {
           "id": "C",
           "text": "Kết quả đạt được."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
       "explanation": "Phần này mô tả “Làm thế nào” (How) dự án được thực hiện, bao gồm mô tả hệ thống, dữ liệu và thuật toán."
     },
     {
+      "id": 273,
+      "local_id": 11,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Khi trình bày “Kết quả” (Results), ngoài việc đưa ra các con số, bạn cần làm gì để báo cáo trực quan hơn?",
       "options": [
         {
@@ -7020,12 +7651,21 @@
         {
           "id": "C",
           "text": "Dùng nhiều màu sắc sặc sỡ cho văn bản."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
       "explanation": "Các Case study trong sách luôn đi kèm với Hình ảnh (ví dụ: ảnh lá cây bị bệnh, biểu đồ độ chính xác) để minh chứng cho kết quả."
     },
     {
+      "id": 274,
+      "local_id": 12,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Phần “Thảo luận” (Discussion) trong báo cáo dùng để làm gì?",
       "options": [
         {
@@ -7039,12 +7679,21 @@
         {
           "id": "C",
           "text": "Để chép lại phần Kết quả."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
       "explanation": "Đây là phần thể hiện tư duy phản biện, giải thích tại sao lại ra kết quả như vậy và nó có ý nghĩa gì trong thực tế."
     },
     {
+      "id": 275,
+      "local_id": 13,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Tại sao việc trích dẫn “Tài liệu tham khảo” (References) ở cuối báo cáo là bắt buộc?",
       "options": [
         {
@@ -7058,12 +7707,21 @@
         {
           "id": "C",
           "text": "Để khoe khoang kiến thức."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
-      "explanation": "Trích dẫn nguồn là chuẩn mực đạo đức trong nghiên cứu khoa học và báo cáo kỹ thuật.\nTỔNG KẾT KHÓA HỌC (ÔN TẬP)"
+      "explanation": "Trích dẫn nguồn là chuẩn mực đạo đức trong nghiên cứu khoa học và báo cáo kỹ thuật. TỔNG KẾT KHÓA HỌC (ÔN TẬP)"
     },
     {
+      "id": 276,
+      "local_id": 14,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Mục tiêu cuối cùng của việc ứng dụng AI và Chuyển đổi số trong nông nghiệp (xuyên suốt khóa học này) là gì?",
       "options": [
         {
@@ -7077,12 +7735,21 @@
         {
           "id": "C",
           "text": "Làm cho nông nghiệp trở nên đắt đỏ hơn."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",
       "explanation": "Tổng hợp kiến thức từ tất cả các chương: Precision Farming, Smart Irrigation, Yield Prediction đều hướng tới sự Bền vững và Hiệu quả."
     },
     {
+      "id": 277,
+      "local_id": 15,
+      "section": "Phần 3: Kỹ năng Viết Báo cáo Thực hành (Case Study Reporting)",
+      "difficulty": "Khó",
+      "difficulty_code": "VD",
       "question": "Theo bạn, rào cản lớn nhất để nông dân Việt Nam tiếp cận các công nghệ này (như đã thảo luận trong phần Đạo đức) là gì?",
       "options": [
         {
@@ -7096,6 +7763,10 @@
         {
           "id": "C",
           "text": "Không có điện."
+        },
+        {
+          "id": "D",
+          "text": ""
         }
       ],
       "answer": "B",

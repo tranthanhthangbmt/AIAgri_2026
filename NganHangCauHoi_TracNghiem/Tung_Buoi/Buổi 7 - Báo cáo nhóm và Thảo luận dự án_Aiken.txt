@@ -1,0 +1,175 @@
+Theo quy trình chuẩn, bước đầu tiên và quan trọng nhất cần làm trước khi chạm vào bất kỳ dòng code hay dữ liệu nào là gì?
+A. Tải dữ liệu xuống máy.
+B. Định khung vấn đề (Frame the Problem): Xác định mục tiêu, loại bài toán và cách đánh giá.
+C. Mua Card màn hình (GPU) mạnh.
+D. Chọn ngay thuật toán Random Forest.
+ANSWER: B
+
+Tại sao việc tách một phần dữ liệu thành “Tập kiểm tra” (Test Set) ngay từ giai đoạn đầu là bắt buộc?
+A. Để giảm dung lượng lưu trữ.
+B. Để ngăn chặn “Thiên kiến nhòm ngó dữ liệu” (Data Snooping Bias) - tránh việc não bộ con người vô tình chọn mô hình phù hợp với dữ liệu kiểm tra.
+C. Để nộp cho giáo viên chấm điểm.
+D. Không cần thiết, có thể tách sau cùng.
+ANSWER: B
+
+Trong bước “Khám phá dữ liệu”, nếu biểu đồ phân phối (Histogram) của một thuộc tính có dạng “đuôi dài” (Heavy tail - lệch hẳn về một bên), bạn nên làm gì?
+A. Xóa thuộc tính đó đi.
+B. Biến đổi thuộc tính (ví dụ: lấy logarit) để phân phối trở nên cân đối hơn (giống hình chuông).
+C. Nhân đôi giá trị lên.
+D. Giữ nguyên không làm gì.
+ANSWER: B
+
+Kỹ thuật xử lý dữ liệu bị thiếu (Missing values) bằng cách điền vào giá trị trung bình (Mean) hoặc trung vị (Median) được gọi là gì?
+A. Dropna (Xóa bỏ).
+B. Imputation (Gán/Điền dữ liệu).
+C. Standardization (Chuẩn hóa).
+D. One-hot encoding.
+ANSWER: B
+
+Mục đích của việc xây dựng một “Mô hình cơ sở” (Baseline Model) đơn giản (ví dụ: luôn đoán giá trị trung bình) là gì?
+A. Để nộp bài cho nhanh.
+B. Để thiết lập một mốc hiệu suất tối thiểu (Benchmark) mà các mô hình phức tạp (như Deep Learning) phải vượt qua được thì mới đáng giá để sử dụng.
+C. Để làm đẹp báo cáo.
+D. Baseline Model luôn là mô hình chính xác nhất.
+ANSWER: B
+
+Kỹ thuật “Cross-Validation” (Kiểm chứng chéo) được sử dụng để làm gì?
+A. Kiểm tra lỗi chính tả trong code.
+B. Đánh giá hiệu suất mô hình một cách tin cậy hơn trên nhiều tập con khác nhau, tránh trường hợp may mắn ngẫu nhiên trên một lần chia dữ liệu.
+C. Tăng tốc độ huấn luyện.
+D. Vẽ biểu đồ đẹp hơn.
+ANSWER: B
+
+Nếu mô hình hoạt động rất tốt trên tập huấn luyện nhưng tệ trên tập kiểm tra, hiện tượng này gọi là gì và cách sửa cơ bản?
+A. Underfitting; Cần làm mô hình phức tạp hơn.
+B. Overfitting; Cần thu thập thêm dữ liệu hoặc đơn giản hóa mô hình (Regularization).
+C. Optimal; Không cần làm gì.
+D. Data Leakage; Cần xóa dữ liệu.
+ANSWER: B
+
+“Grid Search” là kỹ thuật dùng để làm gì?
+A. Tìm kiếm thông tin trên Google.
+B. Tự động thử nghiệm các tổ hợp siêu tham số (Hyperparameters) khác nhau để tìm ra cấu hình tối ưu cho mô hình.
+C. Tìm kiếm lỗi (bug) trong phần mềm.
+D. Tìm kiếm vị trí địa lý.
+ANSWER: B
+
+Khi trình bày dự án cho các bên liên quan (Stakeholders) không chuyên về kỹ thuật, điều gì quan trọng nhất?
+A. Show ra càng nhiều dòng code càng tốt.
+B. “Kể chuyện” (Storytelling): Kết nối kết quả kỹ thuật với giá trị thực tế (giải quyết vấn đề gì, tiết kiệm bao nhiêu tiền) thay vì chỉ nói về các con số khô khan.
+C. Sử dụng nhiều từ ngữ chuyên ngành phức tạp.
+D. Nói thật nhanh để tiết kiệm thời gian.
+ANSWER: B
+
+Theo Checklist, sau khi triển khai mô hình, tại sao chúng ta vẫn cần “Giám sát” (Monitoring)?
+A. Vì mô hình sẽ “thối rữa” (rot) theo thời gian do dữ liệu và môi trường thay đổi (Data Drift/Concept Drift).
+B. Vì máy tính sẽ bị hỏng.
+C. Để tính tiền người dùng.
+D. Không cần giám sát, AI là vĩnh cửu.
+ANSWER: A
+
+Vấn đề “Quyền sở hữu dữ liệu” (Data Ownership) trong nông nghiệp thông minh thường gây tranh cãi giữa hai đối tượng nào?
+A. Nông dân và Người tiêu dùng.
+B. Nông dân (người tạo ra dữ liệu từ ruộng) và Công ty Công nghệ (người thu thập và phân tích dữ liệu).
+C. Chính phủ và Ngân hàng.
+D. Robot và Con người.
+ANSWER: B
+
+“Khoảng cách số” (Digital Divide) trong nông nghiệp đề cập đến rủi ro gì khi áp dụng AI?
+A. Khoảng cách giữa các cây trồng.
+B. Nguy cơ các nông hộ nhỏ/nghèo bị bỏ lại phía sau do không đủ tiền mua công nghệ, trong khi các trang trại lớn ngày càng giàu hơn.
+C. Sự khác biệt giữa số 0 và số 1.
+D. Khoảng cách từ trang trại đến thành phố.
+ANSWER: B
+
+Rác thải điện tử (E-waste) từ các dự án IoT nông nghiệp đến từ đâu?
+A. Từ phần mềm AI.
+B. Từ hàng triệu cảm biến, pin và thiết bị phần cứng bị hỏng hoặc hết hạn sử dụng bị vứt bỏ ra môi trường đồng ruộng.
+C. Từ việc đốt rơm rạ.
+D. Từ phân bón hóa học.
+ANSWER: B
+
+“Thiên kiến thuật toán” (Algorithmic Bias) có thể xảy ra trong nông nghiệp như thế nào?
+A. Mô hình chỉ được huấn luyện trên dữ liệu ở Châu Âu nhưng lại áp dụng ở Việt Nam, dẫn đến dự báo sai lệch hoàn toàn do khác biệt thổ nhưỡng.
+B. Máy tính ghét nông dân.
+C. Thuật toán chạy quá nhanh.
+D. Cảm biến bị hỏng.
+ANSWER: A
+
+Về mặt thị trường lao động, việc sử dụng robot thu hoạch tự động có thể gây ra tác động tiêu cực gì?
+A. Làm tăng giá nông sản.
+B. Gây mất việc làm cho lượng lớn lao động phổ thông/thời vụ (những người sống dựa vào nghề hái thuê).
+C. Làm cây trồng bị đau.
+D. Robot đình công.
+ANSWER: B
+
+Trách nhiệm giải trình (Accountability): Nếu một ứng dụng AI tư vấn sai khiến nông dân mất trắng vụ mùa, ai nên chịu trách nhiệm?
+A. Không ai cả, đó là lỗi kỹ thuật.
+B. Đây là một vấn đề pháp lý phức tạp chưa có lời giải rõ ràng: Là người viết code, công ty cung cấp, hay người nông dân tin tưởng mù quáng?
+C. Người nông dân vì đã tin máy.
+D. Cái máy tính.
+ANSWER: B
+
+Trong bài toán phát hiện bệnh, nếu bộ dữ liệu của bạn có 950 ảnh cây khỏe và chỉ 50 ảnh cây bệnh (Mất cân bằng dữ liệu), và mô hình dự đoán tất cả cây đều khỏe. Độ chính xác (Accuracy) là 95%. Kết quả này có tốt không?
+A. 
+B. Rất tệ, vì mô hình hoàn toàn vô dụng trong việc phát hiện bệnh (thứ chúng ta cần tìm).
+C. Chấp nhận được.
+D. Không xác định được.
+ANSWER: B
+
+Để giải quyết vấn đề mất cân bằng dữ liệu nêu trên (Quá ít ảnh bệnh), giải pháp kỹ thuật nào sau đây là phù hợp?
+A. Xóa bớt ảnh cây bệnh đi.
+B. Sử dụng kỹ thuật Tăng cường dữ liệu (Data Augmentation) cho lớp cây bệnh hoặc dùng các kỹ thuật lấy mẫu lại (Resampling like SMOTE).
+C. Không làm gì cả.
+D. Đổi sang bài toán hồi quy.
+ANSWER: B
+
+Khi triển khai mô hình nhận diện bệnh lên điện thoại di động cũ của nông dân, mô hình chạy rất chậm. Bạn nên làm gì?
+A. Yêu cầu nông dân mua iPhone 15.
+B. Sử dụng các kỹ thuật nén mô hình (Model Quantization) hoặc chuyển sang các kiến trúc nhẹ hơn (như MobileNet, EfficientNet).
+C. Chạy mô hình trên giấy.
+D. Tăng độ phân giải ảnh lên.
+ANSWER: B
+
+Nếu hệ thống tưới tiêu IoT của bạn được lắp đặt ở một cánh đồng xa xôi không có sóng 3G/4G hay Wi-Fi, giải pháp thiết kế nào là hợp lý nhất?
+A. Kéo dây cáp quang dài 10km ra ruộng.
+B. Thiết kế hệ thống xử lý tại biên (Edge Computing) để tự ra quyết định tại chỗ mà không cần gửi dữ liệu về Cloud, hoặc dùng công nghệ truyền tin xa năng lượng thấp (LoRaWAN).
+C. Bỏ cuộc.
+D. Dùng Bluetooth kết nối với vệ tinh.
+ANSWER: B
+
+Trong dự báo giá nông sản, nếu mô hình không thể dự báo được các cú sốc giá (price spikes) do đại dịch hay chiến tranh, nguyên nhân chính là gì?
+A. Do máy tính yếu.
+B. Do dữ liệu huấn luyện trong quá khứ không chứa các sự kiện thiên nga đen (Black Swan events) tương tự, nên mô hình không học được.
+C. Do nông dân giấu giá.
+D. Do code sai.
+ANSWER: B
+
+Tại sao việc sử dụng “Transfer Learning” (Học chuyển giao) lại được khuyến khích cho các dự án sinh viên về phân loại ảnh cây trồng?
+A. Vì sinh viên lười train lại từ đầu.
+B. Vì sinh viên thường không có đủ dữ liệu lớn và tài nguyên tính toán để train một mạng CNN sâu từ đầu. Transfer Learning giúp đạt độ chính xác cao với ít dữ liệu hơn.
+C. Vì nó miễn phí.
+D. Vì nó giúp ảnh đẹp hơn.
+ANSWER: B
+
+Một nhóm sinh viên đề xuất dùng Drone để bay giám sát sâu bệnh 24/7. Điểm yếu thực tế (Practicality) lớn nhất của ý tưởng này là gì?
+A. Drone không biết bay.
+B. Thời lượng pin của Drone hiện tại rất ngắn (chỉ 20-30 phút), không thể bay liên tục 24/7 mà cần thay pin liên tục hoặc trạm sạc tự động đắt tiền.
+C. Drone làm chim sợ.
+D. Sâu bệnh chỉ hoạt động ban đêm.
+ANSWER: B
+
+Chỉ số F1-Score là sự kết hợp của hai chỉ số nào?
+A. Accuracy và Loss.
+B. Precision (Độ chuẩn xác) và Recall (Độ phủ).
+C. True Positive và True Negative.
+D. Mean và Median.
+ANSWER: B
+
+Nếu bạn muốn biết đặc trưng nào (ví dụ: Nhiệt độ, Lượng mưa, hay Phân bón) ảnh hưởng nhiều nhất đến kết quả dự báo của mô hình Random Forest, bạn dùng công cụ gì?
+A. Feature Importance (Tầm quan trọng đặc trưng).
+B. Confusion Matrix.
+C. Learning Curve.
+D. Cost Function.
+ANSWER: A
+

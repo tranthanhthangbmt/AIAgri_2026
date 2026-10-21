@@ -1,0 +1,252 @@
+Theo tài liệu [Data-Driven] Chapter 6, năng suất cây trồng (Crop Yield) là kết quả tương tác phức tạp của ba nhóm yếu tố chính nào?
+A. Đất đai, Nguồn vốn, Nhân lực.
+B. Kiểu gen (Genotype), Môi trường (Environment) và Quản lý (Management).
+C. Phân bón, Thuốc trừ sâu, Máy móc.
+D. Thời tiết, Giá cả thị trường, Chính sách nhà nước.
+ANSWER: B
+
+Trong các yếu tố môi trường ảnh hưởng đến dự báo năng suất, yếu tố nào được coi là quan trọng nhất và khó kiểm soát nhất?
+A. Độ pH của đất.
+B. Các yếu tố khí hậu/thời tiết (Nhiệt độ, Lượng mưa, Bức xạ mặt trời).
+C. Lượng phân bón.
+D. Mật độ gieo trồng.
+ANSWER: B
+
+Chỉ số thực vật nào thường được trích xuất từ hình ảnh vệ tinh hoặc UAV để đánh giá sức khỏe cây trồng và dự báo năng suất?
+A. BMI (Body Mass Index).
+B. NDVI (Normalized Difference Vegetation Index - Chỉ số khác biệt thực vật chuẩn hóa).
+C. IQ (Intelligence Quotient).
+D. GDP (Gross Domestic Product).
+ANSWER: B
+
+Tại sao dữ liệu thu thập từ cảm biến hoặc nhật ký canh tác (Raw Data) cần phải trải qua bước “Làm sạch dữ liệu” (Data Cleaning) trước khi đưa vào mô hình AI?
+A. Để giảm dung lượng lưu trữ.
+B. Để loại bỏ các giá trị bị thiếu (Missing values), nhiễu (Noise) và giá trị ngoại lai (Outliers) có thể làm sai lệch kết quả dự báo.
+C. Để mã hóa dữ liệu thành dạng nhị phân.
+D. Để tăng độ phức tạp cho bài toán.
+ANSWER: B
+
+Kỹ thuật “Chuẩn hóa dữ liệu” (Data Normalization/Scaling) có tác dụng gì khi chúng ta có các biến số khác nhau như “Lượng mưa (mm)” và “Nhiệt độ (°C)”?
+A. Chuyển đổi tất cả đơn vị về mm.
+B. Đưa các biến số về cùng một phạm vi giá trị (thường là [0, 1] hoặc [-1, 1]) để tránh việc biến số có giá trị lớn (như lượng mưa 2000mm) lấn át biến số nhỏ (như nhiệt độ 30°C).
+C. Loại bỏ biến số Nhiệt độ.
+D. Cộng hai giá trị lại với nhau.
+ANSWER: B
+
+“Dữ liệu lịch sử” (Historical Data) đóng vai trò gì trong bài toán dự báo năng suất?
+A. Không có vai trò gì, chỉ cần dữ liệu hiện tại.
+B. Là nguồn dữ liệu huấn luyện (Training data) để mô hình AI học các quy luật và xu hướng từ quá khứ, từ đó suy ra tương lai.
+C. Chỉ dùng để viết báo cáo tổng kết.
+D. Dùng để phạt nông dân nếu năng suất thấp.
+ANSWER: B
+
+Trong quản lý đầu vào thông minh (Chapter 3), công nghệ UAV (Drone) giúp thu thập loại dữ liệu nào mà vệ tinh khó đáp ứng được?
+A. Dữ liệu thời tiết toàn cầu.
+B. Hình ảnh độ phân giải cực cao (sub-centimeter) tại thời điểm cụ thể theo yêu cầu, không bị mây che phủ.
+C. Dữ liệu giá cả thị trường.
+D. Dữ liệu về độ sâu của nước ngầm.
+ANSWER: B
+
+Yếu tố nào sau đây thuộc nhóm “Yếu tố quản lý” (Management Factors) mà con người có thể chủ động điều chỉnh để tối ưu hóa năng suất?
+A. Bức xạ mặt trời.
+B. Lịch tưới tiêu và lượng phân bón.
+C. Nhiệt độ không khí.
+D. Loại đất tự nhiên.
+ANSWER: B
+
+“Phân tích tương quan” (Correlation Analysis), ví dụ như Ma trận nhiệt (Heatmap), được sử dụng ở bước tiền xử lý để làm gì?
+A. Để làm đẹp báo cáo.
+B. Để xác định mối quan hệ giữa các biến đầu vào và biến mục tiêu (năng suất), giúp chọn ra những đặc trưng quan trọng nhất (Feature Selection).
+C. Để xóa dữ liệu bị trùng lặp.
+D. Để chia dữ liệu thành tập Train/Test.
+ANSWER: B
+
+Dữ liệu về “Độ phì nhiêu của đất” (Soil Fertility) bao gồm các thông số hóa học nào quan trọng nhất cho dự báo năng suất?
+A. Độ cứng và màu sắc.
+B. Nitơ (N), Phốt pho (P), Kali (K), Carbon hữu cơ (OC) và độ pH.
+C. Số lượng đá trong đất.
+D. Mùi của đất.
+ANSWER: B
+
+Một tập dữ liệu dự báo năng suất bị “Mất cân bằng” (Imbalanced) có nghĩa là gì?
+A. Số lượng mẫu về năng suất cao và năng suất thấp chênh lệch nhau quá lớn (ví dụ: chủ yếu là năm được mùa, rất ít năm mất mùa).
+B. Dữ liệu bị mất một nửa.
+C. Dữ liệu chỉ có ở một quốc gia.
+D. Dữ liệu không có ngày tháng.
+ANSWER: A
+
+Vai trò của “Kỹ thuật đặc trưng” (Feature Engineering) trong bài toán này là gì?
+A. Thu thập thêm đất về phòng thí nghiệm.
+B. Tạo ra các biến mới từ dữ liệu cũ giúp mô hình học tốt hơn (ví dụ: tạo biến “Lượng mưa tích lũy trong giai đoạn trổ bông” thay vì chỉ dùng lượng mưa trung bình năm).
+C. Vẽ bản đồ khu vực trồng trọt.
+D. Mua thêm máy tính mới.
+ANSWER: B
+
+Bài toán “Dự báo năng suất” (ví dụ: dự báo thu được bao nhiêu tấn lúa/ha) thuộc loại bài toán nào trong Học máy?
+A. Bài toán Phân loại (Classification).
+B. Bài toán Hồi quy (Regression).
+C. Bài toán Phân cụm (Clustering).
+D. Bài toán Học tăng cường (Reinforcement Learning).
+ANSWER: B
+
+Tại sao thuật toán “Hồi quy tuyến tính” (Linear Regression) thường có hiệu suất thấp khi dự báo năng suất cây trồng thực tế?
+A. Vì nó chạy quá chậm.
+B. Vì mối quan hệ giữa các yếu tố môi trường (thời tiết, đất) và năng suất thường là phi tuyến tính (non-linear) và phức tạp, trong khi Hồi quy tuyến tính giả định mối quan hệ là đường thẳng.
+C. Vì nó cần quá nhiều dữ liệu.
+D. Vì nó không có sẵn trong Python.
+ANSWER: B
+
+Thuật toán “Rừng ngẫu nhiên” (Random Forest) hoạt động dựa trên nguyên lý nào?
+A. Tạo ra một cây quyết định duy nhất cực lớn.
+B. Học tập tổ hợp (Ensemble Learning): Tạo ra nhiều cây quyết định ngẫu nhiên và lấy kết quả trung bình của chúng để đưa ra dự đoán cuối cùng.
+C. Mô phỏng mạng lưới thần kinh con người.
+D. Tìm các điểm dữ liệu gần nhất.
+ANSWER: B
+
+Một ưu điểm lớn của thuật toán Random Forest so với Decision Tree đơn lẻ được nhắc đến trong Chapter 6 là gì?
+A. Dễ bị Overfitting hơn.
+B. Giúp chống lại hiện tượng Overfitting (Quá khớp) tốt hơn và xử lý tốt dữ liệu bị thiếu.
+C. Khó giải thích hơn.
+D. Chỉ xử lý được dữ liệu hình ảnh.
+ANSWER: B
+
+Mạng Nơ-ron nhân tạo (ANN) phù hợp nhất với loại dữ liệu nông nghiệp nào?
+A. Dữ liệu có mối quan hệ đơn giản, tuyến tính.
+B. Dữ liệu lớn, phức tạp, có mối quan hệ phi tuyến tính cao giữa đầu vào (thời tiết, đất) và đầu ra (năng suất).
+C. Dữ liệu văn bản viết tay.
+D. Dữ liệu rất nhỏ (ít hơn 10 dòng).
+ANSWER: B
+
+Kiến trúc mạng nơ-ron nào đặc biệt hiệu quả khi dữ liệu đầu vào là chuỗi thời gian (ví dụ: nhiệt độ thay đổi theo từng ngày trong suốt vụ mùa)?
+A. CNN (Convolutional Neural Network).
+B. LSTM (Long Short-Term Memory).
+C. KNN (K-Nearest Neighbors).
+D. K-Means.
+ANSWER: B
+
+Trong nghiên cứu so sánh các thuật toán dự báo năng suất Đậu gà (Chickpea) tại Iran (Chapter 6), thuật toán nào cho kết quả sai số thấp nhất?
+A. Hồi quy tuyến tính.
+B. Random Forest (RF).
+C. KNN.
+D. SVM.
+ANSWER: B
+
+Thuật toán “Hồi quy Vectơ Hỗ trợ” (SVR - Support Vector Regression) hoạt động bằng cách nào?
+A. Tìm một đường thẳng đi qua tất cả điểm dữ liệu.
+B. Tìm một “siêu phẳng” (hyperplane) tối ưu trong không gian nhiều chiều để khớp với dữ liệu trong một giới hạn sai số cho phép.
+C. Chia dữ liệu thành các cụm tròn.
+D. Sắp xếp dữ liệu theo thứ tự bảng chữ cái.
+ANSWER: B
+
+Thuật toán KNN (K-Láng giềng gần nhất) dự báo năng suất cho một thửa ruộng mới dựa trên cơ sở nào?
+A. Dựa trên năng suất trung bình của K thửa ruộng có điều kiện (đất, khí hậu) tương tự nhất trong quá khứ.
+B. Dựa trên công thức toán học phức tạp.
+C. Dựa trên năng suất của thửa ruộng xa nhất.
+D. Dựa trên dự báo thời tiết ngày mai.
+ANSWER: A
+
+Nhược điểm của KNN khi áp dụng cho dữ liệu lớn (Big Data) trong nông nghiệp là gì?
+A. Độ chính xác quá cao gây nghi ngờ.
+B. Tốc độ dự báo chậm và tốn bộ nhớ vì phải tính khoảng cách với tất cả dữ liệu lịch sử mỗi khi dự báo.
+C. Không thể xử lý số liệu.
+D. Chỉ hoạt động trên máy tính lượng tử.
+ANSWER: B
+
+Thuật toán XGBoost (được nhắc đến như mô hình Tăng cường/Boosting) nổi tiếng vì điều gì?
+A. Tốc độ chậm nhưng chính xác.
+B. Hiệu suất cao, tốc độ nhanh và khả năng chiến thắng nhiều cuộc thi dữ liệu (Kaggle) nhờ cơ chế sửa lỗi của các mô hình trước đó.
+C. Chỉ dùng cho dữ liệu hình ảnh.
+D. Là thuật toán lâu đời nhất.
+ANSWER: B
+
+Khi lựa chọn mô hình dự báo cho một loại cây trồng cụ thể (ví dụ: Lúa), yếu tố nào quan trọng nhất cần xem xét?
+A. Tên của thuật toán nghe có hay không.
+B. Đặc điểm của dữ liệu có sẵn (kích thước, loại dữ liệu) và độ chính xác mong muốn.
+C. Màu sắc giao diện phần mềm.
+D. Ý kiến của người bán máy tính.
+ANSWER: B
+
+Chỉ số RMSE (Root Mean Square Error - Căn bậc hai sai số bình phương trung bình) dùng để đánh giá điều gì của mô hình dự báo năng suất?
+A. Độ chính xác phân loại (bao nhiêu % đúng).
+B. Mức độ chênh lệch trung bình giữa năng suất dự báo và năng suất thực tế (càng thấp càng tốt).
+C. Tốc độ chạy của mô hình.
+D. Độ phức tạp của mô hình.
+ANSWER: B
+
+Hệ số xác định (R-squared) có giá trị nằm trong khoảng nào và ý nghĩa là gì?
+A. Từ -vô cùng đến +vô cùng; càng lớn càng tốt.
+B. Từ 0 đến 1; càng gần 1 nghĩa là mô hình càng giải thích tốt sự biến thiên của năng suất (độ phù hợp cao).
+C. Từ 0 đến 100; càng thấp càng tốt.
+D. Luôn bằng 0.
+ANSWER: B
+
+Nếu mô hình có cao trên tập huấn luyện (Training set) nhưng rất thấp trên tập kiểm tra (Test set), mô hình đang gặp vấn đề gì?
+A. Underfitting (Chưa khớp).
+B. Overfitting (Quá khớp/Học vẹt).
+C. Optimal (Tối ưu).
+D. Data Leakage (Rò rỉ dữ liệu).
+ANSWER: B
+
+Chỉ số MAE (Mean Absolute Error - Sai số tuyệt đối trung bình) khác RMSE ở điểm nào?
+A. MAE bình phương sai số lên.
+B. MAE lấy giá trị tuyệt đối của sai số, ít bị ảnh hưởng bởi các giá trị ngoại lai (outliers) hơn so với RMSE.
+C. MAE luôn lớn hơn RMSE.
+D. MAE dùng cho bài toán phân loại.
+ANSWER: B
+
+Trong Case Study dự báo năng suất Lúa (Chapter 9), việc sử dụng AI giúp các nhà hoạch định chính sách điều gì?
+A. Quyết định giá gạo bán lẻ.
+B. Ước tính tổng sản lượng quốc gia sớm để có kế hoạch xuất nhập khẩu và đảm bảo an ninh lương thực.
+C. Đếm số hạt gạo trong bao.
+D. Tìm ra người nông dân giỏi nhất.
+ANSWER: B
+
+“Tối ưu hóa đầu vào” (Input Optimization) dựa trên dự báo năng suất (Chapter 3) có nghĩa là gì?
+A. Mua loại phân bón đắt nhất.
+B. Sử dụng đúng lượng hạt giống, phân bón và nước cần thiết để đạt năng suất mục tiêu, tránh lãng phí.
+C. Sử dụng tối đa lượng phân bón có thể.
+D. Giảm năng suất xuống mức thấp nhất.
+ANSWER: B
+
+Khái niệm “AI có thể diễn giải” (Explainable AI - XAI) được đề xuất trong hướng phát triển tương lai (Chapter 6) nhằm giải quyết vấn đề gì?
+A. Giúp AI chạy nhanh hơn.
+B. Giải quyết vấn đề “Hộp đen” (Black box) - giúp nông dân hiểu TẠI SAO mô hình lại đưa ra dự báo đó (ví dụ: năng suất thấp do thiếu đạm).
+C. Giúp AI nói được tiếng người.
+D. Giúp giảm giá thành phần mềm.
+ANSWER: B
+
+Dữ liệu “Bất thường” (Anomaly) được phát hiện trong quá trình giám sát sản xuất (ví dụ: nhiệt độ tăng đột biến) sẽ kích hoạt hành động gì trong hệ thống AI?
+A. Tự động tắt hệ thống.
+B. Gửi cảnh báo sớm (Early Warning) để nông dân có biện pháp can thiệp kịp thời (ví dụ: che chắn, tưới nước làm mát).
+C. Xóa dữ liệu ngày hôm đó.
+D. Tăng dự báo năng suất lên.
+ANSWER: B
+
+Trong bảng so sánh các mô hình (Chapter 9), nếu Mô hình A có RMSE = 0.5 tấn/ha và Mô hình B có RMSE = 0.8 tấn/ha, ta nên chọn mô hình nào?
+A. Mô hình A.
+B. Mô hình B.
+C. Cả hai như nhau.
+D. Không chọn mô hình nào.
+ANSWER: A
+
+Công nghệ “Tỷ lệ biến đổi” (VRT - Variable Rate Technology) sử dụng kết quả dự báo năng suất để làm gì?
+A. Thay đổi tốc độ máy cày.
+B. Điều chỉnh lượng phân bón/thuốc trừ sâu phun ra tại từng vị trí khác nhau trên cánh đồng tùy theo tiềm năng năng suất của vị trí đó.
+C. Thay đổi giống cây giữa chừng.
+D. Thay đổi kích thước ruộng.
+ANSWER: B
+
+Tại sao việc tích hợp dữ liệu “Đa nguồn” (Multi-source data) từ vệ tinh, drone và cảm biến lại cải thiện độ chính xác của dự báo?
+A. Vì càng nhiều dữ liệu càng rối.
+B. Vì mỗi nguồn dữ liệu bù đắp khuyết điểm cho nhau (Vệ tinh nhìn rộng, Drone nhìn chi tiết, Cảm biến đo chính xác tại chỗ), tạo ra bức tranh toàn diện.
+C. Vì nó làm tăng chi phí dự án.
+D. Vì các nhà khoa học thích phức tạp hóa vấn đề.
+ANSWER: B
+
+Kết quả cuối cùng của một hệ thống “Hoạch định sản xuất” thông minh là gì?
+A. Một file Excel chứa số liệu thô.
+B. Một kế hoạch hành động (Action Plan) bao gồm lịch gieo trồng, lượng vật tư cần thiết và dự kiến sản lượng thu hoạch để tối ưu lợi nhuận.
+C. Một bức ảnh chụp vệ tinh.
+D. Một dự báo thời tiết đơn thuần.
+ANSWER: B
+

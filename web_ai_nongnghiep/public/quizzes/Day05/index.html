@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc nghiệm Buổi 5: Ứng dụng AI trong quản lý nước và dinh dưỡng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #15803d;
+            --primary-hover: #166534;
+            --primary-light: #dcfce7;
+            --accent: #22c55e;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --success: #16a34a;
+            --success-bg: #f0fdf4;
+            --success-border: #bbf7d0;
+            --error: #dc2626;
+            --error-bg: #fef2f2;
+            --error-border: #fecaca;
+            --radius: 12px;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 24px 16px;
+        }
+
+        .quiz-wrapper {
+            width: 100%;
+            max-width: 840px;
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        /* Header Bar */
+        .quiz-header {
+            padding: 20px 28px;
+            background: linear-gradient(135deg, #14532d 0%, #166534 100%);
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .quiz-header h1 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .session-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            backdrop-filter: blur(4px);
+        }
+
+        .quiz-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn-palette {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .btn-palette:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Progress Bar */
+        .progress-track {
+            width: 100%;
+            height: 6px;
+            background-color: #e2e8f0;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #22c55e, #16a34a);
+            width: 0%;
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Quiz Body */
+        .quiz-body {
+            padding: 32px 28px;
+        }
+
+        .question-meta-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .counter-badge {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .tags-cluster {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .tag-pill {
+            font-size: 0.78rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            background: #f1f5f9;
+            color: var(--text-muted);
+        }
+
+        .tag-pill.diff-de { background: #dcfce7; color: #166534; }
+        .tag-pill.diff-tb { background: #fef3c7; color: #92400e; }
+        .tag-pill.diff-kho { background: #fee2e2; color: #991b1b; }
+
+        .question-title {
+            font-size: 1.22rem;
+            font-weight: 700;
+            line-height: 1.55;
+            color: var(--text-main);
+            margin-bottom: 24px;
+        }
+
+        /* Options Grid */
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .option-card {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 18px;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: #ffffff;
+            user-select: none;
+        }
+
+        .option-card:hover:not(.locked) {
+            border-color: var(--accent);
+            background: #f8fafc;
+            transform: translateY(-1px);
+        }
+
+        .option-card.selected:not(.locked) {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .option-card.locked {
+            cursor: default;
+        }
+
+        .option-card.is-correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-bg) !important;
+        }
+
+        .option-card.is-wrong {
+            border-color: var(--error) !important;
+            background-color: var(--error-bg) !important;
+        }
+
+        .option-letter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: #f1f5f9;
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-right: 14px;
+            flex-shrink: 0;
+            transition: all 0.2s;
+        }
+
+        .option-card.selected .option-letter {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        .option-card.is-correct .option-letter {
+            background: var(--success);
+            color: #ffffff;
+        }
+
+        .option-card.is-wrong .option-letter {
+            background: var(--error);
+            color: #ffffff;
+        }
+
+        .option-text {
+            font-size: 1.02rem;
+            line-height: 1.5;
+            color: var(--text-main);
+            padding-top: 3px;
+        }
+
+        /* Feedback Box */
+        .feedback-box {
+            display: none;
+            padding: 18px 20px;
+            border-radius: 10px;
+            margin-bottom: 24px;
+            animation: slideDown 0.3s ease;
+        }
+
+        .feedback-box.show {
+            display: block;
+        }
+
+        .feedback-box.correct {
+            background-color: var(--success-bg);
+            border: 1px solid var(--success-border);
+        }
+
+        .feedback-box.incorrect {
+            background-color: var(--error-bg);
+            border: 1px solid var(--error-border);
+        }
+
+        .feedback-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .correct .feedback-title { color: var(--success); }
+        .incorrect .feedback-title { color: var(--error); }
+
+        .feedback-desc {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #334155;
+        }
+
+        /* Action Buttons */
+        .actions-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .btn {
+            padding: 12px 26px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary:disabled {
+            background-color: #94a3b8;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .btn-secondary {
+            background: #f1f5f9;
+            color: var(--text-main);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: #e2e8f0;
+        }
+
+        /* Result Screen */
+        .result-screen {
+            display: none;
+            text-align: center;
+            padding: 40px 24px;
+        }
+
+        .score-ring-wrap {
+            position: relative;
+            width: 170px;
+            height: 170px;
+            margin: 0 auto 28px;
+        }
+
+        .score-circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(var(--accent) 0%, #e2e8f0 0%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+
+        .score-inner {
+            width: 136px;
+            height: 136px;
+            background: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .score-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .score-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
+        .result-title {
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        .result-summary {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 500px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            max-width: 500px;
+            margin: 0 auto 36px;
+        }
+
+        .stat-card {
+            padding: 16px;
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+        }
+
+        .stat-val {
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        /* Palette Drawer */
+        .drawer-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 100;
+        }
+
+        .drawer {
+            position: fixed;
+            top: 0;
+            right: -360px;
+            width: 340px;
+            height: 100%;
+            background: #ffffff;
+            box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+            z-index: 101;
+            transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+        }
+
+        .drawer.open {
+            right: 0;
+        }
+
+        .drawer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .drawer-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            overflow-y: auto;
+            flex: 1;
+            padding-right: 4px;
+        }
+
+        .palette-item {
+            height: 42px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .palette-item:hover {
+            border-color: var(--primary);
+            background: #e2e8f0;
+        }
+
+        .palette-item.active {
+            border-color: var(--primary);
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .palette-item.correct {
+            background: var(--success);
+            color: #ffffff;
+            border-color: var(--success);
+        }
+
+        .palette-item.wrong {
+            background: var(--error);
+            color: #ffffff;
+            border-color: var(--error);
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 640px) {
+            body { padding: 10px; }
+            .quiz-body { padding: 20px 16px; }
+            .quiz-header { padding: 16px; }
+            .stats-grid { grid-template-columns: 1fr; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-wrapper">
+    <!-- Header -->
+    <div class="quiz-header">
+        <h1>
+            <span>🌾</span>
+            <span>Buổi 5: Ứng dụng AI trong quản lý nước và dinh dưỡng</span>
+        </h1>
+        <div class="quiz-meta">
+            <span class="session-badge">Buổi 5</span>
+            <button class="btn-palette" onclick="toggleDrawer()">📋 Mục lục câu</button>
+        </div>
+    </div>
+
+    <!-- Progress Track -->
+    <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <!-- Screen 1: Quiz Active -->
+    <div class="quiz-body" id="quiz-screen">
+        <div class="question-meta-row">
+            <div class="counter-badge" id="question-counter">Câu hỏi 1 / 40</div>
+            <div class="tags-cluster">
+                <span class="tag-pill" id="section-tag">Tổng quan</span>
+                <span class="tag-pill" id="difficulty-tag">Dễ</span>
+            </div>
+        </div>
+
+        <h2 class="question-title" id="question-text">Đang tải câu hỏi...</h2>
+
+        <div class="options-list" id="options-container">
+            <!-- Dynamic Options -->
+        </div>
+
+        <!-- Feedback Container -->
+        <div class="feedback-box" id="feedback-box">
+            <div class="feedback-title" id="feedback-title"></div>
+            <div class="feedback-desc" id="feedback-desc"></div>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions-row">
+            <button class="btn btn-secondary" id="btn-prev" onclick="navigatePrev()">← Câu trước</button>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn btn-primary" id="btn-check" onclick="checkAnswer()" disabled>Kiểm tra</button>
+                <button class="btn btn-primary" id="btn-next" onclick="navigateNext()" style="display: none;">Câu tiếp theo →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen 2: Results -->
+    <div class="result-screen" id="result-screen">
+        <div class="score-ring-wrap">
+            <div class="score-circle" id="score-circle">
+                <div class="score-inner">
+                    <span class="score-number" id="final-score">0</span>
+                    <span class="score-label" id="final-total">/ 40</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="result-title" id="result-title">Chúc mừng bạn đã hoàn thành!</h2>
+        <p class="result-summary" id="result-summary">Bạn đã trả lời xuất sắc hầu hết các câu hỏi trong phần này.</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="stat-correct">0</div>
+                <div class="stat-label">Số câu đúng</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--error);" id="stat-wrong">0</div>
+                <div class="stat-label">Số câu sai</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="stat-accuracy">0%</div>
+                <div class="stat-label">Độ chính xác</div>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="restartQuiz()">🔄 Làm lại bài</button>
+            <button class="btn btn-secondary" onclick="viewAllAnswers()">🔍 Xem lại chi tiết đáp án</button>
+        </div>
+    </div>
+</div>
+
+<!-- Drawer / Question Palette -->
+<div class="drawer-overlay" id="drawer-overlay" onclick="toggleDrawer()"></div>
+<div class="drawer" id="drawer">
+    <div class="drawer-header">
+        <h3 style="font-size: 1.1rem; font-weight: 700;">Danh sách câu hỏi</h3>
+        <button class="btn btn-secondary" style="padding: 4px 10px; font-size: 0.85rem;" onclick="toggleDrawer()">Đóng ✕</button>
+    </div>
+    <div class="drawer-grid" id="palette-grid">
+        <!-- Palette numbers -->
+    </div>
+</div>
+
+<script>
+    const questions = [{"question": "“Internet vạn vật” (IoT) trong nông nghiệp được định nghĩa tốt nhất là gì?", "options": [{"id": "A", "text": "Một trang web bán nông sản trực tuyến."}, {"id": "B", "text": "Một mạng lưới các vật thể vật lý (cảm biến, máy móc) được kết nối điện tử để thu thập, chia sẻ dữ liệu và giám sát từ xa."}, {"id": "C", "text": "Mạng xã hội dành riêng cho nông dân."}, {"id": "D", "text": "Hệ thống máy tính để bàn không có kết nối internet."}], "answer": "B", "explanation": "IoT là mạng lưới các đối tượng vật lý được kết nối điện tử để thu thập và tổng hợp dữ liệu, cho phép quản lý tài nguyên chủ động."}, {"question": "Trong kiến trúc hệ thống IoT 3 lớp điển hình, lớp dưới cùng có nhiệm vụ thu thập dữ liệu trực tiếp từ môi trường được gọi là gì?", "options": [{"id": "A", "text": "Lớp Mạng (Network Layer)."}, {"id": "B", "text": "Lớp Ứng dụng (Application Layer)."}, {"id": "C", "text": "Lớp Cảm biến/Nhận thức (Perception/Sensor Layer)."}, {"id": "D", "text": "Lớp Đám mây (Cloud Layer)."}], "answer": "C", "explanation": "Lớp Cảm biến (Perception Layer) bao gồm các thiết bị như cảm biến độ ẩm, nhiệt độ… tiếp xúc trực tiếp với môi trường để thu thập dữ liệu thô."}, {"question": "Cảm biến độ ẩm đất (Soil Moisture Sensor) đóng vai trò gì trong hệ thống tưới tiêu thông minh?", "options": [{"id": "A", "text": "Đo lượng mưa rơi xuống từ trời."}, {"id": "B", "text": "Đo hàm lượng nước hiện có trong đất để quyết định xem cây có cần tưới hay không."}, {"id": "C", "text": "Đo nhiệt độ của lá cây."}, {"id": "D", "text": "Đo độ pH của nước."}], "answer": "B", "explanation": "Cảm biến độ ẩm của đất giúp xác định thời điểm tưới tiêu tối ưu bằng cách cung cấp dữ liệu về lượng nước thực tế trong đất."}, {"question": "Vai trò của “Lớp Mạng” (Network Layer) hoặc Gateway trong hệ thống IoT là gì?", "options": [{"id": "A", "text": "Phân tích dữ liệu và ra quyết định."}, {"id": "B", "text": "Thu thập dữ liệu từ đất."}, {"id": "C", "text": "Truyền tải dữ liệu từ các cảm biến lên máy chủ đám mây (Cloud) hoặc trung tâm xử lý."}, {"id": "D", "text": "Hiển thị dữ liệu cho nông dân xem."}], "answer": "C", "explanation": "Lớp mạng chịu trách nhiệm kết nối và truyền dữ liệu từ các thiết bị biên (cảm biến) đến hệ thống xử lý trung tâm."}, {"question": "Tại sao dữ liệu “Thời gian thực” (Real-time data) lại quan trọng đối với quản lý tưới tiêu và dinh dưỡng?", "options": [{"id": "A", "text": "Vì nó giúp nông dân biết lịch sử canh tác năm ngoái."}, {"id": "B", "text": "Vì điều kiện môi trường (nắng, gió, độ ẩm) thay đổi liên tục; dữ liệu tức thời giúp hệ thống phản ứng ngay lập tức (ví dụ: dừng tưới khi trời bắt đầu mưa)."}, {"id": "C", "text": "Vì nó làm tăng dung lượng lưu trữ."}, {"id": "D", "text": "Vì nó giúp bán được giá cao hơn."}], "answer": "B", "explanation": "Để đưa ra các lựa chọn sáng suốt (như tưới nước), việc có sẵn dữ liệu định lượng thời gian thực là rất quan trọng để phản ứng với các biến động tức thời."}, {"question": "Thiết bị nào sau đây thường được sử dụng như một bộ điều khiển trung tâm nhỏ gọn (Edge device) tại trang trại để thu thập dữ liệu từ cảm biến trước khi gửi lên Cloud?", "options": [{"id": "A", "text": "Siêu máy tính."}, {"id": "B", "text": "Raspberry Pi hoặc Arduino."}, {"id": "C", "text": "Máy phát điện."}, {"id": "D", "text": "Máy cày."}], "answer": "B", "explanation": "Raspberry Pi thường được nhắc đến trong các tài liệu IoT như một bộ điều khiển chi phí thấp để thu thập và xử lý dữ liệu tại biên."}, {"question": "Một trong những thách thức lớn nhất khi triển khai hệ thống cảm biến IoT trên các cánh đồng rộng lớn ở vùng nông thôn là gì?", "options": [{"id": "A", "text": "Cảm biến quá nặng."}, {"id": "B", "text": "Vấn đề kết nối mạng (Connectivity) và nguồn năng lượng (Pin/Điện)."}, {"id": "C", "text": "Không có chỗ đặt cảm biến."}, {"id": "D", "text": "Cây trồng che khuất tầm nhìn."}], "answer": "B", "explanation": "Các vùng nông thôn thường thiếu hạ tầng mạng ổn định (như 5G/Wi-Fi diện rộng) và nguồn điện lưới, gây khó khăn cho việc truyền dữ liệu liên tục."}, {"question": "Công nghệ “Viễn thám” (Remote Sensing) qua vệ tinh khác với Cảm biến IoT tại chỗ (In-situ sensors) ở điểm nào?", "options": [{"id": "A", "text": "Viễn thám phải cắm thiết bị vào đất."}, {"id": "B", "text": "Viễn thám cung cấp cái nhìn tổng quan trên diện rộng (vĩ mô) nhưng độ chi tiết thấp hơn; IoT cung cấp dữ liệu chính xác tại điểm đo (vi mô)."}, {"id": "C", "text": "Viễn thám rẻ hơn IoT."}, {"id": "D", "text": "Viễn thám chỉ hoạt động trong nhà."}], "answer": "B", "explanation": "Vệ tinh/Drone mang lại cái nhìn tổng quan trên quy mô lớn, trong khi cảm biến IoT cung cấp dữ liệu chi tiết tại một điểm cụ thể."}, {"question": "Cảm biến NPK được sử dụng để đo thông số gì?", "options": [{"id": "A", "text": "Độ mặn của nước."}, {"id": "B", "text": "Hàm lượng các chất dinh dưỡng đa lượng (Nitơ, Phốt pho, Kali) trong đất."}, {"id": "C", "text": "Tốc độ gió."}, {"id": "D", "text": "Số lượng sâu bệnh."}], "answer": "B", "explanation": "NPK là viết tắt của 3 chất dinh dưỡng chính cần thiết cho cây trồng, cảm biến này giúp quyết định lượng phân bón cần thiết."}, {"question": "Tại sao cần đưa dữ liệu từ cảm biến lên “Điện toán đám mây” (Cloud Computing)?", "options": [{"id": "A", "text": "Để làm mát dữ liệu."}, {"id": "B", "text": "Để tận dụng khả năng lưu trữ khổng lồ và sức mạnh tính toán mạnh mẽ của Cloud để chạy các thuật toán AI phức tạp mà thiết bị nhỏ không làm được."}, {"id": "C", "text": "Để giấu dữ liệu không cho ai biết."}, {"id": "D", "text": "Để xóa dữ liệu đi cho nhẹ máy."}], "answer": "B", "explanation": "Dữ liệu được gửi đến nền tảng đám mây để lưu trữ an toàn và phân tích bằng các thuật toán AI/ML phức tạp."}, {"question": "Khái niệm “Khả năng tương tác” (Interoperability) trong IoT nông nghiệp đề cập đến vấn đề gì?", "options": [{"id": "A", "text": "Khả năng các thiết bị từ các nhà sản xuất khác nhau có thể giao tiếp và làm việc cùng nhau."}, {"id": "B", "text": "Khả năng chống nước của thiết bị."}, {"id": "C", "text": "Khả năng chịu nhiệt của cảm biến."}, {"id": "D", "text": "Khả năng kết nối với con người."}], "answer": "A", "explanation": "Sự thiếu khả năng tương tác giữa các thiết bị do các tiêu chuẩn kỹ thuật số khác nhau là một thách thức lớn, cản trở việc tích hợp hệ thống."}, {"question": "Hệ thống IoT trong nông nghiệp thường kết hợp với công nghệ nào để xác định vị trí chính xác của dữ liệu thu thập được?", "options": [{"id": "A", "text": "MP3."}, {"id": "B", "text": "GPS (Hệ thống định vị toàn cầu)."}, {"id": "C", "text": "USB."}, {"id": "D", "text": "Bluetooth (ở cự ly xa)."}], "answer": "B", "explanation": "Nông nghiệp chính xác yêu cầu “đúng nơi”, do đó dữ liệu cảm biến thường phải đi kèm với tọa độ GPS để lập bản đồ biến đổi của cánh đồng.\nPHẦN 2: TƯỚI TIÊU THÔNG MINH VỚI HỌC TĂNG CƯỜNG SÂU (DRL)"}, {"question": "Hạn chế lớn nhất của phương pháp tưới tiêu truyền thống “theo lịch trình cố định” (Fixed Schedule) là gì?", "options": [{"id": "A", "text": "Tốn quá nhiều điện năng."}, {"id": "B", "text": "Không tính đến sự thay đổi của thời tiết hay độ ẩm thực tế của đất, dẫn đến lãng phí nước (tưới khi đất còn ướt) hoặc làm cây thiếu nước (không tưới khi trời quá nóng)."}, {"id": "C", "text": "Cần quá nhiều nhân công để vận hành."}, {"id": "D", "text": "Làm hỏng hệ thống ống nước."}], "answer": "B", "explanation": "Phương pháp tưới theo lịch trình định trước thường không hiệu quả vì nó không xem xét các điều kiện môi trường thay đổi năng động, dẫn đến tưới quá nhiều hoặc quá ít."}, {"question": "“Học tăng cường sâu” (Deep Reinforcement Learning - DRL) là sự kết hợp của hai công nghệ nào?", "options": [{"id": "A", "text": "Mạng nơ-ron sâu (Deep Neural Networks) và Học tăng cường (Reinforcement Learning)."}, {"id": "B", "text": "Học máy (Machine Learning) và Blockchain."}, {"id": "C", "text": "IoT và Big Data."}, {"id": "D", "text": "Cloud Computing và 5G."}], "answer": "A", "explanation": "DRL kết hợp khả năng nhận thức của học sâu (xử lý dữ liệu đầu vào phức tạp) với khả năng ra quyết định của học tăng cường."}, {"question": "Trong mô hình Học tăng cường áp dụng cho tưới tiêu, “Tác nhân” (Agent) đóng vai trò là gì?", "options": [{"id": "A", "text": "Người nông dân."}, {"id": "B", "text": "Hệ thống tưới tiêu thông minh (phần mềm ra quyết định)."}, {"id": "C", "text": "Cây trồng."}, {"id": "D", "text": "Máy bơm nước."}], "answer": "B", "explanation": "Agent là thực thể đưa ra quyết định (tưới bao nhiêu nước) dựa trên quan sát môi trường."}, {"question": "“Môi trường” (Environment) trong bài toán tưới tiêu bao gồm những yếu tố nào?", "options": [{"id": "A", "text": "Chỉ có máy bơm nước."}, {"id": "B", "text": "Cánh đồng, đất đai, cây trồng và các yếu tố khí hậu (nắng, mưa, gió)."}, {"id": "C", "text": "Nhà kho chứa nông sản."}, {"id": "D", "text": "Chợ bán nông sản."}], "answer": "B", "explanation": "Môi trường là nơi Tác nhân tương tác, bao gồm trạng thái vật lý của đất, cây và thời tiết."}, {"question": "“Hành động” (Action) mà Tác nhân AI thực hiện trong hệ thống tưới tiêu là gì?", "options": [{"id": "A", "text": "Chụp ảnh cây trồng."}, {"id": "B", "text": "Quyết định lượng nước cần tưới (ví dụ: 0 lít, 5 lít, 10 lít) tại một thời điểm cụ thể."}, {"id": "C", "text": "Bón phân cho cây."}, {"id": "D", "text": "Thu hoạch cây trồng."}], "answer": "B", "explanation": "Hành động là quyết định điều khiển của hệ thống, cụ thể là lượng nước tưới tiêu được áp dụng."}, {"question": "Cơ chế “Phần thưởng” (Reward) giúp AI học cách tưới tiêu tối ưu như thế nào?", "options": [{"id": "A", "text": "Nếu cây chết, AI bị xóa sổ."}, {"id": "B", "text": "AI nhận điểm thưởng (+) nếu duy trì độ ẩm đất ở mức lý tưởng và nhận điểm phạt (-) nếu để đất quá khô hoặc quá ướt (gây lãng phí nước)."}, {"id": "C", "text": "AI nhận tiền từ nông dân."}, {"id": "D", "text": "AI nhận thêm dữ liệu để học."}], "answer": "B", "explanation": "Mục tiêu của Agent là tối đa hóa tổng phần thưởng tích lũy. Phần thưởng được thiết kế để khuyến khích việc duy trì độ ẩm tối ưu và tiết kiệm nước."}, {"question": "Dữ liệu đầu vào để mô tả “Trạng thái” (State) của cánh đồng cho AI thường bao gồm những gì?", "options": [{"id": "A", "text": "Độ ẩm đất hiện tại, nhiệt độ không khí, dự báo lượng mưa, giai đoạn phát triển của cây."}, {"id": "B", "text": "Giá nước trên thị trường."}, {"id": "C", "text": "Số lượng nhân công đang làm việc."}, {"id": "D", "text": "Loại máy bơm đang sử dụng."}], "answer": "A", "explanation": "Trạng thái (State) cung cấp thông tin ngữ cảnh để AI ra quyết định, bao gồm các thông số môi trường và sinh lý cây trồng."}, {"question": "Khái niệm “Thử và Sai” (Trial and Error) trong Học tăng cường có nghĩa là gì?", "options": [{"id": "A", "text": "Hệ thống thử tưới nước ngẫu nhiên và xem kết quả, từ đó rút kinh nghiệm để làm tốt hơn ở lần sau."}, {"id": "B", "text": "Hệ thống luôn làm đúng ngay từ đầu."}, {"id": "C", "text": "Hệ thống sao chép hành động của con người."}, {"id": "D", "text": "Hệ thống dừng hoạt động nếu gặp lỗi."}], "answer": "A", "explanation": "Học tăng cường hoạt động dựa trên nguyên tắc khám phá (thử các hành động mới) và khai thác (sử dụng hành động tốt nhất đã biết), học từ kết quả của các thử nghiệm đó."}, {"question": "Tại sao DRL lại ưu việt hơn các hệ thống tưới tự động dựa trên quy tắc (Rule-based, ví dụ: “Nếu độ ẩm < 30% thì tưới”)?", "options": [{"id": "A", "text": "Vì DRL rẻ hơn."}, {"id": "B", "text": "Vì DRL có khả năng học và thích ứng với các điều kiện phức tạp, phi tuyến tính (ví dụ: dự báo ngày mai mưa to thì hôm nay sẽ không tưới dù đất đang hơi khô), điều mà quy tắc cứng nhắc khó làm được."}, {"id": "C", "text": "Vì DRL không cần cảm biến."}, {"id": "D", "text": "Vì DRL chạy nhanh hơn."}], "answer": "B", "explanation": "DRL có khả năng xử lý các không gian trạng thái phức tạp và học các chiến lược dài hạn (như dự đoán mưa) thay vì chỉ phản ứng tức thì theo quy tắc cứng nhắc."}, {"question": "Trong nghiên cứu điển hình về tưới tiêu cho cây hạnh nhân (Almond trees) được nhắc đến trong tài liệu, hệ thống DRL đã giúp tiết kiệm được bao nhiêu phần trăm lượng nước so với phương pháp thông thường?", "options": [{"id": "A", "text": "Khoảng 7.8%."}, {"id": "B", "text": "50%."}, {"id": "C", "text": "90%."}, {"id": "D", "text": "Không tiết kiệm được gì."}], "answer": "A", "explanation": "Một nghiên cứu điển hình cho thấy hệ thống DRL đã tiết kiệm được 7.8% lượng nước trong khi vẫn duy trì năng suất."}, {"question": "Thuật toán DRL nào thường được sử dụng trong các bài toán điều khiển liên tục như tưới tiêu (quyết định lượng nước là số thực)?", "options": [{"id": "A", "text": "Q-Learning (bảng rới rạc)."}, {"id": "B", "text": "DDPG (Deep Deterministic Policy Gradient) hoặc PPO (Proximal Policy Optimization)."}, {"id": "C", "text": "K-Means."}, {"id": "D", "text": "Naïve Bayes."}], "answer": "B", "explanation": "Đối với không gian hành động liên tục (lượng nước tưới có thể là bất kỳ giá trị nào), các thuật toán như DDPG thường được sử dụng thay vì Q-Learning truyền thống."}, {"question": "Một thách thức lớn khi huấn luyện mô hình DRL cho nông nghiệp trong thực tế là gì?", "options": [{"id": "A", "text": "Cây trồng cần rất nhiều thời gian để phát triển (một mùa vụ kéo dài vài tháng), nên việc “thử và sai” trực tiếp trên thực địa rất chậm và rủi ro (làm chết cây)."}, {"id": "B", "text": "Máy tính không chịu được nắng mưa."}, {"id": "C", "text": "Nông dân không cho phép lắp đặt."}, {"id": "D", "text": "Không có thách thức nào."}], "answer": "A", "explanation": "Việc huấn luyện trực tiếp trên thực địa rất tốn thời gian và rủi ro. Do đó, người ta thường huấn luyện Agent trên môi trường mô phỏng (Simulators) trước khi đưa ra thực tế."}, {"question": "Hệ thống tưới tiêu thông minh DRLIC (Deep Reinforcement Learning for Irrigation Control) xem xét yếu tố nào để ra quyết định?", "options": [{"id": "A", "text": "Chỉ xem xét độ ẩm đất hiện tại."}, {"id": "B", "text": "Xem xét cả độ ẩm đất hiện tại và sự mất độ ẩm dự kiến trong tương lai (do bốc hơi/thoát hơi nước)."}, {"id": "C", "text": "Chỉ xem xét lượng mưa."}, {"id": "D", "text": "Chỉ xem xét giờ trong ngày."}], "answer": "B", "explanation": "Hệ thống DRLIC học chính sách tối ưu bằng cách xem xét động lực học của nước trong đất, bao gồm cả sự mất nước trong tương lai.\nPHẦN 3: QUẢN LÝ DINH DƯỠNG & BÓN PHÂN CHÍNH XÁC"}, {"question": "Khái niệm “Quản lý canh tác theo địa điểm cụ thể” (Site-Specific Crop Management - SSCM) trong bón phân nghĩa là gì?", "options": [{"id": "A", "text": "Bón cùng một lượng phân cho toàn bộ cánh đồng (Blanket application)."}, {"id": "B", "text": "Chia cánh đồng thành các vùng quản lý nhỏ (Management Zones) và áp dụng lượng phân bón khác nhau tùy theo nhu cầu dinh dưỡng của từng vùng."}, {"id": "C", "text": "Chỉ bón phân ở viền cánh đồng."}, {"id": "D", "text": "Thay thế phân bón bằng nước sạch."}], "answer": "B", "explanation": "SSCM tập trung vào việc xử lý sự biến đổi không gian, nghĩa là bón phân đúng liều lượng cho đúng vị trí thay vì bón đồng loạt."}, {"question": "Công nghệ “VRT” trong máy rải phân bón thông minh là viết tắt của từ gì?", "options": [{"id": "A", "text": "Virtual Reality Technology (Công nghệ thực tế ảo)."}, {"id": "B", "text": "Variable Rate Technology (Công nghệ tỷ lệ biến đổi)."}, {"id": "C", "text": "Very Rapid Tractor (Máy kéo siêu tốc)."}, {"id": "D", "text": "Visual Recognition Tech (Công nghệ nhận dạng hình ảnh)."}], "answer": "B", "explanation": "VRT (Variable Rate Technology) cho phép máy móc tự động điều chỉnh lưu lượng phân bón/thuốc trừ sâu khi di chuyển qua các vùng khác nhau của cánh đồng."}, {"question": "Trước khi thực hiện bón phân chính xác, bước quan trọng nhất để hiểu tình trạng dinh dưỡng của đất là gì?", "options": [{"id": "A", "text": "Dự báo thời tiết."}, {"id": "B", "text": "Lấy mẫu đất (Soil Sampling) và lập bản đồ dinh dưỡng."}, {"id": "C", "text": "Mua máy kéo mới."}, {"id": "D", "text": "Phỏng vấn hàng xóm."}], "answer": "B", "explanation": "Để quản lý sự biến đổi, trước tiên phải “Đánh giá sự biến đổi” thông qua việc thu thập dữ liệu mẫu đất (độ pH, N, P, K)."}, {"question": "Việc áp dụng bón phân quá mức (Over-fertilization) theo phương pháp truyền thống gây ra hậu quả môi trường nghiêm trọng nào?", "options": [{"id": "A", "text": "Làm đất trở nên quá cứng."}, {"id": "B", "text": "Dư lượng phân bón (nitrate) ngấm xuống nước ngầm hoặc trôi ra sông hồ gây ô nhiễm nguồn nước (hiện tượng phú dưỡng)."}, {"id": "C", "text": "Làm không khí bị khô."}, {"id": "D", "text": "Làm cây mọc quá cao không thu hoạch được."}], "answer": "B", "explanation": "Nông nghiệp chính xác giúp tránh dư lượng hóa chất quá mức trong đất và nước, giảm thiểu ô nhiễm môi trường."}, {"question": "Phương pháp “Quang phổ học” (Spectroscopy) giúp ích gì trong quản lý dinh dưỡng cây trồng?", "options": [{"id": "A", "text": "Chụp ảnh selfie cho cây."}, {"id": "B", "text": "Phân tích nhanh hàm lượng dinh dưỡng (như Nitơ) trong lá hoặc đất thông qua sự phản xạ ánh sáng mà không cần phá hủy mẫu."}, {"id": "C", "text": "Tăng cường ánh sáng mặt trời cho cây."}, {"id": "D", "text": "Đo chiều cao cây."}], "answer": "B", "explanation": "Tài liệu đề cập đến việc “sử dụng phương pháp quang phổ để phân tích hàm lượng nitơ, phốt pho và kali” để đưa ra quyết định bón phân."}, {"question": "Bản đồ quy định liều lượng bón phân được tạo ra bởi AI thường được gọi là gì?", "options": [{"id": "A", "text": "Bản đồ địa hình."}, {"id": "B", "text": "Bản đồ chỉ dẫn (Prescription Map)."}, {"id": "C", "text": "Bản đồ kho báu."}, {"id": "D", "text": "Bản đồ giao thông."}], "answer": "B", "explanation": "Dữ liệu phân tích được chuyển đổi thành một “Prescription Map” (Bản đồ toa thuốc/chỉ dẫn), nạp vào máy VRT để máy biết đi đến đâu thì bón bao nhiêu."}, {"question": "Theo tài liệu [AI-Agri] Chapter 12, việc áp dụng công nghệ quét cánh đồng và bón phân chính xác có thể giảm lượng phân bón sử dụng lên đến bao nhiêu phần trăm?", "options": [{"id": "A", "text": "5%."}, {"id": "B", "text": "10%."}, {"id": "C", "text": "30%."}, {"id": "D", "text": "90%."}], "answer": "C", "explanation": "Tài liệu nêu rõ con số: “Cách tiếp cận này đã được chứng minh là có thể giảm việc sử dụng phân bón lên đến 30%”."}, {"question": "“Ba đỉnh tam giác” của Nông nghiệp chính xác thường được nhắc đến là Kinh tế, Môi trường và yếu tố nào nữa?", "options": [{"id": "A", "text": "Chính trị."}, {"id": "B", "text": "Xã hội (hoặc Bền vững/Equity)."}, {"id": "C", "text": "Công nghệ."}, {"id": "D", "text": "Giải trí."}], "answer": "B", "explanation": "Nông nghiệp chính xác hướng tới sự cân bằng giữa lợi ích kinh tế (lợi nhuận), bảo vệ môi trường và lợi ích xã hội (an ninh lương thực)."}, {"question": "Khi AI phân tích dữ liệu dinh dưỡng đất, nếu phát hiện một vùng có độ pH quá thấp (đất chua), hệ thống sẽ đề xuất hành động gì?", "options": [{"id": "A", "text": "Bón thêm nhiều phân đạm (N)."}, {"id": "B", "text": "Bón vôi (Lime) tại vùng đó để trung hòa độ pH."}, {"id": "C", "text": "Tưới nhiều nước hơn."}, {"id": "D", "text": "Bỏ hoang vùng đất đó."}], "answer": "B", "explanation": "Đây là kiến thức vận dụng cơ bản trong nông nghiệp chính xác: Điều chỉnh pH là bước đầu tiên để cây hấp thụ được dinh dưỡng, AI sẽ tính toán lượng vôi cần thiết cho từng điểm."}, {"question": "Lợi ích “Tích lũy kiến thức” (Knowledge accumulation) trong hệ thống quản lý dinh dưỡng thông minh có ý nghĩa gì?", "options": [{"id": "A", "text": "Giúp máy tính thông minh hơn con người."}, {"id": "B", "text": "Dữ liệu từ các mùa vụ trước (lượng phân đã bón, năng suất thu được) được lưu trữ và phân tích để tối ưu hóa quyết định cho mùa vụ năm sau."}, {"id": "C", "text": "Giúp nông dân học thuộc lòng sách giáo khoa."}, {"id": "D", "text": "Tăng dung lượng ổ cứng."}], "answer": "B", "explanation": "Dữ liệu từ các hoạt động được lưu trữ cung cấp thông tin hữu ích để cải thiện công tác quản lý trong các mùa vụ tiếp theo."}];
+
+    let currentIndex = 0;
+    let selectedOption = null;
+    let userAnswers = {}; // { index: { selected: 'A', isCorrect: true, checked: true } }
+    let isChecked = false;
+
+    // Elements
+    const qCounter = document.getElementById('question-counter');
+    const secTag = document.getElementById('section-tag');
+    const diffTag = document.getElementById('difficulty-tag');
+    const qText = document.getElementById('question-text');
+    const optionsContainer = document.getElementById('options-container');
+    const feedbackBox = document.getElementById('feedback-box');
+    const feedbackTitle = document.getElementById('feedback-title');
+    const feedbackDesc = document.getElementById('feedback-desc');
+    const btnCheck = document.getElementById('btn-check');
+    const btnNext = document.getElementById('btn-next');
+    const btnPrev = document.getElementById('btn-prev');
+    const progressFill = document.getElementById('progress-fill');
+    const quizScreen = document.getElementById('quiz-screen');
+    const resultScreen = document.getElementById('result-screen');
+    const paletteGrid = document.getElementById('palette-grid');
+
+    function initQuiz() {
+        buildPalette();
+        renderQuestion(currentIndex);
+    }
+
+    function buildPalette() {
+        paletteGrid.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const item = document.createElement('div');
+            item.className = 'palette-item';
+            item.id = `palette-${idx}`;
+            item.innerText = idx + 1;
+            item.onclick = () => {
+                toggleDrawer();
+                jumpToQuestion(idx);
+            };
+            paletteGrid.appendChild(item);
+        });
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const el = document.getElementById(`palette-${idx}`);
+            if (!el) return;
+            el.className = 'palette-item';
+            if (idx === currentIndex) el.classList.add('active');
+            if (userAnswers[idx] && userAnswers[idx].checked) {
+                if (userAnswers[idx].isCorrect) el.classList.add('correct');
+                else el.classList.add('wrong');
+            }
+        });
+    }
+
+    function renderQuestion(index) {
+        currentIndex = index;
+        const q = questions[index];
+        const state = userAnswers[index] || null;
+
+        qCounter.innerText = `Câu hỏi ${index + 1} / ${questions.length}`;
+        secTag.innerText = q.section || 'Nội dung trọng tâm';
+        
+        diffTag.innerText = q.difficulty || 'Trung bình';
+        diffTag.className = 'tag-pill';
+        if (q.difficulty === 'Dễ') diffTag.classList.add('diff-de');
+        else if (q.difficulty === 'Khó') diffTag.classList.add('diff-kho');
+        else diffTag.classList.add('diff-tb');
+
+        qText.innerText = q.question;
+        progressFill.style.width = `${((index + 1) / questions.length) * 100}%`;
+
+        btnPrev.disabled = (index === 0);
+
+        // Build Options
+        optionsContainer.innerHTML = '';
+        selectedOption = state ? state.selected : null;
+        isChecked = state ? state.checked : false;
+
+        q.options.forEach(opt => {
+            const card = document.createElement('div');
+            card.className = 'option-card';
+            card.id = `opt-${opt.id}`;
+
+            if (selectedOption === opt.id) {
+                card.classList.add('selected');
+            }
+
+            if (isChecked) {
+                card.classList.add('locked');
+                if (opt.id === q.answer) {
+                    card.classList.add('is-correct');
+                } else if (opt.id === selectedOption && selectedOption !== q.answer) {
+                    card.classList.add('is-wrong');
+                }
+            } else {
+                card.onclick = () => selectOption(opt.id);
+            }
+
+            card.innerHTML = `
+                <div class="option-letter">${opt.id}</div>
+                <div class="option-text">${opt.text}</div>
+            `;
+            optionsContainer.appendChild(card);
+        });
+
+        // Feedback
+        if (isChecked) {
+            btnCheck.style.display = 'none';
+            btnNext.style.display = 'inline-flex';
+            btnNext.innerText = (index === questions.length - 1) ? 'Xem kết quả 🏁' : 'Câu tiếp theo →';
+            showFeedback(state.isCorrect, q);
+        } else {
+            feedbackBox.className = 'feedback-box';
+            btnCheck.style.display = 'inline-flex';
+            btnCheck.disabled = !selectedOption;
+            btnNext.style.display = 'none';
+        }
+
+        updatePalette();
+    }
+
+    function selectOption(optId) {
+        if (isChecked) return;
+        selectedOption = optId;
+        document.querySelectorAll('.option-card').forEach(c => c.classList.remove('selected'));
+        const target = document.getElementById(`opt-${optId}`);
+        if (target) target.classList.add('selected');
+        btnCheck.disabled = false;
+    }
+
+    function checkAnswer() {
+        if (!selectedOption || isChecked) return;
+        const q = questions[currentIndex];
+        const isCorrect = (selectedOption === q.answer);
+
+        isChecked = true;
+        userAnswers[currentIndex] = {
+            selected: selectedOption,
+            isCorrect: isCorrect,
+            checked: true
+        };
+
+        // Lock options & mark colors
+        document.querySelectorAll('.option-card').forEach(c => c.classList.add('locked'));
+        const correctCard = document.getElementById(`opt-${q.answer}`);
+        if (correctCard) correctCard.classList.add('is-correct');
+
+        if (!isCorrect) {
+            const wrongCard = document.getElementById(`opt-${selectedOption}`);
+            if (wrongCard) wrongCard.classList.add('is-wrong');
+        }
+
+        showFeedback(isCorrect, q);
+
+        btnCheck.style.display = 'none';
+        btnNext.style.display = 'inline-flex';
+        btnNext.innerText = (currentIndex === questions.length - 1) ? 'Xem kết quả 🏁' : 'Câu tiếp theo →';
+
+        updatePalette();
+    }
+
+    function showFeedback(isCorrect, q) {
+        feedbackBox.className = `feedback-box show ${isCorrect ? 'correct' : 'incorrect'}`;
+        if (isCorrect) {
+            feedbackTitle.innerHTML = `<span>🎉</span> Chính xác!`;
+        } else {
+            feedbackTitle.innerHTML = `<span>❌</span> Chưa chính xác. Đáp án đúng là: <b>${q.answer}</b>`;
+        }
+        feedbackDesc.innerHTML = `<b>💡 Giải thích:</b> ${q.explanation || 'Không có giải thích bổ sung.'}`;
+    }
+
+    function navigateNext() {
+        if (currentIndex < questions.length - 1) {
+            renderQuestion(currentIndex + 1);
+        } else {
+            showResults();
+        }
+    }
+
+    function navigatePrev() {
+        if (currentIndex > 0) {
+            renderQuestion(currentIndex - 1);
+        }
+    }
+
+    function jumpToQuestion(idx) {
+        renderQuestion(idx);
+    }
+
+    function showResults() {
+        quizScreen.style.display = 'none';
+        resultScreen.style.display = 'block';
+
+        let correctCount = 0;
+        let wrongCount = 0;
+        questions.forEach((q, idx) => {
+            if (userAnswers[idx] && userAnswers[idx].isCorrect) {
+                correctCount++;
+            } else {
+                wrongCount++;
+            }
+        });
+
+        const total = questions.length;
+        const percent = Math.round((correctCount / total) * 100);
+
+        document.getElementById('final-score').innerText = correctCount;
+        document.getElementById('final-total').innerText = `/ ${total}`;
+        document.getElementById('stat-correct').innerText = correctCount;
+        document.getElementById('stat-wrong').innerText = wrongCount;
+        document.getElementById('stat-accuracy').innerText = `${percent}%`;
+
+        const scoreCircle = document.getElementById('score-circle');
+        scoreCircle.style.background = `conic-gradient(var(--accent) ${percent}%, #e2e8f0 ${percent}%)`;
+
+        const rTitle = document.getElementById('result-title');
+        const rSummary = document.getElementById('result-summary');
+
+        if (percent >= 90) {
+            rTitle.innerText = "🌟 Xuất sắc! Nắm vững kiến thức";
+            rSummary.innerText = "Bạn đã hoàn thành bài thi với kết quả tuyệt vời. Bạn đã hiểu rất sâu về nội dung của buổi học!";
+        } else if (percent >= 75) {
+            rTitle.innerText = "👏 Rất tốt! Đạt yêu cầu cao";
+            rSummary.innerText = "Kết quả rất ấn tượng! Bạn đã nắm chắc hầu hết các khái niệm trọng tâm.";
+        } else if (percent >= 50) {
+            rTitle.innerText = "👍 Đạt yêu cầu cơ bản";
+            rSummary.innerText = "Bạn đã vượt qua bài kiểm tra. Hãy xem lại các câu giải thích chi tiết để củng cố thêm phần còn yếu nhé!";
+        } else {
+            rTitle.innerText = "📖 Cần ôn tập thêm!";
+            rSummary.innerText = "Bạn nên đọc lại slide bài giảng và tài liệu học tập rồi thử sức lại lần nữa nhé.";
+        }
+    }
+
+    function restartQuiz() {
+        userAnswers = {};
+        currentIndex = 0;
+        selectedOption = null;
+        isChecked = false;
+        resultScreen.style.display = 'none';
+        quizScreen.style.display = 'block';
+        initQuiz();
+    }
+
+    function viewAllAnswers() {
+        resultScreen.style.display = 'none';
+        quizScreen.style.display = 'block';
+        renderQuestion(0);
+    }
+
+    function toggleDrawer() {
+        const drawer = document.getElementById('drawer');
+        const overlay = document.getElementById('drawer-overlay');
+        const isOpen = drawer.classList.contains('open');
+        if (isOpen) {
+            drawer.classList.remove('open');
+            overlay.style.display = 'none';
+        } else {
+            drawer.classList.add('open');
+            overlay.style.display = 'block';
+        }
+    }
+
+    // Khởi động
+    initQuiz();
+</script>
+
+</body>
+</html>

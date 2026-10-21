@@ -1,0 +1,84 @@
+Khi lắp đặt một hộp điều khiển IoT (chứa mạch điện tử) ngoài trời, chỉ số bảo vệ vỏ hộp nào sau đây là tối thiểu cần thiết để chống mưa và bụi?
+A. IP20 (Chống bụi nhẹ, không chống nước).
+B. IP65 hoặc IP67 (Chống bụi hoàn toàn và chống tia nước áp lực thấp/ngâm nước).
+C. Chỉ cần hộp giấy là đủ.
+D. IP40.
+ANSWER: B
+
+Bước đầu tiên quan trọng nhất khi tiến hành “Khảo sát địa điểm” (Site Survey) để lắp đặt hệ thống IoT không dây là gì?
+A. Khoan lỗ ngay lập tức.
+B. Kiểm tra cường độ sóng (Signal Strength) của mạng Wi-Fi/4G/LoRa tại điểm dự kiến lắp đặt.
+C. Mua nước uống.
+D. Trồng thêm cây.
+ANSWER: B
+
+Nguồn năng lượng khả thi nhất cho các trạm cảm biến (Sensor Nodes) nằm xa nguồn điện lưới là gì?
+A. Kéo dây điện dài 5km.
+B. Sử dụng Pin kết hợp tấm năng lượng mặt trời (Solar Panel).
+C. Sử dụng máy phát điện chạy xăng (chạy 24/7).
+D. Sử dụng năng lượng gió từ quạt cầm tay.
+ANSWER: B
+
+Khi lắp đặt “Cảm biến độ ẩm đất” (Soil Moisture Sensor), vị trí nào là chính xác để phản ánh đúng nhu cầu nước của cây?
+A. Đặt cảm biến nằm ngay trên mặt đất.
+B. Chôn cảm biến ở vùng rễ hoạt động (Root Zone) của cây trồng (độ sâu tùy loại cây).
+C. Chôn cảm biến sâu dưới đáy chậu/luống cách xa rễ.
+D. Treo cảm biến trên cành cây.
+ANSWER: B
+
+Trong quy ước màu dây điện chuẩn của các cảm biến công nghiệp, dây màu Đỏ (Red) và Đen (Black) thường đại diện cho chân nào?
+A. Đỏ: Tín hiệu (Signal); Đen: Đất (GND).
+B. Đỏ: Nguồn dương (VCC/+); Đen: Nguồn âm/Đất (GND/-).
+C. Đỏ: Đất; Đen: Nguồn.
+D. Tùy thích, đấu sao cũng được.
+ANSWER: B
+
+Tại sao sau khi lắp đặt xong, ta cần thực hiện bước “Hiệu chuẩn” (Calibration) cảm biến độ ẩm đất?
+A. Vì cảm biến xuất xưởng luôn chính xác 100%.
+B. Vì các loại đất khác nhau (đất cát vs đất sét) có tính chất dẫn điện khác nhau; cần hiệu chuẩn để mức “100% ẩm” và “0% ẩm” tương ứng đúng với loại đất thực tế.
+C. Để làm sạch cảm biến.
+D. Để tiết kiệm pin.
+ANSWER: B
+
+Khi lắp đặt cảm biến nhiệt độ & độ ẩm không khí (dạng hộp), cần lưu ý điều gì để số liệu không bị sai lệch?
+A. Lắp trực tiếp dưới ánh nắng mặt trời để đo nhiệt độ nắng.
+B. Lắp trong hộp che chắn chuyên dụng (Radiation Shield) có khe thoáng khí, tránh ánh nắng trực tiếp và mưa tạt.
+C. Bọc kín bằng túi nilon.
+D. Lắp ngay cạnh ống xả của máy nổ.
+ANSWER: B
+
+Tình huống: Trên ứng dụng điện thoại báo độ ẩm đất là 0% liên tục trong nhiều ngày dù trời vừa mưa to. Nguyên nhân có khả năng nhất là gì?
+A. Đất quá ướt nên cảm biến không đo được.
+B. Mất kết nối dây tín hiệu hoặc cảm biến bị hỏng/lỏng dây.
+C. Cây đã uống hết sạch nước.
+D. Phần mềm bị lỗi phông chữ.
+ANSWER: B
+
+Để kiểm chứng xem cảm biến độ ẩm đất có đang báo đúng hay không (Data Validation) ngay tại hiện trường, cách đơn giản nhất là gì?
+A. Hỏi ChatGPT.
+B. Dùng tay sờ vào đất hoặc dùng một máy đo cầm tay (handheld meter) đã được chuẩn hóa để đo đối chứng tại cùng vị trí.
+C. Nhìn màu lá cây.
+D. Đợi đến mùa thu hoạch.
+ANSWER: B
+
+Tần suất gửi dữ liệu (Sampling Rate) của cảm biến nên được cài đặt như thế nào là hợp lý cho cây trồng?
+A. Gửi liên tục mỗi 1 giây (Real-time tuyệt đối).
+B. Gửi mỗi 15-30 phút hoặc 1 tiếng một lần.
+C. Gửi mỗi tháng một lần.
+D. Chỉ gửi khi có người bấm nút.
+ANSWER: B
+
+Nếu Gateway (bộ thu phát trung tâm) không kết nối được Internet, đèn trạng thái thường sẽ báo hiệu như thế nào?
+A. Đèn xanh sáng đứng yên.
+B. Đèn đỏ nhấp nháy hoặc đèn báo hiệu mạng tắt (tùy dòng máy).
+C. Gateway phát ra tiếng nhạc.
+D. Gateway tự động bay lên trời.
+ANSWER: B
+
+Khi lắp đặt nhiều cảm biến không dây gần nhau, hiện tượng “Nhiễu sóng” (Interference) có thể xảy ra nếu:
+A. Các thiết bị cùng sử dụng một tần số truyền tin (ví dụ: cùng kênh Wi-Fi 2.4GHz) và phát cùng lúc quá dày đặc.
+B. Các thiết bị có màu giống nhau.
+C. Trời quá nắng.
+D. Gió thổi quá mạnh.
+ANSWER: A
+

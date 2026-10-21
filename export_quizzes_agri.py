@@ -11,7 +11,7 @@ import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
-# Danh sách thông tin chuẩn cho 4 buổi
+# Danh sách thông tin chuẩn cho toàn bộ môn học (Buổi 1 đến 10)
 SESSIONS = {
     "Day01": {
         "num": 1,
@@ -36,6 +36,36 @@ SESSIONS = {
         "title": "Buổi 4: Thị giác máy tính (Computer Vision) ứng dụng",
         "short_title": "Thị giác máy tính ứng dụng",
         "docx_file": "Trắc nghiệm Tuần 4.docx"
+    },
+    "Day05": {
+        "num": 5,
+        "title": "Buổi 5: Ứng dụng AI trong quản lý nước và dinh dưỡng",
+        "short_title": "AI trong quản lý nước và dinh dưỡng",
+        "docx_file": "Trắc nghiệm Tuần 5.docx"
+    },
+    "Day06": {
+        "num": 6,
+        "title": "Buổi 6: Ứng dụng AI trong dự báo & hoạch định sản xuất",
+        "short_title": "AI trong dự báo & hoạch định sản xuất",
+        "docx_file": "Trắc nghiệm Tuần 6.docx"
+    },
+    "Day07": {
+        "num": 7,
+        "title": "Buổi 7: Báo cáo nhóm và Thảo luận dự án",
+        "short_title": "Báo cáo nhóm & Thảo luận dự án",
+        "docx_file": "Trắc nghiệm Tuần 7.docx"
+    },
+    "Day08": {
+        "num": 8,
+        "title": "Buổi 8: Ôn tập và Kiểm tra giữa kỳ",
+        "short_title": "Ôn tập & Kiểm tra giữa kỳ",
+        "docx_file": "Trắc nghiệm Tuần 8.docx"
+    },
+    "Day09_10": {
+        "num": "9&10",
+        "title": "Buổi 9&10: Thực hành (tại doanh nghiệp/trang trại)",
+        "short_title": "Thực hành tại doanh nghiệp trang trại",
+        "docx_file": "Trắc nghiệm Tuần 9&10.docx"
     }
 }
 
@@ -425,8 +455,8 @@ def main():
     
     global_counter = 1
     
-    print("=== BẮT ĐẦU TRÍCH XUẤT CÂU HỎI TRẮC NGHIỆM BUỔI 1 - 4 ===")
-    for day_key in ["Day01", "Day02", "Day03", "Day04"]:
+    print("=== BẮT ĐẦU TRÍCH XUẤT CÂU HỎI TRẮC NGHIỆM BUỔI 1 - 10 ===")
+    for day_key in list(SESSIONS.keys()):
         sess_info = SESSIONS[day_key]
         filepath = os.path.join(docx_dir, sess_info["docx_file"])
         print(f"\n[+] Đang xử lý: {sess_info['docx_file']} ({sess_info['title']})")
@@ -441,7 +471,7 @@ def main():
         print(f"    -> Đã trích xuất thành công {len(session_qs)} câu hỏi.")
         
         # Xuất từng buổi
-        clean_sess_name = sess_info["title"].replace(":", " -")
+        clean_sess_name = sess_info["title"].replace(":", " -").replace("/", "_").replace("\\", "_")
         prefix_tb = os.path.join(tung_buoi_dir, clean_sess_name)
         
         export_to_word_docx(session_qs, f"{prefix_tb}.docx", title=f"BÀI TẬP TRẮC NGHIỆM - {sess_info['title'].upper()}")
@@ -453,21 +483,22 @@ def main():
         shutil.copy(f"{prefix_tb}.xlsx", os.path.join(public_dl_dir, f"{clean_sess_name}.xlsx"))
         shutil.copy(f"{prefix_tb}_Aiken.txt", os.path.join(public_dl_dir, f"{clean_sess_name}_Aiken.txt"))
         
-    print(f"\n=== TỔNG CỘNG ĐÃ TRÍCH XUẤT: {len(all_questions_list)} CÂU HỎI TỪ BUỔI 1 ĐẾN BUỔI 4 ===")
+    total_q_count = len(all_questions_list)
+    print(f"\n=== TỔNG CỘNG ĐÃ TRÍCH XUẤT: {total_q_count} CÂU HỎI TỪ BUỔI 1 ĐẾN BUỔI 10 ===")
     
     # Xuất ngân hàng tổng hợp
-    combined_prefix = os.path.join(output_nganhang, "NganHang_154_CauHoi_AI_NongNghiep_Buoi_1_den_4")
+    combined_prefix = os.path.join(output_nganhang, f"NganHang_{total_q_count}_CauHoi_AI_NongNghiep_Buoi_1_den_10")
     
-    export_to_word_docx(all_questions_list, f"{combined_prefix}.docx", title="NGÂN HÀNG CÂU HỎI TRẮC NGHIỆM MÔN ỨNG DỤNG AI TRONG NÔNG NGHIỆP\n(BUỔI 1 ĐẾN BUỔI 4)")
-    export_to_excel(all_questions_list, f"{combined_prefix}.xlsx", sheet_title="Toàn bộ 154 câu hỏi")
-    export_to_moodle_aiken(all_questions_list, os.path.join(output_nganhang, "Moodle_Aiken_154_CauHoi_Buoi_1_den_4.txt"))
-    export_to_quizizz_template(all_questions_list, os.path.join(output_nganhang, "Quizizz_Template_154_CauHoi_Buoi_1_den_4.xlsx"))
+    export_to_word_docx(all_questions_list, f"{combined_prefix}.docx", title=f"NGÂN HÀNG CÂU HỎI TRẮC NGHIỆM MÔN ỨNG DỤNG AI TRONG NÔNG NGHIỆP\n(BUỔI 1 ĐẾN BUỔI 10 - TỔNG CỘNG {total_q_count} CÂU)")
+    export_to_excel(all_questions_list, f"{combined_prefix}.xlsx", sheet_title=f"Toàn bộ {total_q_count} câu hỏi")
+    export_to_moodle_aiken(all_questions_list, os.path.join(output_nganhang, f"Moodle_Aiken_{total_q_count}_CauHoi_Buoi_1_den_10.txt"))
+    export_to_quizizz_template(all_questions_list, os.path.join(output_nganhang, f"Quizizz_Template_{total_q_count}_CauHoi_Buoi_1_den_10.xlsx"))
     
     # Copy sang public downloads của web
-    shutil.copy(f"{combined_prefix}.docx", os.path.join(public_dl_dir, "NganHang_154_CauHoi_AI_NongNghiep_Buoi_1_den_4.docx"))
-    shutil.copy(f"{combined_prefix}.xlsx", os.path.join(public_dl_dir, "NganHang_154_CauHoi_AI_NongNghiep_Buoi_1_den_4.xlsx"))
-    shutil.copy(os.path.join(output_nganhang, "Moodle_Aiken_154_CauHoi_Buoi_1_den_4.txt"), os.path.join(public_dl_dir, "Moodle_Aiken_154_CauHoi_Buoi_1_den_4.txt"))
-    shutil.copy(os.path.join(output_nganhang, "Quizizz_Template_154_CauHoi_Buoi_1_den_4.xlsx"), os.path.join(public_dl_dir, "Quizizz_Template_154_CauHoi_Buoi_1_den_4.xlsx"))
+    shutil.copy(f"{combined_prefix}.docx", os.path.join(public_dl_dir, f"NganHang_{total_q_count}_CauHoi_AI_NongNghiep_Buoi_1_den_10.docx"))
+    shutil.copy(f"{combined_prefix}.xlsx", os.path.join(public_dl_dir, f"NganHang_{total_q_count}_CauHoi_AI_NongNghiep_Buoi_1_den_10.xlsx"))
+    shutil.copy(os.path.join(output_nganhang, f"Moodle_Aiken_{total_q_count}_CauHoi_Buoi_1_den_10.txt"), os.path.join(public_dl_dir, f"Moodle_Aiken_{total_q_count}_CauHoi_Buoi_1_den_10.txt"))
+    shutil.copy(os.path.join(output_nganhang, f"Quizizz_Template_{total_q_count}_CauHoi_Buoi_1_den_10.xlsx"), os.path.join(public_dl_dir, f"Quizizz_Template_{total_q_count}_CauHoi_Buoi_1_den_10.xlsx"))
     
     # Xuất JSON ngân hàng
     with open(f"{combined_prefix}.json", "w", encoding="utf-8") as f:

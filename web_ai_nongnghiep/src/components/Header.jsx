@@ -16,10 +16,13 @@ const Header = () => {
           <Link to="/syllabus" className={`nav-link ${location.pathname === '/syllabus' ? 'active' : ''}`}>Bài giảng</Link>
           <Link to="/resources" className={`nav-link ${location.pathname === '/resources' ? 'active' : ''}`}>Tài liệu</Link>
           <Link to="/quizzes" className={`nav-link ${location.pathname === '/quizzes' ? 'active' : ''}`}>Trắc nghiệm</Link>
+          <Link to="/exercises" className={`nav-link ${location.pathname === '/exercises' ? 'active' : ''}`}>Bài tập</Link>
           <Link to="/exam" className={`nav-link ${location.pathname === '/exam' ? 'active' : ''}`} style={{ fontWeight: 600 }}>
             📝 Kiểm tra
           </Link>
-          <Link to="/exercises" className={`nav-link ${location.pathname === '/exercises' ? 'active' : ''}`}>Bài tập</Link>
+          <Link to="/experts" className={`nav-link ${location.pathname === '/experts' ? 'active' : ''}`} style={{ fontWeight: 600 }}>
+            🤖 Chuyên gia nông nghiệp
+          </Link>
         </nav>
       </div>
     </header>
