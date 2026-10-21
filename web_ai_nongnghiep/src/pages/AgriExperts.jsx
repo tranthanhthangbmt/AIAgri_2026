@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Brain,
   Cpu,
@@ -21,26 +21,62 @@ import {
   ArrowRight,
   Info,
   CheckCircle2,
-  ChevronRight
+  ChevronRight,
+  Calculator,
+  Network,
+  BookMarked,
+  Code2,
+  FileSpreadsheet
 } from 'lucide-react';
 import {
   overviewData,
   methodologyData,
   expertSystemsList
 } from '../data/expertSystemsData';
+import { jsonSchemaContractCode } from '../data/expertAcademicData';
+import AcademicTheoryView from '../components/agri/AcademicTheoryView';
+import AcademicCitationsView from '../components/agri/AcademicCitationsView';
+import WaterIrrigationCalc from '../components/agri/WaterIrrigationCalc';
+import FertilizerConverterCalc from '../components/agri/FertilizerConverterCalc';
+import SoilReclamationCalc from '../components/agri/SoilReclamationCalc';
+import CuppingRadarSimulator from '../components/agri/CuppingRadarSimulator';
+import AgriOntologyGraph from '../components/agri/AgriOntologyGraph';
 
 const AgriExperts = () => {
   const [selectedExpertId, setSelectedExpertId] = useState('coffee-dss');
   const [activeSubTab, setActiveSubTab] = useState('instruction');
+  const [selectedCalcId, setSelectedCalcId] = useState('calc-coffee-water');
   const [copiedId, setCopiedId] = useState(null);
   const [toastMessage, setToastMessage] = useState('');
 
   const currentExpert = expertSystemsList.find((e) => e.id === selectedExpertId) || expertSystemsList[0];
 
+  useEffect(() => {
+    if (selectedExpertId === 'coffee-dss') {
+      setSelectedCalcId('calc-coffee-water');
+    } else if (selectedExpertId === 'soil-dss') {
+      setSelectedCalcId('calc-soil-lime');
+    } else if (selectedExpertId === 'robusta-dss') {
+      setSelectedCalcId('calc-cupping-radar');
+    } else {
+      setSelectedCalcId('calc-fertilizer-npk');
+    }
+  }, [selectedExpertId]);
+
   const handleCopyPrompt = (text, name) => {
     navigator.clipboard.writeText(text);
     setCopiedId(currentExpert.id);
     setToastMessage(`Đã sao chép System Instruction của "${name}"!`);
+    setTimeout(() => {
+      setCopiedId(null);
+      setToastMessage('');
+    }, 3000);
+  };
+
+  const handleCopySchema = () => {
+    navigator.clipboard.writeText(jsonSchemaContractCode);
+    setCopiedId('json-schema');
+    setToastMessage('Đã sao chép toàn văn hợp đồng JSON Schema API!');
     setTimeout(() => {
       setCopiedId(null);
       setToastMessage('');
@@ -79,13 +115,13 @@ const AgriExperts = () => {
         <div className="container">
           <div className="hero-badge">
             <Sparkles size={16} />
-            <span>Antigravity Multi-Agent Architecture • Google NotebookLM RAG</span>
+            <span>Antigravity Multi-Agent Architecture • Precision Agri-DSS • NotebookLM RAG</span>
           </div>
           <h1 className="expert-hero-title">
             Hệ Chuyên Gia Hỗ Trợ Quyết Định (Agri-DSS)
           </h1>
           <p className="expert-hero-subtitle">
-            Chuyển dịch đột phá từ thị giác máy tính đơn thuần sang Tổ hợp Đa đại lý thông minh,
+            Chuyển dịch đột phá từ thị giác máy tính đơn thuần sang Tổ hợp Đa đại lý thông minh &amp; Nông học chính xác,
             giải quyết các bài toán sinh lý thực vật, dịch hại và chuỗi giá trị đặc thù vùng Tây Nguyên.
           </p>
 
@@ -99,8 +135,8 @@ const AgriExperts = () => {
               <span className="stat-label">Luật Vận Hành Bất Biến</span>
             </div>
             <div className="stat-card">
-              <span className="stat-num">5 Bước</span>
-              <span className="stat-label">Quy Trình Cửa Sắt</span>
+              <span className="stat-num">4</span>
+              <span className="stat-label">Máy Tính Mô Phỏng DSS</span>
             </div>
             <div className="stat-card">
               <span className="stat-num">100%</span>
@@ -110,181 +146,201 @@ const AgriExperts = () => {
         </div>
       </section>
 
-      {/* Main Container */}
-      <div className="container expert-main-content">
-        
-        {/* Phân khu 1: Bối cảnh & Cây tư duy (Tree of Thought) */}
-        <section className="glass-panel expert-section">
-          <div className="section-header">
-            <div className="section-icon-badge">
-              <Brain size={24} />
+      <div className="container main-content-wrapper">
+
+        {/* PHẦN 1: BỐI CẢNH NÔNG NGHIỆP & CÂY TƯ DUY */}
+        <section className="content-block">
+          <div className="block-header">
+            <div className="icon-wrap green">
+              <Sprout size={24} />
             </div>
             <div>
-              <h2 className="section-title">1. Bối Cảnh Nông Nghiệp & Cây Tư Duy (Tree of Thought)</h2>
-              <p className="section-desc">
+              <h2 className="block-title">1. Bối Cảnh Nông Nghiệp &amp; Cây Tư Duy (Tree of Thought)</h2>
+              <p className="block-desc">
                 Phân tích sâu các thách thức tự nhiên tại các tỉnh Đắk Lắk, Gia Lai, Lâm Đồng để dẫn xuất ra 5 đề tài khoa học cốt lõi.
               </p>
             </div>
           </div>
 
-          {/* 5 Thách thức thực địa */}
           <div className="challenges-grid">
-            {overviewData.regionContext.challenges.map((c, idx) => (
-              <div key={idx} className="challenge-item">
-                <div className="challenge-tag">Thách thức #{idx + 1}</div>
-                <h4 className="challenge-title">{c.title}</h4>
-                <p className="challenge-desc">{c.desc}</p>
+            {overviewData.regionContext.challenges.map((item, idx) => (
+              <div key={idx} className="challenge-card">
+                <div className="card-top">
+                  <span className="tag-number">THÁCH THỨC #{idx + 1}</span>
+                  <h4 className="challenge-title">{item.title}</h4>
+                </div>
+                <p className="challenge-desc">{item.desc}</p>
               </div>
             ))}
           </div>
 
-          {/* Cây tư duy Tree of Thought */}
-          <div className="tot-box">
-            <h3 className="tot-header">
-              <Layers size={20} />
-              <span>Sơ Đồ Dẫn Xuất Cây Tư Duy (Tree of Thought)</span>
+          {/* Sơ đồ Cây Tư Duy */}
+          <div className="tot-tree-container">
+            <h3 className="sub-section-title">
+              <Brain size={20} />
+              <span>Dẫn Xuất Logic (Tree of Thought) Từ Thách Thức Thực Địa Đến 5 Đề Tài</span>
             </h3>
-            <div className="tot-branches">
-              {overviewData.treeOfThought.map((tot, idx) => (
-                <div key={idx} className="tot-card">
-                  <div className="tot-branch-title">{tot.branch}</div>
-                  <div className="tot-line">
-                    <strong>Vấn đề cốt lõi:</strong> {tot.problem}
+            <div className="tot-branches-grid">
+              {overviewData.treeOfThought.map((branch, idx) => (
+                <div key={idx} className="tot-branch-card">
+                  <div className="branch-header">
+                    <span className="branch-tag">Nhánh {idx + 1}</span>
+                    <h4 className="branch-title">{branch.branch}</h4>
                   </div>
-                  <div className="tot-line">
-                    <strong>Hướng giải quyết RAG:</strong> {tot.solution}
+                  <div className="branch-body">
+                    <div className="branch-point">
+                      <strong>Vấn đề nan giải:</strong> {branch.problem}
+                    </div>
+                    <div className="branch-point solution">
+                      <strong>Giải pháp DSS:</strong> {branch.solution}
+                    </div>
                   </div>
-                  <div className="tot-derivations">
-                    {tot.derivations.map((d, dIdx) => (
-                      <span key={dIdx} className="derivation-chip">
-                        🎯 {d}
-                      </span>
-                    ))}
+                  <div className="branch-footer">
+                    <span className="derivation-label">Đề tài dẫn xuất:</span>
+                    <div className="derivations-pills">
+                      {branch.derivations.map((d, dIdx) => (
+                        <span key={dIdx} className="d-pill">{d}</span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-
-          {/* Bảng so sánh AI thông thường vs Hệ chuyên gia DSS */}
-          <div className="comparison-wrapper">
-            <h3 className="comparison-title">
-              <ShieldCheck size={20} />
-              <span>So Sánh AI Đàm Thoại Thông Thường vs Hệ Chuyên Gia DSS</span>
-            </h3>
-            <div className="table-responsive">
-              <table className="comparison-table">
-                <thead>
-                  <tr>
-                    <th>Tiêu chí đánh giá</th>
-                    <th>Mô hình AI đàm thoại thông thường</th>
-                    <th>Hệ chuyên gia DSS (Antigravity Architecture)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {overviewData.comparisonTable.map((row, idx) => (
-                    <tr key={idx}>
-                      <td className="criteria-col">
-                        <strong>{row.criteria}</strong>
-                      </td>
-                      <td className="regular-ai-col">❌ {row.regularAi}</td>
-                      <td className="expert-dss-col">✅ {row.expertDss}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
         </section>
 
-        {/* Phân khu 2: Phương pháp luận & Kết nối NotebookLM */}
-        <section className="glass-panel expert-section">
-          <div className="section-header">
-            <div className="section-icon-badge">
+        {/* PHẦN 2: KIẾN TRÚC TỔ HỢP ĐA ĐẠI LÝ & 4 LUẬT BẤT BIẾN */}
+        <section className="content-block">
+          <div className="block-header">
+            <div className="icon-wrap purple">
               <Cpu size={24} />
             </div>
             <div>
-              <h2 className="section-title">2. Phương Pháp Luận Đa Đại Lý & Kết Nối Google NotebookLM</h2>
-              <p className="section-desc">
-                Cơ chế phân tách vai trò Sub-Agents, 4 luật vận hành nghiêm ngặt và cách xây dựng kho tri thức không ảo giác.
+              <h2 className="block-title">2. Phương Pháp Luận &amp; Kiến Trúc Tổ Hợp Đa Đại Lý (Multi-Agent)</h2>
+              <p className="block-desc">
+                Cơ chế điều phối thông minh giữa Meta-Agent (Chỉ huy) và các Sub-Agents chuyên trách, tuân thủ nghiêm ngặt 4 Luật Vận Hành Bất Biến.
               </p>
             </div>
           </div>
 
-          {/* 4 Luật vận hành bất biến */}
+          {/* 4 Luật Bất Biến */}
           <div className="principles-grid">
             {methodologyData.fourPrinciples.map((p, idx) => (
               <div key={idx} className="principle-card">
                 <div className="principle-number">{p.number}</div>
                 <h4 className="principle-name">{p.name}</h4>
                 <p className="principle-desc">{p.desc}</p>
+                <div className="principle-status">
+                  <ShieldCheck size={16} />
+                  <span>Cưỡng chế mức Kernel (System Override)</span>
+                </div>
               </div>
             ))}
           </div>
 
-          {/* Sơ đồ kết nối Google NotebookLM */}
-          <div className="notebooklm-guide-box">
-            <div className="nlm-header">
-              <div className="nlm-title-group">
-                <Database size={22} color="var(--primary-light)" />
-                <h3>Quy Trình Tích Hợp Google NotebookLM Làm Cơ Sở Tri Thức (Grounding Data)</h3>
-              </div>
-              <a
-                href="https://notebooklm.google.com"
-                target="_blank"
-                rel="noreferrer"
-                className="nlm-external-btn"
-              >
-                <span>Mở Google NotebookLM</span>
-                <ExternalLink size={16} />
-              </a>
+          {/* Bảng So Sánh AI Thông Thường vs Hệ Chuyên Gia DSS */}
+          <div className="comparison-section">
+            <h3 className="sub-section-title">
+              <Layers size={20} />
+              <span>So Sánh AI Tạo Sinh Thông Thường (Vanilla LLM) vs Hệ Hỗ Trợ Quyết Định (Agri-DSS)</span>
+            </h3>
+            <div className="table-responsive">
+              <table className="comparison-table">
+                <thead>
+                  <tr>
+                    <th>Tiêu chí đánh giá</th>
+                    <th>AI Tạo Sinh Thông Thường (ChatGPT, Claude...)</th>
+                    <th>Hệ Chuyên Gia DSS (Antigravity Architecture)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {overviewData.comparisonTable.map((row, idx) => (
+                    <tr key={idx}>
+                      <td className="criteria-col">{row.criteria}</td>
+                      <td className="ai-col">{row.regularAi}</td>
+                      <td className="dss-col">
+                        <CheckCircle2 size={16} color="#059669" />
+                        <span>{row.expertDss}</span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-            <p className="nlm-concept">{methodologyData.notebookLmWorkflow.concept}</p>
+          </div>
 
-            <div className="nlm-steps-grid">
-              {methodologyData.notebookLmWorkflow.steps.map((s) => (
-                <div key={s.step} className="nlm-step-item">
-                  <div className="step-badge">Bước {s.step}</div>
-                  <h4 className="step-title">{s.title}</h4>
-                  <p className="step-desc">{s.desc}</p>
+          {/* Quy trình kết nối Google NotebookLM */}
+          <div className="notebooklm-guide-box">
+            <div className="guide-header">
+              <Database size={24} className="guide-icon" />
+              <div>
+                <h3 className="guide-title">Cơ Chế Source Grounding Qua Google NotebookLM (Chống Ảo Giác)</h3>
+                <p className="guide-desc">
+                  Để đảm bảo tính chính xác 100%, mỗi Gem Instruction được liên kết trực tiếp với một Notebook trên Google NotebookLM đóng vai trò là Kho Tri Thức (Knowledge Base).
+                </p>
+              </div>
+            </div>
+
+            <div className="guide-steps-grid">
+              {methodologyData.notebookLmWorkflow?.steps?.map((s, idx) => (
+                <div key={idx} className="guide-step-card">
+                  <div className="step-badge">BƯỚC {s.step}</div>
+                  <h4 className="guide-step-title">{s.title}</h4>
+                  <p className="guide-step-desc">{s.desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Phân khu 3: Khám phá chi tiết 5 Hệ Chuyên gia Nông Nghiệp */}
-        <section className="glass-panel expert-section" id="expert-tabs-section">
-          <div className="section-header">
-            <div className="section-icon-badge">
-              <Sparkles size={24} />
+        {/* PHẦN 3: BẢN ĐỒ BẢN THỂ HỌC TRI THỨC NÔNG HỌC TÂY NGUYÊN */}
+        <section className="content-block">
+          <div className="block-header">
+            <div className="icon-wrap blue">
+              <Network size={24} />
             </div>
             <div>
-              <h2 className="section-title">3. Khám Phá Chi Tiết 5 Hệ Chuyên Gia Nông Nghiệp (Gem Instructions)</h2>
-              <p className="section-desc">
-                Chọn một hệ chuyên gia bên dưới để tra cứu chi tiết Cơ sở dữ liệu khoa học, Quy trình 5 bước, Bảng Red Team và Toàn văn System Instruction.
+              <h2 className="block-title">3. Bản Thể Học Tri Thức Nông Học (Agri-Domain Knowledge Graph)</h2>
+              <p className="block-desc">
+                Mô hình hóa mạng lưới quan hệ nhân quả đa chiều giữa Thổ nhưỡng, Khí hậu, Cây trồng, Dịch hại, Hoạt chất và Giá trị thị trường.
+              </p>
+            </div>
+          </div>
+          <AgriOntologyGraph />
+        </section>
+
+        {/* PHẦN 4: KHÁM PHÁ CHI TIẾT 5 HỆ CHUYÊN GIA DSS & CÔNG CỤ TƯƠNG TÁC */}
+        <section className="content-block">
+          <div className="block-header">
+            <div className="icon-wrap orange">
+              <Brain size={24} />
+            </div>
+            <div>
+              <h2 className="block-title">4. Khám Phá 5 Hệ Chuyên Gia Nông Nghiệp Tây Nguyên</h2>
+              <p className="block-desc">
+                Chọn một hệ chuyên gia bên dưới để khám phá Cơ sở khoa học, Máy tính mô phỏng DSS, System Instructions, Kịch bản Red Team và Trích dẫn APA.
               </p>
             </div>
           </div>
 
-          {/* Bộ 5 Thẻ chọn chuyên gia (Crop Tabs) */}
-          <div className="expert-tabs-nav">
+          {/* Thanh chuyển đổi 5 Chuyên gia */}
+          <div className="experts-selector-tabs">
             {expertSystemsList.map((expert) => {
               const isSelected = expert.id === selectedExpertId;
               return (
                 <button
                   key={expert.id}
-                  className={`expert-tab-btn ${isSelected ? 'active' : ''}`}
+                  className={`expert-nav-btn ${isSelected ? 'active' : ''}`}
                   onClick={() => setSelectedExpertId(expert.id)}
+                  style={{ '--expert-color': expert.badgeColor }}
                 >
-                  <div className="expert-tab-icon" style={{ color: expert.badgeColor }}>
-                    {getExpertIcon(expert.id, 24)}
+                  <div className="btn-icon-wrap" style={{ color: expert.badgeColor }}>
+                    {getExpertIcon(expert.id, 20)}
                   </div>
-                  <div className="expert-tab-text">
-                    <span className="expert-tab-name">{expert.name}</span>
-                    <span className="expert-tab-level">{expert.level}</span>
+                  <div className="btn-text-wrap">
+                    <span className="btn-crop">{expert.crop}</span>
+                    <span className="btn-name">{expert.level}</span>
                   </div>
-                  {isSelected && <div className="active-glow-indicator" />}
                 </button>
               );
             })}
@@ -321,7 +377,7 @@ const AgriExperts = () => {
               </div>
             </div>
 
-            {/* Sub Tabs điều hướng nội dung */}
+            {/* Sub Tabs điều hướng nội dung phong phú */}
             <div className="sub-tabs-bar">
               <button
                 className={`sub-tab-btn ${activeSubTab === 'instruction' ? 'active' : ''}`}
@@ -331,18 +387,25 @@ const AgriExperts = () => {
                 <span>Toàn Văn System Instruction</span>
               </button>
               <button
-                className={`sub-tab-btn ${activeSubTab === 'knowledge' ? 'active' : ''}`}
-                onClick={() => setActiveSubTab('knowledge')}
+                className={`sub-tab-btn ${activeSubTab === 'academic' ? 'active' : ''}`}
+                onClick={() => setActiveSubTab('academic')}
               >
                 <BookOpen size={16} />
-                <span>Cơ Sở Dữ Liệu Khoa Học (NotebookLM)</span>
+                <span>Cơ Sở Khoa Học &amp; Toán Nông Học</span>
               </button>
               <button
-                className={`sub-tab-btn ${activeSubTab === 'subagents' ? 'active' : ''}`}
-                onClick={() => setActiveSubTab('subagents')}
+                className={`sub-tab-btn ${activeSubTab === 'calculators' ? 'active' : ''}`}
+                onClick={() => setActiveSubTab('calculators')}
               >
-                <Cpu size={16} />
-                <span>Đội Ngũ Sub-Agents</span>
+                <Calculator size={16} />
+                <span>Bộ Mô Phỏng DSS Tương Tác</span>
+              </button>
+              <button
+                className={`sub-tab-btn ${activeSubTab === 'citations' ? 'active' : ''}`}
+                onClick={() => setActiveSubTab('citations')}
+              >
+                <BookMarked size={16} />
+                <span>Trích Dẫn APA &amp; Pháp Chuẩn</span>
               </button>
               <button
                 className={`sub-tab-btn ${activeSubTab === 'protocol' ? 'active' : ''}`}
@@ -350,6 +413,13 @@ const AgriExperts = () => {
               >
                 <Layers size={16} />
                 <span>Quy Trình 5 Cửa Sắt</span>
+              </button>
+              <button
+                className={`sub-tab-btn ${activeSubTab === 'subagents' ? 'active' : ''}`}
+                onClick={() => setActiveSubTab('subagents')}
+              >
+                <Cpu size={16} />
+                <span>Đội Ngũ Sub-Agents</span>
               </button>
               <button
                 className={`sub-tab-btn ${activeSubTab === 'redteam' ? 'active' : ''}`}
@@ -365,9 +435,16 @@ const AgriExperts = () => {
                 <CheckCircle2 size={16} />
                 <span>Kịch Bản Mẫu Thực Địa</span>
               </button>
+              <button
+                className={`sub-tab-btn ${activeSubTab === 'schema' ? 'active' : ''}`}
+                onClick={() => setActiveSubTab('schema')}
+              >
+                <Code2 size={16} />
+                <span>Hợp Đồng API JSON Schema</span>
+              </button>
             </div>
 
-            {/* Tab 1: Toàn văn Gem System Instruction */}
+            {/* Sub-tab 1: Toàn văn Gem System Instruction */}
             {activeSubTab === 'instruction' && (
               <div className="sub-content-panel">
                 <div className="panel-top-actions">
@@ -380,103 +457,119 @@ const AgriExperts = () => {
                       className="copy-prompt-btn"
                       onClick={() => handleCopyPrompt(currentExpert.fullInstructionMarkdown, currentExpert.name)}
                     >
-                      {copiedId === currentExpert.id ? <Check size={18} /> : <Copy size={18} />}
-                      <span>{copiedId === currentExpert.id ? 'Đã Sao Chép!' : 'Sao Chép System Instruction'}</span>
+                      {copiedId === currentExpert.id ? <Check size={16} /> : <Copy size={16} />}
+                      <span>{copiedId === currentExpert.id ? 'Đã Sao Chép Prompt!' : 'Sao Chép System Instruction'}</span>
                     </button>
                   </div>
                 </div>
 
-                <div className="code-viewer-container">
-                  <pre className="code-block">
+                <div className="instruction-code-wrapper">
+                  <pre className="instruction-code-content">
                     <code>{currentExpert.fullInstructionMarkdown}</code>
                   </pre>
                 </div>
               </div>
             )}
 
-            {/* Tab 2: Cơ sở dữ liệu khoa học */}
-            {activeSubTab === 'knowledge' && (
+            {/* Sub-tab 2: Cơ sở Khoa học & Mô hình Toán Nông nghiệp */}
+            {activeSubTab === 'academic' && (
               <div className="sub-content-panel">
-                <div className="panel-title-with-desc">
-                  <h4>Danh Mục Sách & Giáo Trình Khoa Học Cần Nạp Cho Chuyên Gia</h4>
-                  <p>
-                    Đây là các tài liệu "chân lý nền tảng" (Ground Truth) bắt buộc phải tải lên mục Sources trong Google NotebookLM
-                    để AI trích dẫn chuẩn xác, loại trừ hoàn toàn rủi ro bịa đặt thông tin.
-                  </p>
+                <AcademicTheoryView expertId={currentExpert.id} />
+              </div>
+            )}
+
+            {/* Sub-tab 3: Bộ Công cụ Mô phỏng DSS Tương Tác */}
+            {activeSubTab === 'calculators' && (
+              <div className="sub-content-panel">
+                <div className="calc-switcher-bar">
+                  <span className="switcher-label">Chọn máy tính mô phỏng:</span>
+                  <button
+                    className={`calc-switch-btn ${selectedCalcId === 'calc-coffee-water' ? 'active' : ''}`}
+                    onClick={() => setSelectedCalcId('calc-coffee-water')}
+                  >
+                    <Droplets size={16} />
+                    <span>Lịch Tưới Penman-Monteith (FAO-56)</span>
+                  </button>
+                  <button
+                    className={`calc-switch-btn ${selectedCalcId === 'calc-fertilizer-npk' ? 'active' : ''}`}
+                    onClick={() => setSelectedCalcId('calc-fertilizer-npk')}
+                  >
+                    <FlaskConical size={16} />
+                    <span>Chuyển Đổi Phân NPK Thương Phẩm</span>
+                  </button>
+                  <button
+                    className={`calc-switch-btn ${selectedCalcId === 'calc-soil-lime' ? 'active' : ''}`}
+                    onClick={() => setSelectedCalcId('calc-soil-lime')}
+                  >
+                    <Layers size={16} />
+                    <span>Vôi Khử Chua &amp; Giải Độc Nhôm Bazan</span>
+                  </button>
+                  <button
+                    className={`calc-switch-btn ${selectedCalcId === 'calc-cupping-radar' ? 'active' : ''}`}
+                    onClick={() => setSelectedCalcId('calc-cupping-radar')}
+                  >
+                    <Coffee size={16} />
+                    <span>Radar Chấm Điểm Fine Robusta CQI</span>
+                  </button>
                 </div>
 
-                <div className="knowledge-cards-list">
-                  {currentExpert.knowledgeBase.map((kb, idx) => (
-                    <div key={idx} className="kb-card">
-                      <div className="kb-badge">Nguồn tài liệu #{idx + 1}</div>
-                      <h5 className="kb-title">
-                        <BookOpen size={18} />
-                        <span>{kb.name}</span>
-                      </h5>
-                      <div className="kb-publisher">
-                        <strong>Cơ quan ban hành / Tác giả:</strong> {kb.publisher}
-                      </div>
-                      <div className="kb-focus">
-                        <strong>Nội dung trọng tâm nạp vào AI:</strong> {kb.focus}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="kb-tip-box">
-                  <Info size={20} color="var(--primary-color)" />
-                  <div>
-                    <strong>Mẹo thiết lập NotebookLM:</strong> Sau khi nạp các file PDF trên vào NotebookLM,
-                    hãy tạo các ghi chú (Notes) tổng hợp bảng hoạt chất hoặc ngưỡng pH/Brix để làm chỉ mục tìm kiếm nhanh cho Sub-Agents.
-                  </div>
+                <div className="active-calc-wrapper">
+                  {selectedCalcId === 'calc-coffee-water' && <WaterIrrigationCalc />}
+                  {selectedCalcId === 'calc-fertilizer-npk' && <FertilizerConverterCalc />}
+                  {selectedCalcId === 'calc-soil-lime' && <SoilReclamationCalc />}
+                  {selectedCalcId === 'calc-cupping-radar' && <CuppingRadarSimulator />}
                 </div>
               </div>
             )}
 
-            {/* Tab 3: Đội ngũ Sub-Agents */}
+            {/* Sub-tab 4: Danh mục Trích dẫn APA & Pháp chuẩn */}
+            {activeSubTab === 'citations' && (
+              <div className="sub-content-panel">
+                <AcademicCitationsView expertId={currentExpert.id} />
+              </div>
+            )}
+
+            {/* Sub-tab 5: Đội ngũ Sub-Agents */}
             {activeSubTab === 'subagents' && (
               <div className="sub-content-panel">
                 <div className="panel-title-with-desc">
-                  <h4>Cơ Cấu Tổ Hợp Sub-Agents Chuyên Trách ({currentExpert.level})</h4>
-                  <p>
-                    Thay vì một mô hình AI đơn lẻ trả lời chung chung, hệ thống phân định thành các chuyên gia cấp dưới chuyên sâu
-                    dưới quyền điều phối của Meta-Agent Orchestrator.
-                  </p>
+                  <h4>Đội Ngũ Sub-Agents Chuyên Trách ({currentExpert.subAgents?.length || 0} Agents)</h4>
+                  <p>Mỗi đại lý đảm nhận một vai trò hẹp, báo cáo trực tiếp về Meta-Agent để tổng hợp phương án tối ưu.</p>
                 </div>
 
-                <div className="subagents-grid">
-                  {currentExpert.subAgents.map((agent, idx) => (
+                <div className="subagents-cards-grid">
+                  {currentExpert.subAgents?.map((agent, idx) => (
                     <div key={idx} className="subagent-card">
-                      <div className="agent-badge">Sub-Agent #{idx + 1}</div>
-                      <h5 className="agent-name">{agent.name}</h5>
-                      <div className="agent-role">
-                        <strong>Vai trò chuyên môn:</strong> {agent.role}
+                      <div className="subagent-avatar">
+                        <Cpu size={24} />
                       </div>
-                      <p className="agent-desc">{agent.description}</p>
+                      <div className="subagent-info">
+                        <div className="subagent-role-tag">{agent.role}</div>
+                        <h5 className="subagent-name">{agent.name}</h5>
+                        <p className="subagent-desc">{agent.description}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
               </div>
             )}
 
-            {/* Tab 4: Quy trình 5 Cửa Sắt */}
+            {/* Sub-tab 6: Quy trình 5 Cửa Sắt */}
             {activeSubTab === 'protocol' && (
               <div className="sub-content-panel">
                 <div className="panel-title-with-desc">
-                  <h4>Quy Trình "5 Cửa Sắt" (Strict 5-Step Protocol) & Chốt Chặn Khóa Trạng Thái</h4>
-                  <p>
-                    Hệ thống vận hành theo nguyên tắc đơn nhiệm (Atomic Execution). Kỹ sư phải bấm duyệt ("Đồng ý", "Tiếp tục")
-                    để mở từng chốt chặn, ngăn chặn mọi sai lầm bộc phát.
-                  </p>
+                  <h4>Quy Trình 5 Cửa Sắt (5-Step Iron Gate Protocol)</h4>
+                  <p>Tuân thủ nguyên tắc thực thi đơn nhiệm (Atomic Execution) - Chốt chặn an toàn không nhảy cóc.</p>
                 </div>
 
                 <div className="protocol-timeline">
-                  {currentExpert.protocolSteps.map((step, idx) => (
-                    <div key={idx} className="timeline-item">
-                      <div className="timeline-marker">
-                        <span>{step.step}</span>
+                  {currentExpert.protocolSteps?.map((step, idx) => (
+                    <div key={idx} className="protocol-step-item">
+                      <div className="step-marker-col">
+                        <div className="step-circle">{step.step}</div>
+                        {idx < currentExpert.protocolSteps.length - 1 && <div className="step-line" />}
                       </div>
-                      <div className="timeline-body">
+                      <div className="step-content-card">
                         <div className="step-header-row">
                           <h5 className="step-title">{step.title}</h5>
                           <span className="step-badge-tag">Bước {step.step}/5</span>
@@ -498,7 +591,7 @@ const AgriExperts = () => {
               </div>
             )}
 
-            {/* Tab 5: Phòng thí nghiệm rủi ro Red Team */}
+            {/* Sub-tab 7: Phòng thí nghiệm rủi ro Red Team */}
             {activeSubTab === 'redteam' && (
               <div className="sub-content-panel">
                 <div className="panel-title-with-desc">
@@ -519,7 +612,7 @@ const AgriExperts = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {currentExpert.redTeamTable.map((row, idx) => (
+                      {currentExpert.redTeamTable?.map((row, idx) => (
                         <tr key={idx}>
                           <td className="risk-col">
                             <AlertTriangle size={16} color="#DC2626" />
@@ -537,7 +630,7 @@ const AgriExperts = () => {
               </div>
             )}
 
-            {/* Tab 6: Kịch bản mẫu thực địa */}
+            {/* Sub-tab 8: Kịch bản mẫu thực địa */}
             {activeSubTab === 'sample' && (
               <div className="sub-content-panel">
                 <div className="panel-title-with-desc">
@@ -551,7 +644,7 @@ const AgriExperts = () => {
                 <div className="chat-simulation-box">
                   <div className="chat-bubble user-bubble">
                     <div className="chat-sender">👨‍🌾 Kỹ sư / Chủ vườn hỏi:</div>
-                    <div className="chat-text">"{currentExpert.sampleScenario.userInput}"</div>
+                    <div className="chat-text">"{currentExpert.sampleScenario?.userInput}"</div>
                   </div>
 
                   <div className="chat-arrow-divider">
@@ -561,8 +654,35 @@ const AgriExperts = () => {
 
                   <div className="chat-bubble expert-bubble">
                     <div className="chat-sender">🤖 {currentExpert.name} ({currentExpert.level}):</div>
-                    <pre className="chat-response-text">{currentExpert.sampleScenario.expertResponse}</pre>
+                    <pre className="chat-response-text">{currentExpert.sampleScenario?.expertResponse}</pre>
                   </div>
+                </div>
+              </div>
+            )}
+
+            {/* Sub-tab 9: Chuẩn hóa Đầu Ra JSON Schema API */}
+            {activeSubTab === 'schema' && (
+              <div className="sub-content-panel">
+                <div className="panel-top-actions">
+                  <div className="actions-left">
+                    <h4>Đặc Tả Hợp Đồng Đầu Ra Chuẩn Hóa JSON Schema (API-Ready)</h4>
+                    <span className="instruction-hint">Đảm bảo câu trả lời của AI luôn ở dạng dữ liệu có cấu trúc, tích hợp trực tiếp vào hệ thống IoT tưới tự động hoặc ERP nông trại</span>
+                  </div>
+                  <div className="actions-right">
+                    <button
+                      className="copy-prompt-btn"
+                      onClick={handleCopySchema}
+                    >
+                      {copiedId === 'json-schema' ? <Check size={16} /> : <Copy size={16} />}
+                      <span>{copiedId === 'json-schema' ? 'Đã Sao Chép Schema!' : 'Sao Chép JSON Schema'}</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div className="instruction-code-wrapper">
+                  <pre className="instruction-code-content">
+                    <code>{jsonSchemaContractCode}</code>
+                  </pre>
                 </div>
               </div>
             )}
