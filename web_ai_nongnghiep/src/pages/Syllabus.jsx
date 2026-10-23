@@ -142,6 +142,23 @@ const Syllabus = () => {
                   };
 
                   const getVideoForTextbook = (tbName) => {
+                    const weekSpecificVideos = {
+                      // Tuần 1
+                      "1_[AI-Agri] Chapter 1_ Artificial Intelligence.pdf": "Slide_Day_01_AIAgri_Chap01",
+                      "1_[AI-Agri] Chapter 12_ Precision Farming.pdf": "Slide_Day_01_AIAgri_Chap12",
+                      "1_[Ethics]_Đạo đức trong AI Nông nghiệp.pdf": "Slide_Day_01_AIAgri_Ethics",
+                      "1_[Data-Driven] Chapter 7 Harvesting Intelligence.pdf": "Slide_Day_01_AIAgri_Chap07",
+                      // Tuần 6
+                      "6_[AI-Agri] Chapter 12_ Precision Farming.pdf": "[AI-Agri] slide Chapter 12_ Precision Farming",
+                      "6_[Data-Driven] Chapter 15_ Deep Reinforcement Learning for Smart Irrigation.pdf": "[Data-Driven] Chapter 15_ Deep Reinforcement Learning for Smart Irrigation",
+                      "6_[Data-Driven] Chapter 1_ Leveraging IoT for Precision Health Monitoring.pdf": "[Data-Driven] Chapter 1_ Leveraging IoT for Precision Health Monitoring",
+                    };
+
+                    const weekSpecificKey = `${weekKey}_${tbName}`;
+                    if (weekSpecificVideos[weekSpecificKey]) {
+                      return `Videos/${encodeURI(weekSpecificVideos[weekSpecificKey])}/index.html`;
+                    }
+
                     const knownVideos = {
                       // Tuần 1
                       "[AI-Agri] Chapter 1_ Artificial Intelligence.pdf": "Slide_Day_01_AIAgri_Chap01",
@@ -163,7 +180,10 @@ const Syllabus = () => {
                       "[AI-Agri] Chapter 11_ Species Recognition in Flowers.pdf": "[AI-Agri] Chapter 11_ Species Recognition in Flowers",
                       "[AI-Agri] Chapter 5_ Computer Vision.pdf": "[AI-Agri] Chapter 5_ Computer Vision",
                       "[Data-Driven] Chapter 2_ Significance of Machine Learning in Apple Disease Detection.pdf": "[Data-Driven] Chapter 2_ Significance of Machine Learning in Apple Disease Detection",
-                      "[Hands-On] Chapter 14_ Deep Computer Vision Using CNNs.pdf": "[Hands-On] Chapter 14_ Deep Computer Vision Using CNNs"
+                      "[Hands-On] Chapter 14_ Deep Computer Vision Using CNNs.pdf": "[Hands-On] Chapter 14_ Deep Computer Vision Using CNNs",
+                      // Tuần 6
+                      "[Data-Driven] Chapter 15_ Deep Reinforcement Learning for Smart Irrigation.pdf": "[Data-Driven] Chapter 15_ Deep Reinforcement Learning for Smart Irrigation",
+                      "[Data-Driven] Chapter 1_ Leveraging IoT for Precision Health Monitoring.pdf": "[Data-Driven] Chapter 1_ Leveraging IoT for Precision Health Monitoring",
                     };
                     return knownVideos[tbName] ? `Videos/${encodeURI(knownVideos[tbName])}/index.html` : null;
                   };
