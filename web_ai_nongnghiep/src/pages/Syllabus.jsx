@@ -152,6 +152,10 @@ const Syllabus = () => {
                       "6_[AI-Agri] Chapter 12_ Precision Farming.pdf": "[AI-Agri] slide Chapter 12_ Precision Farming",
                       "6_[Data-Driven] Chapter 15_ Deep Reinforcement Learning for Smart Irrigation.pdf": "[Data-Driven] Chapter 15_ Deep Reinforcement Learning for Smart Irrigation",
                       "6_[Data-Driven] Chapter 1_ Leveraging IoT for Precision Health Monitoring.pdf": "[Data-Driven] Chapter 1_ Leveraging IoT for Precision Health Monitoring",
+                      // Tuần 7
+                      "7_[Data-Driven] Chapter 3_ Intelligent Inputs Revolutionizing Agriculture.pdf": "[Data-Driven] slide Chapter 3_ Intelligent Inputs Revolutionizing Agriculture",
+                      "7_[Data-Driven] Chapter 6_ A Perusal of Machine-Learning Algorithms in Crop-Yield Predictions.pdf": "[Data-Driven] slide Chapter 6_ A Perusal of Machine-Learning Algorithms in Crop-Yield Predictions",
+                      "7_[Data-Driven] Chapter 9_ Agricultural Crop-Yield Prediction.pdf": "[Data-Driven] slide Chapter 9_ Agricultural Crop-Yield Prediction",
                     };
 
                     const weekSpecificKey = `${weekKey}_${tbName}`;
@@ -184,6 +188,10 @@ const Syllabus = () => {
                       // Tuần 6
                       "[Data-Driven] Chapter 15_ Deep Reinforcement Learning for Smart Irrigation.pdf": "[Data-Driven] Chapter 15_ Deep Reinforcement Learning for Smart Irrigation",
                       "[Data-Driven] Chapter 1_ Leveraging IoT for Precision Health Monitoring.pdf": "[Data-Driven] Chapter 1_ Leveraging IoT for Precision Health Monitoring",
+                      // Tuần 7
+                      "[Data-Driven] Chapter 3_ Intelligent Inputs Revolutionizing Agriculture.pdf": "[Data-Driven] slide Chapter 3_ Intelligent Inputs Revolutionizing Agriculture",
+                      "[Data-Driven] Chapter 6_ A Perusal of Machine-Learning Algorithms in Crop-Yield Predictions.pdf": "[Data-Driven] slide Chapter 6_ A Perusal of Machine-Learning Algorithms in Crop-Yield Predictions",
+                      "[Data-Driven] Chapter 9_ Agricultural Crop-Yield Prediction.pdf": "[Data-Driven] slide Chapter 9_ Agricultural Crop-Yield Prediction",
                     };
                     return knownVideos[tbName] ? `Videos/${encodeURI(knownVideos[tbName])}/index.html` : null;
                   };
